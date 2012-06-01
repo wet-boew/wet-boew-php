@@ -1,0 +1,3 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/inc/body-corps-1a.php"; ?>
+<div id="cn-sig"><img src="/<?php echo $_TEMPLATE['theme_folder']; ?>/images/<?php echo $_TEMPLATE['sig_image']; ?>-<?php echo $_PAGE['lang1']; ?>.gif" width="372" height="20" alt="<?php echo $_TEMPLATE['sig_' . $_PAGE['lang1']]; ?> / <?php echo $_TEMPLATE['sig_' . $_PAGE['lang2']]; ?>" title="<?php echo $_TEMPLATE['sig_' . $_PAGE['lang1']]; ?> / <?php echo $_TEMPLATE['sig_' . $_PAGE['lang2']]; ?>" /></div>
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/inc/body-corps-1b.php"; ?>
