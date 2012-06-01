@@ -1,0 +1,1 @@
+<?php include "wp-pa-theme-clf2-nsi2-eng-fra.php"; ?>

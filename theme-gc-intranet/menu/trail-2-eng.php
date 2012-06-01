@@ -1,0 +1,6 @@
+<h4 class="col-head"><a<?php if ($_PAGE['isapp'] == '1') { ?> <?php if ($_PAGE['html5'] == '1') { ?>target="_blank"<?php } else { ?>class="wet-newwindow"<?php } } ?> href="#">News</a></h4>
+<ul>
+<li><a<?php if ($_PAGE['isapp'] == '1') { ?> <?php if ($_PAGE['html5'] == '1') { ?>target="_blank"<?php } else { ?>class="wet-newwindow"<?php } } ?> href="#">News releases</a></li>
+<li><a<?php if ($_PAGE['isapp'] == '1') { ?> <?php if ($_PAGE['html5'] == '1') { ?>target="_blank"<?php } else { ?>class="wet-newwindow"<?php } } ?> href="#">Media advisories</a></li>
+<li><a<?php if ($_PAGE['isapp'] == '1') { ?> <?php if ($_PAGE['html5'] == '1') { ?>target="_blank"<?php } else { ?>class="wet-newwindow"<?php } } ?> href="#">Multimedia</a></li>
+</ul>
