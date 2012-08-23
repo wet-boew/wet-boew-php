@@ -1,1 +1,0 @@
-<div id="cn-body-inner-1col">
