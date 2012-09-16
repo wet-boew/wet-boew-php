@@ -7,7 +7,7 @@
 <head>
 <meta charset="utf-8" />
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-www.tbs.gc.ca/ws-nw/wet-boew/terms / www.sct.gc.ca/ws-nw/wet-boew/conditions -->
+wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
 <?php $_PAGE['lang1'] = "eng";
 $_PAGE['title_eng'] = "PHP Variant - 2 column - WET 3.0";
 $_PAGE['issued'] = "2011-10-31";

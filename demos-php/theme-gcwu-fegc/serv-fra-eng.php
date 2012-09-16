@@ -8,7 +8,7 @@
 <meta charset="utf-8" />
 
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-www.tbs.gc.ca/ws-nw/wet-boew/terms / www.sct.gc.ca/ws-nw/wet-boew/conditions -->
+wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
 <?php $_PAGE['lang1'] = "fra";
 $_PAGE['lang2'] = "eng";
 $_PAGE['title_eng'] = "PHP Variant - Message - WET 3.0";
