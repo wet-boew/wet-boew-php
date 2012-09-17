@@ -1,20 +1,17 @@
 <div class="wet-boew-menubar mb-mega"><div>
 <ul class="mb-menu">
-<li><section><h3><a href="#">Section 1</a></h3><div class="mb-sm"><div class="span-2">
+<li><section><h3><a href="http://wet-boew.github.com/wet-boew/docs/index-eng.html">WET project</a></h3><div class="mb-sm">
+<div class="span-2">
 <ul>
-<li><a href="#">Item 1.1</a></li>
-<li><a href="#">Item 1.2</a></li>
-<li><a href="#">Item 1.3</a></li>
-<li><a href="#">Item 1.4</a></li>
-<li><a href="#">Item 1.5</a></li>
-<li><a href="#">Item 1.6</a></li>
-<li><a href="#">Item 1.7</a></li>
-<li><a href="#">Item 1.8</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/">Main project page</a></li>
+<li><a href="http://wet-boew.github.com/wet-boew/License-eng.txt">Terms and conditions</a></li>
+<li><a href="http://wet-boew.github.com/wet-boew/demos/index-eng.html">Working examples</a></li>
 </ul>
 </div>
 <div class="clear"></div>
+<div class="mb-main-link"><a href="http://wet-boew.github.com/wet-boew/docs/index-eng.html">WET project - Main page</a></div>
 </div></section></li>
-<li><section><h3><a href="section2-eng.html">Section 2</a></h3><div class="mb-sm">
+<li><section><h3><a href="section2/index-eng.html">Section 2</a></h3><div class="mb-sm">
 <div class="span-2">
 <section><h4><a href="#">Section 2.1</a></h4>
 <ul>
@@ -28,10 +25,16 @@
 </section>
 </div>
 <div class="span-2">
-<section><h4><a href="#">Section 2.2</a></h4>
+<section><h4><a href="section2/section22/index-eng.html">Section 2.2</a></h4>
 <ul>
 <li><a href="#">Item 2.2.1</a></li>
-<li><a href="#">Item 2.2.2</a></li>
+<li><a href="#">Item 2.2.2</a>
+	<ul>
+	<li><a href="#">Item 2.2.2.1</a></li>
+	<li><a href="#">Item 2.2.2.2</a></li>
+	<li><a href="#">Item 2.2.2.3</a></li>
+	</ul>
+</li>
 <li><a href="#">Item 2.2.3</a></li>
 <li><a href="#">Item 2.2.4</a></li>
 <li><a href="#">Item 2.2.5</a></li>
@@ -42,8 +45,23 @@
 </section>
 </div>
 <div class="clear"></div>
+<div class="mb-main-link"><a href="section2/index-eng.html">Section 2 - Main page</a></div>
 </div></section></li>
 <li><section><h3><a href="#">Section 3</a></h3><div class="mb-sm">
+<div class="mb-highlight">
+<section><h4><a href="#">Focus</a></h4>
+<ul>
+<li><a href="#">Link 1</a></li>
+<li><a href="#">Link 2</a></li>
+<li><a href="#">Link 3</a></li>
+<li><a href="#">Link 4</a></li>
+<li><a href="#">Link 5</a></li>
+<li><a href="#">Link 6</a></li>
+<li><a href="#">Link 7</a></li>
+</ul>
+<div class="clear"></div>
+</section>
+</div>
 <div class="span-2">
 <section><h4><a href="#">Section 3.1</a></h4>
 <ul>
@@ -80,8 +98,9 @@
 </section>
 </div>
 <div class="clear"></div>
+<div class="mb-main-link"><a href="#">Section 3 - Main page</a></div>
 </div></section></li>
-<li><section><h3><a href="#">Section 4</a></h3><div class="mb-sm">
+<li><section><h3><a href="section4/index-eng.html">Section 4</a></h3><div class="mb-sm">
 <div class="span-2">
 <section><h4><a href="#">Section 4.1</a></h4>
 <ul>
@@ -98,36 +117,43 @@
 <li><a href="#">Item 4.2.4</a></li>
 </ul>
 </section>
-<section><h4><a href="#">Section 4.3</a></h4>
+</div>
+<div class="span-2">
+<section><h4><a href="section4/section43/index-eng.html">Section 4.3</a></h4>
 <ul>
 <li><a href="#">Item 4.3.1</a></li>
 <li><a href="#">Item 4.3.2</a></li>
+<li><a href="#">Item 4.3.3</a></li>
+<li><a href="#">Item 4.3.4</a></li>
 </ul>
 </section>
-</div>
-<div class="span-2">
 <section><h4><a href="#">Section 4.4</a></h4>
 <ul>
 <li><a href="#">Item 4.4.1</a></li>
 <li><a href="#">Item 4.4.2</a></li>
 <li><a href="#">Item 4.4.3</a></li>
-<li><a href="#">Item 4.4.4</a></li>
-</ul>
-</section>
-<section><h4><a href="#">Section 4.5</a></h4>
-<ul>
-<li><a href="#">Item 4.5.1</a></li>
-<li><a href="#">Item 4.5.2</a></li>
-<li><a href="#">Item 4.5.3</a></li>
-<li><a href="#">Item 4.5.4</a></li>
-<li><a href="#">Item 4.5.5</a></li>
 </ul>
 </section>
 </div>
 <div class="clear"></div>
+<div class="mb-main-link"><a href="#">Section 4 - Main page</a></div>
 </div></section></li>
 <li><div><a href="#">Section 5</a></div></li>
 <li><section><h3><a href="#">Section 6</a></h3><div class="mb-sm">
+<div class="mb-highlight">
+<section><h4><a href="#">Focus</a></h4>
+<ul>
+<li><a href="#">Link 1</a></li>
+<li><a href="#">Link 2</a></li>
+<li><a href="#">Link 3</a></li>
+<li><a href="#">Link 4</a></li>
+<li><a href="#">Link 5</a></li>
+<li><a href="#">Link 6</a></li>
+<li><a href="#">Link 7</a></li>
+</ul>
+<div class="clear"></div>
+</section>
+</div>
 <div class="span-2">
 <section><h4><a href="#">Section 6.1</a></h4>
 <ul>
@@ -176,6 +202,7 @@
 </section>
 </div>
 <div class="clear"></div>
+<div class="mb-main-link"><a href="#">Section 6 - Main page</a></div>
 </div></section></li>
 <li><section><h3><a href="#">Section 7</a></h3><div class="mb-sm">
 <div class="span-2">
@@ -214,6 +241,7 @@
 </section>
 </div>
 <div class="clear"></div>
+<div class="mb-main-link"><a href="#">Section 7 - Main page</a></div>
 </div></section></li>
 </ul>
 </div></div>
