@@ -8,7 +8,7 @@
 <!-- Site title ends / Fin du titre du site -->
 
 <!-- Language selection links begin / Début des liens de sélection de langue -->
-<div id="gcwu-lang"><nav role="navigation"><h2><?php echo $_UNKNOWN['gc_langselect_' . $_PAGE['lang1']]; ?> / <span lang="<?php echo $_UNKNOWN['gcwu_meta_' . $_PAGE['lang2']]; ?>"><?php echo $_UNKNOWN['gc_langselect_' . $_PAGE['lang2']]; ?></span></span></h2>
+<div id="gcwu-lang"><nav role="navigation"><h2><?php echo $_UNKNOWN['gc_langselect_' . $_PAGE['lang1']]; ?> / <span lang="<?php echo $_UNKNOWN['gcwu_meta_' . $_PAGE['lang2']]; ?>"><?php echo $_UNKNOWN['gc_langselect_' . $_PAGE['lang2']]; ?></span></h2>
 <div class="span-6 grid-12 margin-bottom-none">
 <ul id="gcwu-ef-lang">
 <li><div class="span-2 row-start margin-bottom-none"><a href="<?php echo $_PAGE['link_' . $_PAGE['lang1']]; ?>"><?php echo $_UNKNOWN['gcwu_lang_text_' . $_PAGE['lang1']]; ?></a></div></li>
