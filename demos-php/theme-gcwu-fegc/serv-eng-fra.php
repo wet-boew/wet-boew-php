@@ -8,12 +8,12 @@
 <meta charset="utf-8" />
 
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
+wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt -->
 <?php $_PAGE['lang1'] = "eng";
 $_PAGE['lang2'] = "fra";
 $_PAGE['title_eng'] = "Message Title (h1)";
 $_PAGE['title_fra'] = "Variante pour PHP - message - BOEW 3.0";
-$_PAGE['issued'] = "2011-10-31";
+$_PAGE['issued'] = "2013-04-18";
 $_PAGE['modified'] = "YYYY-MM-DD";
 $_PAGE['html5'] = "1"; ?>
 

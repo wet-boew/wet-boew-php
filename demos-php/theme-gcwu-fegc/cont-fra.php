@@ -7,7 +7,7 @@
 <head>
 <meta charset="utf-8" />
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
+wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt -->
 
 <?php $_PAGE['lang1'] = "fra"; ?>
 <?php $_PAGE['title_fra'] = "Variante pour PHP - 1 colonne - BOEW 3.0"; ?>

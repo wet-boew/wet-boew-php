@@ -9,14 +9,14 @@
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt -->
 <?php $_PAGE['lang1'] = "fra";
-$_PAGE['title_fra'] = "Modèle pour applications - Sans recherche ou lien de sélection de la langue - Thème de la facilité d'emploi Web GC - Variante pour PHP - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
+$_PAGE['title_fra'] = "Modèle pour applications - Sans menu du site ou fil d'Ariane - Thème de la facilité d'emploi Web GC - Variante pour PHP - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
 $_PAGE['issued'] = "2013-04-18";
 $_PAGE['modified'] = "YYYY-MM-DD";
 $_PAGE['version'] = "1.1b";
 $_PAGE['html5'] = "1";
 $_PAGE['isapp'] = "1";
-$_PAGE['nosearch'] = "1";
-$_PAGE['nolang'] = "1"; ?>
+$_PAGE['nositemenu'] = "1";
+$_PAGE['bcrumb_hide'] = "1"; ?>
 
 <meta name="dcterms.description" content="English description / Description en anglais" />
 <meta name="description" content="English description / Description en anglais" />

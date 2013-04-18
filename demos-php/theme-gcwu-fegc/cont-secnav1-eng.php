@@ -7,10 +7,10 @@
 <head>
 <meta charset="utf-8" />
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
+wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt -->
 <?php $_PAGE['lang1'] = "eng";
-$_PAGE['title_eng'] = "PHP Variant - 2 column - WET 3.0";
-$_PAGE['issued'] = "2011-10-31";
+$_PAGE['title_eng'] = "Content page - Secondary menu 1 - GC Web Usability theme - PHP variant - Working examples - Web Experience Toolkit&#160;(WET)";
+$_PAGE['issued'] = "2013-04-18";
 $_PAGE['modified'] = "YYYY-MM-DD";
 $_PAGE['html5'] = "1"; ?>
 <meta name="dcterms.description" content="English description / Description en anglais" />
@@ -66,7 +66,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/header-
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/left-gauche-1.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/exmple-eng.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav1-eng.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/left-gauche-2.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/trail-arr.php"; ?>
 </body>

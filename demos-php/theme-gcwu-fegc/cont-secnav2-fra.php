@@ -9,7 +9,7 @@
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt -->
 <?php $_PAGE['lang1'] = "fra";
-$_PAGE['title_fra'] = "Page de contenu - Menu secondaire 1 - Thème de la facilité d'emploi Web GC - Variante pour PHP - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
+$_PAGE['title_fra'] = "Page de contenu - Menu secondaire 2 - Thème de la facilité d'emploi Web GC - Variante pour PHP - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
 $_PAGE['issued'] = "2013-04-18";
 $_PAGE['modified'] = "AAAA-MM-JJ";
 $_PAGE['html5'] = "1"; ?>
@@ -51,7 +51,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/header-
 </ul>
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/left-gauche-1.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav1-fra.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav2-fra.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/left-gauche-2.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/trail-arr.php"; ?>
 </body>

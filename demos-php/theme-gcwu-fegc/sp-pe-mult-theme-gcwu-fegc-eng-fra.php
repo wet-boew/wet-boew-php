@@ -8,7 +8,7 @@
 <head>
 <meta charset="utf-8" />
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
+wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt -->
 <?php }
 $_NAVPATH['lang1'] = "eng";
 $_NAVPATH['lang2'] = "fra";
@@ -26,7 +26,7 @@ $_NAVPATH['link_spa'] = "#";
 $_NAVPATH['link_ita'] = "#";
 $_NAVPATH['link_por'] = "#";
 $_NAVPATH['link_rus'] = "#";
-$_NAVPATH['issued'] = "2011-10-31";
+$_NAVPATH['issued'] = "2013-04-18";
 $_NAVPATH['modified'] = "YYYY-MM-DD";
 $_NAVPATH['html5'] = "1";
 $_NAVPATH['html5'] = "1";

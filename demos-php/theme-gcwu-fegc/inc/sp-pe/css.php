@@ -14,5 +14,5 @@
 <!--<![endif]-->
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/head-tete-2.php"; ?>
-<!-- CustomScriptsCSSStart -->
-<!-- CustomScriptsCSSEnd -->
+<!-- CustomCSSStart -->
+<!-- CustomCSSEnd -->

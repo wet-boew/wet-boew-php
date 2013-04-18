@@ -7,10 +7,10 @@
 <head>
 <meta charset="utf-8" />
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
+wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt -->
 
 <?php $_PAGE['lang1'] = "eng"; ?>
-<?php $_PAGE['title_eng'] = "PHP Variant - Home Layout - WET 3.0"; ?>
+<?php $_PAGE['title_eng'] = "PHP Variant - Home Layout"; ?>
 <?php $_PAGE['issued'] = "2010-08-09"; ?>
 <?php $_PAGE['modified'] = "YYYY-MM-DD"; ?>
 <?php $_PAGE['html5'] = "1"; ?>

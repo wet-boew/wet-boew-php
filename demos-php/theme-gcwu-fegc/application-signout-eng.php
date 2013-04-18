@@ -1,32 +1,40 @@
 <!DOCTYPE html>
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/desc.php"; ?>
-
+<!--[if IE 7]> <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
 <head>
 <meta charset="utf-8" />
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt -->
-
-<?php $_PAGE['lang1'] = "eng"; ?>
-<?php $_PAGE['title_eng'] = "PHP Variant - 1 column layout"; ?>
-<?php $_PAGE['issued'] = "2010-08-09"; ?>
-<?php $_PAGE['modified'] = "YYYY-MM-DD"; ?>
-<?php $_PAGE['html5'] = "1"; ?>
-
-<meta name="dcterms.description" content="English description/Description en anglais" />
-<meta name="description" content="English description/Description en anglais" />
-<meta name="keywords" content="English keywords/Mots-clés en anglais" />
-<meta name="dcterms.creator" content="English name of the content author/Nom en anglais de l'auteur du contenu" />
-<meta name="dcterms.subject" title="scheme" content="English subject terms/Termes de sujet en anglais" /> 
+<?php $_PAGE['lang1'] = "eng";
+$_PAGE['title_eng'] = "Application template - Sign out - GC Web Usability theme - PHP variant - Working examples - Web Experience Toolkit&#160;(WET)";
+$_PAGE['issued'] = "2013-04-18";
+$_PAGE['modified'] = "YYYY-MM-DD";
+$_PAGE['version'] = "1.1b";
+$_PAGE['html5'] = "1";
+$_PAGE['isapp'] = "1"; ?>
+<meta name="dcterms.description" content="English description / Description en anglais" />
+<meta name="description" content="English description / Description en anglais" />
+<meta name="keywords" content="English keywords / Mots-clés en anglais" />
+<meta name="dcterms.creator" content="English name of the content author / Nom en anglais de l'auteur du contenu" />
+<meta name="dcterms.subject" title="scheme" content="English subject terms / Termes de sujet en anglais" />
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/css.php"; ?>
-
 </head>
-
 <body>
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/1col.php"; ?>
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/header-entete.php"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/1col.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/header-entete.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-1.php"; ?>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-1.php"; ?>
+<div id="wb-session"><aside>
+<h2 class="wb-invisible">My account</h2>
+<ul class="button-group">
+<li class="settings"><a class="button button-accent" href="#">Account settings</a></li>
+<li class="session"><a class="button button-accent" href="application-signin-eng.html">Sign out</a></li>
+</ul>
+</aside></div>
 
 <h2>Overview</h2>	
 <p>This feature adapts the HTML5 core markup structure for use with PHP (PHP).</p>
@@ -63,9 +71,7 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
   <li>theme-gcwu-fegc\menu</li>
   <li>theme-gcwu-fegc\php</li>
 </ul>
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php"; ?>
-
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/trail-arr.php"; ?>
-
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/trail-arr.php"; ?>
 </body>
 </html>

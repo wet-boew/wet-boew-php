@@ -9,20 +9,19 @@
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt -->
 <?php $_PAGE['lang1'] = "fra";
-$_PAGE['title_fra'] = "Modèle pour applications - Sans recherche ou lien de sélection de la langue - Thème de la facilité d'emploi Web GC - Variante pour PHP - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
+$_PAGE['title_fra'] = "Modèle pour applications - Menu secondaire 1 - Thème de la facilité d'emploi Web GC - Variante pour PHP - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
 $_PAGE['issued'] = "2013-04-18";
 $_PAGE['modified'] = "YYYY-MM-DD";
 $_PAGE['version'] = "1.1b";
 $_PAGE['html5'] = "1";
-$_PAGE['isapp'] = "1";
-$_PAGE['nosearch'] = "1";
-$_PAGE['nolang'] = "1"; ?>
+$_PAGE['isapp'] = "1"; ?>
 
 <meta name="dcterms.description" content="English description / Description en anglais" />
 <meta name="description" content="English description / Description en anglais" />
 <meta name="keywords" content="English keywords / Mots-clés en anglais" />
 <meta name="dcterms.creator" content="English name of the content author / Nom en anglais de l'auteur du contenu" />
-<meta name="dcterms.subject" title="scheme" content="English subject terms / Termes de sujet en anglais" /> 
+<meta name="dcterms.subject" title="scheme" content="English subject terms / Termes de sujet en anglais" />
+ 
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/css.php"; ?>
 </head>
@@ -117,6 +116,9 @@ include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-1.php"; ?>
 </blockquote>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/left-gauche-1.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav1-eng.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/left-gauche-2.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/trail-arr.php"; ?>
 </body>
 </html>

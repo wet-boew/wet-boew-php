@@ -1,18 +1,23 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/config.php"; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/head-tete-1.php"; ?>
 <link rel="shortcut icon" href="/build/theme-gcwu-fegc/images/favicon.ico" />
-<!-- CSSStart-->
-<script src="/build/js/jquery.min.js"></script>
-<link rel="stylesheet" href="/build/grids/css/util-min.css" />
+
 <!--[if lte IE 8]>
-<link rel="stylesheet" href="/build/js/css/pe-ap-ie-min.css" />
-<link rel="stylesheet" href="/build/theme-gcwu-fegc/css/theme-serv-ie-min.css" />
+<script src="/dist/js/jquery-ie.min.js"></script>
+<script src="/dist/js/polyfills/html5shiv-min.js"></script>
+<link rel="stylesheet" href="/dist/grids/css/util-ie-min.css" />
+<link rel="stylesheet" href="/dist/js/css/pe-ap-ie-min.css" />
+<link rel="stylesheet" href="/dist/theme-gcwu-fegc/css/theme-serv-ie-min.css" />
+<noscript><link rel="stylesheet" href="/dist/theme-gcwu-fegc/css/theme-ns-ie-min.css" /></noscript>
 <![endif]-->
 <!--[if gt IE 8]><!-->
-<link rel="stylesheet" href="/build/js/css/pe-ap-min.css" />
-<link rel="stylesheet" href="/build/theme-gcwu-fegc/css/theme-serv-min.css" />
+<script src="/dist/js/jquery.min.js"></script>
+<link rel="stylesheet" href="/dist/grids/css/util-min.css" />
+<link rel="stylesheet" href="/dist/js/css/pe-ap-min.css" />
+<link rel="stylesheet" href="/dist/theme-gcwu-fegc/css/theme-serv-min.css" />
+<noscript><link rel="stylesheet" href="/dist/theme-gcwu-fegc/css/theme-ns-min.css" /></noscript>
 <!--<![endif]-->
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/head-tete-2.php"; ?>
-<!-- CustomScriptsCSSStart -->
-<!-- CustomScriptsCSSEnd -->
+<!-- CustomCSSStart -->
+<!-- CustomCSSEnd -->
