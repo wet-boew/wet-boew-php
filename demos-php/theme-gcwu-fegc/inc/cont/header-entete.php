@@ -1,5 +1,5 @@
 <?php 
-include $_SERVER['DOCUMENT_ROOT'] . "/build/inc/body-corps-1a.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/dist/inc/body-corps-1a.php";
 
 //Add the GCWU navigation bar, This appears in the black banner at the top
 //of the non-mobile version of the page or as a series of buttons at the bottom
@@ -11,7 +11,7 @@ echo '<div id="gcwu-sig"><div id="gcwu-sig-in">';
 
 //path and titel for the SVG and PNG fallback image. Use the $_PAGE['lang1'] 
 //variable to determine which image should be displayed
-$SIG_IMG_PATH = '/build/theme-gcwu-fegc/images/sig-' .$_PAGE['lang1'];
+$SIG_IMG_PATH = '/dist/theme-gcwu-fegc/images/sig-' .$_PAGE['lang1'];
 $SIG_IMG_TITLE = $_UNKNOWN['gc_sig_' . $_PAGE['lang1']];
 
 //use the SVG image for compatiable browsers
@@ -65,7 +65,7 @@ echo '<div id="gcwu-bnr" role="banner"><div id="gcwu-bnr-in">';
 echo '<div id="gcwu-wmms"><div id="gcwu-wmms-in">';
 
 //path and titel for the SVG and PNG fallback image.
-$CAN_IMG_PATH = "/build/theme-gcwu-fegc/images/wmms";
+$CAN_IMG_PATH = "/dist/theme-gcwu-fegc/images/wmms";
 $CAN_IMG_TITLE = $_UNKNOWN['gc_wmms_' . $_PAGE['lang1']];
 
 //use the SVG image for compatiable browsers
@@ -112,12 +112,12 @@ if ((!isset($_PAGE['nositemenu']) || (isset($_PAGE['nositemenu']) && $_PAGE['nos
 		echo '<div id="gcwu-bc-in">';
 		echo '<ol>';
 		
-		include $_SERVER['DOCUMENT_ROOT'] . "/build/inc/bt-fa.php";
+		include $_SERVER['DOCUMENT_ROOT'] . "/dist/inc/bt-fa.php";
 		
 		echo '</ol>';
 		echo '</div></div>';
 	}
 	echo '</nav>';
 }
-include $_SERVER['DOCUMENT_ROOT'] . "/build/inc/body-corps-1b.php"; 
+include $_SERVER['DOCUMENT_ROOT'] . "/dist/inc/body-corps-1b.php"; 
 ?>
