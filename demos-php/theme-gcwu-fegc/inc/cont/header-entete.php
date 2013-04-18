@@ -1,5 +1,5 @@
 <?php 
-include $_SERVER['DOCUMENT_ROOT'] . "/dist/inc/body-corps-1a.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/body-corps-1a.php";
 
 //Add the GCWU navigation bar, This appears in the black banner at the top
 //of the non-mobile version of the page or as a series of buttons at the bottom
@@ -112,12 +112,12 @@ if ((!isset($_PAGE['nositemenu']) || (isset($_PAGE['nositemenu']) && $_PAGE['nos
 		echo '<div id="gcwu-bc-in">';
 		echo '<ol>';
 		
-		include $_SERVER['DOCUMENT_ROOT'] . "/dist/inc/bt-fa.php";
+		include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/bt-fa.php";
 		
 		echo '</ol>';
 		echo '</div></div>';
 	}
 	echo '</nav>';
 }
-include $_SERVER['DOCUMENT_ROOT'] . "/dist/inc/body-corps-1b.php"; 
+include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/body-corps-1b.php"; 
 ?>
