@@ -7,11 +7,11 @@
 <script src="/dist/js/polyfills/html5shiv-min.js"></script>
 <link rel="stylesheet" href="/dist/grids/css/util-ie-min.css" />
 <link rel="stylesheet" href="/dist/js/css/pe-ap-ie-min.css" />
-<link rel="stylesheet" href="/dist/theme-wet-boew/css/theme-ie-min.css" />
-<noscript><link rel="stylesheet" href="/dist/theme-wet-boew/css/theme-ns-ie-min.css" /></noscript>
+<link rel="stylesheet" href="/dist/theme-gcwu-fegc/css/theme-ie-min.css" />
+<noscript><link rel="stylesheet" href="/dist/theme-gcwu-fegc/css/theme-ns-ie-min.css" /></noscript>
 <![endif]-->
 <!--[if gt IE 8]><!-->
-<script src="/dist/js/jquery.min.js"></script>
+<script src="/build/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/dist/grids/css/util-min.css" />
 <link rel="stylesheet" href="/dist/js/css/pe-ap-min.css" />
 <link rel="stylesheet" href="/dist/theme-gcwu-fegc/css/theme-min.css" />
