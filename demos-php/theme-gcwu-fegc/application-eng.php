@@ -22,7 +22,11 @@ $_PAGE['isapp'] = "1"; ?>
 <meta name="dcterms.subject" title="scheme" content="English subject terms / Termes de sujet en anglais" />
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/css.php"; ?>
+<!-- CustomCSSStart -->
+
+<!-- CustomCSSEnd -->
 </head>
+
 <body>
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/1col.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/header-entete.php";
@@ -62,7 +66,11 @@ include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-1.php"; ?>
   <li>theme-gcwu-fegc\menu</li>
   <li>theme-gcwu-fegc\php</li>
 </ul>
+
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/trail-arr.php"; ?>
+<!-- CustomScriptsStart -->
+
+<!-- CustomScriptsEnd -->
 </body>
 </html>

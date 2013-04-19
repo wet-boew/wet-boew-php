@@ -20,7 +20,9 @@ $_PAGE['html5'] = "1"; ?>
 <meta name="dcterms.subject" title="scheme" content="French subject terms / Termes de sujet en français" /> 
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/css.php"; ?>
+<!-- CustomCSSStart -->
 
+<!-- CustomCSSEnd -->
 </head>
 
 <body>
@@ -49,10 +51,14 @@ include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/header-
   </li>
   <li>Soutien pour Firefox, Opera, Safari, Chrome et IE 7+ </li>
 </ul>
+
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/left-gauche-1.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav2-fra.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/left-gauche-2.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/trail-arr.php"; ?>
+<!-- CustomScriptsStart -->
+
+<!-- CustomScriptsEnd -->
 </body>
 </html>

@@ -19,6 +19,3 @@
 <!--<![endif]-->
 <noscript><link rel="stylesheet" href="/dist/theme-gcwu-fegc/css/theme-ns-min.css" /></noscript>
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/head-tete-2.php"; ?>
-
-<!-- CustomCSSStart -->
-<!-- CustomCSSEnd -->

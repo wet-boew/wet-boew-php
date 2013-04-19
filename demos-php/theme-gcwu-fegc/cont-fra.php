@@ -8,14 +8,11 @@
 <meta charset="utf-8" />
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt -->
-
 <?php $_PAGE['lang1'] = "fra"; ?>
 <?php $_PAGE['title_fra'] = "Variante pour PHP - 1 colonne - BOEW 3.0"; ?>
 <?php $_PAGE['issued'] = "2010-08-09"; ?>
 <?php $_PAGE['modified'] = "YYYY-MM-DD"; ?>
 <?php $_PAGE['html5'] = "1"; ?>
-
-
 <meta name="dcterms.description" content="French description / Description en français" />
 <meta name="description" content="French description / Description en français" />
 <meta name="keywords" content="French keywords / Mots-clés en français" />
@@ -23,7 +20,9 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 <meta name="dcterms.subject" title="scheme" content="French subject terms / Termes de sujet en français" /> 
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/css.php"; ?>
+<!-- CustomCSSStart -->
 
+<!-- CustomCSSEnd -->
 </head>
 
 <body>
@@ -52,9 +51,11 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
   </li>
   <li>Soutien pour Firefox, Opera, Safari, Chrome et IE 7+ </li>
 </ul>
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php"; ?>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/trail-arr.php"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/trail-arr.php"; ?>
+<!-- CustomScriptsStart -->
 
+<!-- CustomScriptsEnd -->
 </body>
 </html>

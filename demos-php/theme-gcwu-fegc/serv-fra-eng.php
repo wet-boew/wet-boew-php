@@ -6,7 +6,6 @@
 <!--<![endif]-->
 <head>
 <meta charset="utf-8" />
-
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt -->
 <?php $_PAGE['lang1'] = "fra";
@@ -16,14 +15,15 @@ $_PAGE['title_fra'] = "Variante pour PHP - message - BOEW 3.0";
 $_PAGE['issued'] = "2013-04-18";
 $_PAGE['modified'] = "YYYY-MM-DD";
 $_PAGE['html5'] = "1"; ?>
-
 <meta name="robots" content="none" />
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/servpage/css.php"; ?>
+<!-- CustomCSSStart -->
 
+<!-- CustomCSSEnd -->
 </head>
-<body>
 
+<body>
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/1col.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/servpage/header-entete.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-1.php"; ?>
@@ -47,5 +47,8 @@ include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-1.php"; ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/servpage/trail-arr.php"; ?>
+<!-- CustomScriptsStart -->
+
+<!-- CustomScriptsEnd -->
 </body>
 </html>

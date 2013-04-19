@@ -33,7 +33,11 @@ include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/sp-pe-vars.php"; ?>
 <meta name="dcterms.subject" title="scheme" lang="fr" content="French subject terms / Termes de sujet en français" />
  
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/sp-pe/css.php"; ?>
+<!-- CustomCSSStart -->
+
+<!-- CustomCSSEnd -->
 </head>
+
 <body>
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/1col.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/sp-pe/header-entete.php";
@@ -41,6 +45,9 @@ include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-1.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/sp-pe/cont.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/sp-pe/trail-arr.php"; ?>
+<!-- CustomScriptsStart -->
+
+<!-- CustomScriptsEnd -->
 </body>
 </html>
 <?php } else {

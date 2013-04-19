@@ -17,7 +17,6 @@ $_PAGE['html5'] = "1";
 $_PAGE['isapp'] = "1";
 $_PAGE['nositemenu'] = "1";
 $_PAGE['bcrumb_hide'] = "1"; ?>
-
 <meta name="dcterms.description" content="English description / Description en anglais" />
 <meta name="description" content="English description / Description en anglais" />
 <meta name="keywords" content="English keywords / Mots-clés en anglais" />
@@ -25,7 +24,11 @@ $_PAGE['bcrumb_hide'] = "1"; ?>
 <meta name="dcterms.subject" title="scheme" content="English subject terms / Termes de sujet en anglais" /> 
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/css.php"; ?>
+<!-- CustomCSSStart -->
+
+<!-- CustomCSSEnd -->
 </head>
+
 <body>
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/1col.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/header-entete.php";
@@ -118,5 +121,8 @@ include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-1.php"; ?>
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/trail-arr.php"; ?>
+<!-- CustomScriptsStart -->
+
+<!-- CustomScriptsEnd -->
 </body>
 </html>

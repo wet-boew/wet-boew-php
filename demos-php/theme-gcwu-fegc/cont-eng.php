@@ -5,13 +5,11 @@
 <meta charset="utf-8" />
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt -->
-
 <?php $_PAGE['lang1'] = "eng"; ?>
 <?php $_PAGE['title_eng'] = "PHP Variant - 1 column layout"; ?>
 <?php $_PAGE['issued'] = "2010-08-09"; ?>
 <?php $_PAGE['modified'] = "YYYY-MM-DD"; ?>
 <?php $_PAGE['html5'] = "1"; ?>
-
 <meta name="dcterms.description" content="English description/Description en anglais" />
 <meta name="description" content="English description/Description en anglais" />
 <meta name="keywords" content="English keywords/Mots-clés en anglais" />
@@ -19,7 +17,9 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
 <meta name="dcterms.subject" title="scheme" content="English subject terms/Termes de sujet en anglais" /> 
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/css.php"; ?>
+<!-- CustomCSSStart -->
 
+<!-- CustomCSSEnd -->
 </head>
 
 <body>
@@ -63,9 +63,11 @@ wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licenc
   <li>theme-gcwu-fegc\menu</li>
   <li>theme-gcwu-fegc\php</li>
 </ul>
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php"; ?>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/trail-arr.php"; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/trail-arr.php"; ?>
+<!-- CustomScriptsStart -->
 
+<!-- CustomScriptsEnd -->
 </body>
 </html>
