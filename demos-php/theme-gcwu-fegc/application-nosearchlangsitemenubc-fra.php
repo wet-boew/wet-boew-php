@@ -121,7 +121,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-1.php"; ?>
 <p>&quot;Blockquote - apparence par défaut&quot;.</p>
 </blockquote>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/centre-2.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/trail-arr.php"; ?>
 <!-- CustomScriptsStart -->
 

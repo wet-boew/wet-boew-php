@@ -45,7 +45,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-1.php"; ?>
 <div  id="gcwu-bar" class="span-8"></div>
 <div class="clear"></div>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/centre-2.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/servpage/trail-arr.php"; ?>
 <!-- CustomScriptsStart -->
 

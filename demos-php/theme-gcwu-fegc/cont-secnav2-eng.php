@@ -66,7 +66,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/header-
   <li>theme-gcwu-fegc\php</li>
 </ul>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/centre-2.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/left-gauche-1.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav2-eng.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/left-gauche-2.php";

@@ -51,7 +51,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/header-
   </li>
   <li>Soutien pour Firefox, Opera, Safari, Chrome et IE 7+ </li>
 </ul>
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/centre-2.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/left-gauche-1.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav1-fra.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/left-gauche-2.php";

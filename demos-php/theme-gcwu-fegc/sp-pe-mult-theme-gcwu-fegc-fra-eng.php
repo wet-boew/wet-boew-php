@@ -43,10 +43,10 @@ include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/sp-pe-vars.php"; ?>
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/sp-pe/header-entete.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-1.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/sp-pe/cont.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/centre-2.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/sp-pe/trail-arr.php"; ?>
 </body>
 </html>
 <?php } else {
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/np.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/sp-pe/np.php";
 } ?>
