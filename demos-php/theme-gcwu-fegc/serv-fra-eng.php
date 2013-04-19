@@ -15,7 +15,7 @@ $_PAGE['title_fra'] = "Variante pour PHP - message - BOEW 3.0";
 $_PAGE['issued'] = "2013-04-18";
 $_PAGE['modified'] = "YYYY-MM-DD";
 $_PAGE['html5'] = "1"; ?>
-<meta name="robots" content="none" />
+<meta name="robots" content="noindex, nofollow, noarchive" />
 
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/servpage/css.php"; ?>
 <!-- CustomCSSStart -->
