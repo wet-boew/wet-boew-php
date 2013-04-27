@@ -1,4 +1,10 @@
 <?php
+	$_SITE['wb_theme_folder'] = "/theme-gcwu-fegc";
+	$_SITE['wb_core_dist_folder'] = "/dist";
+	$_SITE['wb_php_dist_folder'] = "/wet-boew-php/dist-php";
+	
+	include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/config.php";
+
 	$_SITE['gcwu_gcnavbar_eng'] = "Government of Canada navigation bar"; 
 	$_SITE['gcwu_gcnavbar_fra'] = "Barre de navigation de la gouvernement de Canada"; 
 	$_SITE['gcwu_sig_eng'] = "Government of Canada"; 

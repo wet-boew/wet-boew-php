@@ -1,9 +1,5 @@
 <?php
 
-	$_SITE['wb_core_dist_folder'] = "/dist";
-	$_SITE['wb_php_dist_folder'] = "/dist-php";
-	$_SITE['wb_theme_folder'] = "/theme-gcwu-fegc";
-	
 	//modify this for you're specific site
 	$_SITE['wb_site_title_eng'] = "PHP Variant"; 
 	$_SITE['wb_site_title_fra'] = "Variante pour PHP"; 
@@ -97,13 +93,4 @@
 	$_SITE['wb_foot_fra'] = "Pied de page"; 
 	$_SITE['wb_sitefooter_eng'] = "Site footer"; 
 	$_SITE['wb_sitefooter_fra'] = "Pied de page du site"; 	
-
-	//include the theme specific variables.
-	//	NOTE: some variables in the theme specific config will override
-	//		the generic config variables. So this needs to be included at
-	//		the end of the generic config.
-	$_THEME_CONFIG_FILE_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . $_SITE['wb_theme_folder'] . "/config.php";
-	if( file_exists($_THEME_CONFIG_FILE_) ) {
-		include_once $_THEME_CONFIG_FILE_;
-	}
 ?>
