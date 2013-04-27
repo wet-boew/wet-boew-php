@@ -1,73 +1,47 @@
-<!DOCTYPE html>
-<!--[if IE 7]> <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8]> <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en" class="no-js">
-<!--<![endif]-->
-<head>
-<meta charset="utf-8" />
-<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
-<?php $_PAGE['lang1'] = "eng";
-$_PAGE['title_eng'] = "PHP Variant - 2 column - WET 3.0";
-$_PAGE['issued'] = "2011-10-31";
+<?php
+//this is the only time the user needs to hard code the path, once the
+//configuration file has been required all other paths can use the variables from that
+//file. 
+require_once $_SERVER['DOCUMENT_ROOT'] . "/dist-php/theme-gcwu-fegc/config.php";
+
+$_PAGE['lang1'] = "eng";
+$_PAGE['title_eng'] = "Content page - Secondary menu 1 - GC Web Usability theme - Working examples - Web Experience Toolkit&#160;(WET)";
+$_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
-$_PAGE['html5'] = "1"; ?>
-<meta name="dcterms.description" content="English description / Description en anglais" />
+
+$_PAGE['left_gauche_menu_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav1-eng.php";
+
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
+?>
+
+<!-- custom page metadata start -->
 <meta name="description" content="English description / Description en anglais" />
-<meta name="keywords" content="English keywords / Mots-clés en anglais" />
 <meta name="dcterms.creator" content="English name of the content author / Nom en anglais de l'auteur du contenu" />
-<meta name="dcterms.subject" title="scheme" content="English subject terms / Termes de sujet en anglais" /> 
+<meta name="dcterms.subject" title="scheme" content="English subject terms / Termes de sujet en anglais" />
+<!-- end of custom metadata -->
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/css.php"; ?>
+<?php 
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-css.php"; 
+?>
+<!-- CustomCSSStart -->
+<!-- CustomCSSEnd -->
+<?php 
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php";
+?>
+<!-- Main content start -->
 
-</head>
+<?php include "includes/sample-application-".$_PAGE["lang1"].".php"; ?>
 
-<body>
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/2col.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/header-entete.php"; ?>
+<!-- Main content start -->
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-1.php"; ?>
-<h2>Overview</h2>	
-<p>This feature adapts the HTML5 core markup structure for use with PHP (PHP).</p>
-<h3>Benefits</h3>
+<?php include "includes/sample-application-".$_PAGE["lang1"].".php"; ?>
 
-
-<ul>
-  <li>Helps to minimize the duplication of content and code (such as titles and   dates)</li>
-  <li>Provides central control of the left and right columns</li>
-  <li>Improves consistency by separating content from the template code</li>   
-  <li>Automates the breadcrumb trail</li>
-  <li>Conforms to WCAG 2.0 AA</li>
-  <li>Uses WAI-ARIA to enhance accePHPbility</li>
-  <li>Supports Firefox, Opera, Safari, Chrome, and IE 7+ </li>
-</ul>
-
-<h3>Minimum Requirements</h3>
-<ul>
-  <li><a href="https://github.com/wet-boew/wet-boew/downloads">WET 3.0 framework</a></li>
-  <li>PHP installed on a web server</li>
-</ul>
-<h3>How to install the files</h3>
-
-<p>Make sure that you have the WET 3.0 build folder in your root directory.</p>
-<p>Copy the following directories into a folder created in the root.  In the PHP example available, this folder is called "PHP-demos". This demos folder should have the following folders:</p>
-<ul>
-  <li>inc\</li>
-  <li>theme-gcwu-fegc\</li>
-  </ul>
-<p>"inc" is a folder with your global include files that are unrelated to a specific theme. </p>
-<p>Another &quot;inc&quot; folder for theme-specific includes is under the theme-gcwu-fegc folder, as well as a folder for main &quot;menu&quot; based includes. Final, the folder with your php pages is located here.</p>
-<ul>
-  <li>theme-gcwu-fegc\inc</li>
-  <li>theme-gcwu-fegc\menu</li>
-  <li>theme-gcwu-fegc\php</li>
-</ul>
-
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/left-gauche-1.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/exmple-eng.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/left-gauche-2.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/trail-arr.php"; ?>
-</body>
-</html>
+<!-- MainContentEnd -->
+<?php 
+include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-nav.php"; 
+?>
+<!-- CustomScriptsStart -->
+<!-- CustomScriptsEnd -->
+<?php 
+include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-end.php"; 
+?>

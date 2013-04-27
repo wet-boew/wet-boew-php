@@ -1,1 +1,0 @@
-<div id="cn-body-inner-3col"><?php $_UNKNOWN['is_left_gauche'] = "1"; $_UNKNOWN['is_right_droite'] = "1"; ?>

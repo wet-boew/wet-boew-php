@@ -1,51 +1,47 @@
-<!DOCTYPE html>
-<!--[if IE 7]> <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8]> <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en" class="no-js">
-<!--<![endif]-->
-<head>
-<meta charset="utf-8" />
+<?php
+//this is the only time the user needs to hard code the path, once the
+//configuration file has been required all other paths can use the variables from that
+//file. 
+require_once $_SERVER['DOCUMENT_ROOT'] . "/dist-php/theme-gcwu-fegc/config.php";
 
-<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-wet-boew.github.com/wet-boew/License-eng.txt / wet-boew.github.com/wet-boew/Licence-fra.txt -->
-<?php $_PAGE['lang1'] = "fra";
+$_PAGE['lang1'] = "fra";
 $_PAGE['lang2'] = "eng";
-$_PAGE['title_eng'] = "PHP Variant - Message - WET 3.0";
-$_PAGE['title_fra'] = "Variante pour PHP - message - BOEW 3.0";
-$_PAGE['issued'] = "2011-10-31";
+
+$_PAGE['title_eng'] = "Server message page - Bilingual (eng-fra) - GC Web Usability theme - Web Experience Toolkit (WET)";
+$_PAGE['title_fra'] = "Page de message du serveur - Bilingue (eng-fra) - Thème de la facilité d'emploi Web GC - Exemples pratiques - Boîte à outils de l'expérience Web (BOEW)";
+
+$_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
-$_PAGE['html5'] = "1"; ?>
 
-<meta name="robots" content="none" />
+$_PAGE['isserv'] = "1";
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/servpage/css.php"; ?>
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
+?>
 
-</head>
-<body>
+<!-- custom page metadata start -->
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/1col.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/servpage/header-entete.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-1.php"; ?>
+<!-- end of custom metadata -->
 
-<div class="span-4"><section><h2>Titre du message (h2)</h2>
-<p>Message message message message message message message message message message message message message message message message message message message message.</p>
-<ul>
-<li><a href="#">Accueil</a></li>
-<li><a href="#">Contactez-nous</a></li>
-</ul>
-</section></div>
-<div class="span-4" lang="en"><section><h2>Message title (h2)</h2>
-<p>Message message message message message message message message message message message message message message message message message message message message.</p>
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Contact us</a></li>
-</ul>
-</section></div>
-<div  id="gcwu-bar" class="span-8"></div>
-<div class="clear"></div>
+<?php 
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-css.php"; 
+?>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-2.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/servpage/trail-arr.php"; ?>
-</body>
-</html>
+<!-- CustomCSSStart -->
+<!-- CustomCSSEnd -->
+<?php 
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php";
+?>
+
+<!-- Main content start -->
+
+<?php include "includes/sample-serv-".$_PAGE["lang1"]."-".$_PAGE["lang2"].".php"; ?>
+
+<!-- MainContentEnd -->
+<?php 
+include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-nav.php"; 
+?>
+<!-- CustomScriptsStart -->
+<!-- CustomScriptsEnd -->
+<?php 
+include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-end.php"; 
+?>
