@@ -15,8 +15,8 @@
 	$_SITE['wb_search_label_fra'] = "Recherchez le site Web"; 
 	
 	//modify to point to your sites mega menu
-	$_SITE['wb_sitenav_file_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu/prim-megamenu-eng.php";
-	$_SITE['wb_sitenav_file_fra'] = $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu/prim-megamenu-fra.php";
+	$_SITE['wb_sitenav_file_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/prim-megamenu-eng.php";
+	$_SITE['wb_sitenav_file_fra'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/prim-megamenu-fra.php";
 	$_SITE['wb_sitenav_eng'] = "Site menu"; 
 	$_SITE['wb_sitenav_fra'] = "Menu du site"; 
 
