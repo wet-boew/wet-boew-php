@@ -1,5 +1,5 @@
 <!-- FooterStart -->
-<nav role="navigation"><div id="gcwu-sft"><h3><?php $_SITE['wb_sitefooter_' .$_PAGE['lang1'] ]; ?></h3><div id="gcwu-sft-in">
+<nav role="navigation"><div id="gcwu-sft"><h3><?php echo $_SITE['wb_sitefooter_' .$_PAGE['lang1'] ]; ?></h3><div id="gcwu-sft-in">
 <div id="gcwu-tctr">
 <ul>
 <li class="gcwu-tc"><a<?php echo $_TARGET_ ?> href="<?php echo $_SITE['gcwu_terms_href_' . $_PAGE['lang1']]; ?>" rel="license"><?php echo $_SITE['gcwu_terms_text_' . $_PAGE['lang1']]; ?></a></li>
