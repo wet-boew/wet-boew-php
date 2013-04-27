@@ -21,8 +21,3 @@ This feature adapts the HTML5 core markup structure for use with PHP on an Apach
 * Build folder from WET 3.1
 * PHP 5.3+
 * Apache 2.x Web Server
-
-##How to install the files
-
-* Make sure that you have the WET 3.1 build folder in your root directory.
-* Copy the following directories into a folder created in the root:
