@@ -1,11 +1,5 @@
 <!-- FooterStart -->
 <nav role="navigation"><div id="wet-sft"><h3><?php echo $_SITE['wb_sitefooter_' .$_PAGE['lang1'] ]; ?></h3><div id="wet-sft-in">
-<div id="wet-tctr">
-<ul>
-<li class="wet-tc"><a<?php echo $_TARGET_ ?> href="<?php echo $_SITE['wet_terms_href_' . $_PAGE['lang1']]; ?>" rel="license"><?php echo $_SITE['wet_terms_text_' . $_PAGE['lang1']]; ?></a></li>
-<li class="wet-tr"><a<?php echo $_TARGET_ ?> href="<?php echo $_SITE['wet_trans_href_' . $_PAGE['lang1']]; ?>"><?php echo $_SITE['wet_trans_text_' . $_PAGE['lang1']]; ?></a></li>
-</ul>
-</div>
 <div class="clear"></div>
 <?php
 
@@ -23,18 +17,4 @@ for( $i=1; isset($_SITE['wb_ft'.$i.'_href_'.$_PAGE['lang1']]); $i++ ) {
 ?>
 </div></div></nav>
 
-<nav role="navigation"><div id="wet-gcft"><h3><?php echo $_SITE['wet_gcfooter_' . $_PAGE['lang1']]; ?></h3><div id="wet-gcft-in"><div id="wet-gcft-fip">
-<ul>
-<?php
-//add the government of canada links in the black navigation menu at the bottom of the page
-for( $i=1; isset($_SITE['wet_trail'.$i.'_href_'.$_PAGE['lang1']]); $i++ ) {
-	$_LINK_ = $_SITE['wet_trail'.$i.'_href_'.$_PAGE['lang1']];
-	$_TEXT_ = $_SITE['wet_trail'.$i.'_text_'.$_PAGE['lang1']];
-	$_SUB_ = $_SITE['wet_trail'.$i.'_textsub_'.$_PAGE['lang1']];
-	echo '<li><a'.$_TARGET_.' rel="external" href="' .$_LINK_. '"><span>'.$_TEXT_.'</span><br />'.$_SUB_."</a></li>\n";
-}
-?>
-<li id="wet-gcft-ca"><div><a<?php echo $_TARGET_ ?> rel="external" href="<?php echo $_SITE['wet_trail_canada_href_'.$_PAGE['lang1']]; ?>"><?php echo $_SITE['wet_trail_canada_text_'.$_PAGE['lang1']]; ?></a></div></li>
-</ul>
-</div></div></div></nav>
 <!-- FooterEnd -->

@@ -27,7 +27,7 @@ for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 <!--[if IE 7]><html lang="<?php echo $_SITE['wb_meta_' .$_PAGE['lang1'] ]?>" class="no-js ie7"><![endif]-->
 <!--[if IE 8]><html lang="<?php echo $_SITE['wb_meta_' .$_PAGE['lang1'] ]?>" class="no-js ie8"><![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="en" class="no-js">
+<html lang="<?php echo $_SITE['wb_meta_' . $_PAGE['lang1']]; ?>" class="no-js">
 <!--<![endif]-->
 <head>
 <meta charset="utf-8" />

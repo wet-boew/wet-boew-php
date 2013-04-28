@@ -18,7 +18,9 @@ if( $_PAGE['nolang'] != "1" ) {
 		}
 		echo '">';
 		echo '<a href="' .$_SITE['wet_cmblang_href_' . $_PAGE['lang'.$i]];
-		echo '" lang="' .$_SITE['wb_meta_' . $_PAGE['lang'.$i]];
+		if( $i > 1 ) {
+			echo '" lang="' .$_SITE['wb_meta_' . $_PAGE['lang'.$i]];
+		}
 		echo '">' . $_SITE['wet_cmblang_text_' . $_PAGE['lang'.$i]]; 
 		echo "</a></li>\n";
 	}
