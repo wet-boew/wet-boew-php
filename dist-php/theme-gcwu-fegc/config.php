@@ -71,35 +71,6 @@
 	$_SITE['gcwu_terms_href_rus'] = "#"; 
 	$_SITE['gcwu_terms_text_rus'] = "Сроки и условия"; 
 	
-	//use the demo trail menus to create menus specific to your site.	
-	$_SITE['gcwu_ft1_menu_file_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/trail-1-eng.php";
-	$_SITE['gcwu_ft1_menu_file_fra'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/trail-1-fra.php";
-	$_SITE['gcwu_ft1_href_eng'] = "#";
-	$_SITE['gcwu_ft1_href_fra'] = "#";
-	$_SITE['gcwu_ft1_text_eng'] = "About us";
-	$_SITE['gcwu_ft1_text_fra'] = "À propos de nous";
-
-	$_SITE['gcwu_ft2_menu_file_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/trail-2-eng.php";
-	$_SITE['gcwu_ft2_menu_file_fra'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/trail-2-fra.php";
-	$_SITE['gcwu_ft2_href_eng'] = "#";
-	$_SITE['gcwu_ft2_href_fra'] = "#";
-	$_SITE['gcwu_ft2_text_eng'] = "News";
-	$_SITE['gcwu_ft2_text_fra'] = "Nouvelles";
-
-	$_SITE['gcwu_ft3_menu_file_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/trail-3-eng.php";
-	$_SITE['gcwu_ft3_menu_file_fra'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/trail-3-fra.php";
-	$_SITE['gcwu_ft3_href_eng'] = "#";
-	$_SITE['gcwu_ft3_href_fra'] = "#";
-	$_SITE['gcwu_ft3_text_eng'] = "Contact us";
-	$_SITE['gcwu_ft3_text_fra'] = "Contactez-nous";
-
-	$_SITE['gcwu_ft4_menu_file_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/trail-4-eng.php";
-	$_SITE['gcwu_ft4_menu_file_fra'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/trail-4-fra.php";
-	$_SITE['gcwu_ft4_href_eng'] = "#";
-	$_SITE['gcwu_ft4_href_fra'] = "#";
-	$_SITE['gcwu_ft4_text_eng'] = "Stay connected";
-	$_SITE['gcwu_ft4_text_fra'] = "Restez branchés";
-	
 	$_SITE['gcwu_trail1_href_eng'] = "http://healthycanadians.gc.ca/index-eng.php"; 
 	$_SITE['gcwu_trail1_href_fra'] = "http://canadiensensante.gc.ca/index-fra.php"; 
 	$_SITE['gcwu_trail1_text_eng'] = "Health"; 

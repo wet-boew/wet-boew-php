@@ -33,7 +33,6 @@ if( $_PAGE['isserv'] != "1" ) {?>
 <?php } ?>
 
 <div id="wb-head"><div id="wb-head-in"><header>
-
 <?php
 	$_THEME_HEAD_NAV_FILE = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . $_SITE['wb_theme_folder'] . "/head-nav.php"; 
 	if( file_exists($_THEME_HEAD_NAV_FILE) ) {

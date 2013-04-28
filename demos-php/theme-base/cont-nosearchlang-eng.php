@@ -9,12 +9,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/dist-php/theme-base/conf
 $_PAGE['lang1'] = "eng";
 $_PAGE['lang2'] = "spa";
 $_PAGE['lang3'] = "fra";
-$_PAGE['title_' . $_PAGE['lang1']] = "Content page - Base theme - Working examples - Web Experience Toolkit&#160;(WET)";
+$_PAGE['title_' . $_PAGE['lang1']] = "Content page - No search or language selection link - Base theme - Working examples - Web Experience Toolkit&#160;(WET)";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
-$_PAGE['short_title_' .$_PAGE['lang1']] = "Content page- Base theme";
+$_PAGE['short_title_' .$_PAGE['lang1']] = "Content page - No search or language selection link - Base theme";
 
+$_PAGE['nolang'] = "1";
+$_PAGE['nosearch'] = "1";
 /* This is a list of optional variables 
 
 // Set the short title for the page to be displayed just above the main content

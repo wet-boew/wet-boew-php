@@ -6,14 +6,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/dist-php/theme-base/conf
 
 /* These are the required variables fore each page */
 //set 'lang1' to 'eng' for English pages, 'fra' for French pages
-$_PAGE['lang1'] = "eng";
+$_PAGE['lang1'] = "fra";
 $_PAGE['lang2'] = "spa";
-$_PAGE['lang3'] = "fra";
-$_PAGE['title_' . $_PAGE['lang1']] = "Content page - Base theme - Working examples - Web Experience Toolkit&#160;(WET)";
+$_PAGE['lang3'] = "eng";
+$_PAGE['title_' . $_PAGE['lang1']] = "Page de contenu - Thème de base - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
-$_PAGE['short_title_' .$_PAGE['lang1']] = "Content page- Base theme";
+$_PAGE['short_title_' .$_PAGE['lang1']] = "Page de contenu - Thème de base";
 
 /* This is a list of optional variables 
 
@@ -41,7 +41,7 @@ $_PAGE['isserv'] = "1";
  *	file will use that file as the left side menu (secondary navigation)
  *	and make this page a two column layout automaticlly. 
  *
-$_PAGE['left_gauche_menu_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav1-eng.php";
+$_PAGE['left_gauche_menu'] = $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav1-eng.php";
 
 //Possible options for languages
 $_PAGE['lang1'] = "eng";

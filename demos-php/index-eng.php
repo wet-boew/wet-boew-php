@@ -2,18 +2,17 @@
 //this is the only time the user needs to hard code the path, once the
 //configuration file has been required all other paths can use the variables from that
 //file. 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/dist-php/theme-base/config.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/dist-php/theme-wet-boew/config.php";
 
 /* These are the required variables fore each page */
 //set 'lang1' to 'eng' for English pages, 'fra' for French pages
 $_PAGE['lang1'] = "eng";
-$_PAGE['lang2'] = "spa";
-$_PAGE['lang3'] = "fra";
-$_PAGE['title_' . $_PAGE['lang1']] = "Content page - Base theme - Working examples - Web Experience Toolkit&#160;(WET)";
+$_PAGE['lang2'] = "fra";
+$_PAGE['title_' . $_PAGE['lang1']] = "Working examples - Working examples - Web Experience Toolkit&#160;(WET)";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
-$_PAGE['short_title_' .$_PAGE['lang1']] = "Content page- Base theme";
+$_PAGE['short_title_' .$_PAGE['lang1']] = "Working examples";
 
 /* This is a list of optional variables 
 
@@ -57,20 +56,22 @@ include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/he
 ?>
 
 <!-- custom page metadata start -->
-<meta name="description" content="English description / Description en anglais" />
 <!-- end of custom metadata -->
 
 <?php 
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-css.php"; 
 ?>
 <!-- CustomCSSStart -->
+<style>
+#components td {vertical-align: middle;}
+</style>
 <!-- CustomCSSEnd -->
 <?php 
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php";
 ?>
 <!-- Main content start -->
 
-<?php include_once "includes/sample-cont-eng.php"; ?>
+<?php include_once "includes/index-eng.php"; ?>
 
 <!-- MainContentEnd -->
 <?php 
