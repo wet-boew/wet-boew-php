@@ -4,12 +4,12 @@
 		include_once $_THEME_FOOT_START_FILE;
 	}
 
-	if( isset($_PAGE['left_gauche_menu'])  && $_PAGE['left_gauche_menu']!='') {
+	if( isset($_PAGE['left_menu_gauche'])  && $_PAGE['left_menu_gauche']!='') {
 		echo '<div id="wb-sec"><div id="wb-sec-in"><nav role="navigation"><h2 id="wb-nav">'.$_SITE['wb_sec_'.$_PAGE['lang1']] .'</h2>' . "\n";
 		echo '<div class="wb-sec-def">' . "\n";
 		echo '<!-- SecNavStart -->' . "\n";
 	
-		include_once $_PAGE['left_gauche_menu'];
+		include_once $_PAGE['left_menu_gauche'];
 		
 		echo '<!-- SecNavEnd -->' . "\n";
 		echo '</div>' . "\n";
