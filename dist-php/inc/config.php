@@ -14,15 +14,44 @@
 	$_SITE['wb_search_label_eng'] = "Search Web site"; 
 	$_SITE['wb_search_label_fra'] = "Recherchez le site Web"; 
 	
-	//modify to point to your sites mega menu
-	$_SITE['wb_sitenav_file_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu/prim-megamenu-eng.php";
-	$_SITE['wb_sitenav_file_fra'] = $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu/prim-megamenu-fra.php";
-	$_SITE['wb_sitenav_eng'] = "Site menu"; 
-	$_SITE['wb_sitenav_fra'] = "Menu du site"; 
-
 	$_SITE['wb_bcrumb_file'] = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/bt_fa.php"; 
 	$_SITE['wb_bcrumb_eng'] = "Breadcrumb trail"; 
 	$_SITE['wb_bcrumb_fra'] = "Fil d'Ariane"; 
+	
+	//modify to point to your sites mega menu
+	$_SITE['wb_sitenav_file_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/prim-megamenu-eng.php";
+	$_SITE['wb_sitenav_file_fra'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/prim-megamenu-fra.php";
+	$_SITE['wb_sitenav_eng'] = "Site menu"; 
+	$_SITE['wb_sitenav_fra'] = "Menu du site"; 
+
+	//use the demo trail menus to create menus specific to your site.	
+	$_SITE['wb_ft1_menu_file_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/trail-1-eng.php";
+	$_SITE['wb_ft1_menu_file_fra'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/trail-1-fra.php";
+	$_SITE['wb_ft1_href_eng'] = "#";
+	$_SITE['wb_ft1_href_fra'] = "#";
+	$_SITE['wb_ft1_text_eng'] = "About us";
+	$_SITE['wb_ft1_text_fra'] = "À propos de nous";
+
+	$_SITE['wb_ft2_menu_file_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/trail-2-eng.php";
+	$_SITE['wb_ft2_menu_file_fra'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/trail-2-fra.php";
+	$_SITE['wb_ft2_href_eng'] = "#";
+	$_SITE['wb_ft2_href_fra'] = "#";
+	$_SITE['wb_ft2_text_eng'] = "News";
+	$_SITE['wb_ft2_text_fra'] = "Nouvelles";
+
+	$_SITE['wb_ft3_menu_file_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/trail-3-eng.php";
+	$_SITE['wb_ft3_menu_file_fra'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/trail-3-fra.php";
+	$_SITE['wb_ft3_href_eng'] = "#";
+	$_SITE['wb_ft3_href_fra'] = "#";
+	$_SITE['wb_ft3_text_eng'] = "Contact us";
+	$_SITE['wb_ft3_text_fra'] = "Contactez-nous";
+
+	$_SITE['wb_ft4_menu_file_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/trail-4-eng.php";
+	$_SITE['wb_ft4_menu_file_fra'] = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu/trail-4-fra.php";
+	$_SITE['wb_ft4_href_eng'] = "#";
+	$_SITE['wb_ft4_href_fra'] = "#";
+	$_SITE['wb_ft4_text_eng'] = "Stay connected";
+	$_SITE['wb_ft4_text_fra'] = "Restez branchés";
 	
 	//Modify to point to a custom signin/signout application
 	$_SITE['wb_signin_file_eng'] = "application-signout-eng.php";

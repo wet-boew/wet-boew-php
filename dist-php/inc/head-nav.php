@@ -1,8 +1,9 @@
 <?php
 	$_COL_LAYOUT = "";
 	$_NAV_LINK = "";
-	$_PAGE['is_left_gauche'] = isset($_PAGE['left_gauche_menu_'.$_PAGE['lang1']]) && 
-		$_PAGE['left_gauche_menu_'.$_PAGE['lang1']] != "";
+	$_PAGE['left_menu_gauche'] = $_PAGE['left_menu_gauche_'.$_PAGE['lang1']];
+	$_PAGE['is_left_gauche'] = isset($_PAGE['left_menu_gauche']) && 
+		$_PAGE['left_menu_gauche'] != "";
 		
 	// if no left side is uesed then use a single column layout
 	// and skip to navigation points to the footer. 
@@ -33,7 +34,6 @@ if( $_PAGE['isserv'] != "1" ) {?>
 <?php } ?>
 
 <div id="wb-head"><div id="wb-head-in"><header>
-
 <?php
 	$_THEME_HEAD_NAV_FILE = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . $_SITE['wb_theme_folder'] . "/head-nav.php"; 
 	if( file_exists($_THEME_HEAD_NAV_FILE) ) {

@@ -3,15 +3,13 @@
 	if( file_exists($_THEME_FOOT_START_FILE) ) {
 		include_once $_THEME_FOOT_START_FILE;
 	}
-?>
 
-<?php
-	if( $_PAGE['is_left_gauche'] == "1") {
+	if( isset($_PAGE['left_menu_gauche'])  && $_PAGE['left_menu_gauche']!='') {
 		echo '<div id="wb-sec"><div id="wb-sec-in"><nav role="navigation"><h2 id="wb-nav">'.$_SITE['wb_sec_'.$_PAGE['lang1']] .'</h2>' . "\n";
 		echo '<div class="wb-sec-def">' . "\n";
 		echo '<!-- SecNavStart -->' . "\n";
 	
-		include_once $_PAGE['left_gauche_menu_' . $_PAGE['lang1']];
+		include_once $_PAGE['left_menu_gauche'];
 		
 		echo '<!-- SecNavEnd -->' . "\n";
 		echo '</div>' . "\n";
@@ -21,8 +19,7 @@
 ?>
 </div></div>
 
-<div id="wb-foot"><div id="wb-foot-in">
-<footer><h2 id="wb-nav"><?php echo $_SITE['wb_foot_' .$_PAGE['lang1']] ;?></h2>
+<div id="wb-foot"><div id="wb-foot-in"><footer><h2 id="wb-nav"><?php echo $_SITE['wb_foot_' .$_PAGE['lang1']] ;?></h2>
 <?php
 	$_THEME_FOOT_NAV_FILE = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . $_SITE['wb_theme_folder'] . "/foot-nav.php"; 
 	
@@ -53,3 +50,4 @@
 <script src="<?php echo $_SITE['wb_core_dist_folder']; ?>/js/jquerymobile/jquery.mobile.min.js"></script>
 <!--<![endif]-->
 <!-- ScriptsEnd -->
+
