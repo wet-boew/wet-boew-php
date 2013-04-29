@@ -10,7 +10,7 @@ function lte_ie8_css() {
 	$ret_string .= $_SITE['wb_core_dist_folder'] . $_SITE['wb_theme_folder'];
 	if( $_PAGE['isserv'] == "1") {
 		$ret_string .= '/css/theme-serv-ie-min.css';
-	} else if($_PAGE['issplash']) {
+	} else if($_PAGE['issplash'] == "1") {
 		$ret_string .= '/css/theme-sp-pe-ie-min.css';
 	} else {
 		$ret_string .= '/css/theme-ie-min.css';
@@ -31,7 +31,7 @@ function gt_ie8_css() {
 	$ret_string .= $_SITE['wb_core_dist_folder'] . $_SITE['wb_theme_folder'];
 	if( $_PAGE['isserv'] == "1") {
 		$ret_string .= '/css/theme-serv-min.css';
-	} else if($_PAGE['issplash']) {
+	} else if($_PAGE['issplash'] == "1") {
 		$ret_string .= '/css/theme-sp-pe-min.css';
 	} else {
 		$ret_string .= '/css/theme-min.css';
