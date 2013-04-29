@@ -1,8 +1,9 @@
 <?php
 	$_COL_LAYOUT = "";
 	$_NAV_LINK = "";
-	$_PAGE['is_left_gauche'] = isset($_PAGE['left_gauche_menu_'.$_PAGE['lang1']]) && 
-		$_PAGE['left_gauche_menu_'.$_PAGE['lang1']] != "";
+	$_PAGE['left_menu_gauche'] = $_PAGE['left_menu_gauche_'.$_PAGE['lang1']];
+	$_PAGE['is_left_gauche'] = isset($_PAGE['left_menu_gauche']) && 
+		$_PAGE['left_menu_gauche'] != "";
 		
 	// if no left side is uesed then use a single column layout
 	// and skip to navigation points to the footer. 
