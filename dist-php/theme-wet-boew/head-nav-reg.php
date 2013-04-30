@@ -45,7 +45,7 @@ if( $_PAGE['nosearch'] != "1" ) {
 
 <?php
 //Handle the mega menu and bread crumb trail
-if ($_PAGE['nositemenu'] != '1' || $_PAGE['bcrumb_hide'] != '1') { 
+if ($_PAGE['nositemenu'] != '1' || $_PAGE['nobcrumb'] != '1') { 
 
 	echo '<nav role="navigation">' ."\n";
 	if ($_PAGE['nositemenu'] != '1') {
@@ -56,7 +56,7 @@ if ($_PAGE['nositemenu'] != '1' || $_PAGE['bcrumb_hide'] != '1') {
 		echo '</div></div>' ."\n";
 	}
 	
-	if ($_PAGE['bcrumb_hide'] != '1') {
+	if ($_PAGE['nobcrumb'] != '1') {
 		echo '<div id="wet-bc"><h2>'.$_SITE['wb_bcrumb_' .$_PAGE['lang1'] ].'</h2><div id="wet-bc-in">' ."\n";
 		echo "<ol>\n";
 		include $_SITE['wb_bcrumb_file'];

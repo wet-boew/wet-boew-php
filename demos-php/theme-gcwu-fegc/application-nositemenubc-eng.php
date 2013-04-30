@@ -12,7 +12,7 @@ $_PAGE['version'] = "1.1b";
 $_PAGE['isapp'] = "1";
 
 $_PAGE['nositemenu'] = "1";
-$_PAGE['bcrumb_hide'] = "1";
+$_PAGE['nobcrumb'] = "1";
 
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
 ?>
