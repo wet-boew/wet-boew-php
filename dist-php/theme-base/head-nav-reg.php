@@ -33,22 +33,42 @@ if( $_PAGE['nosearch'] != "1" ) {
 	echo '</div></section>';
 }
 ?>
-</div></div>
-
+</div>
 <?php
+if( $_PAGE['sub_title_' . $_PAGE['lang1']] ) {
+	echo '<div id="base-subsite" class="base-subsite-1">'."\n";
+	echo '<p><a href="'.$_PAGE['sub_link_' . $_PAGE['lang1']].'">'.$_PAGE['sub_title_' . $_PAGE['lang1']]."</a></p>\n";
+	echo '</div>';
+}
+?></div>
+<?php
+//if the site menu hasn't been set or the file can't be found set the no site menu flag
+if( !isset($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ]) || (isset($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ])
+ && ($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ]=="" || !file_exists($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ])))) {
+	$_PAGE['nositemenu'] = "1";
+	echo "<h1 id=\"here\">".$_PAGE['wb_sitenav_file_' . $_PAGE['lang1']]."</h1>";
+}
+	
+//if the bread crumb trail hasn't been set or the file can't be found set the nobcrumb
+if( !isset($_SITE['wb_bcrumb_file']) || (isset($_SITE['wb_bcrumb_file']) && 
+	($_SITE['wb_bcrumb_file'] == "" || !file_exists($_SITE['wb_bcrumb_file'])))) {
+		$_PAGE['nobcrumb'] = "1";
+}
+
 //Handle the mega menu and bread crumb trail
-if ($_PAGE['nositemenu'] != '1' || $_PAGE['bcrumb_hide'] != '1') { 
+if ($_PAGE['nositemenu'] != '1' || $_PAGE['nobcrumb'] != '1') { 
 
 	echo '<nav role="navigation">' ."\n";
 	if ($_PAGE['nositemenu'] != '1') {
 		echo '<div id="base-psnb"><h2>' . $_SITE['wb_sitenav_' . $_PAGE["lang1"]] .'</h2><div id="base-psnb-in">';
+		echo '<div class="wet-boew-menubar mb-mega"><div>';
 	
 		include $_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ];
 	
-		echo '</div></div>' ."\n";
+		echo '</div></div></div></div>' ."\n";
 	}
 	
-	if ($_PAGE['bcrumb_hide'] != '1') {
+	if ($_PAGE['nobcrumb'] != '1') {
 		echo '<div id="base-bc"><h2>'.$_SITE['wb_bcrumb_' .$_PAGE['lang1'] ].'</h2><div id="base-bc-in">' ."\n";
 		echo "<ol>\n";
 		include $_SITE['wb_bcrumb_file'];

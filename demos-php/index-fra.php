@@ -2,7 +2,7 @@
 //this is the only time the user needs to hard code the path, once the
 //configuration file has been required all other paths can use the variables from that
 //file. 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/dist-php/theme-wet-boew/config.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/config.php";
 
 /* These are the required variables fore each page */
 //set 'lang1' to 'eng' for English pages, 'fra' for French pages

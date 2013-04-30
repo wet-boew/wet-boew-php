@@ -1,10 +1,9 @@
-<div class="wet-boew-menubar mb-mega"><div>
 <ul class="mb-menu">
 <li><section><h3><a href="http://wet-boew.github.io/wet-boew/index-fra.html">Projet de la BOEW</a></h3><div class="mb-sm">
 <div class="span-2">
 <ul>
 <li><a href="https://github.com/wet-boew/wet-boew/">Page principale du projet</a></li>
-<li><a href="http://wet-boew.github.io/wet-boew/Licence-fra.txt">Conditions régissant l'utilisation</a></li>
+<li><a href="http://wet-boew.github.io/wet-boew/Licence-fra.txt">Conditions rï¿½gissant l'utilisation</a></li>
 <li><a href="http://wet-boew.github.io/wet-boew/demos/index-fra.html">Exemples pratiques</a></li>
 </ul>
 </div>
@@ -244,4 +243,3 @@
 <div class="mb-main-link"><a href="#">Section 7 - Page principale</a></div>
 </div></section></li>
 </ul>
-</div></div>

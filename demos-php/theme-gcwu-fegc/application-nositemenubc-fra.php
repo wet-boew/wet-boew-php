@@ -2,7 +2,7 @@
 //this is the only time the user needs to hard code the path, once the
 //configuration file has been required all other paths can use the variables from that
 //file. 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/dist-php/theme-gcwu-fegc/config.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/config.php";
 
 $_PAGE['lang1'] = "fra";
 $_PAGE['title_fra'] = "Modèle pour applications - Sans menu du site ou fil d'Ariane - Thème de la facilité d'emploi Web GC - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
@@ -12,7 +12,7 @@ $_PAGE['version'] = "1.1b";
 $_PAGE['isapp'] = "1";
 
 $_PAGE['nositemenu'] = "1";
-$_PAGE['bcrumb_hide'] = "1";
+$_PAGE['nobcrumb'] = "1";
 
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
 ?>

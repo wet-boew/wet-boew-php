@@ -2,14 +2,14 @@
 //this is the only time the user needs to hard code the path, once the
 //configuration file has been required all other paths can use the variables from that
 //file. 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/dist-php/theme-gcwu-fegc/config.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/config.php";
 
 $_PAGE['lang1'] = "eng";
 $_PAGE['title_eng'] = "Content page - Secondary menu 2 - GC Web Usability theme - Working examples - Web Experience Toolkit&#160;(WET)";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
-$_PAGE['left_gauche_menu_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav2-eng.php";
+$_PAGE['left_menu_gauche'] = $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav2-eng.php";
 
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
 ?>

@@ -1,3 +1,4 @@
+
 <section><h2>Heading 2 (<code>h2</code>) - default appearance</h2>
 	<section><h3>Heading 3 (<code>h3</code>) - default appearance</h3>
 		<section><h4>Heading 4 (<code>h4</code>) - default appearance</h4>

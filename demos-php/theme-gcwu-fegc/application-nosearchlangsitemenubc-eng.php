@@ -2,7 +2,7 @@
 //this is the only time the user needs to hard code the path, once the
 //configuration file has been required all other paths can use the variables from that
 //file. 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/dist-php/theme-gcwu-fegc/config.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/config.php";
 
 $_PAGE['lang1'] = "eng";
 $_PAGE['title_eng'] = "Application template - No search, language selection link, site menu or breadcrumb trail - GC Web Usability theme - Working examples - Web Experience Toolkit&#160;(WET)";
@@ -14,7 +14,7 @@ $_PAGE['isapp'] = "1";
 $_PAGE['nosearch'] = "1";
 $_PAGE['nolang'] = "1";
 $_PAGE['nositemenu'] = "1";
-$_PAGE['bcrumb_hide'] = "1";
+$_PAGE['nobcrumb'] = "1";
 
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
 ?>
