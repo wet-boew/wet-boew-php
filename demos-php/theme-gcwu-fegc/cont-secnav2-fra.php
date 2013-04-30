@@ -9,7 +9,7 @@ $_PAGE['title_eng'] = "Page de contenu - Menu secondaire 2 - Thème de la facili
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
-$_PAGE['left_gauche_menu_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav2-fra.php";
+$_PAGE['left_menu_gauche'] = $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav2-fra.php";
 
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
 ?>

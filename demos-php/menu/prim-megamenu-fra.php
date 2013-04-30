@@ -243,4 +243,3 @@
 <div class="mb-main-link"><a href="#">Section 7 - Page principale</a></div>
 </div></section></li>
 </ul>
-</div></div>

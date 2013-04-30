@@ -69,7 +69,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/he
 ?>
 <!-- Main content start -->
 <?php 
-include "includes/index-eng.php";
+include "includes/index-fra.php";
 ?>
 <!-- MainContentEnd -->
 <?php 

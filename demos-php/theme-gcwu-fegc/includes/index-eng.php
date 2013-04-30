@@ -1,7 +1,7 @@
 
 <ul class="button-group">
-<li><a href="https://github.com/wet-boew/wet-boew/wiki/GC-Web-Usability-theme" class="button button-info">Documentation</a></li>
-<li><a href="https://github.com/wet-boew/wet-boew/issues/new" class="button">Questions or comments?</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew-php/wiki/GC-Web-Usability-theme" class="button button-info">Documentation</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew-php/issues/new" class="button">Questions or comments?</a></li>
 </ul>
 
 <div class="span-4 module-table-contents">
