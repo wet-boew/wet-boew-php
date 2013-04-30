@@ -4,12 +4,16 @@
 //file. 
 require_once $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-base/config.php";
 
-$_PAGE['lang1'] = "fra";
-$_PAGE['lang2'] = "eng";
+$_PAGE['lang1'] = "eng";
+$_PAGE['lang2'] = "fra";
 $_PAGE['lang3'] = "spa";
 
-$_PAGE['title_fra'] = "Page de contenu - Thème de base - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
-$_PAGE['short_title_fra'] = "Page de contenu - Thème de base";
+$_PAGE['title_eng'] = "Content page - Sign in - Base theme - Working examples - Web Experience Toolkit&#160;(WET)";
+$_PAGE['short_title_eng'] = "Content page - Sign in";
+
+$_PAGE['signin'] = "1";
+$_SITE['wb_signin_file_eng'] = "cont-signout-eng.php";
+
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 

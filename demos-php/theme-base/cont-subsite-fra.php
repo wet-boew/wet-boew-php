@@ -8,8 +8,11 @@ $_PAGE['lang1'] = "fra";
 $_PAGE['lang2'] = "eng";
 $_PAGE['lang3'] = "spa";
 
-$_PAGE['title_fra'] = "Page de contenu - Thème de base - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
-$_PAGE['short_title_fra'] = "Page de contenu - Thème de base";
+$_PAGE['title_fra'] = "Page de contenu - Sous-site - Thème de base - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
+$_PAGE['short_title_fra'] = "Page de contenu - Sous-site - Thème de base";
+$_PAGE['sub_title_fra'] = "Nom du sous-site";
+$_PAGE['sub_link_fra'] = "#";
+
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 

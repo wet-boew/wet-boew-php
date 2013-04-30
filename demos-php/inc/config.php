@@ -63,7 +63,7 @@
 	$_SITE['wb_signout_file_eng'] = "application-signin-eng.php";
 	$_SITE['wb_signout_file_fra'] = "application-signin-fra.php";
 	$_SITE['wb_signout_text_eng'] = "Sign out";
-	$_SITE['wb_signout_text_fra'] = "Ouvrir une session";
+	$_SITE['wb_signout_text_fra'] = "Fermer la session";
 
 	//Modify to point to a custom account settings application when using sign in/sign out button
 	$_SITE['wb_sio_file_eng'] = "#";

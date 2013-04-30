@@ -8,8 +8,10 @@ $_PAGE['lang1'] = "fra";
 $_PAGE['lang2'] = "eng";
 $_PAGE['lang3'] = "spa";
 
-$_PAGE['title_fra'] = "Page de contenu - Thème de base - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
-$_PAGE['short_title_fra'] = "Page de contenu - Thème de base";
+$_PAGE['left_menu_gauche'] = $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav1-fra.php";
+
+$_PAGE['title_fra'] = "Page de contenu - Menu secondaire 1 - Thème de base - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
+$_PAGE['short_title_fra'] = "Page de contenu - Menu secondaire 1 - Thème de base";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
