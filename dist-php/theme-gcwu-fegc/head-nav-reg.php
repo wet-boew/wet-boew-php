@@ -45,16 +45,29 @@ if( $_PAGE['nosearch'] != "1" ) {
 </div></div>
 
 <?php
+//if the site menu hasn't been set or the file can't be found set the no site menu flag
+if( !isset($_PAGE['left_menu_gauche']) || (isset($_PAGE['left_menu_gauche']) && 
+	($_PAGE['left_menu_gauche'] == "" || !file_exists($_PAGE['left_menu_gauche'])))) {
+		$_PAGE['nositemenu'] = "1";
+}
+	
+//if the bread crumb trail hasn't been set or the file can't be found set the bcrumb_hide
+if( !isset($_PAGE['wb_bcrumb_file']) || (isset($_PAGE['wb_bcrumb_file']) && 
+	($_PAGE['wb_bcrumb_file'] == "" || !file_exists($_PAGE['wb_bcrumb_file'])))) {
+		$_PAGE['bcrumb_hide'] = "1";
+}
+	
 //Handle the mega menu and bread crumb trail
 if ($_PAGE['nositemenu'] != '1' || $_PAGE['bcrumb_hide'] != '1') { 
 
 	echo '<nav role="navigation">' ."\n";
 	if ($_PAGE['nositemenu'] != '1') {
 		echo '<div id="gcwu-psnb"><h2>' . $_SITE['wb_sitenav_' . $_PAGE["lang1"]] .'</h2><div id="gcwu-psnb-in">';
+		echo '<div class="wet-boew-menubar mb-mega"><div>';
 	
 		include $_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ];
 	
-		echo '</div></div>' ."\n";
+		echo '</div></div></div></div>' ."\n";
 	}
 	
 	if ($_PAGE['bcrumb_hide'] != '1') {
