@@ -3,7 +3,7 @@
 	$_SITE['wb_core_dist_folder'] = "/dist";
 	$_SITE['wb_php_dist_folder'] = "/dist-php";
 	
-	include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/config.php";
+	include_once $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/config.php";
 
 	$_SITE['gcwu_gcnavbar_eng'] = "Government of Canada navigation bar"; 
 	$_SITE['gcwu_gcnavbar_fra'] = "Barre de navigation de la gouvernement de Canada"; 

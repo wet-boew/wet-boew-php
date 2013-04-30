@@ -46,14 +46,15 @@ if( $_PAGE['nosearch'] != "1" ) {
 
 <?php
 //if the site menu hasn't been set or the file can't be found set the no site menu flag
-if( !isset($_PAGE['left_menu_gauche']) || (isset($_PAGE['left_menu_gauche']) && 
-	($_PAGE['left_menu_gauche'] == "" || !file_exists($_PAGE['left_menu_gauche'])))) {
-		$_PAGE['nositemenu'] = "1";
+if( !isset($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ]) || (isset($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ])
+ && ($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ]=="" || !file_exists($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ])))) {
+	$_PAGE['nositemenu'] = "1";
+	echo "<h1 id=\"here\">".$_PAGE['wb_sitenav_file_' . $_PAGE['lang1']]."</h1>";
 }
 	
 //if the bread crumb trail hasn't been set or the file can't be found set the bcrumb_hide
-if( !isset($_PAGE['wb_bcrumb_file']) || (isset($_PAGE['wb_bcrumb_file']) && 
-	($_PAGE['wb_bcrumb_file'] == "" || !file_exists($_PAGE['wb_bcrumb_file'])))) {
+if( !isset($_SITE['wb_bcrumb_file']) || (isset($_SITE['wb_bcrumb_file']) && 
+	($_SITE['wb_bcrumb_file'] == "" || !file_exists($_SITE['wb_bcrumb_file'])))) {
 		$_PAGE['bcrumb_hide'] = "1";
 }
 	

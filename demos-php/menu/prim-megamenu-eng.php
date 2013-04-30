@@ -1,4 +1,3 @@
-<div class="wet-boew-menubar mb-mega"><div>
 <ul class="mb-menu">
 <li><section><h3><a href="http://wet-boew.github.io/wet-boew/index-eng.html">WET project</a></h3><div class="mb-sm">
 <div class="span-2">
@@ -244,4 +243,3 @@
 <div class="mb-main-link"><a href="#">Section 7 - Main page</a></div>
 </div></section></li>
 </ul>
-</div></div>
