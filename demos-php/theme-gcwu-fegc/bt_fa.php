@@ -1,7 +1,14 @@
 <?php
-$_NAV_PATH['title_eng'] = "Working Examples";
-$_NAV_PATH['link_eng'] = "/demos-php/theme-gcwu-fegc/index-eng.php";
 
-$_NAV_PATH['title_fra'] = "Exemples pratiques";
-$_NAV_PATH['link_fra'] = "/demos-php/theme-gcwu-fegc/index-fra.php";
+//get the path to the current folder this file resides in. 
+$_ROOT_PATH_ = preg_replace("(\\\)", "\\\\\\", $_SERVER['DOCUMENT_ROOT']);
+
+//Remove the server root path to make the path a nice URL relaitve path
+$_PATH_ = preg_replace("(".$_ROOT_PATH_.")", "", realpath(dirname(__FILE__)));
+
+$_NAV_PATH['title_eng'] = "GCWU Theme";
+$_NAV_PATH['link_eng'] = $_PATH_ ."/index-eng.php";
+
+$_NAV_PATH['title_fra'] = "Thème de FEGC";
+$_NAV_PATH['link_fra'] = $_PATH_ ."/index-fra.php";
 ?>
