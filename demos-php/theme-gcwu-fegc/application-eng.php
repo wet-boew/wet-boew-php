@@ -2,6 +2,7 @@
 
 //always set the page language options first
 $_PAGE['lang1'] = "eng";
+$_PAGE['lang2'] = "fra";
 
 /*
  * this is the only time the user needs to hard code the path, once the

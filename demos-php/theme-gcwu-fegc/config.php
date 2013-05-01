@@ -39,11 +39,12 @@
 
 	$_SITE['gcwu_cmblang_title_eng'] = "Français - Version française de cette page"; 
 	$_SITE['gcwu_cmblang_title_fra'] = "English - English version of the Web page"; 
-	$_SITE['gcwu_cmblang_text_eng'] = "Français"; 
+	$_SITE['gcwu_cmblang_text_eng'] = "Français";
 	$_SITE['gcwu_cmblang_text_fra'] = "English"; 
-	
 	$_SITE['gcwu_cmblang_title_site_eng'] = "English - English version of the Web site"; 
 	$_SITE['gcwu_cmblang_title_site_fra'] = "Français - Version française de ce site Web";
+
+	$_SITE['gcwu_cmblang_text_spa'] = "español";
 
 	$_SITE['gcwu_wmms_eng'] = "Symbol of the Government of Canada"; 
 	$_SITE['gcwu_wmms_fra'] = "Symbole du gouvernement du Canada"; 

@@ -1,52 +1,61 @@
-<?php if ($_NAVPATH['show'] != 1) { ?>
-<!DOCTYPE html>
-<!--[if IE 7]> <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8]> <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en" class="no-js">
-<!--<![endif]-->
-<head>
-<meta charset="utf-8" />
-<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt -->
-<?php }
-$_NAVPATH['title_eng'] = "Welcome";
-$_NAVPATH['title_fra'] = "Bienvenue";
-$_NAVPATH['link_eng'] = "cont-eng.php";
-$_NAVPATH['link_fra'] = "cont-fra.php";
-$_NAVPATH['lang1'] = "fra";
-$_NAVPATH['lang2'] = "eng";
-$_NAVPATH['issued'] = "2013-04-18";
-$_NAVPATH['modified'] = "YYYY-MM-DD";
-$_NAVPATH['html5'] = "1";
-if ($_NAVPATH['show'] != 1) {
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/sp-pe-vars.php"; ?>
-<meta name="dcterms.description" content="English description / Description en anglais" />
-<meta name="dcterms.description" lang="fr" content="French description / Description en français" />
+<?php
+
+//always set the page language options first
+$_PAGE['lang1'] = "fra";
+$_PAGE['lang2'] = "eng";
+$_PAGE['lang3'] = "deu";
+$_PAGE['lang4'] = "spa";
+$_PAGE['lang5'] = "ita";
+$_PAGE['lang6'] = "por";
+$_PAGE['lang7'] = "rus";
+
+//this is the only time the user needs to hard code the path, once the
+//configuration file has been required all other paths can use the variables from that
+//file. 
+//
+//programaticly setting the main config file means the demos will work regardless of where
+//they're dumpted. Saves time when deploying the demos to different servers for development
+$path = realpath(dirname(__FILE__));
+require_once $path ."/config.php";
+
+
+$_PAGE['title_eng'] = "Splash page - Bilingual (fra-eng) - GC Web Usability theme - Web Experience Toolkit (WET)";
+$_PAGE['title_fra'] = "Page d'entrée - Bilingue (fra-eng) - Thème de la facilité d'emploi Web GC - Exemples pratiques - Boîte à outils de l'expérience Web (BOEW)";
+
+$_PAGE['short_title_eng'] = "Welcome";
+$_PAGE['short_title_fra'] = "Bienvenue";
+
+$_PAGE['issplash'] = "1";
+
+$_PAGE['issued'] = "YYYY-MM-DD";
+$_PAGE['modified'] = "YYYY-MM-DD";
+
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
+?>
+
+<!-- custom page metadata start -->
 <meta name="description" content="English description / Description en anglais" />
 <meta name="description" lang="fr" content="French description / Description en français" />
-<meta name="keywords" content="English keywords / Mots-clés en anglais" />
-<meta name="keywords" lang="fr" content="French keywords / Mots-clés en français" />
 <meta name="dcterms.creator" content="English name of the content author / Nom en anglais de l'auteur du contenu" />
 <meta name="dcterms.creator" lang="fr" content="French name of the content author / Nom en français de l'auteur du contenu" />
-<meta name="dcterms.subject" title="scheme" content="English subject terms / Termes de sujet en anglais" />
-<meta name="dcterms.subject" title="scheme" lang="fr" content="French subject terms / Termes de sujet en français" />
- 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/sp-pe/css.php"; ?>
+<!-- end of custom metadata -->
+
+<?php 
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-css.php"; 
+?>
 <!-- CustomCSSStart -->
-
 <!-- CustomCSSEnd -->
-</head>
-
-<body>
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/1col.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/sp-pe/header-entete.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-1.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/sp-pe/cont.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/centre-2.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/sp-pe/trail-arr.php"; ?>
-</body>
-</html>
-<?php } else {
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/sp-pe/np.php";
-} ?>
+<?php 
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php";
+?>
+<!-- Main content start -->
+<!-- no content needed for splash page -->
+<!-- MainContentEnd -->
+<?php 
+include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-nav.php"; 
+?>
+<!-- CustomScriptsStart -->
+<!-- CustomScriptsEnd -->
+<?php 
+include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-end.php"; 
+?>

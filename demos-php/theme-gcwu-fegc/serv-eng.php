@@ -2,12 +2,7 @@
 
 //always set the page language options first
 $_PAGE['lang1'] = "eng";
-
-
-//always set the page language options first
-//they're dumpted. Saves time when deploying the demos to different servers for development
-$path = realpath(dirname(__FILE__));
-require_once $path ."/config.php";
+$_PAGE['lang2'] = "fra";
 
 //this is the only time the user needs to hard code the path, once the
 //configuration file has been required all other paths can use the variables from that
@@ -17,8 +12,6 @@ require_once $path ."/config.php";
 //they're dumpted. Saves time when deploying the demos to different servers for development
 $path = realpath(dirname(__FILE__));
 require_once $path ."/config.php";
-
-
 
 $_PAGE['title_eng'] = "Server message page - Bilingual (eng-fra) - GC Web Usability theme - Web Experience Toolkit (WET)";
 

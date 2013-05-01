@@ -2,12 +2,12 @@
 
 //always set the page language options first
 $_PAGE['lang1'] = "fra";
-
-
-//always set the page language options first
-//they're dumpted. Saves time when deploying the demos to different servers for development
-$path = realpath(dirname(__FILE__));
-require_once $path ."/config.php";
+$_PAGE['lang2'] = "eng";
+$_PAGE['lang3'] = "deu";
+$_PAGE['lang4'] = "spa";
+$_PAGE['lang5'] = "ita";
+$_PAGE['lang6'] = "por";
+$_PAGE['lang7'] = "rus";
 
 //this is the only time the user needs to hard code the path, once the
 //configuration file has been required all other paths can use the variables from that
@@ -17,14 +17,6 @@ require_once $path ."/config.php";
 //they're dumpted. Saves time when deploying the demos to different servers for development
 $path = realpath(dirname(__FILE__));
 require_once $path ."/config.php";
-
-
-$_PAGE['lang2'] = "eng";
-$_PAGE['lang3'] = "deu";
-$_PAGE['lang4'] = "spa";
-$_PAGE['lang5'] = "ita";
-$_PAGE['lang6'] = "por";
-$_PAGE['lang7'] = "rus";
 
 $_PAGE['title_eng'] = "Server message page - Multilingual (eng-fra) - GC Web Usability theme - Web Experience Toolkit (WET)";
 $_PAGE['title_fra'] = "Page de message du serveur - Multilingue (eng-fra) - Thème de la facilité d'emploi Web GC - Exemples pratiques - Boîte à outils de l'expérience Web (BOEW)";
