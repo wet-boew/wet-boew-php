@@ -1,9 +1,17 @@
 <?php
+	//set the theme folder, this could be set programaticlly, but
+	//this configuration file is unfortunately differnt for each
+	//theme anyway.
 	$_SITE['wb_theme_folder'] = "/theme-base";
-	$_SITE['wb_core_dist_folder'] = "/dist";
-	$_SITE['wb_php_dist_folder'] = "/dist-php";
-	
-	include_once $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/config.php";
+
+	/*
+	 * Path to the distribution /inc/config.php file containing the common
+	 * in the demo this is programatically defined demonstrating one method
+	 * of including the configuration file. This could also be hardcoded
+	 */
+	$path = realpath(dirname(__FILE__));
+	$_INC_CONFIG = substr($path, 0, strrpos($path, "\\")) ."/inc/config.php";
+	require $_INC_CONFIG;
 	
 	//Modify the language selection link to point to whatever script suits your site.
 	$_SITE['base_cmblang_href_eng'] = $_SITE['base_cmblang_href_fra'] = $_SITE['wb_php_dist_folder'] . "/langselect/lang.php"; 

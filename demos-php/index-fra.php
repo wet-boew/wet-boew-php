@@ -1,13 +1,19 @@
 <?php
-//this is the only time the user needs to hard code the path, once the
-//configuration file has been required all other paths can use the variables from that
-//file. 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/config.php";
-
-/* These are the required variables fore each page */
+//always set the page language options first
 //set 'lang1' to 'eng' for English pages, 'fra' for French pages
 $_PAGE['lang1'] = "fra";
 $_PAGE['lang2'] = "eng";
+
+//this is the only time the user needs to hard code the path, once the
+//configuration file has been required all other paths can use the variables from that
+//file. 
+//
+//programaticly setting the main config file means the demos will work regardless of where
+//they're dumpted. Saves time when deploying the demos to different servers for development
+$path = realpath(dirname(__FILE__));
+require_once $path ."/theme-gcwu-fegc/config.php";
+
+/* These are the required variables fore each page */
 $_PAGE['title_' . $_PAGE['lang1']] = "Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
