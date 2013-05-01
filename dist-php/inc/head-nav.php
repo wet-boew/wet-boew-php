@@ -29,7 +29,7 @@
 <body><div id="<?php echo $_COL_LAYOUT; ?>">
 <?php 
 //if this is a server page the skip navigation isn't required
-if( $_PAGE['isserv'] != "1" ) {?>
+if( $_PAGE['isserv'] != "1" && $_PAGE['issplash']!='1') {?>
 <div id="wb-skip">
 <ul id="wb-tphp">
 <li id="wb-skip1"><a href="#wb-cont"><?php echo $_SKIP_1_NAV_TEXT ?></a></li>
@@ -47,7 +47,7 @@ if( $_PAGE['isserv'] != "1" ) {?>
 	if( $_PAGE['isserv'] == "1" ) {
 		$_THEME_HEAD_NAV_FILE = $_PHP_THEME_PATH_ . "/serv/head-nav.php";
 	} else if( $_PAGE['issplash'] == "1" ) {
-		$_THEME_HEAD_NAV_FILE = $_PHP_THEME_PATH_ . "sp-pe/head-nav.php";
+		$_THEME_HEAD_NAV_FILE = $_PHP_THEME_PATH_ . "/sp-pe/head-nav.php";
 	}
 	
 	if( file_exists($_THEME_HEAD_NAV_FILE) ) {

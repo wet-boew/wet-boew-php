@@ -13,7 +13,7 @@ $_PAGE['lang3'] = "spa";
 //they're dumpted. Saves time when deploying the demos to different servers for development
 $_PAGE_PATH_ = realpath(dirname(__FILE__));
 $_SLASH_ = "/";
-$_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/inc" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
+$_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/config" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
 require_once $_CONFIG_PATH ."/config.php";
 $_PAGE['title_fra'] = "Page de contenu - Sans menu du site ou fil d'Ariane - Thème de base - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
 $_PAGE['short_title_fra'] = "Page de contenu - Sans menu du site ou fil d'Ariane - Thème de base";

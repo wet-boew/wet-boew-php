@@ -13,7 +13,7 @@ $_PAGE['lang3'] = "spa";
 //they're dumpted. Saves time when deploying the demos to different servers for development
 $_PAGE_PATH_ = realpath(dirname(__FILE__));
 $_SLASH_ = "/";
-$_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/inc" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
+$_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/config" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
 require_once $_CONFIG_PATH ."/config.php";
 $_PAGE['title_eng'] = "Content page - No search, language selection link, site menu or breadcrumb trail - Base theme - Working examples - Web Experience Toolkit&#160;(WET)";
 $_PAGE['short_title_eng'] = "Content page - No search, language selection link, site menu or breadcrumb trail - Base theme";
