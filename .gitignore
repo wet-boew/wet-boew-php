@@ -3,3 +3,7 @@
 *.pyo
 dist/
 demos/
+.project
+.settings/
+_notes/
+*/_notes/
