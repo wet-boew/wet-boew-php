@@ -6,13 +6,18 @@
 	
 	//Location I've deployed the demos-php, dist-php and dist folders to
 	//to keep them separated from the rest of my site
-	$_DEPLOY_FOLDER_DIST = $_DEPLOY_FOLDER_PHP_ = "/wet-boew";
+	$_DEPLOY_FOLDER_DIST_ = $_DEPLOY_FOLDER_PHP_ = "/wet-boew";
 	
-	//define the path to the wet core distribution folder
-	//for development the deploy folder is /wet-boew-dist and the
-	//php deploy folder is /wet-boew-php. Comment out or remove these
-	//lines when deploying to your site.
-	$_DEPLOY_FOLDER_DIST_ = $_DEPLOY_FOLDER_DIST . "-dist";
+	/*
+	 * Define the path to the wet core distribution folder. For development from
+	 * github the deploy folder is /wet-boew-dist and the php deploy folder is 
+	 * /wet-boew-php. 
+	 *
+	 * For deployment from a zip file where the demos-php, dist-php and dist
+	 * folders are copied into a directory at the root of the webserver Comment 
+	 * out or remove these lines.
+	 */
+	$_DEPLOY_FOLDER_DIST_ = $_DEPLOY_FOLDER_DIST_ . "-dist";
 	$_DEPLOY_FOLDER_PHP_ = $_DEPLOY_FOLDER_PHP_ . "-php";
 	
 	$_SITE['wb_core_dist_folder'] = $_DEPLOY_FOLDER_DIST_ . "/dist";
