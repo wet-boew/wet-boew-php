@@ -10,7 +10,13 @@
 	 * of including the configuration file. This could also be hardcoded
 	 */
 	$path = realpath(dirname(__FILE__));
-	$_INC_CONFIG = substr($path, 0, strrpos($path, "\\")) ."/inc/config.php";
+	if( strpos($path, "\\") > 0 ) {
+		//for Windows server
+		$_INC_CONFIG = substr($path, 0, strrpos($path, "\\")) ."/inc/config.php";
+	} else {
+		//for Linux Server
+		$_INC_CONFIG = substr($path, 0, strrpos($path, "/")) ."/inc/config.php";
+	}
 	require $_INC_CONFIG;
 
 	$_SITE['gcwu_gcnavbar_eng'] = "Government of Canada navigation bar"; 

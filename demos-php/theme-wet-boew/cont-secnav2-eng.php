@@ -18,8 +18,8 @@ require_once $path ."/config.php";
 /* These are the required variables fore each page */
 $_PAGE['title_' . $_PAGE['lang1']] = "Content page - Secondary menu 2 - WET theme - Working examples - Web Experience Toolkit&#160;(WET)";
 $_PAGE['short title_' . $_PAGE['lang1']] = "Content page - Secondary menu 2";
-$_PAGE['issued'] = "2013-04-30";
-$_PAGE['modified'] = "2013-04-30";
+$_PAGE['issued'] = "2013-05-01";
+$_PAGE['modified'] = "2013-05-01";
 
 $path = substr($path, 0, strrpos($path, "\\"));
 $_PAGE['left_menu_gauche'] = $path ."/menu-left-gauche/secnav2-eng.php";

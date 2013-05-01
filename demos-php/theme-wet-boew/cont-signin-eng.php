@@ -18,8 +18,8 @@ require_once $path ."/config.php";
 /* These are the required variables fore each page */
 $_PAGE['title_' . $_PAGE['lang1']] = "Content page - Sign in - WET theme - Working examples - Web Experience Toolkit&#160;(WET)";
 $_PAGE['short title_' . $_PAGE['lang1']] = "Content page - Sign in";
-$_PAGE['issued'] = "2013-04-30";
-$_PAGE['modified'] = "2013-04-30";
+$_PAGE['issued'] = "2013-05-01";
+$_PAGE['modified'] = "2013-05-01";
 
 $_PAGE['signin'] = "1";
 $_SITE['wb_signin_file_'.$_PAGE['lang1']] = "cont-signout-eng.php";

@@ -20,8 +20,8 @@ $_PAGE['short_title_' . $_PAGE['lang1']] = "Page de contenu - Sous-site";
 $_PAGE['sub_title_' .$_PAGE['lang1']] = "Nom du sous-site";
 $_PAGE['sub_link_' .$_PAGE['lang1']] = "#";
 
-$_PAGE['issued'] = "2013-04-30";
-$_PAGE['modified'] = "2013-04-30";
+$_PAGE['issued'] = "2013-05-01";
+$_PAGE['modified'] = "2013-05-01";
 
 /* This is a list of optional variables 
 
