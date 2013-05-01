@@ -17,8 +17,8 @@ require_once $path ."/config.php";
 /* These are the required variables fore each page */
 $_PAGE['title_' . $_PAGE['lang1']] = "Page de contenu - Ouvrir une session - Thème de la BOEW - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
 $_PAGE['short_title_' . $_PAGE['lang1']] = "Page de contenu - Ouvrir une session";
-$_PAGE['issued'] = "2013-04-30";
-$_PAGE['modified'] = "2013-04-30";
+$_PAGE['issued'] = "2013-05-01";
+$_PAGE['modified'] = "2013-05-01";
 
 $_PAGE['signin'] = "1";
 $_SITE['wb_signin_file_'.$_PAGE['lang1']] = "cont-signout-fra.php";
