@@ -12,10 +12,10 @@
 	$path = realpath(dirname(__FILE__));
 	if( strpos($path, "\\") > 0 ) {
 		//for Windows server
-		$_INC_CONFIG = substr($path, 0, strrpos($path, "\\")) ."/inc/config.php";
+		$_INC_CONFIG = substr($path, 0, strrpos($path, "\\")) ."/config.php";
 	} else {
 		//for Linux Server
-		$_INC_CONFIG = substr($path, 0, strrpos($path, "/")) ."/inc/config.php";
+		$_INC_CONFIG = substr($path, 0, strrpos($path, "/")) ."/config.php";
 	}
 	require $_INC_CONFIG;
 

@@ -4,6 +4,7 @@
 dist/
 demos/
 .project
+.pydevproject
 .settings/
 _notes/
 */_notes/

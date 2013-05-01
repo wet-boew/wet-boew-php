@@ -1,9 +1,23 @@
 <?php
+	//set the theme folder, this could be set programaticlly, but
+	//this configuration file is unfortunately differnt for each
+	//theme anyway.
 	$_SITE['wb_theme_folder'] = "/theme-gcwu-fegc";
-	$_SITE['wb_core_dist_folder'] = "/wet-boew-dist/dist";
-	$_SITE['wb_php_dist_folder'] = "/wet-boew-php/dist-php";
-	
-	include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/config.php";
+
+	/*
+	 * Path to the distribution /inc/config.php file containing the common
+	 * in the demo this is programatically defined demonstrating one method
+	 * of including the configuration file. This could also be hardcoded
+	 */
+	$path = realpath(dirname(__FILE__));
+	if( strpos($path, "\\") > 0 ) {
+		//for Windows server
+		$_INC_CONFIG = substr($path, 0, strrpos($path, "\\")) ."/config.php";
+	} else {
+		//for Linux Server
+		$_INC_CONFIG = substr($path, 0, strrpos($path, "/")) ."/config.php";
+	}
+	require $_INC_CONFIG;
 
 	$_SITE['gcwu_gcnavbar_eng'] = "Government of Canada navigation bar"; 
 	$_SITE['gcwu_gcnavbar_fra'] = "Barre de navigation de la gouvernement de Canada"; 
@@ -31,11 +45,12 @@
 
 	$_SITE['gcwu_cmblang_title_eng'] = "Français - Version française de cette page"; 
 	$_SITE['gcwu_cmblang_title_fra'] = "English - English version of the Web page"; 
-	$_SITE['gcwu_cmblang_text_eng'] = "Français"; 
+	$_SITE['gcwu_cmblang_text_eng'] = "Français";
 	$_SITE['gcwu_cmblang_text_fra'] = "English"; 
-	
 	$_SITE['gcwu_cmblang_title_site_eng'] = "English - English version of the Web site"; 
 	$_SITE['gcwu_cmblang_title_site_fra'] = "Français - Version française de ce site Web";
+
+	$_SITE['gcwu_cmblang_text_spa'] = "español";
 
 	$_SITE['gcwu_wmms_eng'] = "Symbol of the Government of Canada"; 
 	$_SITE['gcwu_wmms_fra'] = "Symbole du gouvernement du Canada"; 

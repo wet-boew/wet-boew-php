@@ -10,8 +10,11 @@ $_PAGE['lang2'] = "fra";
 //
 //programaticly setting the main config file means the demos will work regardless of where
 //they're dumpted. Saves time when deploying the demos to different servers for development
-$path = realpath(dirname(__FILE__));
-require_once $path ."/config.php";
+$_PAGE_PATH_ = realpath(dirname(__FILE__));
+$_SLASH_ = "/";
+$_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/config" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
+require_once $_CONFIG_PATH ."/config.php";
+
 
 $_PAGE['title_eng'] = "Server message page - Bilingual (eng-fra) - GC Web Usability theme - Web Experience Toolkit (WET)";
 $_PAGE['title_fra'] = "Page de message du serveur - Bilingue (eng-fra) - Thème de la facilité d'emploi Web GC - Exemples pratiques - Boîte à outils de l'expérience Web (BOEW)";

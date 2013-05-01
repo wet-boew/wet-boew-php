@@ -11,11 +11,14 @@ $_PAGE['lang3'] = "spa";
 //
 //programaticly setting the main config file means the demos will work regardless of where
 //they're dumpted. Saves time when deploying the demos to different servers for development
-$path = realpath(dirname(__FILE__));
-require_once $path ."/config.php";
+$_PAGE_PATH_ = realpath(dirname(__FILE__));
+$_SLASH_ = "/";
+$_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/config" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
+require_once $_CONFIG_PATH ."/config.php";
 
-$path = substr($path, 0, strrpos($path, "\\"));
-$_PAGE['left_menu_gauche'] = $path ."/menu-left-gauche/secnav2-fra.php";
+
+$_PAGE_PATH_ = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_));
+$_PAGE['left_menu_gauche'] = $_PAGE_PATH_ ."/menu-left-gauche/secnav2-fra.php";
 
 $_PAGE['title_fra'] = "Page de contenu - Menu secondaire 2 - Thème de base - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
 $_PAGE['short_title_fra'] = "Page de contenu - Menu secondaire 2 - Thème de base";

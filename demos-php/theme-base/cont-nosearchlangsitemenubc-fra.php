@@ -11,10 +11,10 @@ $_PAGE['lang3'] = "spa";
 //
 //programaticly setting the main config file means the demos will work regardless of where
 //they're dumpted. Saves time when deploying the demos to different servers for development
-$path = realpath(dirname(__FILE__));
-require_once $path ."/config.php";
-
-
+$_PAGE_PATH_ = realpath(dirname(__FILE__));
+$_SLASH_ = "/";
+$_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/config" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
+require_once $_CONFIG_PATH ."/config.php";
 $_PAGE['title_fra'] = "Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane - Thème de base - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
 $_PAGE['short_title_fra'] = "Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane - Thème de base";
 $_PAGE['issued'] = "YYYY-MM-DD";

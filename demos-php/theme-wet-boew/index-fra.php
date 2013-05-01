@@ -11,9 +11,10 @@ $_PAGE['lang2'] = "eng";
 //
 //programaticly setting the main config file means the demos will work regardless of where
 //they're dumpted. Saves time when deploying the demos to different servers for development
-$path = realpath(dirname(__FILE__));
-require_once $path ."/config.php";
-
+$_PAGE_PATH_ = realpath(dirname(__FILE__));
+$_SLASH_ = "/";
+$_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/config" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
+require_once $_CONFIG_PATH ."/config.php";
 /* These are the required variables fore each page */
 $_PAGE['title_' . $_PAGE['lang1']] = "Thème de la facilité d'emploi Web GC";
 $_PAGE['issued'] = "2013-05-01";

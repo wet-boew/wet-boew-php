@@ -1,9 +1,23 @@
 <?php
+	//set the theme folder, this could be set programaticlly, but
+	//this configuration file is unfortunately differnt for each
+	//theme anyway.
 	$_SITE['wb_theme_folder'] = "/theme-base";
-	$_SITE['wb_core_dist_folder'] = "/wet-boew-dist/dist";
-	$_SITE['wb_php_dist_folder'] = "/wet-boew-php/dist-php";
-	
-	include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/config.php";
+
+	/*
+	 * Path to the distribution /inc/config.php file containing the common
+	 * in the demo this is programatically defined demonstrating one method
+	 * of including the configuration file. This could also be hardcoded
+	 */
+	$path = realpath(dirname(__FILE__));
+	if( strpos($path, "\\") > 0 ) {
+		//for Windows server
+		$_INC_CONFIG = substr($path, 0, strrpos($path, "\\")) ."/config.php";
+	} else {
+		//for Linux Server
+		$_INC_CONFIG = substr($path, 0, strrpos($path, "/")) ."/config.php";
+	}
+	require $_INC_CONFIG;
 	
 	//Modify the language selection link to point to whatever script suits your site.
 	$_SITE['base_cmblang_href_eng'] = $_SITE['base_cmblang_href_fra'] = $_SITE['wb_php_dist_folder'] . "/langselect/lang.php"; 
@@ -36,9 +50,6 @@
 	$_SITE['base_sft_text_fra'] = "Site footer";
 	$_SITE['base_fullft_text_fra'] = "Full-width footer area";
 	$_SITE['base_fullft_in_text_fra'] = "id=\"base-fullft-in\"";
-
-	//Modify the language selection link to point to whatever script suits your site.
-	$_SITE['base_cmblang_href_eng'] = $_SITE['base_cmblang_href_fra'] = $_SITE['wb_php_dist_folder'] . "/langselect/lang.php"; 
 
 	$_SITE['base_fullhd_link_spa'] = "#";
 	$_SITE['base_fullhd_link_fra'] = "cont-fra.html";

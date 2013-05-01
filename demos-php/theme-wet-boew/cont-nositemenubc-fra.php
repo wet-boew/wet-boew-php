@@ -2,8 +2,8 @@
 
 //always set the page language options first
 //set 'lang1' to 'eng' for English pages, 'fra' for French pages
-$_PAGE['lang1'] = "eng";
-$_PAGE['lang2'] = "fra";
+$_PAGE['lang1'] = "fra";
+$_PAGE['lang2'] = "eng";
 
 //this is the only time the user needs to hard code the path, once the
 //configuration file has been required all other paths can use the variables from that
@@ -15,15 +15,14 @@ $_PAGE_PATH_ = realpath(dirname(__FILE__));
 $_SLASH_ = "/";
 $_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/config" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
 require_once $_CONFIG_PATH ."/config.php";
-
 /* These are the required variables fore each page */
-$_PAGE['title_' . $_PAGE['lang1']] = "Content page - Sign in - WET theme - Working examples - Web Experience Toolkit&#160;(WET)";
-$_PAGE['short title_' . $_PAGE['lang1']] = "Content page - Sign in";
+$_PAGE['title_' . $_PAGE['lang1']] = "Page de contenu - Sans menu du site ou fil d'Ariane - Thème de la BOEW - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
+$_PAGE['short_title_' . $_PAGE['lang1']] = "Page de contenu - Sans menu du site ou fil d'Ariane";
 $_PAGE['issued'] = "2013-05-01";
 $_PAGE['modified'] = "2013-05-01";
 
-$_PAGE['signin'] = "1";
-$_SITE['wb_signin_file_'.$_PAGE['lang1']] = "cont-signout-eng.php";
+$_PAGE['nositemenu'] = "1";
+$_PAGE['nobcrumb'] = "1";
 
 /* This is a list of optional variables 
 
@@ -68,6 +67,8 @@ include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/he
 
 <!-- custom page metadata start -->
 <meta name="description" content="English description / Description en anglais" />
+<meta name="dcterms.creator" content="English name of the content author / Nom en anglais de l'auteur du contenu" />
+<meta name="dcterms.subject" title="scheme" content="English subject terms / Termes de sujet en anglais" />
 <!-- end of custom metadata -->
 
 <?php 
@@ -81,7 +82,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/he
 ?>
 <!-- Main content start -->
 <?php 
-include "includes/sample-cont-eng.php";
+include "includes/sample-cont-fra.php";
 ?>
 <!-- MainContentEnd -->
 <?php 

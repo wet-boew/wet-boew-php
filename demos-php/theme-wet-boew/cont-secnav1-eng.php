@@ -11,9 +11,10 @@ $_PAGE['lang2'] = "fra";
 //
 //programaticly setting the main config file means the demos will work regardless of where
 //they're dumpted. Saves time when deploying the demos to different servers for development
-$path = realpath(dirname(__FILE__));
-require_once $path ."/config.php";
-
+$_PAGE_PATH_ = realpath(dirname(__FILE__));
+$_SLASH_ = "/";
+$_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/config" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
+require_once $_CONFIG_PATH ."/config.php";
 
 /* These are the required variables fore each page */
 $_PAGE['title_' . $_PAGE['lang1']] = "Content page - Secondary menu 1 - WET theme - Working examples - Web Experience Toolkit&#160;(WET)";
@@ -21,8 +22,8 @@ $_PAGE['short title_' . $_PAGE['lang1']] = "Content page - Secondary menu 1";
 $_PAGE['issued'] = "2013-05-01";
 $_PAGE['modified'] = "2013-05-01";
 
-$path = substr($path, 0, strrpos($path, "\\"));
-$_PAGE['left_menu_gauche'] = $path ."/menu-left-gauche/secnav1-eng.php";
+$_PAGE_PATH_ = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_));
+$_PAGE['left_menu_gauche'] = $_PAGE_PATH_ ."/menu-left-gauche/secnav1-eng.php";
 
 /* This is a list of optional variables 
 

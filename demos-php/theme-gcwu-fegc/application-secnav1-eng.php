@@ -10,9 +10,10 @@ $_PAGE['lang2'] = "fra";
 //
 //programaticly setting the main config file means the demos will work regardless of where
 //they're dumpted. Saves time when deploying the demos to different servers for development
-$path = realpath(dirname(__FILE__));
-require_once $path ."/config.php";
-
+$_PAGE_PATH_ = realpath(dirname(__FILE__));
+$_SLASH_ = "/";
+$_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/config" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
+require_once $_CONFIG_PATH ."/config.php";
 
 $_PAGE['title_eng'] = "Application template - Secondary menu 1 - GC Web Usability theme - Working examples - Web Experience Toolkit&#160;(WET)";
 $_PAGE['issued'] = "YYYY-MM-DD";
@@ -20,7 +21,8 @@ $_PAGE['modified'] = "YYYY-MM-DD";
 $_PAGE['version'] = "1.1b";
 $_PAGE['isapp'] = "1";
 
-$_PAGE['left_gauche_menu_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav1-eng.php";
+$_PAGE_PATH_ = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_));
+$_PAGE['left_menu_gauche'] = $_PAGE_PATH_ ."/menu-left-gauche/secnav1-eng.php";
 
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
 ?>

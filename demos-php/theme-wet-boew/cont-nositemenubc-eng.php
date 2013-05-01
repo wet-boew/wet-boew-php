@@ -17,13 +17,13 @@ $_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/con
 require_once $_CONFIG_PATH ."/config.php";
 
 /* These are the required variables fore each page */
-$_PAGE['title_' . $_PAGE['lang1']] = "Content page - Sign in - WET theme - Working examples - Web Experience Toolkit&#160;(WET)";
-$_PAGE['short title_' . $_PAGE['lang1']] = "Content page - Sign in";
+$_PAGE['title_' . $_PAGE['lang1']] = "Content page - No site menu or breadcrumb trail - WET theme - Working examples - Web Experience Toolkit&#160;(WET)";
+$_PAGE['short title_' . $_PAGE['lang1']] = "Content page - No site menu or breadcrumb trail";
 $_PAGE['issued'] = "2013-05-01";
 $_PAGE['modified'] = "2013-05-01";
 
-$_PAGE['signin'] = "1";
-$_SITE['wb_signin_file_'.$_PAGE['lang1']] = "cont-signout-eng.php";
+$_PAGE['nositemenu'] = "1";
+$_PAGE['nobcrumb'] = "1";
 
 /* This is a list of optional variables 
 

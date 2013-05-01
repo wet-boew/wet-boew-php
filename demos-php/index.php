@@ -12,7 +12,7 @@ $_PAGE['lang2'] = "fra";
 //programaticly setting the main config file means the demos will work regardless of where
 //they're dumpted. Saves time when deploying the demos to different servers for development
 $path = realpath(dirname(__FILE__));
-require_once $path ."/theme-gcwu-fegc/config.php";
+require_once $path ."/config/theme-gcwu-fegc/config.php";
 
 
 $_PAGE['title_fra'] = "Page d'entrée - Bilingue (eng-fra) - Thème de la facilité d'emploi Web GC - Exemples pratiques - Boîte à outils de l'expérience Web (BOEW)";
@@ -21,9 +21,12 @@ $_PAGE['short_title_eng'] = "Welcome";
 $_PAGE['short_title_fra'] = "Bienvenue";
 
 //get the path to the current folder this file resides in. 
-$_ROOT_PATH_ = preg_replace("(\\\)", "\\\\\\", $_SERVER['DOCUMENT_ROOT']);
+$_ROOT_PATH_ = $_SERVER['DOCUMENT_ROOT'];
+if(strpos($_ROOT_PATH_, "\\") > 0 ) {
+	$_ROOT_PATH_ = preg_replace("(\\\)", "\\\\\\", $_SERVER['DOCUMENT_ROOT']);
+}
 //Remove the server root path to make the path a nice URL relaitve path
-$_PATH_ = preg_replace("(".$_ROOT_PATH_.")", "", realpath(dirname(__FILE__)));
+$_PATH_ = "/" .preg_replace("(".$_ROOT_PATH_.")", "", realpath(dirname(__FILE__)));
 
 $_SITE['wb_site_href_eng'] = $_PATH_ ."/index-eng.php";
 $_SITE['wb_site_href_fra'] = $_PATH_ ."/index-fra.php";

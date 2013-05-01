@@ -11,7 +11,7 @@ $_PAGE['lang2'] = "fra";
 //programaticly setting the main config file means the demos will work regardless of where
 //they're dumpted. Saves time when deploying the demos to different servers for development
 $path = realpath(dirname(__FILE__));
-require_once $path ."/theme-gcwu-fegc/config.php";
+require_once $path ."/config/theme-gcwu-fegc/config.php";
 
 /* These are the required variables fore each page */
 $_PAGE['title_' . $_PAGE['lang1']] = "Working examples - Working examples - Web Experience Toolkit&#160;(WET)";
