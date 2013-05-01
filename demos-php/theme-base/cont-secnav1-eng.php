@@ -16,7 +16,7 @@ require_once $path ."/config.php";
 
 
 $path = substr($path, 0, strrpos($path, "\\"));
-$_PAGE['left_menu_gauche'] = $path ."/menu-left-gauche/secnav1-fra.php";
+$_PAGE['left_menu_gauche'] = $path ."/menu-left-gauche/secnav1-eng.php";
 
 $_PAGE['title_eng'] = "Content page - Secondary menu 1 - Base theme - Working examples - Web Experience Toolkit&#160;(WET)";
 $_PAGE['short_title_eng'] = "Content page - Secondary menu 1";

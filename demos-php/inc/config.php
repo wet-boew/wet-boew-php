@@ -4,21 +4,30 @@
 	 * Set only non-language specific variables in this file 
 	 */
 	
+	//Location I've deployed the demos-php, dist-php and dist folders to
+	//to keep them separated from the rest of my site
+	$_DEPLOY_FOLDER_DIST = $_DEPLOY_FOLDER_PHP_ = "/wet-boew";
+	
 	//define the path to the wet core distribution folder
-	$_SITE['wb_core_dist_folder'] = "/wet-boew-dist/dist";
+	//for development the deploy folder is /wet-boew-dist and the
+	//php deploy folder is /wet-boew-php. Comment out or remove these
+	//lines when deploying to your site.
+	$_DEPLOY_FOLDER_DIST_ = $_DEPLOY_FOLDER_DIST . "-dist";
+	$_DEPLOY_FOLDER_PHP_ = $_DEPLOY_FOLDER_PHP_ . "-php";
+	
+	$_SITE['wb_core_dist_folder'] = $_DEPLOY_FOLDER_DIST_ . "/dist";
 	
 	//define the path to the wet php distribution folder
-	$_SITE['wb_php_dist_folder'] = "/wet-boew-php/dist-php";
+	//for development the deploy folder is /wet-boew-php
+	$_SITE['wb_php_dist_folder'] = $_DEPLOY_FOLDER_PHP_ . "/dist-php";
+	
+	//define the locations of the demo menus
+	$_MENU_LOCATION_ = $_SERVER['DOCUMENT_ROOT'] .$_DEPLOY_FOLDER_PHP_ . "/demos-php/menu";
 
-	//modify this for you're specific site
-	$_SITE['wb_site_title_fra'] = "Variante pour PHP"; 
-	$_SITE['wb_site_href_fra'] = "home-accueil-fra.php"; 
-
-	$_MENU_LOCATION_ = $_SERVER['DOCUMENT_ROOT'] . "/wet-boew-php/demos-php/menu";
-
-	//modify to point to your sites search option
+	//modify to point to your sites search implementation
 	$_SITE['wb_search_file'] = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/search.php";
 	
+	//modify to point to yours sites bread crumb implementation
 	$_SITE['wb_bcrumb_file'] = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/bt_fa.php"; 
 
 	//if $_PAGE['lang1'] is set assume the user set the languages
