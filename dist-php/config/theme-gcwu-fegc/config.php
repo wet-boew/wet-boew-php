@@ -67,8 +67,8 @@
 	$_SITE['gcwu_gcnb3_text_fra'] = "Ministères"; 
 	
 	//button and language swap text
-	$_SITE['gcwu_cmblang_text_eng'] = "Français";
-	$_SITE['gcwu_cmblang_text_fra'] = "English"; 
+	$_SITE['gcwu_cmblang_text_fra'] = "Français";
+	$_SITE['gcwu_cmblang_text_eng'] = "English"; 
 	$_SITE['gcwu_cmblang_title_eng'] = "Français - Version française de cette page"; 
 	$_SITE['gcwu_cmblang_title_fra'] = "English - English version of the Web page"; 
 

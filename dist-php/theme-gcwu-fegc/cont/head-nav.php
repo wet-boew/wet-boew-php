@@ -27,7 +27,7 @@ if( $_PAGE['nolang'] != "1" ) {
 		}
 		echo '">';
 		echo '<a href="' .$_SITE['gcwu_cmblang_href_' . $_PAGE['lang'.$i]];
-		echo '" lang="' .$_SITE['gcwu_langalt_' . $_PAGE['lang'.$i]];
+		echo '" lang="' .$_SITE['wb_meta_' . $_PAGE['lang'.$i]];
 		echo '">' . $_SITE['gcwu_cmblang_text_' . $_PAGE['lang'.$i]]; 
 		echo '</a></li>';
 	}
