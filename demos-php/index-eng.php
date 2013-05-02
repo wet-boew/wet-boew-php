@@ -4,10 +4,6 @@
 $_PAGE['lang1'] = "eng";
 $_PAGE['lang2'] = "fra";
 
-//this is the only time the user needs to hard code the path, once the
-//configuration file has been required all other paths can use the variables from that
-//file. 
-//
 //programaticly setting the main config file means the demos will work regardless of where
 //they're dumpted. Saves time when deploying the demos to different servers for development
 $path = realpath(dirname(__FILE__));
