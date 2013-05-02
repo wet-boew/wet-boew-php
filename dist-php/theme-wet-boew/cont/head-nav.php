@@ -51,7 +51,6 @@ if( $_PAGE['sub_title_' . $_PAGE['lang1']] ) {
 if( !isset($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ]) || (isset($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ])
  && ($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ]=="" || !file_exists($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ])))) {
 	$_PAGE['nositemenu'] = "1";
-	echo "<h1 id=\"here\">".$_PAGE['wb_sitenav_file_' . $_PAGE['lang1']]."</h1>";
 }
 
 //if the bread crumb trail hasn't been set or the file can't be found set the nobcrumb
