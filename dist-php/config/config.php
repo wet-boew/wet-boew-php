@@ -25,7 +25,7 @@
 	$_SITE['wb_php_dist_folder'] = $_ROOT_SERVER_DIR . $_DEPLOY_FOLDER_PHP_ . "/dist-php";
 	
 	//define the locations of the demo menus
-	$_MENU_LOCATION_ = $_SERVER['DOCUMENT_ROOT'] .$_DEPLOY_FOLDER_PHP_ . "/demos-php/menu";
+	$_MENU_LOCATION_ = $_SERVER['DOCUMENT_ROOT'] . $_ROOT_SERVER_DIR.$_DEPLOY_FOLDER_PHP_ . "/demos-php/menu";
 
 	//modify to point to your sites search implementation
 	$_SITE['wb_search_file'] = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/search.php";

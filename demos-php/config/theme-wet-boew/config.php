@@ -1,6 +1,6 @@
 <?php
 
-	$_ROOT_SERVER_DIR = ""; //"wet-boew";
+	$_ROOT_SERVER_DIR = "/wet-boew";
 	//$_ROOT_SERVER_DIR .= "-php";
 	
 	//override variables set in the dist config folder here to personalize the site
