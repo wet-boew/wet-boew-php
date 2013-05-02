@@ -20,7 +20,8 @@ $_PAGE['lang1'] = "";
  * they're dumpted. Saves time when deploying the demos to different servers for development
  */
 $_PAGE_PATH_ = realpath(dirname(__FILE__));
-$_SLASH_ = "/";
+//if this is a windows machine use the backslash, otherwise use forwardslash
+$_SLASH_ = (strtoupper(substr(PHP_OS, 0, 3)) == 'WIN')?"\\":"/";
 $_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/config" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
 require_once $_CONFIG_PATH ."/config.php";
 

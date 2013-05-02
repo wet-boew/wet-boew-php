@@ -5,13 +5,11 @@ $_PAGE['lang1'] = "eng";
 $_PAGE['lang2'] = "fra";
 
 
-//this is the only time the user needs to hard code the path, once the
-//configuration file has been required all other paths can use the variables from that
-//file. 
-//
 //programaticly setting the main config file means the demos will work regardless of where
 //they're dumpted. Saves time when deploying the demos to different servers for development
 $path = realpath(dirname(__FILE__));
+//add PHP variants need to load a config file, choosing the /config/{theme}/config.php directory
+//determines what them thist page will use.
 require_once $path ."/config/theme-gcwu-fegc/config.php";
 
 
@@ -22,11 +20,22 @@ $_PAGE['short_title_fra'] = "Bienvenue";
 
 //get the path to the current folder this file resides in. 
 $_ROOT_PATH_ = $_SERVER['DOCUMENT_ROOT'];
-if(strpos($_ROOT_PATH_, "\\") > 0 ) {
-	$_ROOT_PATH_ = preg_replace("(\\\)", "\\\\\\", $_SERVER['DOCUMENT_ROOT']);
+if(strtoupper(substr(PHP_OS, 0, 3)) == 'WIN') {
+	//Backslashes are escape characters so on a winodws server
+	//they need to be replaced with double backslash. For anyone
+	//that hasn't see it before you have to escape the backslash
+	//in regular expressions hence the \\\\\\\\\\\\\\\\\\\\\\\\\ below
+	$_ROOT_PATH_ = preg_replace("(\\\)", "\\\\\\", $_ROOT_PATH_);
 }
 //Remove the server root path to make the path a nice URL relaitve path
-$_PATH_ = "/" .preg_replace("(".$_ROOT_PATH_.")", "", realpath(dirname(__FILE__)));
+$_PATH_ = preg_replace("(".$_ROOT_PATH_.")", "", realpath(dirname(__FILE__)));
+
+if( strtoupper(substr(PHP_OS, 0, 3)) != 'WIN' ) {
+	//linux server paths I think end with a forward slash
+	//so the initial / is removed from the path in the preg_replace above
+	//and is required to form the URL
+	$_PATH_ = "/".$_PATH_;
+}
 
 $_SITE['wb_site_href_eng'] = $_PATH_ ."/index-eng.php";
 $_SITE['wb_site_href_fra'] = $_PATH_ ."/index-fra.php";

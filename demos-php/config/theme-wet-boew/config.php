@@ -9,14 +9,12 @@
 	 * in the demo this is programatically defined demonstrating one method
 	 * of including the configuration file. This could also be hardcoded
 	 */
-	$path = realpath(dirname(__FILE__));
-	if( strpos($path, "\\") > 0 ) {
-		//for Windows server
-		$_INC_CONFIG = substr($path, 0, strrpos($path, "\\")) ."/config.php";
-	} else {
-		//for Linux Server
-		$_INC_CONFIG = substr($path, 0, strrpos($path, "/")) ."/config.php";
-	}
+	$_INC_CONFIG = realpath(dirname(__FILE__));
+
+	//if this is a windows machine use the backslash, otherwise use forwardslash
+	$_SLASH_ = (strtoupper(substr(PHP_OS, 0, 3)) == 'WIN')?"\\":"/";
+	$_INC_CONFIG = substr($_INC_CONFIG, 0, strrpos($_INC_CONFIG, $_SLASH_)) ."/config.php";
+
 	require $_INC_CONFIG;
 
 	//Modify the language selection link to point to whatever script suits your site.
