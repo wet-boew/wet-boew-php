@@ -9,22 +9,48 @@
 	 * in the demo this is programatically defined demonstrating one method
 	 * of including the configuration file. This could also be hardcoded
 	 */
-	$path = realpath(dirname(__FILE__));
-	if( strpos($path, "\\") > 0 ) {
-		//for Windows server
-		$_INC_CONFIG = substr($path, 0, strrpos($path, "\\")) ."/config.php";
-	} else {
-		//for Linux Server
-		$_INC_CONFIG = substr($path, 0, strrpos($path, "/")) ."/config.php";
-	}
+	$_INC_CONFIG = realpath(dirname(__FILE__));
+
+	//if this is a windows machine use the backslash, otherwise use forwardslash
+	$_SLASH_ = (strtoupper(substr(PHP_OS, 0, 3)) == 'WIN')?"\\":"/";
+	$_INC_CONFIG = substr($_INC_CONFIG, 0, strrpos($_INC_CONFIG, $_SLASH_)) ."/config.php";
+
 	require $_INC_CONFIG;
 
-	$_SITE['gcwu_gcnavbar_eng'] = "Government of Canada navigation bar"; 
-	$_SITE['gcwu_gcnavbar_fra'] = "Barre de navigation de la gouvernement de Canada"; 
+	//Modify the language selection link to point to whatever script suits your 
+	//site or keep the default language script
+	$_SITE['gcwu_cmblang_href_eng'] = $_SITE['gcwu_cmblang_href_fra'] = $_SITE['wb_php_dist_folder'] . "/langselect/lang.php"; 
+
+	//Modify Terms and conditions and Transparency links 
+	$_SITE['gcwu_terms_href_eng'] = "#"; 
+	$_SITE['gcwu_terms_href_fra'] = "#"; 
+
+	$_SITE['gcwu_trans_href_eng'] = "#"; 
+	$_SITE['gcwu_trans_href_fra'] = "#"; 
+
+	//Terms and conditions and transparency text
+	$_SITE['gcwu_terms_text_eng'] = "Terms and conditions"; 
+	$_SITE['gcwu_terms_text_fra'] = "Avis"; 
+
+	$_SITE['gcwu_trans_text_eng'] = "Transparency"; 
+	$_SITE['gcwu_trans_text_fra'] = "Transparence"; 
+
+	//sets the name of the signature image and alt text used in the top left of the theme
+	$_SITE['gcwu_sig_image'] = "sig"; 
 	$_SITE['gcwu_sig_eng'] = "Government of Canada"; 
 	$_SITE['gcwu_sig_fra'] = "Gouvernement du Canada"; 
-	$_SITE['gcwu_sig_image'] = "sig"; 
+
+	//alt text used for the "Canada" logo that appears about the search tool
+	$_SITE['gcwu_wmms_eng'] = "Symbol of the Government of Canada"; 
+	$_SITE['gcwu_wmms_fra'] = "Symbole du gouvernement du Canada"; 
+
+	//hidden text used for accessibility
+	$_SITE['gcwu_gcnavbar_eng'] = "Government of Canada navigation bar"; 
+	$_SITE['gcwu_gcnavbar_fra'] = "Barre de navigation de la gouvernement de Canada"; 
+	$_SITE['gcwu_gcfooter_eng'] = "Government of Canada footer"; 
+	$_SITE['gcwu_gcfooter_fra'] = "Pied de page du gouvernement du Canada"; 
 	
+	//links that appear at the very top of the page for this theme
 	$_SITE['gcwu_gcnb1_href_eng'] = "http://www.canada.gc.ca/menu-eng.html"; 
 	$_SITE['gcwu_gcnb1_href_fra'] = "http://www.canada.gc.ca/menu-fra.html"; 
 	$_SITE['gcwu_gcnb1_text_eng'] = "Canada.gc.ca"; 
@@ -40,52 +66,13 @@
 	$_SITE['gcwu_gcnb3_text_eng'] = "Departments"; 
 	$_SITE['gcwu_gcnb3_text_fra'] = "Ministères"; 
 	
-	//Modify the language selection link to point to whatever script suits your site.
-	$_SITE['gcwu_cmblang_href_eng'] = $_SITE['gcwu_cmblang_href_fra'] = $_SITE['wb_php_dist_folder'] . "/langselect/lang.php"; 
-
-	$_SITE['gcwu_cmblang_title_eng'] = "Français - Version française de cette page"; 
-	$_SITE['gcwu_cmblang_title_fra'] = "English - English version of the Web page"; 
+	//button and language swap text
 	$_SITE['gcwu_cmblang_text_eng'] = "Français";
 	$_SITE['gcwu_cmblang_text_fra'] = "English"; 
-	$_SITE['gcwu_cmblang_title_site_eng'] = "English - English version of the Web site"; 
-	$_SITE['gcwu_cmblang_title_site_fra'] = "Français - Version française de ce site Web";
+	$_SITE['gcwu_cmblang_title_eng'] = "Français - Version française de cette page"; 
+	$_SITE['gcwu_cmblang_title_fra'] = "English - English version of the Web page"; 
 
-	$_SITE['gcwu_cmblang_text_spa'] = "español";
-
-	$_SITE['gcwu_wmms_eng'] = "Symbol of the Government of Canada"; 
-	$_SITE['gcwu_wmms_fra'] = "Symbole du gouvernement du Canada"; 
-	$_SITE['gcwu_domain_eng'] = "[www.]mainsite-siteprimaire.gc.ca"; 
-	$_SITE['gcwu_domain_fra'] = "[www.]siteprimaire-mainsite.gc.ca";
-	
-	$_SITE['gcwu_gcfooter_eng'] = "Government of Canada footer"; 
-	$_SITE['gcwu_gcfooter_fra'] = "Pied de page du gouvernement du Canada"; 
-
-	$_SITE['gcwu_terms_href_eng'] = "#"; 
-	$_SITE['gcwu_terms_href_fra'] = "#"; 
-	$_SITE['gcwu_terms_text_eng'] = "Terms and conditions"; 
-	$_SITE['gcwu_terms_text_fra'] = "Avis"; 
-
-	$_SITE['gcwu_trans_href_eng'] = "#"; 
-	$_SITE['gcwu_trans_href_fra'] = "#"; 
-	$_SITE['gcwu_trans_text_eng'] = "Transparency"; 
-	$_SITE['gcwu_trans_text_fra'] = "Transparence"; 
-
-	/* Support for other languages, only necessary for multilingual demos */
-	$_SITE['gcwu_terms_href_deu'] = "#"; 
-	$_SITE['gcwu_terms_text_deu'] = "Begriffe und gewöhnt"; 
-
-	$_SITE['gcwu_terms_href_spa'] = "#"; 
-	$_SITE['gcwu_terms_text_spa'] = "Términos y condiciones"; 
-
-	$_SITE['gcwu_terms_href_ita'] = "#"; 
-	$_SITE['gcwu_terms_text_ita'] = "Termini e condiziona"; 
-
-	$_SITE['gcwu_terms_href_por'] = "#"; 
-	$_SITE['gcwu_terms_text_por'] = "Termos e condiciona"; 
-
-	$_SITE['gcwu_terms_href_rus'] = "#"; 
-	$_SITE['gcwu_terms_text_rus'] = "Сроки и условия"; 
-	
+	//links that appear at the very bottom of the page for this theme
 	$_SITE['gcwu_trail1_href_eng'] = "http://healthycanadians.gc.ca/index-eng.php"; 
 	$_SITE['gcwu_trail1_href_fra'] = "http://canadiensensante.gc.ca/index-fra.php"; 
 	$_SITE['gcwu_trail1_text_eng'] = "Health"; 
@@ -125,7 +112,25 @@
 	$_SITE['gcwu_trail_canada_href_fra'] = "http://www.canada.gc.ca/menu-fra.html"; 
 	$_SITE['gcwu_trail_canada_text_eng'] = "Canada.gc.ca"; 
 	$_SITE['gcwu_trail_canada_text_fra'] = "Canada.gc.ca"; 
-	
+
+	/* Support for other languages, only necessary for multilingual demos */
+	$_SITE['gcwu_cmblang_text_spa'] = "español";
+
+	$_SITE['gcwu_terms_href_deu'] = "#"; 
+	$_SITE['gcwu_terms_text_deu'] = "Begriffe und gewöhnt"; 
+
+	$_SITE['gcwu_terms_href_spa'] = "#"; 
+	$_SITE['gcwu_terms_text_spa'] = "Términos y condiciones"; 
+
+	$_SITE['gcwu_terms_href_ita'] = "#"; 
+	$_SITE['gcwu_terms_text_ita'] = "Termini e condiziona"; 
+
+	$_SITE['gcwu_terms_href_por'] = "#"; 
+	$_SITE['gcwu_terms_text_por'] = "Termos e condiciona"; 
+
+	$_SITE['gcwu_terms_href_rus'] = "#"; 
+	$_SITE['gcwu_terms_text_rus'] = "Сроки и условия"; 
+		
 	$_SITE['gcwu_langselect_eng'] = "Language selection links"; 
 	$_SITE['gcwu_langselect_fra'] = "Liens de sélection de langue"; 
 	$_SITE['gcwu_hidebtarrow'] = "1"; 
