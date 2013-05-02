@@ -9,17 +9,19 @@
 	
 	/*	Override variables in the dist-php config files here for the specific site */
 	
-	$_SITE['wb_site_href_eng'] = $_ROOT_SERVER_DIR . "/demos-php/index.php"; 
-	$_SITE['wb_site_href_fra'] = $_ROOT_SERVER_DIR . "/demos-php/index.php"; 
-
 	//Modify the language selection link to point to whatever script suits your 
 	//site or keep the default language script
 	$_SITE['gcwu_cmblang_href_eng'] = $_SITE['gcwu_cmblang_href_fra'] = $_SITE['wb_php_dist_folder'] . "/langselect/lang.php"; 
 
-	//Modify Terms and conditions and Transparency links 
+	//Modify the location of the sites root splash page
+	$_SITE['wb_site_href_eng'] = $_ROOT_SERVER_DIR . "/demos-php/index.php"; 
+	$_SITE['wb_site_href_fra'] = $_ROOT_SERVER_DIR . "/demos-php/index.php"; 
+
+	//Modify Terms and conditions links
 	$_SITE['gcwu_terms_href_eng'] = "#"; 
 	$_SITE['gcwu_terms_href_fra'] = "#"; 
 
+	//Modify Transparency links
 	$_SITE['gcwu_trans_href_eng'] = "#"; 
 	$_SITE['gcwu_trans_href_fra'] = "#"; 
 	
