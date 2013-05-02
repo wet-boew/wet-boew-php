@@ -7,7 +7,7 @@ if( strpos($_ROOT_PATH_, "\\") > 0 ) {
 	$_ROOT_PATH_ = preg_replace("(\\\)", "\\\\\\", $_ROOT_PATH_);
 }
 //Remove the server root path to make the path a nice URL relaitve path
-$_PATH_ = "/" .preg_replace("(".$_ROOT_PATH_.")", "", realpath(dirname(__FILE__)));
+$_PATH_ = ((strtoupper(substr(PHP_OS, 0, 3)) == 'WIN')?"":"/") .preg_replace("(".$_ROOT_PATH_.")", "", realpath(dirname(__FILE__)));
 
 $_NAV_PATH['title_eng'] = "Home";
 $_NAV_PATH['link_eng'] = $_PATH_ ."/index-eng.php";
