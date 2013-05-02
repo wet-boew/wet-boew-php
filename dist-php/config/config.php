@@ -6,7 +6,7 @@
 	
 	//Location I've deployed the demos-php, dist-php and dist folders to
 	//to keep them separated from the rest of my site
-	$_DEPLOY_FOLDER_DIST_ = $_DEPLOY_FOLDER_PHP_ ="/wet-boew";
+	$_DEPLOY_FOLDER_DIST_ = $_DEPLOY_FOLDER_PHP_ = "/wet-boew";
 	
 	/*
 	 * Define the path to the wet core distribution folder. For development from

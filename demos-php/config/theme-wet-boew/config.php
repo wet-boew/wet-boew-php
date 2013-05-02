@@ -1,36 +1,21 @@
 <?php
-	//set the theme folder, this could be set programaticlly, but
-	//this configuration file is unfortunately differnt for each
-	//theme anyway.
-	$_SITE['wb_theme_folder'] = "/theme-wet-boew";
 
-	/*
-	 * Path to the distribution /inc/config.php file containing the common
-	 * in the demo this is programatically defined demonstrating one method
-	 * of including the configuration file. This could also be hardcoded
-	 */
-	$_INC_CONFIG = realpath(dirname(__FILE__));
-
-	//if this is a windows machine use the backslash, otherwise use forwardslash
-	$_SLASH_ = (strtoupper(substr(PHP_OS, 0, 3)) == 'WIN')?"\\":"/";
-	$_INC_CONFIG = substr($_INC_CONFIG, 0, strrpos($_INC_CONFIG, $_SLASH_)) ."/config.php";
-
-	require $_INC_CONFIG;
-
-	//Modify the language selection link to point to whatever script suits your site.
-	$_SITE['wet_cmblang_href_eng'] = $_SITE['wet_cmblang_href_fra'] = $_SITE['wb_php_dist_folder'] . "/langselect/lang.php"; 
-
-	$_SITE['wet_sig_image'] = "logo";
-	$_SITE['wet_sig_eng'] = "";
-	$_SITE['wet_sig_fra'] = "";
+	//override variables set in the dist config folder here to personalize the site
+	$_DIST_CONFIG_LOC_ = "/wet-boew-php/dist-php/config/theme-wet-boew/config.php";
+	include $_SERVER['DOCUMENT_ROOT'] . $_DIST_CONFIG_LOC_;
 	
-	$_SITE['wet_fullhd_text_eng'] = "Full-width header area";
-	$_SITE['wet_fullhd_text_fra'] = "Secteur d'en-tête de plein-largeur";
+	/*	Override variables in the dist-php config files here for the specific site */
+	
+	$_ROOT_SERVER_DIR = "/wet-boew";
 
-	$_SITE['wet_cmblang_text_fra'] = "Français"; 
-	$_SITE['wet_cmblang_text_eng'] = "English"; 
+	//enable if deployed from github. Comment out if demos deployed from zip file
+	$_ROOT_SERVER_DIR .= "-php";
 	
-	$_SITE['wet_fullft_text_eng'] = "Full-width footer area";
-	$_SITE['wet_fullft_text_fra'] = "Secteur de pied de page de plein-largeur";
-	
+	$_SITE['wb_site_href_eng'] = $_ROOT_SERVER_DIR . "/demos-php/index.php"; 
+	$_SITE['wb_site_href_fra'] = $_ROOT_SERVER_DIR . "/demos-php/index.php"; 
+
+	//Modify the language selection link to point to whatever script suits your 
+	//site or keep the default language script
+	$_SITE['gcwu_cmblang_href_eng'] = $_SITE['gcwu_cmblang_href_fra'] = $_SITE['wb_php_dist_folder'] . "/langselect/lang.php"; 
+
 ?>
