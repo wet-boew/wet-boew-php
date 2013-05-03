@@ -2,19 +2,19 @@
 /* SPLASH PAGE BEGIN */
 if( $_PAGE['issplash'] == 1 ) {
 ?>
-<div id="base-title">
+<div id="gcwu-title">
 <?php
-	echo '<div id="base-title-left" class="span-3 margin-bottom-none"'.$_META_LANG.'>';
+	echo '<div id="gcwu-title-left" class="span-3 margin-bottom-none"'.$_META_LANG.'>';
 	echo $_SITE['wb_site_title_'.$_PAGE['lang1']];
 	echo "</div>\n";
 	echo '<div class="span-2 margin-bottom-none"></div>'."\n";
-	echo '<div id="base-title-right" class="span-3 margin-bottom-none"'.$_META_LANG.'>';
+	echo '<div id="gcwu-title-right" class="span-3 margin-bottom-none"'.$_META_LANG.'>';
 	echo $_SITE['wb_site_title_'.$_PAGE['lang2']];
 	echo "</div>\n";
 
 	for($i=3; isset($_PAGE['lang'.$i]); $i++ ) {
 		if( isset( $_SITE['wb_site_title_'.$_PAGE['lang'.$i]]) ) {
-			$_Left_Or_Rigth = ( $i%2==1 )?"base-alt-title-left":"base-alt-title-right";
+			$_Left_Or_Rigth = ( $i%2==1 )?"gcwu-alt-title-left":"gcwu-alt-title-right";
 			$_META_LANG = "";
 			if( $i > 1 ) {
 				$_META_LANG = ' lang="'.$_SITE['wb_meta_'.$_PAGE['lang'.$i]].'"';

@@ -1,20 +1,20 @@
 <!-- HeaderStart -->
-<section><div id="base-fullhd"><h2><?php echo $_SITE['base_fullhd_text_'.$_PAGE['lang1']]; ?></h2>
-<p class="mobile-hide"><?php echo $_SITE['base_mobile_hide1_text_'.$_PAGE['lang1']]; ?></p>
-<div id="base-fullhd-in">
-<p class="mobile-hide"><?php echo $_SITE['base_mobile_hide2_text_'.$_PAGE['lang1']]; ?></p>
+<section><div id="gcwu-fullhd"><h2><?php echo $_SITE['gcwu_fullhd_text_'.$_PAGE['lang1']]; ?></h2>
+<p class="mobile-hide"><?php echo $_SITE['gcwu_mobile_hide1_text_'.$_PAGE['lang1']]; ?></p>
+<div id="gcwu-fullhd-in">
+<p class="mobile-hide"><?php echo $_SITE['gcwu_mobile_hide2_text_'.$_PAGE['lang1']]; ?></p>
 <ul>
 <?php
 if( $_PAGE['nolang'] != "1" ) {
 	for($i=2; isset($_PAGE['lang'.$i]); $i++ ) {
-		echo '<li id="base-fullhd-lang';
+		echo '<li id="gcwu-fullhd-lang';
 		if( $i-1 >= 2 ) {
 			echo "-" .($i-1);
 		}
 		echo '">';
-		echo '<a href="' .$_SITE['base_cmblang_href_' . $_PAGE['lang'.$i]];
-		echo '" lang="' .$_SITE['base_langalt_' . $_PAGE['lang'.$i]];
-		echo '">' . $_SITE['base_cmblang_text_' . $_PAGE['lang'.$i]]; 
+		echo '<a href="' .$_SITE['gcwu_cmblang_href_' . $_PAGE['lang'.$i]];
+		echo '" lang="' .$_SITE['gcwu_langalt_' . $_PAGE['lang'.$i]];
+		echo '">' . $_SITE['gcwu_cmblang_text_' . $_PAGE['lang'.$i]]; 
 		echo '</a></li>';
 	}
 }
@@ -23,12 +23,12 @@ if( $_PAGE['nolang'] != "1" ) {
 </div>
 </div></section>
 
-<div id="base-bnr" role="banner"><div id="base-bnr-in">
-<div id="base-title"><p id="base-title-in"><a<?php echo $_TARGET_; ?> href="<?php echo $_SITE['wb_site_href_' . $_PAGE['lang1']]; ?>"><?php echo $_SITE['wb_site_title_' . $_PAGE['lang1']]; ?></a></p></div>
+<div id="gcwu-bnr" role="banner"><div id="gcwu-bnr-in">
+<div id="gcwu-title"><p id="gcwu-title-in"><a<?php echo $_TARGET_; ?> href="<?php echo $_SITE['wb_site_href_' . $_PAGE['lang1']]; ?>"><?php echo $_SITE['wb_site_title_' . $_PAGE['lang1']]; ?></a></p></div>
 
 <?php
 if( $_PAGE['nosearch'] != "1" ) {
-	echo '<section role="search"><div id="base-srchbx"><h2>'.$_SITE['wb_search_' . $_PAGE['lang1']].'</h2>';
+	echo '<section role="search"><div id="gcwu-srchbx"><h2>'.$_SITE['wb_search_' . $_PAGE['lang1']].'</h2>';
     include $_SITE['wb_search_file']; 
 	echo '</div></section>';
 }
@@ -36,7 +36,7 @@ if( $_PAGE['nosearch'] != "1" ) {
 </div>
 <?php
 if( $_PAGE['sub_title_' . $_PAGE['lang1']] ) {
-	echo '<div id="base-subsite" class="base-subsite-1">'."\n";
+	echo '<div id="gcwu-subsite" class="gcwu-subsite-1">'."\n";
 	echo '<p><a href="'.$_PAGE['sub_link_' . $_PAGE['lang1']].'">'.$_PAGE['sub_title_' . $_PAGE['lang1']]."</a></p>\n";
 	echo '</div>';
 }
@@ -60,7 +60,7 @@ if ($_PAGE['nositemenu'] != '1' || $_PAGE['nobcrumb'] != '1') {
 
 	echo '<nav role="navigation">' ."\n";
 	if ($_PAGE['nositemenu'] != '1') {
-		echo '<div id="base-psnb"><h2>' . $_SITE['wb_sitenav_' . $_PAGE["lang1"]] .'</h2><div id="base-psnb-in">';
+		echo '<div id="gcwu-psnb"><h2>' . $_SITE['wb_sitenav_' . $_PAGE["lang1"]] .'</h2><div id="gcwu-psnb-in">';
 		echo '<div class="wet-boew-menubar mb-mega"><div>';
 	
 		include $_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ];
@@ -69,7 +69,7 @@ if ($_PAGE['nositemenu'] != '1' || $_PAGE['nobcrumb'] != '1') {
 	}
 	
 	if ($_PAGE['nobcrumb'] != '1') {
-		echo '<div id="base-bc"><h2>'.$_SITE['wb_bcrumb_' .$_PAGE['lang1'] ].'</h2><div id="base-bc-in">' ."\n";
+		echo '<div id="gcwu-bc"><h2>'.$_SITE['wb_bcrumb_' .$_PAGE['lang1'] ].'</h2><div id="gcwu-bc-in">' ."\n";
 		echo "<ol>\n";
 		include $_SITE['wb_bcrumb_file'];
 	

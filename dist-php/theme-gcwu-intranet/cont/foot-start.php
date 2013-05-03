@@ -7,6 +7,6 @@
 	}
 ?>
 
-<dl id="base-date-mod" role="contentinfo">
+<dl id="gcwu-date-mod" role="contentinfo">
 <dt><?php echo $_MOD_TEXT_; ?></dt><dd><?php echo $_DATE_VERSION_TEXT_?></dd>
 </dl>
