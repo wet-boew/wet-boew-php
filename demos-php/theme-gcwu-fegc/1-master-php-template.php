@@ -5,8 +5,8 @@
 //
 //Possible options for languages
 //"eng", "fra", "deu", "spa", "ita", "por", "rus"
-$_PAGE['lang1'] = "";
-//$_PAGE['lang2'] = "";
+$_PAGE['lang1'] = "eng";
+$_PAGE['lang2'] = "fra";
 //$_PAGE['lang3'] = "";
 //$_PAGE['lang4'] = "";
 // etc...
@@ -15,14 +15,8 @@ $_PAGE['lang1'] = "";
  * this is the only time the user needs to hard code the path, once the
  * configuration file has been required all other paths can use the variables from that
  * file. 
- * 
- * programaticly setting the main config file means the demos will work regardless of where
- * they're dumpted. Saves time when deploying the demos to different servers for development
  */
-$_PAGE_PATH_ = realpath(dirname(__FILE__));
-//if this is a windows machine use the backslash, otherwise use forwardslash
-$_SLASH_ = (strtoupper(substr(PHP_OS, 0, 3)) == 'WIN')?"\\":"/";
-$_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/config" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
+$_CONFIG_PATH = "";
 require_once $_CONFIG_PATH ."/config.php";
 
 /* These are the required variables fore each page */
