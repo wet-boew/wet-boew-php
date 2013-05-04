@@ -3,7 +3,7 @@
 //always set the page language options first
 $_PAGE['lang1'] = "eng";
 
-$_PAGE['title_eng'] = "Content page - No search or language selection link - Base theme - Working examples - Web Experience Toolkit&#160;(WET)";
+$_PAGE['title_eng'] = "Content page - No search or language selection link - GC Web Usability Intranet theme - Working examples - Web Experience Toolkit&#160;(WET)";
 
 //programaticly setting the main config file means the demos will work regardless of where
 //they're dumpted. Saves time when deploying the demos to different servers for development

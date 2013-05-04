@@ -12,8 +12,8 @@ $_PAGE_PATH_ = realpath(dirname(__FILE__));
 $_SLASH_ = (strtoupper(substr(PHP_OS, 0, 3)) == 'WIN')?"\\":"/";
 $_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/config" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
 require_once $_CONFIG_PATH ."/config.php";
-$_PAGE['title_eng'] = "Content page - Sign out - Base theme - Working examples - Web Experience Toolkit&#160;(WET)";
-$_PAGE['short_title_eng'] = "Content page - Sign out - Base theme";
+$_PAGE['title_eng'] = "Content page - Sign out - GC Web Usability Intranet theme - Working examples - Web Experience Toolkit&#160;(WET)";
+$_PAGE['short_title_eng'] = "Content page - Sign out - GC Web Usability Intranet theme";
 
 $_PAGE['signout'] = "1";
 $_SITE['wb_signout_file_eng'] = "cont-signin-eng.php";

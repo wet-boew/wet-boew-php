@@ -7,8 +7,8 @@ $_PAGE['lang3'] = "spa";
 
 
 //always set the page language options first
-$_PAGE['title_eng'] = "Content page - Base theme - Working examples - Web Experience Toolkit&#160;(WET)";
-$_PAGE['short_title_eng'] = "Content page - Base theme";
+$_PAGE['title_eng'] = "Content page - GC Web Usability Intranet theme - Working examples - Web Experience Toolkit&#160;(WET)";
+$_PAGE['short_title_eng'] = "Content page - GC Web Usability Intranet theme";
 $_PAGE['issued'] = "YYYY-MM-DD";
 
 //programaticly setting the main config file means the demos will work regardless of where

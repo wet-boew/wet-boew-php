@@ -1,10 +1,22 @@
 <!-- HeaderStart -->
-<section><div id="gcwu-fullhd"><h2><?php echo $_SITE['gcwu_fullhd_text_'.$_PAGE['lang1']]; ?></h2>
-<p class="mobile-hide"><?php echo $_SITE['gcwu_mobile_hide1_text_'.$_PAGE['lang1']]; ?></p>
-<div id="gcwu-fullhd-in">
-<p class="mobile-hide"><?php echo $_SITE['gcwu_mobile_hide2_text_'.$_PAGE['lang1']]; ?></p>
+<?php
+
+	$_SIG_IMG_ = $_SITE['wb_core_dist_folder'] . $_SITE['wb_theme_folder'] .'/images/'.$_SITE['gcwu_sig_image'].'-blk-' . $_PAGE['lang1'];
+	$_SIG_ALT_ = $_SITE['gcwu_sig_' . $_PAGE['lang1']];
+
+	$_WMMS_IMG_ = $_SITE['wb_core_dist_folder'] . $_SITE['wb_theme_folder'] .'/images/wmms-intra';
+	$_WMMS_ALT_ = $_SITE['gcwu_wmms_' . $_PAGE['lang1'] ];
+?>
+
+<nav role="navigation"><div id="gcwu-gcnb"><h2>Intranet navigation bar</h2><div id="gcwu-gcnb-in"><div id="gcwu-intranetnb"><div id="gcwu-intranetnb-in">
 <ul>
 <?php
+//for the intranet GCWU theme we allow three custom links
+for( $i=1; $i<=3; $i++ ) {
+	if( $_SITE['gcwu_gcnb'.$i.'_href_'.$_PAGE['lang1']]) {
+		echo '<li id="gcwu-gcnb'.$i.'"><a href="'.$_SITE['gcwu_gcnb'.$i.'_href_'.$_PAGE['lang1']].'">'.$_SITE['gcwu_gcnb'.$i.'_text_'.$_PAGE['lang1']]."</a></li>\n";
+	}
+}
 if( $_PAGE['nolang'] != "1" ) {
 	for($i=2; isset($_PAGE['lang'.$i]); $i++ ) {
 		echo '<li id="gcwu-fullhd-lang';
@@ -20,8 +32,11 @@ if( $_PAGE['nolang'] != "1" ) {
 }
 ?>
 </ul>
-</div>
-</div></section>
+</div></div>
+<div id="gcwu-gcnb-fip">
+<div id="gcwu-sig"><div id="gcwu-sig-in"><object data="<?php echo $_SIG_IMG_; ?>.svg" role="img" tabindex="-1" aria-label="<?php echo $_SIG_ALT_; ?>" type="image/svg+xml"><img src="<?php echo $_SIG_IMG_; ?>.png" alt="<?php echo $_SIG_ALT_; ?>" /></object></div></div>
+<div id="gcwu-wmms"><div id="gcwu-wmms-in"><object data="<?php echo $_WMMS_IMG_; ?>.svg" role="img" tabindex="-1" aria-label="<?php echo $_WMMS_ALT_; ?>" type="image/svg+xml"><img src="<?php echo $_WMMS_ALT_; ?>.png" alt="<?php echo $_WMMS_ALT_; ?>" /></object></div></div>
+</div></div></div></nav>
 
 <div id="gcwu-bnr" role="banner"><div id="gcwu-bnr-in">
 <div id="gcwu-title"><p id="gcwu-title-in"><a<?php echo $_TARGET_; ?> href="<?php echo $_SITE['wb_site_href_' . $_PAGE['lang1']]; ?>"><?php echo $_SITE['wb_site_title_' . $_PAGE['lang1']]; ?></a></p></div>

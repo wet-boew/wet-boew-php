@@ -15,9 +15,4 @@ for( $i=1; isset($_SITE['wb_ft'.$i.'_href_'.$_PAGE['lang1']]); $i++ ) {
 }
 ?>
 </div></div></nav>
-
-<section><div id="gcwu-fullft"><h3><?php echo $_SITE['gcwu_fullft_text_'.$_PAGE['lang1']]; ?></h3>
-<p class="mobile-hide"><?php echo $_SITE['gcwu_mobile_hide3_text_' . $_PAGE['lang1']]; ?></p>
-<div id="gcwu-fullft-in"><p class="mobile-hide"><?php echo $_SITE['gcwu_fullft_in_text_'.$_PAGE['lang1']]?></p></div>
-</div></section>
 <!-- FooterEnd -->

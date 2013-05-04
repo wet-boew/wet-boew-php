@@ -16,7 +16,7 @@ require_once $_CONFIG_PATH ."/config.php";
 $_PAGE_PATH_ = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_));
 $_PAGE['left_menu_gauche'] = $_PAGE_PATH_ ."/menu-left-gauche/secnav2-eng.php";
 
-$_PAGE['title_eng'] = "Content page - Secondary menu 2 - Base theme - Working examples - Web Experience Toolkit&#160;(WET)";
+$_PAGE['title_eng'] = "Content page - Secondary menu 2 - GC Web Usability Intranet theme - Working examples - Web Experience Toolkit&#160;(WET)";
 $_PAGE['short_title_eng'] = "Content page - Secondary menu 2";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";

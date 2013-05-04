@@ -27,6 +27,12 @@
 			<td>Un thème qui met en place la mise en page et la mise en forme exigés par la Norme sur la facilité des sites Web. Il est recommandé de se servir de ce thème sur les sites Web du gouvernement du Canada.</td>
 			<td></td>
 		</tr>
+		<tr>
+			<td><a href="theme-gcwu-intranet/index-fra.php">TThème de la facilité d’emploi Web GC pour les sites intranet</a></td>
+			<td><a href="https://github.com/wet-boew/wet-boew/wiki/Thèmes-et-style">Thème et style</a></td>
+			<td>Une version du thème de la facilité d'emploi des sites Web du GC pour les sites intranet.</td>
+			<td></td>
+		</tr>
 	</tbody>
 </table>
 </div>

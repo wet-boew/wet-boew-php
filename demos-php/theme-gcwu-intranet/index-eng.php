@@ -19,7 +19,7 @@ require_once $_CONFIG_PATH ."/config.php";
 
 
 /* These are the required variables fore each page */
-$_PAGE['title_' . $_PAGE['lang1']] = "GC Web Usability theme";
+$_PAGE['title_' . $_PAGE['lang1']] = "GC Web Usability Intranet theme - Working examples - Web Experience Toolkit (WET)";
 $_PAGE['issued'] = "2013-04-30";
 $_PAGE['modified'] = "2013-04-30";
 

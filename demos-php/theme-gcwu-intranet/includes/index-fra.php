@@ -1,7 +1,7 @@
-
 <ul class="button-group">
-<li><a href="https://github.com/wet-boew/wet-boew-php/wiki/Th%C3%A8me-de-base" class="button button-info">Documentation</a></li>
-<li><a href="https://github.com/wet-boew/wet-boew-php/issues/new" class="button">Questions ou commentaires?</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/wiki/Th%C3%A8me-de-la-facilit%C3%A9-d%E2%80%99emploi-Web-GC-pour-les-sites-intranet" class="button button-info">Documentation</a></li>
+<li><a href="guide-eng.php" class="button button-confirm">Guide d'implémentation (anglais seulement)</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/issues/new" class="button">Questions ou commentaires?</a></li>
 </ul>
 
 <div class="span-4 module-table-contents">
