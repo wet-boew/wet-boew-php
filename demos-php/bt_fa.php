@@ -9,9 +9,9 @@ if( strpos($_ROOT_PATH_, "\\") > 0 ) {
 //Remove the server root path to make the path a nice URL relaitve path
 $_PATH_ = ((strtoupper(substr(PHP_OS, 0, 3)) == 'WIN')?"":"/") .preg_replace("(".$_ROOT_PATH_.")", "", realpath(dirname(__FILE__)));
 
-$_NAV_PATH['title_eng'] = "Home";
-$_NAV_PATH['link_eng'] = $_PATH_ ."/index-eng.php";
+$_NAVPATH['title_eng'] = "Home";
+$_NAVPATH['link_eng'] = $_PATH_ ."/index-eng.php";
 
-$_NAV_PATH['title_fra'] = "Accueil";
-$_NAV_PATH['link_fra'] = $_PATH_ ."/index-fra.php";
+$_NAVPATH['title_fra'] = "Accueil";
+$_NAVPATH['link_fra'] = $_PATH_ ."/index-fra.php";
 ?>

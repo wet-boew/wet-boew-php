@@ -3,7 +3,7 @@
 	 * uncomment for AJAX replacement test
 	 */
 ?>
-<ul class="mb-menu" data-ajax-replace="<?php echo $_DEPLOY_FOLDER_PHP_; ?>/demos-php/menu/menu-eng.txt">
+<ul class="mb-menu" data-ajax-replace="<?php echo $_ROOT_SERVER_DIR.$_DEPLOY_FOLDER_PHP_; ?>/demos-php/menu/menu-eng.txt">
 <li><div><a href="http://wet-boew.github.io/wet-boew/index-eng.html" lang="en">WET project</a></div></li>
 <li><div><a href="section2/index-eng.html">Section 2</a></div></li>
 <li><div><a href="#">Section 3</a></div></li>
