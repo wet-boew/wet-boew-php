@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-# Windows image file caches
-Thumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Mac
-.DS_Store
-
-#Dreamweaver
-_notes
-=======
 *.class
 *.pyc
 *.pyo
@@ -21,4 +8,4 @@ demos/
 .settings/
 _notes/
 */_notes/
->>>>>>> 666f71122306ac0bb96d4200250697014cfbfa29
+
