@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Windows image file caches
 Thumbs.db
 
@@ -9,3 +10,15 @@ Desktop.ini
 
 #Dreamweaver
 _notes
+=======
+*.class
+*.pyc
+*.pyo
+dist/
+demos/
+.project
+.pydevproject
+.settings/
+_notes/
+*/_notes/
+>>>>>>> 666f71122306ac0bb96d4200250697014cfbfa29

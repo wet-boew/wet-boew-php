@@ -1,63 +1,57 @@
-<!DOCTYPE html>
-<!--[if IE 7]><html lang="fr" class="no-js ie7"><![endif]-->
-<!--[if IE 8]><html lang="fr" class="no-js ie8"><![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="fr" class="no-js">
-<!--<![endif]-->
-<head>
-<meta charset="utf-8" />
-<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt -->
-<?php $_PAGE['lang1'] = "fra";
-$_PAGE['title_fra'] = "Page de contenu - Menu secondaire 1 - Thème de la facilité d'emploi Web GC - Variante pour PHP - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
-$_PAGE['issued'] = "2013-04-18";
-$_PAGE['modified'] = "AAAA-MM-JJ";
-$_PAGE['html5'] = "1"; ?>
-<meta name="dcterms.description" content="French description / Description en français" />
-<meta name="description" content="French description / Description en français" />
-<meta name="keywords" content="French keywords / Mots-clés en français" />
-<meta name="dcterms.creator" content="French name of the content author / Nom en français de l'auteur du contenu" />
-<meta name="dcterms.subject" title="scheme" content="French subject terms / Termes de sujet en français" /> 
+<?php
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/css.php"; ?>
+//always set the page language options first
+$_PAGE['lang1'] = "fra";
+$_PAGE['lang2'] = "eng";
+
+//programaticly setting the main config file means the demos will work regardless of where
+//they're dumpted. Saves time when deploying the demos to different servers for development
+$_PAGE_PATH_ = realpath(dirname(__FILE__));
+//if this is a windows machine use the backslash, otherwise use forwardslash
+$_SLASH_ = (strtoupper(substr(PHP_OS, 0, 3)) == 'WIN')?"\\":"/";
+$_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/config" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
+require_once $_CONFIG_PATH ."/config.php";
+
+
+
+$_PAGE['title_fra'] = "Page de contenu - Menu secondaire 1 - Thème de la facilité d'emploi Web GC - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
+$_PAGE['issued'] = "YYYY-MM-DD";
+$_PAGE['modified'] = "YYYY-MM-DD";
+
+$_PAGE_PATH_ = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_));
+$_PAGE['left_menu_gauche'] = $_PAGE_PATH_ ."/menu-left-gauche/secnav1-fra.php";
+
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
+?>
+
+<!-- custom page metadata start -->
+<meta name="description" content="English description / Description en anglais" />
+<meta name="dcterms.creator" content="English name of the content author / Nom en anglais de l'auteur du contenu" />
+<meta name="dcterms.subject" title="scheme" content="English subject terms / Termes de sujet en anglais" />
+<!-- end of custom metadata -->
+
+<?php 
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-css.php"; 
+?>
 <!-- CustomCSSStart -->
-
 <!-- CustomCSSEnd -->
-</head>
+<?php 
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php";
+?>
+<!-- Main content start -->
 
-<body>
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/2col.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/header-entete.php"; ?>
+<?php include "includes/sample-application-".$_PAGE["lang1"].".php"; ?>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-1.php"; ?>
+<!-- Main content start -->
 
-<h2>Vue d'ensemble</h2>
+<?php include "includes/sample-application-".$_PAGE["lang1"].".php"; ?>
 
-<p>Cette composante adapte la structure de balisage principale pour HTML5 à une   utilisation avec le langage PHP (PHP).</p>
-
-<h3>Avantages</h3>
-<ul>
-  <li>Permet de réduire le dédoublement de contenu et de codes (comme dans les   titres et les dates).   
-  </li>
-  <li>Permet un contrôle central des colonnes de gauche et de droite.   
-  </li>
-  <li>Améliore l'uniformité en séparant le contenu du code de gabarit.   
-  </li>
-  <li>Automatise le fil d'Ariane (chemin de navigation).   
-  </li>
-  <li>Conformes à WCAG 2.0 AA   
-  </li>
-  <li>Recours aux WAI-ARIA pour accroître l'accePHPbilité   
-  </li>
-  <li>Soutien pour Firefox, Opera, Safari, Chrome et IE 7+ </li>
-</ul>
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/centre-2.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/left-gauche-1.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav1-fra.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/left-gauche-2.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/trail-arr.php"; ?>
+<!-- MainContentEnd -->
+<?php 
+include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-nav.php"; 
+?>
 <!-- CustomScriptsStart -->
-
 <!-- CustomScriptsEnd -->
-</body>
-</html>
+<?php 
+include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-end.php"; 
+?>

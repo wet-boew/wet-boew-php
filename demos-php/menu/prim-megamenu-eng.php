@@ -1,4 +1,23 @@
-<div class="wet-boew-menubar mb-mega"><div>
+<?php
+	/*
+	 * uncomment for AJAX replacement test
+	 */
+?>
+<ul class="mb-menu" data-ajax-replace="<?php echo $_ROOT_SERVER_DIR.$_DEPLOY_FOLDER_PHP_; ?>/demos-php/menu/menu-eng.txt">
+<li><div><a href="http://wet-boew.github.io/wet-boew/index-eng.html" lang="en">WET project</a></div></li>
+<li><div><a href="section2/index-eng.html">Section 2</a></div></li>
+<li><div><a href="#">Section 3</a></div></li>
+<li><div><a href="#">Section 4</a></div></li>
+<li><div><a href="#">Section 5</a></div></li>
+<li><div><a href="#">Section 6</a></div></li>
+<li><div><a href="#">Section 7</a></div></li>
+</ul>
+
+<?php
+/*
+ * Comment out for AJax replacement test
+ *
+
 <ul class="mb-menu">
 <li><section><h3><a href="http://wet-boew.github.io/wet-boew/index-eng.html">WET project</a></h3><div class="mb-sm">
 <div class="span-2">
@@ -244,4 +263,5 @@
 <div class="mb-main-link"><a href="#">Section 7 - Main page</a></div>
 </div></section></li>
 </ul>
-</div></div>
+*/
+?>

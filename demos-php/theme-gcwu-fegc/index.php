@@ -1,1 +1,0 @@
-<?php include "sp-pe-theme-gcwu-fegc-eng-fra.php"; ?>

@@ -1,76 +1,58 @@
-<!DOCTYPE html>
-<!--[if IE 7]> <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8]> <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en" class="no-js">
-<!--<![endif]-->
-<head>
-<meta charset="utf-8" />
-<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-wet-boew.github.io/wet-boew/License-eng.txt / wet-boew.github.io/wet-boew/Licence-fra.txt -->
-<?php $_PAGE['lang1'] = "eng";
-$_PAGE['title_eng'] = "Application template - GC Web Usability theme - PHP variant - Working examples - Web Experience Toolkit&#160;(WET)";
-$_PAGE['issued'] = "2013-04-18";
+<?php
+
+//always set the page language options first
+$_PAGE['lang1'] = "eng";
+$_PAGE['lang2'] = "fra";
+
+/*
+ * this is the only time the user needs to hard code the path, once the
+ * configuration file has been required all other paths can use the variables from that
+ * file. 
+ * 
+ * programaticly setting the main config file means the demos will work regardless of where
+ * they're dumpted. Saves time when deploying the demos to different servers for development
+ */
+$_PAGE_PATH_ = realpath(dirname(__FILE__));
+//if this is a windows machine use the backslash, otherwise use forwardslash
+$_SLASH_ = (strtoupper(substr(PHP_OS, 0, 3)) == 'WIN')?"\\":"/";
+$_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/config" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
+require_once $_CONFIG_PATH ."/config.php";
+
+
+$_PAGE['title_eng'] = "Application template - GC Web Usability theme - Working examples - Web Experience Toolkit&#160;(WET)";
+$_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 $_PAGE['version'] = "1.1b";
-$_PAGE['html5'] = "1";
-$_PAGE['isapp'] = "1"; ?>
-<meta name="dcterms.description" content="English description / Description en anglais" />
+$_PAGE['isapp'] = "1";
+
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
+?>
+
+<!-- custom page metadata start -->
 <meta name="description" content="English description / Description en anglais" />
-<meta name="keywords" content="English keywords / Mots-clés en anglais" />
 <meta name="dcterms.creator" content="English name of the content author / Nom en anglais de l'auteur du contenu" />
 <meta name="dcterms.subject" title="scheme" content="English subject terms / Termes de sujet en anglais" />
+<!-- end of custom metadata -->
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/css.php"; ?>
+<?php 
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-css.php"; 
+?>
 <!-- CustomCSSStart -->
 
 <!-- CustomCSSEnd -->
-</head>
+<?php 
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php";
+?>
+<!-- Main content start -->
 
-<body>
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/1col.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/header-entete.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/inc/centre-1.php"; ?>
-<h2>Overview</h2>	
-<p>This feature adapts the HTML5 core markup structure for use with PHP (PHP).</p>
-<h3>Benefits</h3>
+<?php include "includes/sample-application-".$_PAGE["lang1"].".php"; ?>
 
-
-<ul>
-  <li>Helps to minimize the duplication of content and code (such as titles and   dates)</li>
-  <li>Provides central control of the left and right columns</li>
-  <li>Improves consistency by separating content from the template code</li>   
-  <li>Automates the breadcrumb trail</li>
-  <li>Conforms to WCAG 2.0 AA</li>
-  <li>Uses WAI-ARIA to enhance accePHPbility</li>
-  <li>Supports Firefox, Opera, Safari, Chrome, and IE 7+ </li>
-</ul>
-
-<h3>Minimum Requirements</h3>
-<ul>
-  <li><a href="https://github.com/wet-boew/wet-boew/downloads">WET 3.0 framework</a></li>
-  <li>PHP installed on a web server</li>
-</ul>
-<h3>How to install the files</h3>
-
-<p>Make sure that you have the WET 3.0 build folder in your root directory.</p>
-<p>Copy the following directories into a folder created in the root.  In the PHP example available, this folder is called "PHP-demos". This demos folder should have the following folders:</p>
-<ul>
-  <li>inc\</li>
-  <li>theme-gcwu-fegc\</li>
-  </ul>
-<p>"inc" is a folder with your global include files that are unrelated to a specific theme. </p>
-<p>Another &quot;inc&quot; folder for theme-specific includes is under the theme-gcwu-fegc folder, as well as a folder for main &quot;menu&quot; based includes. Final, the folder with your php pages is located here.</p>
-<ul>
-  <li>theme-gcwu-fegc\inc</li>
-  <li>theme-gcwu-fegc\menu</li>
-  <li>theme-gcwu-fegc\php</li>
-</ul>
-
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/centre-2.php";
-include $_SERVER['DOCUMENT_ROOT'] . "/demos-php/theme-gcwu-fegc/inc/cont/trail-arr.php"; ?>
+<!-- MainContentEnd -->
+<?php 
+include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-nav.php"; 
+?>
 <!-- CustomScriptsStart -->
-
 <!-- CustomScriptsEnd -->
-</body>
-</html>
+<?php 
+include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-end.php"; 
+?>

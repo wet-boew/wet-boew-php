@@ -1,1 +1,0 @@
-<?php if ($_TEMPLATE['head_footer_file'] != '') { include $_SERVER['DOCUMENT_ROOT'] . $_TEMPLATE['head_footer_file']; } ?>
