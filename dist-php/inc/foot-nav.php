@@ -27,8 +27,14 @@ if( file_exists($_FOOT_START_INCLUDE_) ) {
 <div class="clear"></div>
 </div></div>
 <?php
+//if there's no secondary menu then the H2 element around the "Footer" gets the id="wb-nav" id
+//Otherwise the secondary menu gets it.
+$_FOOT_NAV_ = ' id="wb-nav"';
 
 if( isset($_PAGE['left_menu_gauche'])  && $_PAGE['left_menu_gauche']!='' && file_exists($_PAGE['left_menu_gauche'])) {
+	//clear the foot nav variable so it doesn't get added to the H2 in the footer below
+	$_FOOT_NAV_ = "";
+
 	echo '<div id="wb-sec"><div id="wb-sec-in"><nav role="navigation"><h2 id="wb-nav">'.$_SITE['wb_sec_'.$_PAGE['lang1']] .'</h2>' . "\n";
 	echo '<div class="wb-sec-def">' . "\n";
 	echo '<!-- SecNavStart -->' . "\n";
@@ -43,7 +49,7 @@ if( isset($_PAGE['left_menu_gauche'])  && $_PAGE['left_menu_gauche']!='' && file
 ?>
 </div></div>
 
-<div id="wb-foot"><div id="wb-foot-in"><footer><h2 id="wb-nav"><?php echo $_SITE['wb_foot_' .$_PAGE['lang1']] ;?></h2>
+<div id="wb-foot"><div id="wb-foot-in"><footer><h2<?php echo $_FOOT_NAV_; ?>><?php echo $_SITE['wb_foot_' .$_PAGE['lang1']] ;?></h2>
 <?php
 if( file_exists($_FOOT_INCLUDE_) ) {
 	include_once $_FOOT_INCLUDE_;
