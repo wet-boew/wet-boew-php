@@ -12,11 +12,8 @@ $path = realpath(dirname(__FILE__));
 //determines what them thist page will use.
 require_once $path ."/config/theme-gcwu-fegc/config.php";
 
-
-$_PAGE['title_fra'] = "Page d'entrée - Bilingue (eng-fra) - Thème de la facilité d'emploi Web GC - Exemples pratiques - Boîte à outils de l'expérience Web (BOEW)";
-
-$_PAGE['short_title_eng'] = "Welcome";
-$_PAGE['short_title_fra'] = "Bienvenue";
+$_PAGE['title_eng'] = "Welcome";
+$_PAGE['title_fra'] = "Bienvenue";
 
 //get the path to the current folder this file resides in. 
 $_ROOT_PATH_ = $_SERVER['DOCUMENT_ROOT'];
