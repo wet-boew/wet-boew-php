@@ -42,7 +42,6 @@ include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/he
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php";
 ?>
 <!-- Main content start -->
-<h1>AZURE Test</h1>
 <!-- no content needed for splash page -->
 <!-- MainContentEnd -->
 <?php 
