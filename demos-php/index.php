@@ -15,8 +15,8 @@ require_once $path ."/config/theme-gcwu-fegc/config.php";
 $_PAGE['title_eng'] = "Welcome";
 $_PAGE['title_fra'] = "Bienvenue";
 
-$_SITE['wb_site_href_eng'] = "index-eng.php";
-$_SITE['wb_site_href_fra'] = "index-fra.php";
+$_SITE['wb_site_href_eng'] = "/index-eng.php";
+$_SITE['wb_site_href_fra'] = "/index-fra.php";
 
 $_PAGE['issplash'] = "1";
 
