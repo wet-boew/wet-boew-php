@@ -2,6 +2,7 @@ wet-boew-php
 ============
 
 PHP variant of the Web Experience Toolkit (WET)
+Demos site: http://wet-boew-php.azurewebsites.net/demos-php/index.php
 
 ## Overview
 
