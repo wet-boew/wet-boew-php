@@ -1,4 +1,5 @@
 <?php
+
 $_NAVPATH['title_eng'] = "Base Theme";
 $_NAVPATH['link_eng'] = "/demos-php/theme-base/index-eng.php";
 
