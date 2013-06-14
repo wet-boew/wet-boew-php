@@ -29,7 +29,7 @@ if( $_PAGE['nolang'] != "1" ) {
 <?php
 if( $_PAGE['nosearch'] != "1" ) {
 	echo '<section role="search"><div id="base-srchbx"><h2>'.$_SITE['wb_search_' . $_PAGE['lang1']].'</h2>';
-    include $_SITE['wb_search_file']; 
+    include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] ."/inc/search.php";
 	echo '</div></section>';
 }
 ?>

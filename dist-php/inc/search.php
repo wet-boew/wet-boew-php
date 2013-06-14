@@ -1,7 +1,10 @@
 <?php
-	$_THEME_SEARCH_FILE_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . $_SITE['wb_theme_folder'] ."/search.php";
 	
-	if( file_exists($_THEME_SEARCH_FILE_) ) {
-		include_once $_THEME_SEARCH_FILE_;
+	if( file_exists($_SITE['wb_search_file']) ) {
+		include_once $_SITE['wb_search_file'];
+	} else if(file_exists($_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_search_file'])) {
+		include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_search_file'];
+	} else {
+		echo "Could not find file '".$_SITE['wb_search_file']."' or '" .$_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_search_file'].";";
 	}
 ?>

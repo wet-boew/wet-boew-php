@@ -4,8 +4,6 @@
 	 * Set only non-language specific variables in this file 
 	 */
 		
-	//$_ROOT_SERVER_DIR is set in a parent config file.
-	
 	/*
 	 * Define the path to the wet core distribution folder. For development from
 	 * github the deploy folder is /wet-boew-dist and the php deploy folder is 
@@ -15,8 +13,6 @@
 	 * folders are copied into a directory at the root of the webserver Comment 
 	 * out or remove these lines.
 	 */
-	//$_DEPLOY_FOLDER_DIST_ = "-dist";
-	//$_DEPLOY_FOLDER_PHP_ = "-php";
 	
 	$_SITE['wb_core_dist_folder'] = $_SITE['wb_core_root'] . "/dist";
 	
@@ -27,8 +23,8 @@
 	//define the locations of the demo menus
 	$_MENU_LOCATION_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_root'] . "/demos-php/menu";
 
-	//modify to point to your sites search implementation
-	$_SITE['wb_search_file'] = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/search.php";
+	//modify in a custom config to point to your sites search implementation
+	$_SITE['wb_search_file'] = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_root'] . "/demos-php/search" . $_SITE['wb_theme_folder'] ."/search.php";
 	
 	//modify to point to yours sites bread crumb implementation
 	$_SITE['wb_bcrumb_file'] = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/bt_fa.php"; 
