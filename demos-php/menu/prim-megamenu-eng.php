@@ -23,7 +23,7 @@
 <div class="span-2">
 <ul>
 <li><a href="https://github.com/wet-boew/wet-boew/">Main project page</a></li>
-<li><a href="http://wet-boew.github.io/wet-boew/License-eng.txt">Terms and conditions</a></li>
+<li><a href="http://wet-boew.github.io/wet-boew/License-eng.html">Terms and conditions</a></li>
 <li><a href="http://wet-boew.github.io/wet-boew/demos/index-eng.html">Working examples</a></li>
 </ul>
 </div>

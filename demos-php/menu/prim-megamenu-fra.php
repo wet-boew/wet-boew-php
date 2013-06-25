@@ -24,9 +24,9 @@
 <ul>
 <li><a href="https://github.com/wet-boew/wet-boew/">Page principale du projet</a></li>
 <<<<<<< HEAD
-<li><a href="http://wet-boew.github.io/wet-boew/Licence-fra.txt">Conditions r�gissant l'utilisation</a></li>
+<li><a href="http://wet-boew.github.io/wet-boew/Licence-fra.html">Conditions r�gissant l'utilisation</a></li>
 =======
-<li><a href="http://wet-boew.github.io/wet-boew/Licence-fra.txt">Conditions r�gissant l'utilisation</a></li>
+<li><a href="http://wet-boew.github.io/wet-boew/Licence-fra.html">Conditions r�gissant l'utilisation</a></li>
 >>>>>>> 666f71122306ac0bb96d4200250697014cfbfa29
 <li><a href="http://wet-boew.github.io/wet-boew/demos/index-fra.html">Exemples pratiques</a></li>
 </ul>
