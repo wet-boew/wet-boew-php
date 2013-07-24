@@ -24,7 +24,7 @@
 		<tr>
 			<td><a href="theme-wet-boew/index-eng.php">WET theme (v3.1)</a></td>
 			<td><a href="https://github.com/wet-boew/wet-boew/wiki/Themes-and-style">Theme and style</a></td>
-			<td>The WET theme was developed to provide an example implementation of the <a href="http://wet-boew.github.com/wet-boew/demos/theme-base/index-eng.html">Base Theme</a>.</td>
+			<td>The WET theme was developed to provide an example implementation of the <a href="http://wet-boew.github.io/wet-boew/demos/theme-base/index-eng.html">Base Theme</a>.</td>
 			<td></td>
 		</tr>
 		<tr>

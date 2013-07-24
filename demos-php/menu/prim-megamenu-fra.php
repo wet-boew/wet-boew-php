@@ -3,7 +3,7 @@
 	 * uncomment for AJAX replacement test
 	 */
 ?>
-<ul class="mb-menu" data-ajax-replace="<?php echo $_ROOT_SERVER_DIR.$_DEPLOY_FOLDER_PHP_; ?>/demos-php/menu/menu-fra.txt">
+<ul class="mb-menu" data-ajax-replace="/demos-php/menu/menu-fra.txt">
 <li><div><a href="http://wet-boew.github.io/wet-boew/index-fra.html" lang="fr">Projet de la BOEW</a></div></li>
 <li><div><a href="section2/index-fra.html">Section 2</a></div></li>
 <li><div><a href="#">Section 3</a></div></li>
@@ -24,9 +24,9 @@
 <ul>
 <li><a href="https://github.com/wet-boew/wet-boew/">Page principale du projet</a></li>
 <<<<<<< HEAD
-<li><a href="http://wet-boew.github.io/wet-boew/Licence-fra.txt">Conditions régissant l'utilisation</a></li>
+<li><a href="http://wet-boew.github.io/wet-boew/Licence-fra.html">Conditions rï¿½gissant l'utilisation</a></li>
 =======
-<li><a href="http://wet-boew.github.io/wet-boew/Licence-fra.txt">Conditions rï¿½gissant l'utilisation</a></li>
+<li><a href="http://wet-boew.github.io/wet-boew/Licence-fra.html">Conditions rï¿½gissant l'utilisation</a></li>
 >>>>>>> 666f71122306ac0bb96d4200250697014cfbfa29
 <li><a href="http://wet-boew.github.io/wet-boew/demos/index-fra.html">Exemples pratiques</a></li>
 </ul>

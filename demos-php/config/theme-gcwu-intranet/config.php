@@ -20,8 +20,11 @@
 	$_DIST_CONFIG_LOC_ = $_SITE['wb_php_root'] . "/dist-php/config/theme-gcwu-intranet/config.php";
 	include $_SERVER['DOCUMENT_ROOT'] . $_DIST_CONFIG_LOC_;
 		
-	$_SITE['wb_site_href_eng'] = $_ROOT_SERVER_DIR . "/demos-php/index.php"; 
-	$_SITE['wb_site_href_fra'] = $_ROOT_SERVER_DIR . "/demos-php/index.php"; 
+	//modify to point to your sites search implementation
+	$_SITE['wb_search_file'] = $_SITE['wb_php_root'] ."/demos-php/search" . $_SITE['wb_theme_folder'] ."/search.php";
+
+	$_SITE['wb_site_href_eng'] = $_SITE['wb_php_root'] . "/demos-php/index.php"; 
+	$_SITE['wb_site_href_fra'] = $_SITE['wb_php_root'] . "/demos-php/index.php"; 
 
 	/*	Override variables in the dist-php config files here for the specific site */
 
