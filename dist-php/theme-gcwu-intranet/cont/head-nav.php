@@ -34,8 +34,8 @@ if( $_PAGE['nolang'] != "1" ) {
 </ul>
 </div></div>
 <div id="gcwu-gcnb-fip">
-<div id="gcwu-sig"><div id="gcwu-sig-in"><object data="<?php echo $_SIG_IMG_; ?>.svg" role="img" tabindex="-1" aria-label="<?php echo $_SIG_ALT_; ?>" type="image/svg+xml"><img src="<?php echo $_SIG_IMG_; ?>.png" alt="<?php echo $_SIG_ALT_; ?>" /></object></div></div>
-<div id="gcwu-wmms"><div id="gcwu-wmms-in"><object data="<?php echo $_WMMS_IMG_; ?>.svg" role="img" tabindex="-1" aria-label="<?php echo $_WMMS_ALT_; ?>" type="image/svg+xml"><img src="<?php echo $_WMMS_ALT_; ?>.png" alt="<?php echo $_WMMS_ALT_; ?>" /></object></div></div>
+<div id="gcwu-sig"><div id="gcwu-sig-in"><object data="<?php echo $_SIG_IMG_; ?>.svg" role="img" tabindex="-1" aria-label="<?php echo $_SIG_ALT_; ?>" type="image/svg+xml"><img src="<?php echo $_SIG_IMG_; ?>-alt.png" class="image-actual" alt="<?php echo $_SIG_ALT_; ?>" /></object></div></div>
+<div id="gcwu-wmms"><div id="gcwu-wmms-in"><object data="<?php echo $_WMMS_IMG_; ?>.svg" role="img" tabindex="-1" aria-label="<?php echo $_WMMS_ALT_; ?>" type="image/svg+xml"><img src="<?php echo $_WMMS_ALT_; ?>-alt.png" class="image-actual" alt="<?php echo $_WMMS_ALT_; ?>" /></object></div></div>
 </div></div></div></nav>
 
 <div id="gcwu-bnr" role="banner"><div id="gcwu-bnr-in">
