@@ -10,7 +10,7 @@
 <!-- HeaderStart -->
 <nav role="navigation"><div id="gcwu-gcnb"><h2><?php echo $_SITE['gcwu_gcnavbar_' .$_PAGE['lang1']]; ?></h2>
 <div id="gcwu-gcnb-in"><div id="gcwu-gcnb-fip">
-<div id="gcwu-sig"><div id="gcwu-sig-in"><object data="<?php echo $_SIG_IMG_ ?>.svg" role="img" tabindex="-1" aria-label="<?php echo $_SIG_ALT_ ?>" type="image/svg+xml"><img src="<?php echo $_SIG_IMG_ ?>-alt.png" class="image-actual" alt="<?php echo $_SIG_ALT_ ?>" /></object></div></div>
+<div id="gcwu-sig"><div id="gcwu-sig-in"><object data="<?php echo $_SIG_IMG_ ?>.svg" role="img" tabindex="-1" aria-label="<?php echo $_SIG_ALT_ ?>" type="image/svg+xml"><img src="<?php echo $_SIG_IMG_ ?>.png" class="image-actual" alt="<?php echo $_SIG_ALT_ ?>" /></object></div></div>
 <ul>
 <?php
 //print the links that appear in the black navigation bar
@@ -45,7 +45,7 @@ if( $_PAGE['nolang'] != "1" ) {
 </div></div></div></nav>
 
 <div id="gcwu-bnr" role="banner"><div id="gcwu-bnr-in">
-<div id="gcwu-wmms"><div id="gcwu-wmms-in"><object data="<?php echo $_WMMS_IMG_; ?>.svg" role="img" tabindex="-1" aria-label="<?php echo $_WMMS_ALT_; ?>" type="image/svg+xml"><img src="<?php echo $_WMMS_IMG_; ?>-alt.png" class="image-actual" alt="<?php echo $_WMMS_ALT_; ?>" /></object></div></div>
+<div id="gcwu-wmms"><div id="gcwu-wmms-in"><object data="<?php echo $_WMMS_IMG_; ?>.svg" role="img" tabindex="-1" aria-label="<?php echo $_WMMS_ALT_; ?>" type="image/svg+xml"><img src="<?php echo $_WMMS_IMG_; ?>.png" class="image-actual" alt="<?php echo $_WMMS_ALT_; ?>" /></object></div></div>
 
 <div id="gcwu-title"><p id="gcwu-title-in"><a<?php echo $_TARGET_; ?> href="<?php echo $_SITE['wb_site_href_' . $_PAGE['lang1']]; ?>"><?php echo $_SITE['wb_site_title_' . $_PAGE['lang1']]; ?></a></p></div>
 <?php
