@@ -29,7 +29,7 @@ if( $_PAGE['nolang'] != "1" ) {
 </div></section>
 
 <div id="wet-bnr" role="banner"><div id="wet-bnr-in">
-<div id="wet-title"><p id="wet-title-in"><a<?php echo $_TARGET_; ?> href="<?php echo $_SITE['wb_site_href_' . $_PAGE['lang1']]; ?>"><object data="<?php echo $_SIG_IMG_; ?>.svg" role="img" tabindex="-1" type="image/svg+xml"><img src="<?php echo $_SIG_IMG_; ?>-alt.png" class="image-actual" alt="<?php echo $_SIG_ALT_; ?>" /></object><span><?php echo $_SITE['wb_site_title_' . $_PAGE['lang1']]; ?></span></a></p></div>
+<div id="wet-title"><p id="wet-title-in"><a<?php echo $_TARGET_; ?> href="<?php echo $_SITE['wb_site_href_' . $_PAGE['lang1']]; ?>"><object data="<?php echo $_SIG_IMG_; ?>.svg" role="img" tabindex="-1" type="image/svg+xml"><img src="<?php echo $_SIG_IMG_; ?>.png" class="image-actual" alt="<?php echo $_SIG_ALT_; ?>" /></object><span><?php echo $_SITE['wb_site_title_' . $_PAGE['lang1']]; ?></span></a></p></div>
 
 <?php
 if( $_PAGE['nosearch'] != "1" ) {
