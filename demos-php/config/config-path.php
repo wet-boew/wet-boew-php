@@ -8,4 +8,6 @@
  */
  $_SITE['wb_php_root'] = "";
  $_SITE['wb_core_root'] = "/wet-boew"; 
+ 
+ print_r($_SITE);
 ?>
