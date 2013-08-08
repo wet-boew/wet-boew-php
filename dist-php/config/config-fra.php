@@ -15,13 +15,14 @@
 	$_SITE['wb_ft1_href_'.$_LANG_] = "#";
 	$_SITE['wb_ft1_text_'.$_LANG_] = "À propos de nous";
 
-	$_SITE['wb_ft2_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-2-fra.php";
+	//moved contact us menu before news in reference to issue #2517
+	$_SITE['wb_ft2_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-3-fra.php";
 	$_SITE['wb_ft2_href_'.$_LANG_] = "#";
-	$_SITE['wb_ft2_text_'.$_LANG_] = "Nouvelles";
+	$_SITE['wb_ft2_text_'.$_LANG_] = "Contactez-nous";
 
-	$_SITE['wb_ft3_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-3-fra.php";
+	$_SITE['wb_ft3_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-2-fra.php";
 	$_SITE['wb_ft3_href_'.$_LANG_] = "#";
-	$_SITE['wb_ft3_text_'.$_LANG_] = "Contactez-nous";
+	$_SITE['wb_ft3_text_'.$_LANG_] = "Nouvelles";
 
 	$_SITE['wb_ft4_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-4-fra.php";
 	$_SITE['wb_ft4_href_'.$_LANG_] = "#";
