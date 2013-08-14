@@ -10,8 +10,7 @@ for( $i=1; isset($_SITE['wb_ft'.$i.'_text_'.$_PAGE['lang1']]); $i++ ) {
         $_LINK_ = $_SITE['wb_ft'.$i.'_href_'.$_PAGE['lang1']];
     }
     if (strlen($_LINK_) > 0) {
-    if (isset($_LINK_ ) && strlen($_LINK_) > 0) {
-        // Add link to text only if available
+       // Add link to text only if available
         $_TEXT_ = '<a'.$_TARGET_.' href="'.$_LINK_ .'">'.$_TEXT_.'</a>';
     }
     echo '<section><div class="span-2"><h4 class="gcwu-col-head">'.$_TEXT_.'</h4>'.PHP_EOL;
