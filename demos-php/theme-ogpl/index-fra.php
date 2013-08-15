@@ -19,7 +19,7 @@ require_once $_CONFIG_PATH ."/config.php";
 
 
 /* These are the required variables fore each page */
-$_PAGE['title_' . $_PAGE['lang1']] = "Thème de la facilité d'emploi Web GC";
+$_PAGE['title_' . $_PAGE['lang1']] = "Thème de la PGO";
 $_PAGE['issued'] = "2013-04-30";
 $_PAGE['modified'] = "2013-04-30";
 

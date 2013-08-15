@@ -3,7 +3,7 @@
 //always set the page language options first
 $_PAGE['lang1'] = "fra";
 
-$_PAGE['title_fra'] = "Page de contenu - Sans recherche ou lien de sélection de la langue - Thème de de la PGO - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
+$_PAGE['title_fra'] = "Page de contenu - Sans recherche ou lien de sélection de la langue - Thème de la PGO - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
 
 //programaticly setting the main config file means the demos will work regardless of where
 //they're dumpted. Saves time when deploying the demos to different servers for development

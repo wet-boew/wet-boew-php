@@ -12,8 +12,8 @@ $_PAGE_PATH_ = realpath(dirname(__FILE__));
 $_SLASH_ = (strtoupper(substr(PHP_OS, 0, 3)) == 'WIN')?"\\":"/";
 $_CONFIG_PATH = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_)) . "/config" . substr($_PAGE_PATH_, strrpos($_PAGE_PATH_, $_SLASH_));
 require_once $_CONFIG_PATH ."/config.php";
-$_PAGE['title_fra'] = "Page de contenu - Sans menu du site ou fil d'Ariane - Thème de de la PGO - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
-$_PAGE['short_title_fra'] = "Page de contenu - Sans menu du site ou fil d'Ariane - Thème de de la PGO";
+$_PAGE['title_fra'] = "Page de contenu - Sans menu du site ou fil d'Ariane - Thème de la PGO - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
+$_PAGE['short_title_fra'] = "Page de contenu - Sans menu du site ou fil d'Ariane - Thème de la PGO";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 

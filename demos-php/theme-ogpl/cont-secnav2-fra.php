@@ -17,8 +17,8 @@ require_once $_CONFIG_PATH ."/config.php";
 $_PAGE_PATH_ = substr($_PAGE_PATH_, 0, strrpos($_PAGE_PATH_, $_SLASH_));
 $_PAGE['left_menu_gauche'] = $_PAGE_PATH_ ."/menu-left-gauche/secnav2-fra.php";
 
-$_PAGE['title_fra'] = "Page de contenu - Menu secondaire 2 - Thème de de la PGO - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
-$_PAGE['short_title_fra'] = "Page de contenu - Menu secondaire 2 - Thème de de la PGO";
+$_PAGE['title_fra'] = "Page de contenu - Menu secondaire 2 - Thème de la PGO - Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
+$_PAGE['short_title_fra'] = "Page de contenu - Menu secondaire 2 - Thème de la PGO";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
