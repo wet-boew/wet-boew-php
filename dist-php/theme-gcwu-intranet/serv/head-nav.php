@@ -11,8 +11,8 @@
 
 <!-- HeaderStart -->
 <div id="gcwu-title" class="span-8">
-<div id="gcwu-sig" class="span-4 row-start"><div id="gcwu-sig-in"><object data="<?php echo $_SIG_IMG_ ?>.svg" role="img" tabindex="-1" aria-label="<?php echo $_SIG_ALT_ ?>" type="image/svg+xml"><img src="<?php echo $_SIG_FALL_IMG_ ?>.png" alt="<?php echo $_SIG_ALT_ ?>" /></object></div></div>
-<div id="gcwu-wmms" class="span-4 row-end"><div id="gcwu-wmms-in"><object data="<?php echo $_WMMS_IMG_; ?>.svg" role="img" tabindex="-1" aria-label="<?php echo $_WMMS_ALT_; ?>" type="image/svg+xml"><img src="<?php echo $_WMMS_FALL_IMG_; ?>.png" alt="<?php echo $_WMMS_ALT_; ?>" /></object></div></div>
+<div id="gcwu-sig" class="span-4 row-start"><div id="gcwu-sig-in"><object data="<?php echo $_SIG_IMG_ ?>.svg" role="img" tabindex="-1" aria-label="<?php echo $_SIG_ALT_ ?>" type="image/svg+xml"><img src="<?php echo $_SIG_FALL_IMG_ ?>.png" class="image-actual" alt="<?php echo $_SIG_ALT_ ?>" /></object></div></div>
+<div id="gcwu-wmms" class="span-4 row-end"><div id="gcwu-wmms-in"><object data="<?php echo $_WMMS_IMG_; ?>.svg" role="img" tabindex="-1" aria-label="<?php echo $_WMMS_ALT_; ?>" type="image/svg+xml"><img src="<?php echo $_WMMS_FALL_IMG_; ?>.png" class="image-actual" alt="<?php echo $_WMMS_ALT_; ?>" /></object></div></div>
 <div class="clear"></div>
 
 <div id="gcwu-title-left" class="span-4 row-start"><a href="<?php echo $_SITE['wb_site_href_'.$_PAGE['lang1']]; ?>"><?php echo $_SITE['wb_site_title_'.$_PAGE['lang1']]; ?></a></div>

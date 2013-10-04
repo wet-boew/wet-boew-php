@@ -1,5 +1,21 @@
 <?php
 
+	/*
+	 * Add all of the default variables that may be null to prevent PHP warnings 
+	 * and errors for undefined values
+	 */
+	$_PAGE['issplash'] = (!isset($_PAGE['issplash']) ? 0 : $_PAGE['issplash']);
+	$_PAGE['isapp'] = (!isset($_PAGE['isapp']) ? 0 : $_PAGE['isapp']);
+	$_PAGE['isserv'] = (!isset($_PAGE['isserv']) ? 0 : $_PAGE['isserv']);
+	$_PAGE['signin'] = (!isset($_PAGE['signin']) ? 0 : $_PAGE['signin']);
+	$_PAGE['signout'] = (!isset($_PAGE['signout']) ? 0 : $_PAGE['signout']);
+	$_META_LANG = (!isset($_META_LANG) ? '' : $_META_LANG); // for head-end.php
+	$_META_LANG_ = (!isset($_META_LANG_) ? '' : $_META_LANG_); // for head-doc.php
+	$_PAGE['nolang'] = (!isset($_PAGE['nolang']) ? 0 : $_PAGE['nolang']);
+	$_PAGE['nosearch'] = (!isset($_PAGE['nosearch']) ? 0 : $_PAGE['nosearch']);
+	$_PAGE['nositemenu'] = (!isset($_PAGE['nositemenu']) ? 0 : $_PAGE['nositemenu']);
+	$_PAGE['nobcrumb'] = (!isset($_PAGE['nobcrumb']) ? 0 : $_PAGE['nobcrumb']);
+	 	 
 	/* 
 	 * Set only non-language specific variables in this file 
 	 */
