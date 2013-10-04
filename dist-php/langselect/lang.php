@@ -1,7 +1,7 @@
 <?php
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
- * wet-boew.github.io/wet-boew/License-en.txt / wet-boew.github.io/wet-boew/Licence-fr.txt
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  */
 if ($_SERVER['HTTP_REFERER'] != "") {
     $q = $_SERVER['HTTP_REFERER'];
