@@ -103,4 +103,10 @@ echo $_TITLE_;
 	if( file_exists($_HEAD_END_) ) {
 		include_once $_HEAD_END_;
 	}
+	
+	// Archived Section
+	$_ARCHIVED_TEXT = $_SITE['archived_' . $_PAGE['lang1']];
+	if( $_PAGE['isarchived'] == "1" ){
+		echo $_ARCHIVED_TEXT;
+	}
 ?>
