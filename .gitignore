@@ -8,4 +8,5 @@ demos/
 .settings/
 _notes/
 */_notes/
+demos-php/config/config-path.php
 
