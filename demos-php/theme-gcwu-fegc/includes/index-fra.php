@@ -17,6 +17,7 @@
 <section><h2 id="en">Anglais</h2>
 <ul>
 <li><a href="cont-eng.php"><span class="wb-invisible">Anglais - </span>Page de contenu</a></li>
+<li><a href="cont-archived-eng.php"><span class="wb-invisible">Anglais - </span>Content page - Archived</a></li>
 <li><a href="cont-secnav1-eng.php"><span class="wb-invisible">Anglais - </span>Page de contenu - Menu secondaire 1</a></li>
 <li><a href="cont-secnav2-eng.php"><span class="wb-invisible">Anglais - </span>Page de contenu - Menu secondaire 2</a></li>
 <li><a href="cont-mult-eng.php"><span class="wb-invisible">Anglais - </span>Page de contenu - Multilingue</a></li>
