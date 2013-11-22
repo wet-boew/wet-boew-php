@@ -15,6 +15,7 @@
 	$_PAGE['nosearch'] = (!isset($_PAGE['nosearch']) ? 0 : $_PAGE['nosearch']);
 	$_PAGE['nositemenu'] = (!isset($_PAGE['nositemenu']) ? 0 : $_PAGE['nositemenu']);
 	$_PAGE['nobcrumb'] = (!isset($_PAGE['nobcrumb']) ? 0 : $_PAGE['nobcrumb']);
+	$_PAGE['isarchived'] = (!isset($_PAGE['isarchived']) ? 0 : $_PAGE['isarchived']);
 	 	 
 	/* 
 	 * Set only non-language specific variables in this file 
@@ -45,6 +46,8 @@
 	//modify to point to yours sites bread crumb implementation
 	$_SITE['wb_bcrumb_file'] = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/bt_fa.php"; 
 
+	$_SITE['wb_archive_warn_icon'] = $_SITE['wb_core_dist_folder']."/js/images/archived/warning.gif";
+	
 	//if $_PAGE['lang1'] is set assume the user set the languages
 	//before including the config file. If so add only the required
 	//configration files.
