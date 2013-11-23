@@ -1,5 +1,5 @@
 <?php
-
+	
 	/*
 	 * Add all of the default variables that may be null to prevent PHP warnings 
 	 * and errors for undefined values

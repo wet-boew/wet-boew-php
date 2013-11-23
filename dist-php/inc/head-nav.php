@@ -2,7 +2,7 @@
 	$_COL_LAYOUT = "";
 	$_NAV_LINK = "";
 	//'left_menu_gauche' is all that's needed since you can only have one leftside per page
-	//This is just incase the user used 'left_menu_gauche_eng' or 'left_menu_gauche_fra' to be 
+	//This is just incase the user used 'left_menu_gauche_en' or 'left_menu_gauche_fr' to be 
 	//consistent with naming in the rest of the varient.
 	if( isset($_PAGE['left_menu_gauche_'.$_PAGE['lang1']]) && $_PAGE['left_menu_gauche_'.$_PAGE['lang1']]!="") {
 		$_PAGE['left_menu_gauche'] = $_PAGE['left_menu_gauche_'.$_PAGE['lang1']];

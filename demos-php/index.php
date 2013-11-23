@@ -1,8 +1,8 @@
 <?php
 
 //always set the page language options first
-$_PAGE['lang1'] = "eng";
-$_PAGE['lang2'] = "fra";
+$_PAGE['lang1'] = "en";
+$_PAGE['lang2'] = "fr";
 
 
 //programaticly setting the main config file means the demos will work regardless of where
@@ -12,11 +12,11 @@ $path = realpath(dirname(__FILE__));
 //determines what them thist page will use.
 require_once $path ."/config/theme-gcwu-fegc/config.php";
 
-$_PAGE['title_eng'] = "Welcome";
-$_PAGE['title_fra'] = "Bienvenue";
+$_PAGE['title_en'] = "Welcome";
+$_PAGE['title_fr'] = "Bienvenue";
 
-$_SITE['wb_site_href_eng'] = $_SITE['wb_php_root'] . "/demos-php/index-eng.php";
-$_SITE['wb_site_href_fra'] = $_SITE['wb_php_root'] . "/demos-php/index-fra.php";
+$_SITE['wb_site_href_en'] = $_SITE['wb_php_root'] . "/demos-php/index-en.php";
+$_SITE['wb_site_href_fr'] = $_SITE['wb_php_root'] . "/demos-php/index-fr.php";
 
 $_PAGE['issplash'] = "1";
 

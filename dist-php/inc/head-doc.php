@@ -32,7 +32,7 @@ for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 <head>
 <meta charset="utf-8" />
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-wet-boew.github.io/wet-boew/License-eng.html / wet-boew.github.io/wet-boew/Licence-fra.html -->
+wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 <title><?php echo $_PAGE_TITLE_;?></title>
 
 <link rel="shortcut icon" href="<?php echo $_SITE['wb_core_dist_folder'] . $_SITE['wb_theme_folder']; ?>/images/favicon.ico" />

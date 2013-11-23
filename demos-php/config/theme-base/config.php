@@ -24,8 +24,8 @@
 	$_SITE['wb_search_file'] = $_SITE['wb_php_root'] ."/demos-php/search" . $_SITE['wb_theme_folder'] ."/search.php";
 
 
-	$_SITE['wb_site_href_eng'] = $_SITE['wb_php_root'] ."/demos-php/index.php"; 
-	$_SITE['wb_site_href_fra'] = $_SITE['wb_php_root'] ."/demos-php/index.php"; 
+	$_SITE['wb_site_href_en'] = $_SITE['wb_php_root'] ."/demos-php/index.php"; 
+	$_SITE['wb_site_href_fr'] = $_SITE['wb_php_root'] ."/demos-php/index.php"; 
 
 	/*	Override variables in the dist-php config files here for the specific site */
 

@@ -27,11 +27,11 @@
 
 	//enable if deployed from github. Comment out if demos deployed from zip file
 	
-	$_SITE['wb_site_href_eng'] = $_SITE['wb_php_root'] . "/demos-php/index.php"; 
-	$_SITE['wb_site_href_fra'] = $_SITE['wb_php_root'] . "/demos-php/index.php"; 
+	$_SITE['wb_site_href_en'] = $_SITE['wb_php_root'] . "/demos-php/index.php"; 
+	$_SITE['wb_site_href_fr'] = $_SITE['wb_php_root'] . "/demos-php/index.php"; 
 
 	//Modify the language selection link to point to whatever script suits your 
 	//site or keep the default language script
-	$_SITE['gcwu_cmblang_href_eng'] = $_SITE['gcwu_cmblang_href_fra'] = $_SITE['wb_php_dist_folder'] . "/langselect/lang.php"; 
+	$_SITE['gcwu_cmblang_href_en'] = $_SITE['gcwu_cmblang_href_fr'] = $_SITE['wb_php_dist_folder'] . "/langselect/lang.php"; 
 
 ?>

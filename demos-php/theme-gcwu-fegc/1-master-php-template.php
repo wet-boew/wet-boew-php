@@ -4,9 +4,9 @@
 //set 'lang1' to 'eng' for English pages, 'fra' for French pages
 //
 //Possible options for languages
-//"eng", "fra", "deu", "spa", "ita", "por", "rus"
-$_PAGE['lang1'] = "eng";
-$_PAGE['lang2'] = "fra";
+//"en", "fr", "de", "es", "it", "pt", "ru"
+$_PAGE['lang1'] = "en";
+$_PAGE['lang2'] = "fr";
 //$_PAGE['lang3'] = "";
 //$_PAGE['lang4'] = "";
 // etc...
@@ -46,11 +46,11 @@ $_PAGE['issplash'] = "1";
 $_PAGE['isserv'] = "1";
 
 *
- *	Pointing 'left_gauche_menu_eng' or 'left_gauche_menu_fra' to a
+ *	Pointing 'left_gauche_menu_en' or 'left_gauche_menu_fr' to a
  *	file will use that file as the left side menu (secondary navigation)
  *	and make this page a two column layout automaticlly. 
  *
-$_PAGE['left_gauche_menu_eng'] = $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav1-eng.php";
+$_PAGE['left_gauche_menu_en'] = $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav1-en.php";
 
 ****************************************/
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 

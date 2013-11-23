@@ -23,17 +23,17 @@
 	//modify to point to your sites search implementation
 	$_SITE['wb_search_file'] = $_SITE['wb_php_root'] ."/demos-php/search" . $_SITE['wb_theme_folder'] ."/search.php";
 
-	$_SITE['wb_site_href_eng'] = $_SITE['wb_php_root'] . "/demos-php/index.php"; 
-	$_SITE['wb_site_href_fra'] = $_SITE['wb_php_root'] . "/demos-php/index.php"; 
+	$_SITE['wb_site_href_en'] = $_SITE['wb_php_root'] . "/demos-php/index.php"; 
+	$_SITE['wb_site_href_fr'] = $_SITE['wb_php_root'] . "/demos-php/index.php"; 
 
 	/*	Override variables in the dist-php config files here for the specific site */
 
-	$_PAGE['custom_link1_href_eng'] = '#';
-	$_PAGE['custom_link1_text_eng'] = 'Custom link';
+	$_PAGE['custom_link1_href_en'] = '#';
+	$_PAGE['custom_link1_text_en'] = 'Custom link';
 	
-	$_PAGE['custom_link2_href_eng'] = '#';
-	$_PAGE['custom_link2_text_eng'] = 'Custom link';
+	$_PAGE['custom_link2_href_en'] = '#';
+	$_PAGE['custom_link2_text_en'] = 'Custom link';
 	
-	$_PAGE['custom_link3_href_eng'] = '#';
-	$_PAGE['custom_link3_text_eng'] = 'Custom link';
+	$_PAGE['custom_link3_href_en'] = '#';
+	$_PAGE['custom_link3_text_en'] = 'Custom link';
 ?>
