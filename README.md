@@ -22,3 +22,7 @@ This feature adapts the HTML5 core markup structure for use with PHP on an Apach
 * dist folder from WET 3.1 Core
 * PHP 5.3+
 * Apache 2.x Web Server
+
+##Change Log
+* 2013/11/23 Tagged 3.1
+* 2013/11/23 Started work on version 4.0
