@@ -46,7 +46,7 @@
 
 	//hidden text used for accessibility
 	$_SITE['gcwu_gcnavbar_eng'] = "Government of Canada navigation bar"; 
-	$_SITE['gcwu_gcnavbar_fra'] = "Barre de navigation de la gouvernement de Canada"; 
+	$_SITE['gcwu_gcnavbar_fra'] = "Barre de navigation du gouvernement du Canada"; 
 	$_SITE['gcwu_gcfooter_eng'] = "Government of Canada footer"; 
 	$_SITE['gcwu_gcfooter_fra'] = "Pied de page du gouvernement du Canada"; 
 	
