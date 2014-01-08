@@ -33,7 +33,11 @@ for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 <meta charset="utf-8" />
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 wet-boew.github.io/wet-boew/License-eng.html / wet-boew.github.io/wet-boew/Licence-fra.html -->
-<title><?php echo $_PAGE_TITLE_;?></title>
+<title><?php 
+if( $_PAGE['isarchived'] == "1" ){
+	echo $_SITE['wb_archive_title_'.$_PAGE['lang1']] . " ";
+}
+echo $_PAGE_TITLE_;?></title>
 
 <link rel="shortcut icon" href="<?php echo $_SITE['wb_core_dist_folder'] . $_SITE['wb_theme_folder']; ?>/images/favicon.ico" />
 <?php 
