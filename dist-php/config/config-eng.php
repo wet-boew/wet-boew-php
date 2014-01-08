@@ -57,7 +57,7 @@
 	$_SITE['wb_foot_'.$_LANG_] = "Footer"; 
 	$_SITE['wb_sitefooter_'.$_LANG_] = "Site footer"; 
 
-	$_SITE['wb_archive_title_'.$_LANG_] = "ARCHIVED";
+	$_SITE['wb_archive_title_'.$_LANG_] = "ARCHIVED:";
 	$_SITE['wb_archive_warn_alt_'.$_LANG_] = "Warning";
 	$_SITE['wb_archive_warn_title_'.$_LANG_] = $_SITE['wb_archive_warn_alt'.$_LANG_];
 	$_SITE['wb_archive_warn_webuse_'.$_LANG_] = "The <a href='http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227'>Standard on Web Usability</a> replaces this content. This content is archived because Common Look and Feel 2.0 Standards have been rescinded.";
