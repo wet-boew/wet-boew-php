@@ -62,7 +62,7 @@
 	$_SITE['wb_foot_'.$_LANG_] = "Pied de page"; 
 	$_SITE['wb_sitefooter_'.$_LANG_] = "Pied de page du site"; 
 	
-	$_SITE['wb_archive_title_'.$_LANG_] = "ARCHIVÉ";
+	$_SITE['wb_archive_title_'.$_LANG_] = "ARCHIVÉ :";
 	$_SITE['wb_archive_warn_alt_'.$_LANG_] = "Avertissement";
 	$_SITE['wb_archive_warn_title_'.$_LANG_] = $_SITE['wb_archive_warn_alt'.$_LANG_];
 	$_SITE['wb_archive_warn_webuse_'.$_LANG_] = "La <a href='http://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=24227'>Norme sur la facilit&eacute; d'emploi des sites Web</a> remplace ce contenu. Cette page Web a &eacute;t&eacute; archiv&eacute;e parce que les Normes sur la normalisation des sites Internet 2.0 ont &eacute;t&eacute;s annul&eacute;es.";
