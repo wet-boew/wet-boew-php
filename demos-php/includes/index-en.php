@@ -10,36 +10,11 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="theme-base/index-en.php">Base theme (v3.1)</a></td>
-			<td><a href="https://github.com/wet-boew/wet-boew/wiki/Themes-and-Style">Theme and style</a></td>
-			<td>A theme template aid to in the creation of new themes.</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td><a href="theme-gcwu-fegc/index-en.php">GC Web usability theme (v3.1)</a></td>
-			<td><a href="https://github.com/wet-boew/wet-boew/wiki/Themes-and-style">Theme and style</a></td>
-			<td>The GC Web usability theme was developed to comply with the <a href="http://www.tbs-sct.gc.ca/pol/doc-en.aspx?id=24227">Standard on Web Usability</a> and is recommended for use with all Government of Canada websites.</td>
-			<td></td>
-		</tr>
-		<tr>
 			<td><a href="theme-wet-boew/index-en.php">WET theme (v3.1)</a></td>
 			<td><a href="https://github.com/wet-boew/wet-boew/wiki/Themes-and-style">Theme and style</a></td>
 			<td>The WET theme was developed to provide an example implementation of the <a href="http://wet-boew.github.io/wet-boew/demos/theme-base/index-en.html">Base Theme</a>.</td>
 			<td></td>
-		</tr>
-		<tr>
-			<td><a href="theme-ogpl/index-en.php">OGPL theme (v3.1.2)</a></td>
-			<td><a href="https://github.com/wet-boew/wet-boew/wiki/Themes-and-style">Theme and style</a></td>
-			<td>The OGPL theme was developed to support the <a href="http://ogpl.github.io/index-en.html">Open Government Platform (OGPL)</a>.</td>
-			<td></td>
 		</tr>		
-		<tr>
-			<td><a href="theme-gcwu-intranet/index-en.php">GC Intranet usability theme (v3.1)</a></td>
-			<td><a href="https://github.com/wet-boew/wet-boew/wiki/Themes-and-Style">Theme and style</a></td>
-			<td>The GC Intranet usability theme was developed to comply with the <a href="http://www.tbs-sct.gc.ca/pol/doc-en.aspx?id=24227">Standard on Web Usability</a> and is recommended for use with all Government of Canada intranet sites.</td>
-			<td></td>
-		</tr>
-		
 	</tbody>
 </table>
 </div>

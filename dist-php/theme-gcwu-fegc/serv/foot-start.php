@@ -1,1 +1,0 @@
-<div id="gcwu-bar" class="span-8"></div>
