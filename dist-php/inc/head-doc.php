@@ -35,7 +35,7 @@ for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 wet-boew.github.io/wet-boew/License-eng.html / wet-boew.github.io/wet-boew/Licence-fra.html -->
 <title><?php 
 if( $_PAGE['isarchived'] == "1" ){
-	echo $_SITE['wb_archive_title_'.$_PAGE['lang1']] . " ";
+	echo $_SITE['wb_archive_title_'.$_PAGE['lang1']];
 }
 echo $_PAGE_TITLE_;?></title>
 
