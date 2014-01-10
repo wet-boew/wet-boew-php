@@ -1,5 +1,12 @@
 <?php
 	$_LANG_ = "en";
+	$_SITE['wb_meta_'.$_LANG_] = "en";
+
+	$_SITE['wb_sh_link_1_'.$_LANG_] = "Skip to main content"; 
+	$_SITE['wb_sh_link_2_'.$_LANG_] = "Skip to secondary menu"; 
+	$_SITE['wb_sh_link_3_'.$_LANG_] = "Skip to site information"; 
+	
+	$_SITE['wb_cmblang_text_'.$_LANG_] = "English"; 
 	
 	$_SITE['wb_site_title_'.$_LANG_] = "PHP Variant"; 
 	$_SITE['wb_site_href_'.$_LANG_] = "home-accueil-en.php"; 
@@ -47,11 +54,7 @@
 
 	$_SITE['wb_lang_header_'.$_LANG] = "Language selection";
 
-	$_SITE['wb_meta_'.$_LANG_] = "en"; 
 	$_SITE['wb_lang_text_'.$_LANG_] = "English"; 
-	$_SITE['wb_sh_link_1_'.$_LANG_] = "Skip to main content"; 
-	$_SITE['wb_sh_link_2_'.$_LANG_] = "Skip to secondary menu"; 
-	$_SITE['wb_sh_link_3_'.$_LANG_] = "Skip to site information"; 
 	$_SITE['wb_sec_'.$_LANG_] = "Secondary menu"; 
 	$_SITE['wb_sup_'.$_LANG_] = "Supplemental content"; 
 	$_SITE['wb_doc_dates_'.$_LANG_] = "Date modified:"; 

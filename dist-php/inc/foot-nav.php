@@ -1,5 +1,19 @@
-</section>
 </main>
+<?php
+if( isset($_PAGE['left_menu_gauche']) && $_PAGE['left_menu_gauche']!='' && file_exists($_PAGE['left_menu_gauche'])) {
+
+        echo '<nav role="navigation" id="wb-sec" typeof="SiteNavigationElement" class="col-md-3 col-md-pull-9 visible-md visible-lg">';
+		echo '<h2>'.$_SITE['wb_sec_'.$_PAGE['lang1']] .'</h2>' . "\n";
+        echo '<!-- SecNavStart -->' . "\n";
+
+        include_once $_PAGE['left_menu_gauche'];
+        
+        echo '<!-- SecNavEnd -->' . "\n";
+        echo '</nav>' . PHP_EOL;
+		echo '</div>';
+		echo '</div>';
+}
+?>
 
 <?php
 //use the content footers by default

@@ -17,10 +17,6 @@
 	$_PAGE['nobcrumb'] = (!isset($_PAGE['nobcrumb']) ? 0 : $_PAGE['nobcrumb']);
 	$_PAGE['isarchived'] = (!isset($_PAGE['isarchived']) ? 0 : $_PAGE['isarchived']);
 	 	 
-	/* 
-	 * Set only non-language specific variables in this file 
-	 */
-		
 	/*
 	 * Define the path to the wet core distribution folder. For development from
 	 * github the deploy folder is /wet-boew-dist and the php deploy folder is 
@@ -46,6 +42,8 @@
 	//modify to point to yours sites bread crumb implementation
 	$_SITE['wb_bcrumb_file'] = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/breadcrumb-generator.php"; 
 
+	$_SITE['wb_sig_image'] = "logo";
+
 	//if $_PAGE['lang1'] is set assume the user set the languages
 	//before including the config file. If so add only the required
 	//configration files.
@@ -56,11 +54,5 @@
 	}
 	
 	//Modify the language selection link to point to whatever script suits your site.
-	$_SITE['wb_cmblang_href_en'] = $_SITE['wb_cmblang_href_fr'] = $_SITE['wb_php_dist_folder'] . "/langselect/lang.php"; 
-
-	$_SITE['wb_sig_image'] = "logo";
-
-	$_SITE['wb_cmblang_text_fr'] = "Français"; 
-	$_SITE['wb_cmblang_text_en'] = "English"; 
-		
+	$_SITE['wb_cmblang_href_en'] = $_SITE['wb_cmblang_href_fr'] = $_SITE['wb_php_dist_folder'] . "/langselect/lang.php"; 		
 ?>

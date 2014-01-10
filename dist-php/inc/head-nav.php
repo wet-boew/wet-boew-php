@@ -43,24 +43,22 @@ if( $_PAGE['isserv'] != "1" && $_PAGE['issplash']!='1') {?>
 
 <header role="banner">
 <?php
-	$_PHP_THEME_PATH_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'];
-		
-	//if this is a server page use the server navigation head
-	$_THEME_HEAD_NAV_FILE =  $_PHP_THEME_PATH_ . "/inc/cont/head-nav.php";
-	if( $_PAGE['isserv'] == "1" ) {
-		$_THEME_HEAD_NAV_FILE = $_PHP_THEME_PATH_ . "/inc/serv/head-nav.php";
-	} else if( $_PAGE['issplash'] == "1" ) {
-		$_THEME_HEAD_NAV_FILE = $_PHP_THEME_PATH_ . "/inc/sp-pe/head-nav.php";
-	}
-	
-	if( file_exists($_THEME_HEAD_NAV_FILE) ) {
-		include_once $_THEME_HEAD_NAV_FILE;
-	}
+//use the content footers by default
+$_ROOT_PATH_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'];
+$_INC_TYPE_ = 'cont';
+
+if( $_PAGE['issplash'] == "1" ) {
+	$_INC_TYPE_ = 'sp-pe';
+}
+
+$_HEAD_INCLUDE_ = $_ROOT_PATH_ . "/inc/".$_INC_TYPE_."/head.php";
+
+if( file_exists($_HEAD_INCLUDE_) ) {
+	include_once $_HEAD_INCLUDE_;
+}
 ?>
 
 </header>
-<div id="wb-core"><div id="wb-core-in" class="equalize">
-<div id="wb-main" role="main"><div id="wb-main-in">
 <!-- MainContentStart -->
 <?php
 	if( $_PAGE['signin'] == "1" || $_PAGE['signout'] == "1") {
@@ -89,19 +87,28 @@ if( $_PAGE['isserv'] != "1" && $_PAGE['issplash']!='1') {?>
 		echo '</aside></div>' ."\n";
 	}
 ?>
-<main role="main" property="mainContentOfPage" class="container">
-<h1 id="wb-cont" property="name"><?php
-$_TITLE_ = $_PAGE['short_title_' . $_PAGE['lang1']];
-//if there's more than one language set then add the additioal title elements
-for( $i=2; isset($_PAGE['lang'.$i]); $i++ ) {
-	if( isset($_PAGE['short_title_' . $_PAGE['lang'.$i]]) ) {
-		$_TITLE_ .= " / <span lang=\"".$_SITE['wb_meta_'.$_PAGE['lang'.$i]]."\">" . $_PAGE['short_title_' . $_PAGE['lang'.$i]] ."</span>"; 
-	}
+<?php
+if( isset($_PAGE['left_menu_gauche']) && $_PAGE['left_menu_gauche']!='' && file_exists($_PAGE['left_menu_gauche']) ) {
+	echo '<div class="container">';
+	echo '<div class="row">';
+	echo '<main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">';
+} else {
+	echo '<main role="main" property="mainContentOfPage" class="container">';
 }
-
-echo $_TITLE_;
+?>
+<h1 id="wb-cont" property="name"><?php
+if( isset($_PAGE['short_title_' . $_PAGE['lang1']])) {
+	$_TITLE_ = $_PAGE['short_title_' . $_PAGE['lang1']];
+	//if there's more than one language set then add the additioal title elements
+	for( $i=2; isset($_PAGE['lang'.$i]); $i++ ) {
+		if( isset($_PAGE['short_title_' . $_PAGE['lang'.$i]]) ) {
+			$_TITLE_ .= " / <span lang=\"".$_SITE['wb_meta_'.$_PAGE['lang'.$i]]."\">" . $_PAGE['short_title_' . $_PAGE['lang'.$i]] ."</span>"; 
+		}
+	}
+	
+	echo $_TITLE_;
+}
 ?></h1>
-<section>
 
 <?php
 	$_HEAD_END_ = $_SERVER['DOCUMENT_ROOT'] .$_SITE['wb_php_dist_folder'] ."/head-end.php";

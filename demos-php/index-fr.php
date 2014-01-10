@@ -25,7 +25,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/he
 ?>
 
 <!-- custom page metadata start -->
-<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities"/>
+<meta name="description" content="La Boîte à outils de l’expérience Web (BOEW) rassemble différents composants réutilisables et prêts-à-utiliser pour la conception et la mise à jour de sites Web innovateurs qui sont à la fois accessibles, conviviaux et interopérables. Tous ces composants réutilisables sont des logiciels libres mis à la disposition des ministères et des collectivités Web externes."/>
 <!-- end of custom metadata -->
 
 <?php 
@@ -50,35 +50,3 @@ include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-na
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-end.php";
 ?>
-<!--
-
-	<nav role="navigation" class="row">
-	<h2>Informations sur le site</h2>
-	<section class="col-sm-3">
-	<h3>À propos</h3>
-	<ul class="list-unstyled">
-	<li><a href="/v4.0-ci/index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
-	<li><a href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
-	</ul>
-	</section>
-	<section class="col-sm-3">
-	<h3>Contactez-nous</h3>
-	<ul class="list-unstyled">
-	<li><a href="https://github.com/wet-boew/wet-boew/issues/new">Questions ou commentaires?</a></li>
-	</ul>
-	</section>
-	<section class="col-sm-3">
-	<h3>Nouvelles</h3>
-	<ul class="list-unstyled">
-	<li><a href="https://github.com/wet-boew/wet-boew/pulse">Activité du projet récente</a></li>
-	<li><a href="https://github.com/wet-boew/wet-boew/graphs">Statistiques du projet</a></li>
-	</ul>
-	</section>
-	<section class="col-sm-3">
-	<h3>Restez branchés</h3>
-	<ul class="list-unstyled">
-	<li><a href="https://twitter.com/BoiteExpWeb">Twitter</a></li>
-	</ul>
-	</section>
-	</nav>
--->
