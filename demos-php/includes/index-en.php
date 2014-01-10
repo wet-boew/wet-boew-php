@@ -1,20 +1,20 @@
-<div class="span-8"> 
-<table id="components" class="wet-boew-prettify wet-boew-tables" data-wet-boew='{"bZebra": true, "bVisible": false, "aColumns": [3], "aMobileColumns": [1,3], "aLengthMenu": [[10, 25, -1], [10, 25, "All"]], "iDisplayLength": -1}'>
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Category</th>
-			<th>Description</th>
-			<th>Keywords</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="theme-wet-boew/index-en.php">WET theme (v3.1)</a></td>
-			<td><a href="https://github.com/wet-boew/wet-boew/wiki/Themes-and-style">Theme and style</a></td>
-			<td>The WET theme was developed to provide an example implementation of the <a href="http://wet-boew.github.io/wet-boew/demos/theme-base/index-en.html">Base Theme</a>.</td>
-			<td></td>
-		</tr>		
-	</tbody>
-</table>
-</div>
+<h2>English</h2>
+<ul>
+<li><a href="content-en.html">Content page</a></li>
+<li><a href="content-secmenu-en.html">Content page - Secondary menu</a></li>
+<li><a href="content-nosearchlang-en.html">Content page - No search or language selection link</a></li>
+<li><a href="content-nositemenubc-en.html">Content page - No site menu or breadcrumb trail</a></li>
+<li><a href="content-nosearchlangsitemenubc-en.html">Content page - No search, language selection link, site menu or breadcrumb trail</a></li>
+<li><a href="splashpage-en.html">Splash page</a></li>
+</ul>
+</section>
+<section>
+<h2>French</h2>
+<ul>
+<li><a href="content-fr.html">Content page</a></li>
+<li><a href="content-secmenu-fr.html">Content page - Secondary menu</a></li>
+<li><a href="content-nosearchlang-fr.html">Content page - No search or language selection link</a></li>
+<li><a href="content-nositemenubc-fr.html">Content page - No site menu or breadcrumb trail</a></li>
+<li><a href="content-nosearchlangsitemenubc-fr.html">Content page - No search, language selection link, site menu or breadcrumb trail</a></li>
+<li><a href="splashpage-fr.html">Splash page</a></li>
+</ul>

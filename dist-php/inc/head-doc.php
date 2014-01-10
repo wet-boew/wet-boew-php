@@ -24,10 +24,9 @@ for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 }
 ?>
 <!DOCTYPE html>
-<!--[if IE 7]><html lang="<?php echo $_SITE['wb_meta_' .$_PAGE['lang1'] ]?>" class="no-js ie7"><![endif]-->
-<!--[if IE 8]><html lang="<?php echo $_SITE['wb_meta_' .$_PAGE['lang1'] ]?>" class="no-js ie8"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="<?php echo $_SITE['wb_meta_' . $_PAGE['lang1']]; ?>" class="no-js">
+<html class="no-js" lang="<?php echo $_SITE['wb_meta_' . $_PAGE['lang1']]; ?>">
 <!--<![endif]-->
 <head>
 <meta charset="utf-8" />
@@ -35,7 +34,7 @@ for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 <title><?php echo $_PAGE_TITLE_;?></title>
 
-<link rel="shortcut icon" href="<?php echo $_SITE['wb_core_dist_folder'] . $_SITE['wb_theme_folder']; ?>/images/favicon.ico" />
+<link rel="shortcut icon" href="<?php echo $_SITE['wb_core_dist_folder']?>/assets/favicon.ico" />
 <?php 
 /* no robots if this is a server page*/
 if( $_PAGE['isserv'] == "1" ) { ?>
@@ -65,4 +64,4 @@ for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 <meta name="dcterms.modified" title="W3CDTF" content="<?php echo $_PAGE['modified']; ?>" />
 <?php } ?>
 
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="width=device-width, initial-scale=1" name="viewport"/>

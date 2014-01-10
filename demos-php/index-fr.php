@@ -1,86 +1,84 @@
 <?php
 //always set the page language options first
-//set 'lang1' to 'eng' for English pages, 'fra' for French pages
+//set 'lang1' to 'en' for English pages, 'fr' for French pages
 $_PAGE['lang1'] = "fr";
+
+//Add additional languages the page will support
 $_PAGE['lang2'] = "en";
 
 //programaticly setting the main config file means the demos will work regardless of where
 //they're dumpted. Saves time when deploying the demos to different servers for development
-$path = realpath(dirname(__FILE__));
-require_once $path ."/config/theme-gcwu-fegc/config.php";
+$_PAGE_PATH_ = realpath(dirname(__FILE__));
+
+require_once $_PAGE_PATH_ . "/config/config.php";
 
 /* These are the required variables fore each page */
-$_PAGE['title_' . $_PAGE['lang1']] = "Exemples pratiques - Boîte à outils de l'expérience Web&#160;(BOEW)";
+$_PAGE['title_' . $_PAGE['lang1']] = "Thème de la BOEW - Boîte à outils de l'expérience Web";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
-$_PAGE['short_title_' .$_PAGE['lang1']] = "Exemples pratiques";
+//Optional variables
+$_PAGE['short_title_' .$_PAGE['lang1']] = "Thème de la BOEW";
 
-/* This is a list of optional variables 
-
-// Set the short title for the page to be displayed just above the main content
-// if not set then the required $_PAGE['title_' . $_PAGE['lang1']] above will be used
-$_PAGE['short_title_' . $_PAGE['lang1']] = "";
-
-// Set the alternate short title for the page to be displayed just above the main content
-$_PAGE['short_title_' . $_PAGE['lang2']] = "";
-
-// Set 'isapp' to one to use the application template. If this is an application use
-// the 'version' variable, which is displayed at the bottom of the content area
-// instead of the Date Modified
-$_PAGE['isapp'] = "1";
-$_PAGE['version'] = "";
-
-//set 'issplash' to one to use the splash page
-$_PAGE['issplash'] = "1";
-
-//set 'isserv' to one to use the server template
-$_PAGE['isserv'] = "1";
-
-*
- *	Pointing 'left_gauche_menu_en' or 'left_gauche_menu_fr' to a
- *	file will use that file as the left side menu (secondary navigation)
- *	and make this page a two column layout automaticlly. 
- *
-$_PAGE['left_gauche_menu_en'] = $_SERVER['DOCUMENT_ROOT'] . "/demos-php/menu-left-gauche/secnav1-en.php";
-
-//Possible options for languages
-$_PAGE['lang1'] = "en";
-$_PAGE['lang2'] = "fr";
-$_PAGE['lang3'] = "de";
-$_PAGE['lang4'] = "es";
-$_PAGE['lang5'] = "it";
-$_PAGE['lang6'] = "pt";
-$_PAGE['lang7'] = "ru";
-
-****************************************/
+//include header information that comes before custome CSS on the page
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
 ?>
 
 <!-- custom page metadata start -->
+<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities"/>
 <!-- end of custom metadata -->
 
 <?php 
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-css.php"; 
 ?>
-<!-- CustomCSSStart -->
-<style>
-#components td {vertical-align: middle;}
-</style>
-<!-- CustomCSSEnd -->
+
+<!-- custom css includes -->
+<!-- end of custom css includes -->
+
+
 <?php 
-include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php"; 
 ?>
 <!-- Main content start -->
-
-<?php include_once "includes/index-fr.php"; ?>
-
+<?php include "includes/index-fr.php"; ?>
 <!-- MainContentEnd -->
-<?php 
-include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-nav.php"; 
+<?php
+include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-nav.php";
 ?>
 <!-- CustomScriptsStart -->
 <!-- CustomScriptsEnd -->
-<?php 
-include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-end.php"; 
+<?php
+include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-end.php";
 ?>
+<!--
+
+	<nav role="navigation" class="row">
+	<h2>Informations sur le site</h2>
+	<section class="col-sm-3">
+	<h3>À propos</h3>
+	<ul class="list-unstyled">
+	<li><a href="/v4.0-ci/index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
+	<li><a href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
+	</ul>
+	</section>
+	<section class="col-sm-3">
+	<h3>Contactez-nous</h3>
+	<ul class="list-unstyled">
+	<li><a href="https://github.com/wet-boew/wet-boew/issues/new">Questions ou commentaires?</a></li>
+	</ul>
+	</section>
+	<section class="col-sm-3">
+	<h3>Nouvelles</h3>
+	<ul class="list-unstyled">
+	<li><a href="https://github.com/wet-boew/wet-boew/pulse">Activité du projet récente</a></li>
+	<li><a href="https://github.com/wet-boew/wet-boew/graphs">Statistiques du projet</a></li>
+	</ul>
+	</section>
+	<section class="col-sm-3">
+	<h3>Restez branchés</h3>
+	<ul class="list-unstyled">
+	<li><a href="https://twitter.com/BoiteExpWeb">Twitter</a></li>
+	</ul>
+	</section>
+	</nav>
+-->

@@ -8,7 +8,7 @@
 		$_PAGE['left_menu_gauche'] = $_PAGE['left_menu_gauche_'.$_PAGE['lang1']];
 	}
 	$_PAGE['is_left_gauche'] = isset($_PAGE['left_menu_gauche']) && 
-		$_PAGE['left_menu_gauche'] != "";
+	$_PAGE['left_menu_gauche'] != "";
 		
 	// if no left side is uesed then use a single column layout
 	// and skip to navigation points to the footer. 
@@ -26,28 +26,31 @@
 ?>
 </head>
 
-<body><div id="<?php echo $_COL_LAYOUT; ?>">
+<body vocab="http://schema.org/" typeof="WebPage">
+<!-- <div id="<?php echo $_COL_LAYOUT; ?>"> -->
 <?php 
 //if this is a server page the skip navigation isn't required
 if( $_PAGE['isserv'] != "1" && $_PAGE['issplash']!='1') {?>
-<div id="wb-skip">
 <ul id="wb-tphp">
-<li id="wb-skip1"><a href="#wb-cont"><?php echo $_SKIP_1_NAV_TEXT ?></a></li>
-<li id="wb-skip2"><a href="#wb-nav"><?php echo $_SKIP_2_NAV_TEXT ?></a></li>
+	<li class="wb-slc">
+		<a class="wb-sl" href="#wb-cont"><?php echo $_SKIP_1_NAV_TEXT ?><</a>
+	</li>
+	<li class="wb-slc visible-md visible-lg">
+		<a class="wb-sl" href="#wb-info"><?php echo $_SKIP_2_NAV_TEXT ?></a>
+	</li>
 </ul>
-</div>
 <?php } ?>
 
-<div id="wb-head"><div id="wb-head-in"><header>
+<header role="banner">
 <?php
-	$_PHP_THEME_PATH_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . $_SITE['wb_theme_folder'];
+	$_PHP_THEME_PATH_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'];
 		
 	//if this is a server page use the server navigation head
-	$_THEME_HEAD_NAV_FILE =  $_PHP_THEME_PATH_ . "/cont/head-nav.php";
+	$_THEME_HEAD_NAV_FILE =  $_PHP_THEME_PATH_ . "/inc/cont/head-nav.php";
 	if( $_PAGE['isserv'] == "1" ) {
-		$_THEME_HEAD_NAV_FILE = $_PHP_THEME_PATH_ . "/serv/head-nav.php";
+		$_THEME_HEAD_NAV_FILE = $_PHP_THEME_PATH_ . "/inc/serv/head-nav.php";
 	} else if( $_PAGE['issplash'] == "1" ) {
-		$_THEME_HEAD_NAV_FILE = $_PHP_THEME_PATH_ . "/sp-pe/head-nav.php";
+		$_THEME_HEAD_NAV_FILE = $_PHP_THEME_PATH_ . "/inc/sp-pe/head-nav.php";
 	}
 	
 	if( file_exists($_THEME_HEAD_NAV_FILE) ) {
@@ -55,7 +58,7 @@ if( $_PAGE['isserv'] != "1" && $_PAGE['issplash']!='1') {?>
 	}
 ?>
 
-</header></div></div>
+</header>
 <div id="wb-core"><div id="wb-core-in" class="equalize">
 <div id="wb-main" role="main"><div id="wb-main-in">
 <!-- MainContentStart -->
@@ -86,7 +89,8 @@ if( $_PAGE['isserv'] != "1" && $_PAGE['issplash']!='1') {?>
 		echo '</aside></div>' ."\n";
 	}
 ?>
-<h1 id="wb-cont"><?php
+<main role="main" property="mainContentOfPage" class="container">
+<h1 id="wb-cont" property="name"><?php
 $_TITLE_ = $_PAGE['short_title_' . $_PAGE['lang1']];
 //if there's more than one language set then add the additioal title elements
 for( $i=2; isset($_PAGE['lang'.$i]); $i++ ) {
@@ -97,9 +101,10 @@ for( $i=2; isset($_PAGE['lang'.$i]); $i++ ) {
 
 echo $_TITLE_;
 ?></h1>
+<section>
 
 <?php
-	$_HEAD_END_ = $_SERVER['DOCUMENT_ROOT'] .$_SITE['wb_php_dist_folder'] .$_SITE['wb_theme_folder'] ."/head-end.php";
+	$_HEAD_END_ = $_SERVER['DOCUMENT_ROOT'] .$_SITE['wb_php_dist_folder'] ."/head-end.php";
 	if( file_exists($_HEAD_END_) ) {
 		include_once $_HEAD_END_;
 	}

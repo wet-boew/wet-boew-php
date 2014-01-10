@@ -50,11 +50,13 @@
 	
 	$_SITE['wb_sio_heading_'.$_LANG_] = "Mon compte";
 
+	$_SITE['wb_lang_header_'.$_LANG] = "Sélection de la langue";
+
 	$_SITE['wb_meta_'.$_LANG_] = "fr"; 
 	$_SITE['wb_lang_text_'.$_LANG_] = "Français"; 
 	$_SITE['wb_sh_link_1_'.$_LANG_] = "Passer au contenu principal"; 
 	$_SITE['wb_sh_link_2_'.$_LANG_] = "Passer au menu secondaire"; 
-	$_SITE['wb_sh_link_3_'.$_LANG_] = "Passer au pied de page"; 
+	$_SITE['wb_sh_link_3_'.$_LANG_] = "Passer aux informations sur le site"; 
 	$_SITE['wb_sec_'.$_LANG_] = "Menu secondaire"; 
 	$_SITE['wb_sup_'.$_LANG_] = "Contenu supplémentaire"; 
 	$_SITE['wb_doc_dates_'.$_LANG_] = "Date de modification&nbsp;:"; 

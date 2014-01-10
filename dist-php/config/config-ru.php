@@ -45,11 +45,13 @@
 	$_SITE['wb_sio_text_'.$_LANG_] = "Account settings";
 	$_SITE['wb_sio_heading_'.$_LANG_] = "My account";
 
+	$_SITE['wb_lang_header_'.$_LANG] = "Language selection";
+
 	$_SITE['wb_meta_'.$_LANG_] = "ru"; 
 	$_SITE['wb_lang_text_'.$_LANG_] = "&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;"; 
 	$_SITE['wb_sh_link_1_'.$_LANG_] = "Skip to main content"; 
 	$_SITE['wb_sh_link_2_'.$_LANG_] = "Skip to secondary menu"; 
-	$_SITE['wb_sh_link_3_'.$_LANG_] = "Skip to footer"; 
+	$_SITE['wb_sh_link_3_'.$_LANG_] = "Skip to site information"; 
 	$_SITE['wb_sec_'.$_LANG_] = "Secondary menu"; 
 	$_SITE['wb_sup_'.$_LANG_] = "Supplemental content"; 
 	$_SITE['wb_doc_dates_'.$_LANG_] = "Date modified:"; 

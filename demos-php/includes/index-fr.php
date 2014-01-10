@@ -1,20 +1,20 @@
-<div class="span-8">
-<table id="components" class="wet-boew-prettify wet-boew-tables" data-wet-boew='{"bZebra": true, "bVisible": false, "aColumns": [3], "aMobileColumns": [1,3], "aLengthMenu": [[10, 25, -1], [10, 25, "All"]], "iDisplayLength": -1}'>
-	<thead>
-		<tr>
-			<th>Nom</th>
-			<th>Catégorie</th>
-			<th>Description</th>
-			<th>Mots clés</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="theme-wet-boew/index-fr.php">Thème de la BOEW (v3.1)</a></td>
-			<td><a href="https://github.com/wet-boew/wet-boew/wiki/Thèmes-et-style">Thème et style</a></td>
-			<td>Un exemple de thème conçu à partir du thème de base.</td>
-			<td></td>
-		</tr>
-	</tbody>
-</table>
-</div>
+<h2>Anglais</h2>
+<ul>
+<li><a href="content-en.html">Page de contenu</a></li>
+<li><a href="content-secmenu-en.html">Page de contenu - Menu secondaire</a></li>
+<li><a href="content-nosearchlang-en.html">Page de contenu - Sans recherche ou lien de sélection de la langue</a></li>
+<li><a href="content-nositemenubc-en.html">Page de contenu - Sans menu du site ou fil d'Ariane</a></li>
+<li><a href="content-nosearchlangsitemenubc-en.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane</a></li>
+<li><a href="splashpage-en.html">Page d'entrée</a></li>
+</ul>
+</section>
+<section>
+<h2>Français</h2>
+<ul>
+<li><a href="content-fr.html">Page de contenu</a></li>
+<li><a href="content-secmenu-fr.html">Page de contenu - Menu secondaire</a></li>
+<li><a href="content-nosearchlang-fr.html">Page de contenu - Sans recherche ou lien de sélection de la langue</a></li>
+<li><a href="content-nositemenubc-fr.html">Page de contenu - Sans menu du site ou fil d'Ariane</a></li>
+<li><a href="content-nosearchlangsitemenubc-fr.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane</a></li>
+<li><a href="splashpage-fr.html">Page d'entrée</a></li>
+</ul>

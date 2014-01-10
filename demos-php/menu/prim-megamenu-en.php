@@ -3,15 +3,18 @@
 	 * uncomment for AJAX replacement test
 	 */
 ?>
-<ul class="mb-menu" data-ajax-replace="/demos-php/menu/menu-en.txt">
-<li><div><a href="http://wet-boew.github.io/wet-boew/index-en.html" lang="en">WET project</a></div></li>
-<li><div><a href="section2/index-en.html">Section 2</a></div></li>
-<li><div><a href="#">Section 3</a></div></li>
-<li><div><a href="#">Section 4</a></div></li>
-<li><div><a href="#">Section 5</a></div></li>
-<li><div><a href="#">Section 6</a></div></li>
-<li><div><a href="#">Section 7</a></div></li>
-</ul>
+<!-- TODO: Add php variable for data-ajax-fetch file -->
+<nav role="navigation" id="wb-sm" data-ajax-fetch="/wet-boew/ajax/sitemenu-en.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+<div class="container nvbar"><h2>' . $_SITE['wb_sitenav_' . $_PAGE["lang1"]] .'</h2>
+<div class="row">
+	<ul class="list-inline menu">
+		<li><a href="/wet-boew/index-en.html">WET project</a></li>
+		<li><a href="https://github.com/wet-boew/wet-boew/wiki/Implementing-WET">Implement WET</a></li>
+		<li><a href="https://github.com/wet-boew/wet-boew/wiki/Contributor-guidelines">Contribute to WET</a></li>
+	</ul>
+</div>
+</div>
+</nav>
 
 <?php
 /*

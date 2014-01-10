@@ -26,7 +26,7 @@
 	$_SITE['wb_ft4_text_'.$_LANG_] = "Stay connected";
 	
 	$_SITE['wb_search_'.$_LANG_] = "Search"; 
-	$_SITE['wb_search_label_'.$_LANG_] = "Search Web site"; 
+	$_SITE['wb_search_label_'.$_LANG_] = "Search Website"; 
 
 	$_SITE['wb_bcrumb_'.$_LANG_] = "Breadcrumb trail"; 
 	
@@ -45,16 +45,18 @@
 	$_SITE['wb_sio_text_'.$_LANG_] = "Account settings";
 	$_SITE['wb_sio_heading_'.$_LANG_] = "My account";
 
+	$_SITE['wb_lang_header_'.$_LANG] = "Language selection";
+
 	$_SITE['wb_meta_'.$_LANG_] = "en"; 
 	$_SITE['wb_lang_text_'.$_LANG_] = "English"; 
 	$_SITE['wb_sh_link_1_'.$_LANG_] = "Skip to main content"; 
 	$_SITE['wb_sh_link_2_'.$_LANG_] = "Skip to secondary menu"; 
-	$_SITE['wb_sh_link_3_'.$_LANG_] = "Skip to footer"; 
+	$_SITE['wb_sh_link_3_'.$_LANG_] = "Skip to site information"; 
 	$_SITE['wb_sec_'.$_LANG_] = "Secondary menu"; 
 	$_SITE['wb_sup_'.$_LANG_] = "Supplemental content"; 
 	$_SITE['wb_doc_dates_'.$_LANG_] = "Date modified:"; 
 	$_SITE['wb_doc_version_'.$_LANG_] = "Version:"; 
-	$_SITE['wb_foot_'.$_LANG_] = "Footer"; 
+	$_SITE['wb_foot_'.$_LANG_] = "Site Information"; 
 	$_SITE['wb_sitefooter_'.$_LANG_] = "Site footer"; 
 
 	$_SITE['wb_archive_warn_alt_'.$_LANG_] = "Warning";

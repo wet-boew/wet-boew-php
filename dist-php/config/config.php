@@ -31,7 +31,7 @@
 	 * out or remove these lines.
 	 */
 	
-	$_SITE['wb_core_dist_folder'] = $_SITE['wb_core_root'] . "/dist";
+	$_SITE['wb_core_dist_folder'] = $_SITE['wb_core_root'];
 	
 	//define the path to the wet php distribution folder
 	//for development the deploy folder is /wet-boew-php
@@ -41,13 +41,11 @@
 	$_MENU_LOCATION_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_root'] . "/demos-php/menu";
 
 	//modify in a custom config to point to your sites search implementation
-	$_SITE['wb_search_file'] = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_root'] . "/demos-php/search" . $_SITE['wb_theme_folder'] ."/search.php";
+	$_SITE['wb_search_file'] = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_root'] . "/demos-php/search/search.php";
 	
 	//modify to point to yours sites bread crumb implementation
-	$_SITE['wb_bcrumb_file'] = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/bt_fa.php"; 
+	$_SITE['wb_bcrumb_file'] = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/breadcrumb-generator.php"; 
 
-	$_SITE['wb_archive_warn_icon'] = $_SITE['wb_core_dist_folder']."/js/images/archived/warning.gif";
-	
 	//if $_PAGE['lang1'] is set assume the user set the languages
 	//before including the config file. If so add only the required
 	//configration files.
@@ -56,5 +54,13 @@
 			include_once "config-" . $_PAGE['lang'.$i] .".php";
 		}
 	}
+	
+	//Modify the language selection link to point to whatever script suits your site.
+	$_SITE['wb_cmblang_href_en'] = $_SITE['wb_cmblang_href_fr'] = $_SITE['wb_php_dist_folder'] . "/langselect/lang.php"; 
+
+	$_SITE['wb_sig_image'] = "logo";
+
+	$_SITE['wb_cmblang_text_fr'] = "Français"; 
+	$_SITE['wb_cmblang_text_en'] = "English"; 
 		
 ?>
