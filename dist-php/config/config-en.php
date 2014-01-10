@@ -10,14 +10,14 @@
 
 	$_SITE['wb_ft1_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-1-en.php";
 	$_SITE['wb_ft1_href_'.$_LANG_] = "#";
-	$_SITE['wb_ft1_text_'.$_LANG_] = "About us";
+	$_SITE['wb_ft1_text_'.$_LANG_] = "About";
 
 	//moved contact us menu before news in reference to issue #2517
-	$_SITE['wb_ft2_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-3-en.php";
+	$_SITE['wb_ft2_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-2-en.php";
 	$_SITE['wb_ft2_href_'.$_LANG_] = "#";
 	$_SITE['wb_ft2_text_'.$_LANG_] = "Contact us";
 
-	$_SITE['wb_ft3_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-2-en.php";
+	$_SITE['wb_ft3_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-3-en.php";
 	$_SITE['wb_ft3_href_'.$_LANG_] = "#";
 	$_SITE['wb_ft3_text_'.$_LANG_] = "News";
 

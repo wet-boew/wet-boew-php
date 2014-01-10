@@ -2,35 +2,20 @@
 </main>
 
 <?php
-//if there's no secondary menu then the H2 element around the "Footer" gets the id="wb-nav" id
-//Otherwise the secondary menu gets it.
-$_FOOT_NAV_ = ' id="wb-nav"';
+//use the content footers by default
+$_ROOT_PATH_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'];
+$_INC_TYPE_ = 'cont';
 
-if( isset($_PAGE['left_menu_gauche'])  && $_PAGE['left_menu_gauche']!='' && file_exists($_PAGE['left_menu_gauche'])) {
-	//clear the foot nav variable so it doesn't get added to the H2 in the footer below
-	$_FOOT_NAV_ = "";
-
-	echo '<div id="wb-sec"><div id="wb-sec-in"><nav role="navigation"><h2 id="wb-nav">'.$_SITE['wb_sec_'.$_PAGE['lang1']] .'</h2>' . "\n";
-	echo '<div class="wb-sec-def">' . "\n";
-	echo '<!-- SecNavStart -->' . "\n";
-
-	include_once $_PAGE['left_menu_gauche'];
-	
-	echo '<!-- SecNavEnd -->' . "\n";
-	echo '</div>' . "\n";
-	echo '</nav></div></div>' . "\n";
-
+if( $_PAGE['issplash'] == "1" ) {
+	$_INC_TYPE_ = 'sp-pe';
 }
-?>
-<footer role="contentinfo" id="wb-info" class="container visible-md visible-lg">
-<nav role="navigation" class="row">
-<h2><?php echo $_SITE['wb_foot_' .$_PAGE['lang1']] ;?></h2>
-<?php
+
+$_FOOT_INCLUDE_ = $_ROOT_PATH_ . "/inc/".$_INC_TYPE_."/foot.php";
+
 if( file_exists($_FOOT_INCLUDE_) ) {
 	include_once $_FOOT_INCLUDE_;
 }
 ?>
-</footer>
 <!-- ScriptsStart -->
 
 <!--[if gte IE 9 | !IE ]><!-->

@@ -1,5 +1,3 @@
-<ul>
-<li><a<?php if ($_PAGE['isapp'] == '1') { ?> target="_blank"<?php } ?> href="#">Communiqués</a></li>
-<li><a<?php if ($_PAGE['isapp'] == '1') { ?> target="_blank"<?php } ?> href="#">Avix aux médias</a></li>
-<li><a<?php if ($_PAGE['isapp'] == '1') { ?> target="_blank"<?php } ?> href="#">Multimédia</a></li>
+<ul class="list-unstyled">
+<li><a href="https://github.com/wet-boew/wet-boew/issues/new">Questions ou commentaires?</a></li>
 </ul>

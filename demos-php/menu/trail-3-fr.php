@@ -1,6 +1,4 @@
-<address>
-<ul>
-<li><a<?php if ($_PAGE['isapp'] == '1') { ?> target="_blank"<?php } ?> href="#">Numéros de téléphone</a></li>
-<li><a<?php if ($_PAGE['isapp'] == '1') { ?> target="_blank"<?php } ?> href="#">Nos bureaux</a></li>
+<ul class="list-unstyled">
+<li><a href="https://github.com/wet-boew/wet-boew/pulse">Activité du projet récente</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/graphs">Statistiques du projet</a></li>
 </ul>
-</address>
