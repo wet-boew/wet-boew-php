@@ -36,11 +36,6 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 <link rel="shortcut icon" href="<?php echo $_SITE['wb_core_dist_folder']?>/assets/favicon.ico" />
 <?php 
-/* no robots if this is a server page*/
-if( $_PAGE['isserv'] == "1" ) { ?>
-<meta name="robots" content="noindex, nofollow, noarchive" />
-<?php } /* end of no robots*/
-
 //print the available title metadata for this page
 for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 	if( isset($_PAGE['title_'.$_PAGE['lang'.$i]]) ) {
@@ -59,9 +54,5 @@ for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 	}
 }
 ?>
-<?php if( $_PAGE['isserv'] != "1" ) { ?>
-<meta name="dcterms.issued" title="W3CDTF" content="<?php echo $_PAGE['issued']; ?>" />
-<meta name="dcterms.modified" title="W3CDTF" content="<?php echo $_PAGE['modified']; ?>" />
-<?php } ?>
 
 <meta content="width=device-width, initial-scale=1" name="viewport"/>

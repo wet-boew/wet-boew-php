@@ -59,33 +59,7 @@ if( file_exists($_HEAD_INCLUDE_) ) {
 
 </header>
 <!-- MainContentStart -->
-<?php
-	if( $_PAGE['signin'] == "1" || $_PAGE['signout'] == "1") {
-		//one of the two buttons is going to be displayed
-		//determine if it's the signin or signout button
-		$_SIO_ = ($_PAGE['signin']=="1"?"signin":"signout");
-		
-		$_LINK_ = $_SITE['wb_'.$_SIO_.'_file_' . $_PAGE['lang1']];
-		$_BUTTON_ = $_SITE['wb_'.$_SIO_.'_text_' . $_PAGE['lang1']];
 
-		$_HEADING_ = $_SITE['wb_sio_heading_' . $_PAGE['lang1']];
-		$_ACCOUNT_TEXT_ = $_SITE['wb_sio_text_' . $_PAGE['lang1']];
-		$_ACCOUNT_FILE = $_SITE['wb_sio_file_' . $_PAGE['lang1']];
-
-		echo '<div id="wb-session"><aside>' ."\n";
-		echo '<h2 class="wb-invisible">'.$_HEADING_.'</h2>' ."\n";
-		echo '<ul class="button-group">' ."\n";
-		if( $_PAGE['signout'] == "1" ) {
-			echo '<li class="settings"><a class="button" href="'.$_ACCOUNT_FILE.'">';
-				echo $_ACCOUNT_TEXT_.'</a></li>';
-		}
-		echo '<li class="session">';
-		echo '<a class="button" href="'.$_LINK_.'">';
-			echo $_BUTTON_.'</a></li>' ."\n";
-		echo '</ul>' ."\n";
-		echo '</aside></div>' ."\n";
-	}
-?>
 <?php
 if( isset($_PAGE['left_menu_gauche']) && $_PAGE['left_menu_gauche']!='' && file_exists($_PAGE['left_menu_gauche']) ) {
 	echo '<div class="container">';
@@ -94,9 +68,9 @@ if( isset($_PAGE['left_menu_gauche']) && $_PAGE['left_menu_gauche']!='' && file_
 } else {
 	echo '<main role="main" property="mainContentOfPage" class="container">';
 }
+
 if( $_PAGE['issplash']!='1' ) {
-?>
-<h1 id="wb-cont" property="name"><?php
+	echo '<h1 id="wb-cont" property="name">';
 	if( isset($_PAGE['short_title_' . $_PAGE['lang1']])) {
 		$_TITLE_ = $_PAGE['short_title_' . $_PAGE['lang1']];
 		//if there's more than one language set then add the additioal title elements
@@ -105,24 +79,22 @@ if( $_PAGE['issplash']!='1' ) {
 				$_TITLE_ .= " / <span lang=\"".$_SITE['wb_meta_'.$_PAGE['lang'.$i]]."\">" . $_PAGE['short_title_' . $_PAGE['lang'.$i]] ."</span>"; 
 			}
 		}
-		
 		echo $_TITLE_;
 	}
-?></h1>
+	echo '</h1>';
 
-<?php
-		$_HEAD_END_ = $_SERVER['DOCUMENT_ROOT'] .$_SITE['wb_php_dist_folder'] ."/head-end.php";
-		if( file_exists($_HEAD_END_) ) {
-			include_once $_HEAD_END_;
-		}
-		
-		// Archived Section
-		if( $_PAGE['isarchived'] == "1" ){
-			echo "<p><img src='".$_SITE['wb_archive_warn_icon']."' alt='".$_SITE['wb_archive_warn_alt_'.$_PAGE['lang1']];
-			echo "' title='".$_SITE['wb_archive_warn_title_'.$_PAGE['lang1']]."' class='margin-bottom-none' />".$_SITE['wb_archive_warn_webuse_'.$_PAGE['lang1']];
-			echo "</p><div id='archived' class='wet-boew-archived span-6' data-load='archived'>";
-			echo "<section><h2>".$_SITE['wb_archive_warn_head_'.$_PAGE['lang1']]."</h2>";
-			echo "<p>".$_SITE['wb_archive_warn_msg_'.$_PAGE['lang1']]."</p></section></div><div class='clear'></div>";
-		}
+	$_HEAD_END_ = $_SERVER['DOCUMENT_ROOT'] .$_SITE['wb_php_dist_folder'] ."/head-end.php";
+	if( file_exists($_HEAD_END_) ) {
+		include_once $_HEAD_END_;
 	}
+	
+	// Archived Section
+	if( $_PAGE['isarchived'] == "1" ){
+		echo "<p><img src='".$_SITE['wb_archive_warn_icon']."' alt='".$_SITE['wb_archive_warn_alt_'.$_PAGE['lang1']];
+		echo "' title='".$_SITE['wb_archive_warn_title_'.$_PAGE['lang1']]."' class='margin-bottom-none' />".$_SITE['wb_archive_warn_webuse_'.$_PAGE['lang1']];
+		echo "</p><div id='archived' class='wet-boew-archived span-6' data-load='archived'>";
+		echo "<section><h2>".$_SITE['wb_archive_warn_head_'.$_PAGE['lang1']]."</h2>";
+		echo "<p>".$_SITE['wb_archive_warn_msg_'.$_PAGE['lang1']]."</p></section></div><div class='clear'></div>";
+	}
+}
 ?>

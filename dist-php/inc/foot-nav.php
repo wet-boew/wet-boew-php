@@ -16,18 +16,15 @@ if( isset($_PAGE['left_menu_gauche']) && $_PAGE['left_menu_gauche']!='' && file_
 ?>
 
 <?php
-//use the content footers by default
-$_ROOT_PATH_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'];
-$_INC_TYPE_ = 'cont';
-
-if( $_PAGE['issplash'] == "1" ) {
-	$_INC_TYPE_ = 'sp-pe';
-}
-
-$_FOOT_INCLUDE_ = $_ROOT_PATH_ . "/inc/".$_INC_TYPE_."/foot.php";
-
-if( file_exists($_FOOT_INCLUDE_) ) {
-	include_once $_FOOT_INCLUDE_;
+if( $_PAGE['issplash'] != "1" ) {
+	//use the content footers by default
+	$_ROOT_PATH_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'];
+	
+	$_FOOT_INCLUDE_ = $_ROOT_PATH_ . "/inc/cont/foot.php";
+	
+	if( file_exists($_FOOT_INCLUDE_) ) {
+		include_once $_FOOT_INCLUDE_;
+	}
 }
 ?>
 <!-- ScriptsStart -->
