@@ -1,4 +1,4 @@
-<ul>
-<li><a<?php if ($_PAGE['isapp'] == '1') { ?> target="_blank"<?php } ?> href="#">Notre mandat</a></li>
-<li><a<?php if ($_PAGE['isapp'] == '1') { ?> target="_blank"<?php } ?> href="#">Notre ministre</a></li>
+<ul class="list-unstyled">
+<li><a href="/v4.0-ci/index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
+<li><a href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
 </ul>

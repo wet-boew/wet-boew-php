@@ -8,7 +8,7 @@
 		$_PAGE['left_menu_gauche'] = $_PAGE['left_menu_gauche_'.$_PAGE['lang1']];
 	}
 	$_PAGE['is_left_gauche'] = isset($_PAGE['left_menu_gauche']) && 
-		$_PAGE['left_menu_gauche'] != "";
+	$_PAGE['left_menu_gauche'] != "";
 		
 	// if no left side is uesed then use a single column layout
 	// and skip to navigation points to the footer. 
@@ -26,38 +26,38 @@
 ?>
 </head>
 
-<body><div id="<?php echo $_COL_LAYOUT; ?>">
+<body vocab="http://schema.org/" typeof="WebPage">
 <?php 
 //if this is a server page the skip navigation isn't required
 if( $_PAGE['isserv'] != "1" && $_PAGE['issplash']!='1') {?>
-<div id="wb-skip">
 <ul id="wb-tphp">
-<li id="wb-skip1"><a href="#wb-cont"><?php echo $_SKIP_1_NAV_TEXT ?></a></li>
-<li id="wb-skip2"><a href="#wb-nav"><?php echo $_SKIP_2_NAV_TEXT ?></a></li>
+	<li class="wb-slc">
+		<a class="wb-sl" href="#wb-cont"><?php echo $_SKIP_1_NAV_TEXT ?><</a>
+	</li>
+	<li class="wb-slc visible-md visible-lg">
+		<a class="wb-sl" href="#wb-info"><?php echo $_SKIP_2_NAV_TEXT ?></a>
+	</li>
 </ul>
-</div>
 <?php } ?>
 
-<div id="wb-head"><div id="wb-head-in"><header>
+<header role="banner">
 <?php
-	$_PHP_THEME_PATH_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . $_SITE['wb_theme_folder'];
-		
-	//if this is a server page use the server navigation head
-	$_THEME_HEAD_NAV_FILE =  $_PHP_THEME_PATH_ . "/cont/head-nav.php";
-	if( $_PAGE['isserv'] == "1" ) {
-		$_THEME_HEAD_NAV_FILE = $_PHP_THEME_PATH_ . "/serv/head-nav.php";
-	} else if( $_PAGE['issplash'] == "1" ) {
-		$_THEME_HEAD_NAV_FILE = $_PHP_THEME_PATH_ . "/sp-pe/head-nav.php";
-	}
-	
-	if( file_exists($_THEME_HEAD_NAV_FILE) ) {
-		include_once $_THEME_HEAD_NAV_FILE;
-	}
+//use the content footers by default
+$_ROOT_PATH_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'];
+$_INC_TYPE_ = 'cont';
+
+if( $_PAGE['issplash'] == "1" ) {
+	$_INC_TYPE_ = 'sp-pe';
+}
+
+$_HEAD_INCLUDE_ = $_ROOT_PATH_ . "/inc/".$_INC_TYPE_."/head.php";
+
+if( file_exists($_HEAD_INCLUDE_) ) {
+	include_once $_HEAD_INCLUDE_;
+}
 ?>
 
-</header></div></div>
-<div id="wb-core"><div id="wb-core-in" class="equalize">
-<div id="wb-main" role="main"><div id="wb-main-in">
+</header>
 <!-- MainContentStart -->
 <?php
 	if( $_PAGE['signin'] == "1" || $_PAGE['signout'] == "1") {
@@ -86,30 +86,43 @@ if( $_PAGE['isserv'] != "1" && $_PAGE['issplash']!='1') {?>
 		echo '</aside></div>' ."\n";
 	}
 ?>
-<h1 id="wb-cont"><?php
-$_TITLE_ = $_PAGE['short_title_' . $_PAGE['lang1']];
-//if there's more than one language set then add the additioal title elements
-for( $i=2; isset($_PAGE['lang'.$i]); $i++ ) {
-	if( isset($_PAGE['short_title_' . $_PAGE['lang'.$i]]) ) {
-		$_TITLE_ .= " / <span lang=\"".$_SITE['wb_meta_'.$_PAGE['lang'.$i]]."\">" . $_PAGE['short_title_' . $_PAGE['lang'.$i]] ."</span>"; 
-	}
+<?php
+if( isset($_PAGE['left_menu_gauche']) && $_PAGE['left_menu_gauche']!='' && file_exists($_PAGE['left_menu_gauche']) ) {
+	echo '<div class="container">';
+	echo '<div class="row">';
+	echo '<main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">';
+} else {
+	echo '<main role="main" property="mainContentOfPage" class="container">';
 }
-
-echo $_TITLE_;
+if( $_PAGE['issplash']!='1' ) {
+?>
+<h1 id="wb-cont" property="name"><?php
+	if( isset($_PAGE['short_title_' . $_PAGE['lang1']])) {
+		$_TITLE_ = $_PAGE['short_title_' . $_PAGE['lang1']];
+		//if there's more than one language set then add the additioal title elements
+		for( $i=2; isset($_PAGE['lang'.$i]); $i++ ) {
+			if( isset($_PAGE['short_title_' . $_PAGE['lang'.$i]]) ) {
+				$_TITLE_ .= " / <span lang=\"".$_SITE['wb_meta_'.$_PAGE['lang'.$i]]."\">" . $_PAGE['short_title_' . $_PAGE['lang'.$i]] ."</span>"; 
+			}
+		}
+		
+		echo $_TITLE_;
+	}
 ?></h1>
 
 <?php
-	$_HEAD_END_ = $_SERVER['DOCUMENT_ROOT'] .$_SITE['wb_php_dist_folder'] .$_SITE['wb_theme_folder'] ."/head-end.php";
-	if( file_exists($_HEAD_END_) ) {
-		include_once $_HEAD_END_;
-	}
-	
-	// Archived Section
-	if( $_PAGE['isarchived'] == "1" ){
-		echo "<p><img src='".$_SITE['wb_archive_warn_icon']."' alt='".$_SITE['wb_archive_warn_alt_'.$_PAGE['lang1']];
-		echo "' title='".$_SITE['wb_archive_warn_title_'.$_PAGE['lang1']]."' class='margin-bottom-none' />".$_SITE['wb_archive_warn_webuse_'.$_PAGE['lang1']];
-		echo "</p><div id='archived' class='wet-boew-archived span-6' data-load='archived'>";
-		echo "<section><h2>".$_SITE['wb_archive_warn_head_'.$_PAGE['lang1']]."</h2>";
-		echo "<p>".$_SITE['wb_archive_warn_msg_'.$_PAGE['lang1']]."</p></section></div><div class='clear'></div>";
+		$_HEAD_END_ = $_SERVER['DOCUMENT_ROOT'] .$_SITE['wb_php_dist_folder'] ."/head-end.php";
+		if( file_exists($_HEAD_END_) ) {
+			include_once $_HEAD_END_;
+		}
+		
+		// Archived Section
+		if( $_PAGE['isarchived'] == "1" ){
+			echo "<p><img src='".$_SITE['wb_archive_warn_icon']."' alt='".$_SITE['wb_archive_warn_alt_'.$_PAGE['lang1']];
+			echo "' title='".$_SITE['wb_archive_warn_title_'.$_PAGE['lang1']]."' class='margin-bottom-none' />".$_SITE['wb_archive_warn_webuse_'.$_PAGE['lang1']];
+			echo "</p><div id='archived' class='wet-boew-archived span-6' data-load='archived'>";
+			echo "<section><h2>".$_SITE['wb_archive_warn_head_'.$_PAGE['lang1']]."</h2>";
+			echo "<p>".$_SITE['wb_archive_warn_msg_'.$_PAGE['lang1']]."</p></section></div><div class='clear'></div>";
+		}
 	}
 ?>

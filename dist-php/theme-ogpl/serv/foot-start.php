@@ -1,1 +1,0 @@
-<div id="ogpl-bar" class="span-8"></div>

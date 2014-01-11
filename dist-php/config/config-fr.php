@@ -1,9 +1,22 @@
 <?php
 	$_LANG_ = "fr";
+	$_SITE['wb_meta_'.$_LANG_] = "fr"; 
+
+	$_SITE['wb_sh_link_1_'.$_LANG_] = "Passer au contenu principal"; 
+	$_SITE['wb_sh_link_2_'.$_LANG_] = "Passer au menu secondaire"; 
+	$_SITE['wb_sh_link_3_'.$_LANG_] = "Passer aux informations sur le site"; 
 	
+	$_SITE['wb_cmblang_text_'.$_LANG_] = "Français"; 
+
 	//modify this for you're specific site
 	$_SITE['wb_site_title_'.$_LANG_] = "Variante pour PHP"; 
 	$_SITE['wb_site_href_'.$_LANG_] = "home-accueil-fr.php"; 
+
+	$_SITE['wb_lang_header_'.$_LANG_] = "Sélection de la langue";
+	$_SITE['wb_lang_text_'.$_LANG_] = "Français"; 
+
+	$_SITE['wb_terms_'.$_LANG_] = "Conditions régissant l'utilisation";
+	$_SITE['wb_terms_href_'.$_LANG_] = "../../Licence-fr.html";
 
 	//$_MENU_LOCATION__ is set in the parent config.php file
 	//modify to point to your sites mega menu
@@ -13,14 +26,14 @@
 	//use the demo trail menus to create menus specific to your site.	
 	$_SITE['wb_ft1_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-1-fr.php";
 	$_SITE['wb_ft1_href_'.$_LANG_] = "#";
-	$_SITE['wb_ft1_text_'.$_LANG_] = "À propos de nous";
+	$_SITE['wb_ft1_text_'.$_LANG_] = "À propos";
 
 	//moved contact us menu before news in reference to issue #2517
-	$_SITE['wb_ft2_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-3-fr.php";
+	$_SITE['wb_ft2_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-2-fr.php";
 	$_SITE['wb_ft2_href_'.$_LANG_] = "#";
 	$_SITE['wb_ft2_text_'.$_LANG_] = "Contactez-nous";
 
-	$_SITE['wb_ft3_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-2-fr.php";
+	$_SITE['wb_ft3_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-3-fr.php";
 	$_SITE['wb_ft3_href_'.$_LANG_] = "#";
 	$_SITE['wb_ft3_text_'.$_LANG_] = "Nouvelles";
 
@@ -50,11 +63,6 @@
 	
 	$_SITE['wb_sio_heading_'.$_LANG_] = "Mon compte";
 
-	$_SITE['wb_meta_'.$_LANG_] = "fr"; 
-	$_SITE['wb_lang_text_'.$_LANG_] = "Français"; 
-	$_SITE['wb_sh_link_1_'.$_LANG_] = "Passer au contenu principal"; 
-	$_SITE['wb_sh_link_2_'.$_LANG_] = "Passer au menu secondaire"; 
-	$_SITE['wb_sh_link_3_'.$_LANG_] = "Passer au pied de page"; 
 	$_SITE['wb_sec_'.$_LANG_] = "Menu secondaire"; 
 	$_SITE['wb_sup_'.$_LANG_] = "Contenu supplémentaire"; 
 	$_SITE['wb_doc_dates_'.$_LANG_] = "Date de modification&nbsp;:"; 

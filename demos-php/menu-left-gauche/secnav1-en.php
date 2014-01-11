@@ -1,41 +1,18 @@
-<div><ul>
-<li class="top-level"><a href="#">Item 4a</a></li>
-<li class="top-level"><a href="#">Item 4b</a></li>
-<li class="top-level"><a href="#">Item 4c</a></li>
-</ul></div>
-<section><h3><a href="#">Section 4.1</a></h3>
-<ul>
-<li><a href="#">Item 4.1.1</a></li>
-<li><a href="#">Item 4.1.2</a></li>
-<li><a href="#">Item 4.1.3</a></li>
+<ul class="list-group menu list-unstyled">
+<li><a class="list-group-item item" href="#sect1">Section 1</a>
+<ul class="list-group list-unstyled" id="sect1">
+<li><a class="list-group-item" href="/v4.0-ci/index-en">Item 1a</a></li>
+<li><a class="list-group-item" href="/v4.0-ci/index-en">Item 1b</a></li>
+<li><a class="list-group-item" href="/v4.0-ci/index-en">Item 1c</a></li>
+<li><a class="list-group-item" href="/v4.0-ci/index-en">Item 1d</a></li>
+<li><a class="list-group-item" href="/v4.0-ci/index-en">Item 1e</a></li>
 </ul>
-</section>
-<section><h3><a href="#">Section 4.2</a></h3>
-<ul>
-<li><a href="#">Item 4.2.1</a></li>
-<li><a href="#">Item 4.2.2</a>
-	<ul>
-	<li><a href="#">Item 4.2.2.1</a></li>
-	<li><a href="#">Item 4.2.2.2</a></li>
-	<li><a href="#">Item 4.2.2.3</a></li>
-	<li><a href="#">Item 4.2.2.4</a></li>
-	</ul>
 </li>
-<li><a href="#">Item 4.2.3</a></li>
-<li><a href="#">Item 4.2.4</a></li>
+<li><a class="list-group-item" href="/v4.0-ci/index-en">Item 2</a></li>
+<li><a class="list-group-item" href="/v4.0-ci/index-en">Item 3</a></li>
+<li><a class="list-group-item" href="/v4.0-ci/index-en">Item 4</a></li>
+<li><a class="list-group-item" href="/v4.0-ci/index-en">Item 5</a></li>
+<li><a class="list-group-item" href="/v4.0-ci/index-en">Item 6</a></li>
+<li><a class="list-group-item" href="/v4.0-ci/index-en">Item 7</a></li>
+<li><a class="list-group-item" href="/v4.0-ci/index-en">Item 8</a></li>
 </ul>
-</section>
-<section><h3><a href="section4/section43/index-en.html">Section 4.3</a></h3>
-<ul>
-<li><a href="#">Item 4.3.1</a></li>
-<li><a href="#">Item 4.3.2</a></li>
-</ul>
-</section>
-<section><h3><a href="#">Section 4.4</a></h3>
-<ul>
-<li><a href="#">Item 4.4.1</a></li>
-<li><a href="#">Item 4.4.2</a></li>
-<li><a href="#">Item 4.4.3</a></li>
-<li><a href="#">Item 4.4.4</a></li>
-</ul>
-</section>

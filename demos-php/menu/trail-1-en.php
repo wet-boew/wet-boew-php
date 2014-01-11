@@ -1,4 +1,4 @@
-<ul>
-<li><a<?php if ($_PAGE['isapp'] == '1') { ?> target="_blank"<?php } ?> href="#">Our Mandate</a></li>
-<li><a<?php if ($_PAGE['isapp'] == '1') { ?> target="_blank"<?php } ?> href="#">Our Minister</a></li>
+<ul class="list-unstyled">
+<li><a href="/v4.0-ci/index-en.html#about">About the Web Experience Toolkit</a></li>
+<li><a href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
 </ul>
