@@ -10,7 +10,7 @@ $_PAGE['lang2'] = "fr";
 $path = realpath(dirname(__FILE__));
 //add PHP variants need to load a config file, choosing the /config/{theme}/config.php directory
 //determines what them thist page will use.
-require_once $path ."/config/theme-gcwu-fegc/config.php";
+require_once $path ."/config/config.php";
 
 $_PAGE['title_en'] = "Welcome";
 $_PAGE['title_fr'] = "Bienvenue";
