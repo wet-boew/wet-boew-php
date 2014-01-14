@@ -42,7 +42,20 @@ include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/he
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php";
 ?>
 <!-- Main content start -->
-<!-- no content needed for splash page -->
+<div class="row mrgn-tp-lg">
+<div class="col-md-12">
+<section class="col-md-6">
+<h2 class="h3 text-center">Web Experience Toolkit</h2>
+<a class="btn btn-lg btn-primary btn-block" href="<?php echo $_SITE['wb_site_href_en']; ?>"><?php echo $_SITE['wb_lang_text_en']; ?></a>
+<a class="btn btn-lg btn-default btn-block" href="<?php echo $_SITE['wb_terms_href_en']; ?>" rel="license"><?php echo $_SITE['wb_terms_en']; ?></a>
+</section>
+<section class="col-md-6" lang="fr">
+<h2 class="h3 text-center">Boîte à outils de l’expérience Web</h2>
+<a class="btn btn-lg btn-primary btn-block" href="<?php echo $_SITE['wb_site_href_fr']; ?>"><?php echo $_SITE['wb_lang_text_fr']; ?></a>
+<a class="btn btn-lg btn-default btn-block" href="<?php echo $_SITE['wb_terms_href_fr']; ?>" rel="license"><?php echo $_SITE['wb_terms_fr']; ?></a>
+</section>
+</div>
+</div>
 <!-- MainContentEnd -->
 <?php 
 include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-nav.php"; 

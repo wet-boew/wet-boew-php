@@ -3,6 +3,7 @@
 	$_LANG_ = "es";
 	$_SITE['wb_meta_'.$_LANG_] = "es"; 
 	$_SITE['wb_lang_text_'.$_LANG_] = "Español"; 
+	$_SITE['wb_lang_cur_'.$_LANG_] = "(current)";
 
 	$_SITE['wb_sh_link_1_'.$_LANG_] = "Skip to main content"; 
 	$_SITE['wb_sh_link_2_'.$_LANG_] = "Skip to secondary menu"; 
