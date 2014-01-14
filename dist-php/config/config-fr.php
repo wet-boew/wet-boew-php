@@ -2,6 +2,7 @@
 	$_LANG_ = "fr";
 	$_SITE['wb_meta_'.$_LANG_] = "fr"; 
 	$_SITE['wb_lang_text_'.$_LANG_] = "Français"; 
+	$_SITE['wb_lang_cur_'.$_LANG_] = "(courant)";
 
 	$_SITE['wb_sh_link_1_'.$_LANG_] = "Passer au contenu principal"; 
 	$_SITE['wb_sh_link_2_'.$_LANG_] = "Passer au menu secondaire"; 

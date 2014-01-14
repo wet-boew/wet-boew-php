@@ -1,6 +1,6 @@
 <?php
 
-	$_SIG_IMG_ = $_SITE['wb_core_dist_folder'] . $_SITE['wb_theme_folder'] .'/assets/'.$_SITE['wb_sig_image'];
+	$_SIG_IMG_ = $_SITE['wb_core_dist_folder'] . '/assets/'.$_SITE['wb_sig_image'];
 ?>
 
 <div id="wb-bnr">

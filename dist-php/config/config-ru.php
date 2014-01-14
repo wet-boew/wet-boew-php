@@ -3,6 +3,7 @@
 	$_LANG_ = "ru";
 	$_SITE['wb_meta_'.$_LANG_] = "ru"; 
 	$_SITE['wb_lang_text_'.$_LANG_] = "&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;"; 
+	$_SITE['wb_lang_cur_'.$_LANG_] = "(current)";
 
 	$_SITE['wb_sh_link_1_'.$_LANG_] = "Skip to main content"; 
 	$_SITE['wb_sh_link_2_'.$_LANG_] = "Skip to secondary menu"; 
