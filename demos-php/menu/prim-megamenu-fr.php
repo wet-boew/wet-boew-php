@@ -26,11 +26,7 @@
 <div class="span-2">
 <ul>
 <li><a href="https://github.com/wet-boew/wet-boew/">Page principale du projet</a></li>
-<<<<<<< HEAD
 <li><a href="http://wet-boew.github.io/wet-boew/Licence-fr.html">Conditions r�gissant l'utilisation</a></li>
-=======
-<li><a href="http://wet-boew.github.io/wet-boew/Licence-fr.html">Conditions r�gissant l'utilisation</a></li>
->>>>>>> 666f71122306ac0bb96d4200250697014cfbfa29
 <li><a href="http://wet-boew.github.io/wet-boew/demos/index-fr.html">Exemples pratiques</a></li>
 </ul>
 </div>
