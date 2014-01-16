@@ -32,7 +32,7 @@
 if( $_PAGE['isserv'] != "1" && $_PAGE['issplash']!='1') {?>
 <ul id="wb-tphp">
 	<li class="wb-slc">
-		<a class="wb-sl" href="#wb-cont"><?php echo $_SKIP_1_NAV_TEXT ?><</a>
+		<a class="wb-sl" href="#wb-cont"><?php echo $_SKIP_1_NAV_TEXT ?></a>
 	</li>
 	<li class="wb-slc visible-md visible-lg">
 		<a class="wb-sl" href="#wb-info"><?php echo $_SKIP_2_NAV_TEXT ?></a>
