@@ -5,7 +5,7 @@
 ?>
 <!-- TODO: Add php variable for data-ajax-fetch file -->
 <nav role="navigation" id="wb-sm" data-ajax-fetch="/wet-boew/ajax/sitemenu-fr.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
-<div class="container nvbar"><h2>' . $_SITE['wb_sitenav_' . $_PAGE["lang1"]] .'</h2>
+<div class="container nvbar"><h2><?php echo $_SITE['wb_sitenav_' . $_PAGE["lang1"]]; ?></h2>
 <div class="row">
 	<ul class="list-inline menu">
 		<li><a href="/wet-boew/index-fr.html">WET project</a></li>
