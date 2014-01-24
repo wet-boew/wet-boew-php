@@ -24,7 +24,7 @@ for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 }
 ?>
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="<?php echo $_SITE['wb_meta_' . $_PAGE['lang1']]; ?>"><![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="<?php echo $_SITE['wb_meta_' . $_PAGE['lang1']]; ?>">
 <!--<![endif]-->
