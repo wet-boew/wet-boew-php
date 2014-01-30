@@ -58,8 +58,12 @@ for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 		if( $i > 1 ) {
 			$_META_LANG_ = ' lang="'.$_SITE['wb_meta_'.$_CONTENT_LANG_].'"';
 		}
-	
-		echo '<meta name="dcterms.title"'.$_META_LANG_.' title="'.$_ISO_.'" content="'.$_CONTENT_TITLE_.'" />'."\n";
+		if( $_PAGE['isarchived'] == "1" ){
+			echo '<meta name="dcterms.title"'.$_META_LANG_.' title="'.$_ISO_.'" content="'$_SITE['wb_archive_title_'.$_PAGE['lang1']].$_CONTENT_TITLE_.'" />'."\n";
+		}
+		else{
+			echo '<meta name="dcterms.title"'.$_META_LANG_.' title="'.$_ISO_.'" content="'.$_CONTENT_TITLE_.'" />'."\n";
+		}
 		echo '<meta name="dcterms.language"'.$_META_LANG_.' title="'.$_ISO_.'" content="'.$_CONTENT_LANG_.'" />' ."\n";
 	}
 }
