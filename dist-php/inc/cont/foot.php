@@ -7,6 +7,11 @@
 
 //add the four required footer menus
 for( $i=1; isset($_SITE['wb_ft'.$i.'_text_'.$_PAGE['lang1']]); $i++ ) {
+	//escapes to the next iteration if the menu is empty
+	if (empty($_SITE['wb_ft'.$i.'_text_'.$_PAGE['lang1']])) {
+		continue;
+	}
+	
     $_TEXT_ = $_SITE['wb_ft'.$i.'_text_'.$_PAGE['lang1']];
      echo '<section class="col-sm-3"><h3>'.$_TEXT_.'</h3>'.PHP_EOL;
 

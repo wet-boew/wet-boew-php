@@ -7,8 +7,8 @@
 	 * and $_SITE['wb_core_root'] variables to point to the directory where
 	 * the /dist-php and core /dist folders respectivly exist
 	 */
-	 $_SITE['wb_php_root'] = "/wet-boew/";
-	 $_SITE['wb_core_root'] = "/wet-boew/dist/"; 
+	 $_SITE['wb_php_root'] = "/wet-boew-php";
+	 $_SITE['wb_core_root'] = "/wet-boew"; 
 	
 	//include the standard distribution config with the default settings
 	include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_root'] . "/dist-php/config/config.php";
