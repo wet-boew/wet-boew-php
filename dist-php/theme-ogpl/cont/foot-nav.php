@@ -5,6 +5,10 @@
 
 //add the four required footer menus
 for( $i=1; isset($_SITE['wb_ft'.$i.'_text_'.$_PAGE['lang1']]); $i++ ) {
+    if (empty($_SITE['wb_ft'.$i.'_text_'.$_PAGE['lang1']])) {
+        continue;
+    }
+
     $_TEXT_ = $_SITE['wb_ft'.$i.'_text_'.$_PAGE['lang1']];
     $_LINK_ = null;
     if( isset($_SITE['wb_ft'.$i.'_href_'.$_PAGE['lang1']]) ) {
