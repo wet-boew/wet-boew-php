@@ -13,7 +13,7 @@ if( $_PAGE['nolang'] != "1" ) {
 		}
 		echo '">';
 		echo '<a href="' .$_SITE['base_cmblang_href_' . $_PAGE['lang'.$i]];
-		echo '" lang="' .$_SITE['base_langalt_' . $_PAGE['lang'.$i]];
+		echo '" lang="' .$_PAGE['lang2'];
 		echo '">' . $_SITE['base_cmblang_text_' . $_PAGE['lang'.$i]]; 
 		echo '</a></li>';
 	}
