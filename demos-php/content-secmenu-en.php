@@ -13,12 +13,12 @@ $_PAGE_PATH_ = realpath(dirname(__FILE__));
 require_once $_PAGE_PATH_ . "/config/config.php";
 
 /* These are the required variables fore each page */
-$_PAGE['title_' . $_PAGE['lang1']] = "Content page - Secondary menu - WET theme - Web Experience Toolkit";
+$_PAGE['title_' . $_PAGE['lang1']] = "Content page - Secondary menu - ".$theme_title[$_SITE['wb_theme']]." - Web Experience Toolkit";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
 //Optional variables
-$_PAGE['short_title_' .$_PAGE['lang1']] = "Content page - Secondary menu - WET theme";
+$_PAGE['short_title_' .$_PAGE['lang1']] = "Content page - Secondary menu - ".$theme_title[$_SITE['wb_theme']];
 
 $_PAGE['left_menu_gauche'] = $_PAGE_PATH_ ."/menu-left-gauche/secnav1-en.php";
 

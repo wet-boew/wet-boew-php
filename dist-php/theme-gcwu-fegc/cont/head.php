@@ -11,9 +11,9 @@ $_WMMS_ALT_ = $_SITE['gcwu_wmms_' . $_PAGE['lang1'] ];
 	<div class="row">
 		<object id="gcwu-sig" type="image/svg+xml" tabindex="-1" role="img" data="<?php echo $_SIG_IMG_; ?>" aria-label="<?php echo $_SIG_ALT_; ?>"></object>
 		<ul id="gc-bar" class="list-inline">
-			<li><a href="http://www.canada.ca/en/index.html" rel="external">Canada.ca</a></li>
-			<li><a href="http://www.canada.ca/en/services/index.html" rel="external">Services</a></li>
-			<li><a href="http://www.canada.ca/en/gov/dept/index.html" rel="external">Departments</a></li>
+			<li><a href="<?php echo $_SITE['gcwu_head_canada_dot_ca_link_'.$_PAGE['lang1']]; ?>" rel="external"><?php echo $_SITE['gcwu_head_canada_dot_ca_'.$_PAGE['lang1']]; ?></a></li>
+			<li><a href="<?php echo $_SITE['gcwu_head_service_link_'.$_PAGE['lang1']]; ?>" rel="external"><?php echo $_SITE['gcwu_head_service_'.$_PAGE['lang1']]; ?></a></li>
+			<li><a href="<?php echo $_SITE['gcwu_head_departments_link_'.$_PAGE['lang1']]; ?>" rel="external"><?php echo $_SITE['gcwu_head_departments_'.$_PAGE['lang1']]; ?></a></li>
 			
 			<li id="wb-lng">
 				<h2><?php echo $_SITE['wb_lang_header_'.$_PAGE['lang1']]; ?></h2>

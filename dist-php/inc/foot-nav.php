@@ -33,7 +33,7 @@ if( $_PAGE['issplash'] != "1" ) {
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="<?php echo $_SITE['wb_core_dist_folder']; ?>/js/wet-boew.min.js"></script>
 <!--<![endif]-->
-<!--[if lt IE 9]><script src="/wet-boew/js/ie8-wet-boew2.min.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="<?php echo $_SITE['wb_core_dist_folder']; ?>/js/ie8-wet-boew2.min.js"></script><![endif]-->
 
 <!-- ScriptsEnd -->
 
