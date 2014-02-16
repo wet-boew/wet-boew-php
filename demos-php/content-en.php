@@ -13,8 +13,8 @@ $_PAGE_PATH_ = realpath(dirname(__FILE__));
 require_once $_PAGE_PATH_ . "/config/config.php";
 
 //I'm a lazy programmer, instead of creating separate demos for different themes
-//I just created this array so depending on what the user sets the theme as in the
-// demos-php/config/config-path.php file the title will match the theme
+//I created this array so depending on what the user sets the theme as in the
+// demos-php/config/config.php file the title will match the theme
 $theme_title = array( "theme-base" => "WET theme", "theme-gcwu-fegc" => "GCWU Theme");
 
 /* These are the required variables fore each page */
