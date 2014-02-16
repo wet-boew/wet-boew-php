@@ -1,3 +1,4 @@
+<section>
 <h2>English</h2>
 <ul>
 <li><a href="content-en.php">Content page</a></li>
@@ -18,3 +19,4 @@
 <li><a href="content-nosearchlangsitemenubc-fr.php">Content page - No search, language selection link, site menu or breadcrumb trail</a></li>
 <li><a href="splashpage-fr.php">Splash page</a></li>
 </ul>
+</section>
