@@ -12,13 +12,18 @@ $_PAGE_PATH_ = realpath(dirname(__FILE__));
 
 require_once $_PAGE_PATH_ . "/config/config.php";
 
+//I'm a lazy programmer, instead of creating separate demos for different themes
+//I just created this array so depending on what the user sets the theme as in the
+// demos-php/config/config.php file the title will match the theme
+$theme_title = array( "theme-base" => "WET theme", "theme-gcwu-fegc" => "GCWU Theme");
+
 /* These are the required variables fore each page */
-$_PAGE['title_' . $_PAGE['lang1']] = "WET theme - Web Experience Toolkit";
+$_PAGE['title_' . $_PAGE['lang1']] = $theme_title[$_SITE['wb_theme']]." - Web Experience Toolkit";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
 //Optional variables
-$_PAGE['short_title_' .$_PAGE['lang1']] = "WET theme";
+$_PAGE['short_title_' .$_PAGE['lang1']] = $theme_title[$_SITE['wb_theme']];
 
 //include header information that comes before custome CSS on the page
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 

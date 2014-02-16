@@ -12,13 +12,18 @@ $_PAGE_PATH_ = realpath(dirname(__FILE__));
 
 require_once $_PAGE_PATH_ . "/config/config.php";
 
+//I'm a lazy programmer, instead of creating separate demos for different themes
+//I just created this array so depending on what the user sets the theme as in the
+// demos-php/config/config.php file the title will match the theme
+$theme_title = array( "theme-base" => "Thème de la BOEW", "theme-gcwu-fegc" => "Thème de la FEGC");
+
 /* These are the required variables fore each page */
-$_PAGE['title_' . $_PAGE['lang1']] = "Page de contenu - Sans menu du site ou fil d&#x27;Ariane - Thème de la BOEW - Boîte à outils de l'expérience Web";
+$_PAGE['title_' . $_PAGE['lang1']] = "Page de contenu - Sans menu du site ou fil d&#x27;Ariane - ".$theme_title[$_SITE['wb_theme']]." - Boîte à outils de l'expérience Web";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
 //Optional variables
-$_PAGE['short_title_' .$_PAGE['lang1']] = "Page de contenu - Sans menu du site ou fil d&#x27;Ariane - Thème de la BOEW";
+$_PAGE['short_title_' .$_PAGE['lang1']] = "Page de contenu - Sans menu du site ou fil d&#x27;Ariane - ".$theme_title[$_SITE['wb_theme']];
 
 $_PAGE['nositemenu'] = 1;
 $_PAGE['nobcrumb'] = 1;

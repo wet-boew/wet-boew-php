@@ -1,4 +1,10 @@
 <?php
+	/*
+	 * Chose a theme:
+	 * uncomment the one you want
+	 */ 
+	 //$_SITE['wb_theme'] = "theme-base"; //Standard core WET theme
+	 $_SITE['wb_theme'] = "theme-gcwu-fegc"; //Government of Canada Web Usability Theme
 
 	//$_SITE['wb_php_root'] and $_SITE['wb_core_root'] are set in the following file
 	/* **************************************
@@ -6,9 +12,19 @@
 	 * simplify deployment to various webservers. Change the $_SITE['wb_php_root']
 	 * and $_SITE['wb_core_root'] variables to point to the directory where
 	 * the /dist-php and core /dist folders respectivly exist
+	 * 
+	 * DEV NOTE:
+	 * my personal setup has the WET core themes at the root of the server so:
+	 * /demos-php
+	 * /dist-php
+	 * /theme-base
+	 * /theme-gcwu-fegc
+	 * etc...
+	 * 
+	 * I've give the PHP distribution themes the same names as the core theme folders
 	 */
-	 $_SITE['wb_php_root'] = "/wet-boew-php";
-	 $_SITE['wb_core_root'] = "/wet-boew"; 
+	 $_SITE['wb_php_root'] = "";
+	 $_SITE['wb_core_root'] = "/".$_SITE['wb_theme'];
 	
 	//include the standard distribution config with the default settings
 	include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_root'] . "/dist-php/config/config.php";

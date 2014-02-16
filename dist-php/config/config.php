@@ -42,7 +42,8 @@
 	//modify to point to yours sites bread crumb implementation
 	$_SITE['wb_bcrumb_file'] = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/breadcrumb-generator.php"; 
 
-	$_SITE['wb_sig_image'] = "logo";
+	//include the theme specific configureation
+	include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] .'/config/'.$_SITE['wb_theme'].'/config.php';
 
 	//if $_PAGE['lang1'] is set assume the user set the languages
 	//before including the config file. If so add only the required

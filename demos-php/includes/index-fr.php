@@ -1,3 +1,4 @@
+<section>
 <h2>Anglais</h2>
 <ul>
 <li><a href="content-en.php">Page de contenu</a></li>
@@ -18,3 +19,4 @@
 <li><a href="content-nosearchlangsitemenubc-fr.php">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane</a></li>
 <li><a href="splashpage-fr.php">Page d'entrée</a></li>
 </ul>
+</section>
