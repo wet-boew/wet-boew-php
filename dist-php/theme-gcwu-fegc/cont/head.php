@@ -50,12 +50,12 @@ $_WMMS_ALT_ = $_SITE['gcwu_wmms_' . $_PAGE['lang1'] ];
 </div>
 <div class="container">
 	<div class="row">
-		<div id="wb-sttl">
+		<div id="wb-sttl" class="col-md-5">
 			<a href="<?php echo $_SITE['wb_site_href_' . $_PAGE['lang1']]; ?>">
 			<span><?php echo $_SITE['wb_site_title_'.$_PAGE['lang1']] ?></span>
 			</a>
-			<object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="<?php  echo $_WMMS_IMG_; ?>" aria-label="<?php echo $_WMMS_ALT_; ?>"></object>
 		</div>
+			<object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="<?php  echo $_WMMS_IMG_; ?>" aria-label="<?php echo $_WMMS_ALT_; ?>"></object>
 		<?php
 		if( $_PAGE['nosearch'] != "1" ) {
 			echo '<section id="wb-srch" class="visible-md visible-lg">';
