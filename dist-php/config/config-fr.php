@@ -48,7 +48,7 @@
 	$_SITE['wb_search_label_'.$_LANG_] = "Recherchez le site Web"; 
 
 	$_SITE['wb_bcrumb_'.$_LANG_] = "Fil d'Ariane"; 
-
+	$_SITE['wb_doc_dates_'.$_LANG_] = "Date de modification&nbsp;:";
 	//The following variables were used in version 3.1, but not in version 4.0
 	/*	
 	//Modify to point to a custom signin/signout application

@@ -49,6 +49,8 @@
 	$_SITE['wb_search_label_'.$_LANG_] = "Search Website"; 
 
 	$_SITE['wb_bcrumb_'.$_LANG_] = "Breadcrumb trail"; 
+	
+	$_SITE['wb_doc_dates_'.$_LANG_] = "Date modified:";
 
 	//The following variables were used in version 3.1, but not in version 4.0
 	/*	

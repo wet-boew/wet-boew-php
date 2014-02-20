@@ -1,3 +1,17 @@
+<?php
+                $_MOD_TEXT_ = $_SITE['wb_doc_dates_'.$_PAGE['lang1']];
+                $_DATE_VERSION_TEXT_ = "<span><time>".$_PAGE['modified']."</time></span>";
+                if( $_PAGE['isapp'] == "1" ) {
+                                $_MOD_TEXT_ = $_SITE['wb_doc_version_' . $_PAGE['lang1']];
+                                $_DATE_VERSION_TEXT_ = $_PAGE['version'];
+                }
+?>
+    <dl id="wb-dtmd" role="contentinfo" property="dateModified">
+        <dt><?php echo $_SITE['wb_doc_dates_'.$_PAGE['lang1']] ?></dt>
+       <dd>
+            <time><?php echo $_DATE_VERSION_TEXT_?></time>
+        </dd>
+    </dl>
 </main>
 <?php
 if( isset($_PAGE['left_menu_gauche']) && $_PAGE['left_menu_gauche']!='' && file_exists($_PAGE['left_menu_gauche'])) {
