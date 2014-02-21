@@ -40,7 +40,7 @@ if( $_PAGE['nosearch'] != "1" ) {
 ?>
 </div>
 <?php
-if( $_PAGE['sub_title_' . $_PAGE['lang1']] ) {
+if( isset($PAGE['sub_title_' . $PAGE['lang1']]) && !empty($PAGE['sub_title_' . $_PAGE['lang1']]) )  {
 	echo '<div id="wet-subsite" class="wet-subsite-1">'."\n";
 	echo '<p><a href="'.$_PAGE['sub_link_' . $_PAGE['lang1']].'">'.$_PAGE['sub_title_' . $_PAGE['lang1']]."</a></p>\n";
 	echo '</div>';
