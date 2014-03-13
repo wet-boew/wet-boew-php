@@ -12,12 +12,21 @@ $_PAGE_PATH_ = realpath(dirname(__FILE__));
 
 require_once $_PAGE_PATH_ . "/config/config.php";
 
+//I'm a lazy programmer, instead of creating separate demos for different themes
+//I just created this array so depending on what the user sets the theme as in the
+// demos-php/config/config.php file the title will match the theme
+$theme_title = array( "theme-base" => "WET theme", "theme-gcwu-fegc" => "GCWU Theme");
+
 /* These are the required variables fore each page */
-$_PAGE['title_' . $_PAGE['lang1']] = "Language selection - Web Experience Toolkit / Sélection de la langue - Boîte à outils de l’expérience Web - Web Experience Toolkit";
+$_PAGE['title_' . $_PAGE['lang1']] = "Content page - No site menu or breadcrumb trail - ".$theme_title[$_SITE['wb_theme']]." - Web Experience Toolkit";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
-$_PAGE['issplash'] = 1;
+//Optional variables
+$_PAGE['short_title_' .$_PAGE['lang1']] = "Content page - No site menu or breadcrumb trail - ".$theme_title[$_SITE['wb_theme']];
+
+$_PAGE['nositemenu'] = 1;
+$_PAGE['nobcrumb'] = 1;
 //include header information that comes before custome CSS on the page
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
 ?>
@@ -35,23 +44,10 @@ include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/he
 
 
 <?php 
-include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php";
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php"; 
 ?>
 <!-- Main content start -->
-<div class="row mrgn-tp-lg">
-<div class="col-md-12">
-<section class="col-md-6">
-<h2 class="h3 text-center">Web Experience Toolkit</h2>
-<a class="btn btn-lg btn-primary btn-block" href="<?php echo $_SITE['wb_site_href_en']; ?>"><?php echo $_SITE['wb_lang_text_en']; ?></a>
-<a class="btn btn-lg btn-default btn-block" href="<?php echo $_SITE['wb_terms_href_en']; ?>" rel="license"><?php echo $_SITE['wb_terms_en']; ?></a>
-</section>
-<section class="col-md-6" lang="fr">
-<h2 class="h3 text-center">Boîte à outils de l’expérience Web</h2>
-<a class="btn btn-lg btn-primary btn-block" href="<?php echo $_SITE['wb_site_href_fr']; ?>"><?php echo $_SITE['wb_lang_text_fr']; ?></a>
-<a class="btn btn-lg btn-default btn-block" href="<?php echo $_SITE['wb_terms_href_fr']; ?>" rel="license"><?php echo $_SITE['wb_terms_fr']; ?></a>
-</section>
-</div>
-</div>
+<?php include "includes/sample-cont-en.php"; ?>
 <!-- MainContentEnd -->
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-nav.php";

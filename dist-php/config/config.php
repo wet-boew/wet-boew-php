@@ -31,7 +31,7 @@
 	
 	//define the path to the wet php distribution folder
 	//for development the deploy folder is /wet-boew-php
-	$_SITE['wb_php_dist_folder'] = $_SITE['wb_php_root'] . "/dist-php";
+	$_SITE['wb_php_dist_folder'] = $_SITE['wb_php_root'] . "dist-php";
 	
 	//define the locations of the demo menus
 	$_MENU_LOCATION_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_root'] . "/demos-php/menu";
@@ -55,5 +55,5 @@
 	}
 	
 	//Modify the language selection link to point to whatever script suits your site.
-	$_SITE['wb_cmblang_href_en'] = $_SITE['wb_cmblang_href_fr'] = $_SITE['wb_php_dist_folder'] . "/langselect/lang.php"; 		
+	$_SITE['wb_cmblang_href_en'] = $_SITE['wb_cmblang_href_fr'] = "/" .$_SITE['wb_php_dist_folder'] . "/langselect/lang.php"; 		
 ?>

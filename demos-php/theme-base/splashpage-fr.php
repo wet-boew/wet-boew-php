@@ -1,8 +1,8 @@
 <?php
 
 //always set the page language options first
-$_PAGE['lang1'] = "en";
-$_PAGE['lang2'] = "fr";
+$_PAGE['lang1'] = "fr";
+$_PAGE['lang2'] = "en";
 
 
 //programaticly setting the main config file means the demos will work regardless of where

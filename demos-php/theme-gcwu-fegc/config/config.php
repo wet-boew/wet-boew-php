@@ -3,8 +3,7 @@
 	 * Chose a theme:
 	 * uncomment the one you want
 	 */ 
-	 $_SITE['wb_theme'] = "theme-base"; //Standard core WET theme
-	 //$_SITE['wb_theme'] = "theme-gcwu-fegc"; //Government of Canada Web Usability Theme
+	 $_SITE['wb_theme'] = "theme-gcwu-fegc"; //Government of Canada Web Usability Theme
 
 	//$_SITE['wb_php_root'] and $_SITE['wb_core_root'] are set in the following file
 	/* **************************************

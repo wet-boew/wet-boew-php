@@ -1,15 +1,7 @@
-<?php
-
-	$_SIG_IMG_ = $_SITE['wb_core_dist_folder'] . '/assets/'.$_SITE['wb_sig_image'];
+<?php 
+	/* include theme specific headers if the theme specific /sp-pe/head.php file exists */
+	$_THEME_SP_PE = $_SERVER['DOCUMENT_ROOT'].$_SITE['wb_php_dist_folder'].$_SITE['wb_core_root']."/sp-pe/head.php";
+	if( file_exists($_THEME_SP_PE ) ) {
+		include $_THEME_SP_PE;
+	}
 ?>
-
-<div id="wb-bnr">
-<div class="container">
-<div class="row mrgn-tp-lg mrgn-bttm-lg">
-<section class="col-md-8 col-md-offset-2">
-
-<object type="image/svg+xml" tabindex="-1" role="img" data="<?php echo $_SIG_IMG_ ?>.svg" aria-label="Web Experience Toolkit"></object>
-</section>
-</div>
-</div>
-</div>

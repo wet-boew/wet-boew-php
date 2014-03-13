@@ -1,22 +1,23 @@
-<section>
-<h2>English</h2>
-<ul>
-<li><a href="content-en.php">Content page</a></li>
-<li><a href="content-secmenu-en.php">Content page - Secondary menu</a></li>
-<li><a href="content-nosearchlang-en.php">Content page - No search or language selection link</a></li>
-<li><a href="content-nositemenubc-en.php">Content page - No site menu or breadcrumb trail</a></li>
-<li><a href="content-nosearchlangsitemenubc-en.php">Content page - No search, language selection link, site menu or breadcrumb trail</a></li>
-<li><a href="splashpage-en.php">Splash page</a></li>
-</ul>
-</section>
-<section>
-<h2>French</h2>
-<ul>
-<li><a href="content-fr.php">Content page</a></li>
-<li><a href="content-secmenu-fr.php">Content page - Secondary menu</a></li>
-<li><a href="content-nosearchlang-fr.php">Content page - No search or language selection link</a></li>
-<li><a href="content-nositemenubc-fr.php">Content page - No site menu or breadcrumb trail</a></li>
-<li><a href="content-nosearchlangsitemenubc-fr.php">Content page - No search, language selection link, site menu or breadcrumb trail</a></li>
-<li><a href="splashpage-fr.php">Splash page</a></li>
-</ul>
-</section>
+<table id="components" class="wb-tables table table-striped table-hover" data-wet-boew='{"aoColumnDefs": [ { "bVisible": false, "aTargets": [ 3 ] } ], "aLengthMenu": [[10, 25, -1], [10, 25, "All"]], "iDisplayLength": -1 }'>
+<thead>
+<tr>
+<th>Name</th>
+<th>Category</th>
+<th>Description</th>
+<th>Keywords</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/wet-boew-php/demos-php/theme-gcwu-fegc/index-en.php">Government of Canada Web Usability theme</a></td>
+<td>Theme and style</td>
+<td>This theme implements the requirements of the <a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227" rel="external">Standard on Web Usability</a> and is recommended for use on all Government of Canada websites (except for Canada.ca).</td>
+<td>theme-gcwu-fegc</td>
+</tr>
+<td><a href="/wet-boew-php/demos-php/theme-base/index-en.php">Web Experience Toolkit (WET) theme</a></td>
+<td>Theme and style</td>
+<td>This theme provides an example implementation of the Base Theme.</td>
+<td>theme-wet-boew</td>
+</tr>
+</tbody>
+</table>
