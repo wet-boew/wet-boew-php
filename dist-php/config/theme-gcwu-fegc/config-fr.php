@@ -1,5 +1,6 @@
 <?php
 	$_LANG_ = "fr";
+	$_SITE['gcwu_sig_alt_image_' . $_LANG_] = $_SITE['wb_core_dist_folder'] .'/assets/sig-alt-' . $_LANG_.'.svg';
 	$_SITE['gcwu_sig_image_' . $_LANG_] = $_SITE['wb_core_dist_folder'] .'/assets/sig-' . $_LANG_.'.svg';
 	$_SITE['gcwu_sig_' . $_LANG_] = "Gouvernement du Canada";
 	

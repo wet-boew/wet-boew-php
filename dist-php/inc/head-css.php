@@ -3,7 +3,7 @@
 <!--<![endif]-->
 <?php
 echo '<link rel="stylesheet" href="' . $_SITE['wb_core_dist_folder'] . '/css/';
-if( isset($_PAGE['issplash']) && $_PAGE['issplash'] == 1 ) {
+if( $_SITE['wb_theme'] == 'theme-gcwu-fegc' && isset($_PAGE['issplash']) && $_PAGE['issplash'] == 1 ) {
 	echo 'theme-sp-pe.min.css';
 } else {
 	echo 'theme.min.css';

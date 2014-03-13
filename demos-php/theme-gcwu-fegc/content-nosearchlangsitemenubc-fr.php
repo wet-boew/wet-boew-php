@@ -1,6 +1,6 @@
 <?php
 //always set the page language options first
-//set 'lang1' to 'en' for English pages, 'fr' for French pages
+//set 'lang1' to 'eng' for English pages, 'fra' for French pages
 $_PAGE['lang1'] = "fr";
 
 //Add additional languages the page will support
@@ -12,13 +12,23 @@ $_PAGE_PATH_ = realpath(dirname(__FILE__));
 
 require_once $_PAGE_PATH_ . "/config/config.php";
 
+//I'm a lazy programmer, instead of creating separate demos for different themes
+//I just created this array so depending on what the user sets the theme as in the
+// demos-php/config/config.php file the title will match the theme
+$theme_title = array( "theme-base" => "Thème de la BOEW", "theme-gcwu-fegc" => "Thème de la FEGC");
+
 /* These are the required variables fore each page */
-$_PAGE['title_' . $_PAGE['lang1']] = "Sélection de la langue - Boîte à outils de l’expérience Web / Language selection - Web Experience Toolkit - Boîte à outils de l'expérience Web";
+$_PAGE['title_' . $_PAGE['lang1']] = "Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d&#x27;Ariane - ".$theme_title[$_SITE['wb_theme']]." - Boîte à outils de l'expérience Web";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
-$_PAGE['issplash'] = 1;
+//Optional variables
+$_PAGE['short_title_' .$_PAGE['lang1']] = "Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d&#x27;Ariane - ".$theme_title[$_SITE['wb_theme']];
 
+$_PAGE['nosearch'] = 1;
+$_PAGE['nolang'] = 1;
+$_PAGE['nositemenu'] = 1;
+$_PAGE['nobcrumb'] = 1;
 //include header information that comes before custome CSS on the page
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
 ?>
@@ -39,20 +49,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/he
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php"; 
 ?>
 <!-- Main content start -->
-<div class="row mrgn-tp-lg">
-<div class="col-md-12">
-<section class="col-md-6">
-<h2 class="h3 text-center">Boîte à outils de l’expérience Web</h2>
-<a class="btn btn-lg btn-primary btn-block" href="../index-fr.html">Français</a>
-<a class="btn btn-lg btn-default btn-block" href="../../Licence-fr.html" rel="license">Conditions régissant l'utilisation</a>
-</section>
-<section class="col-md-6" lang="en">
-<h2 class="h3 text-center">Web Experience Toolkit</h2>
-<a class="btn btn-lg btn-primary btn-block" href="../index-en.html">English</a>
-<a class="btn btn-lg btn-default btn-block" href="../../License-en.html" rel="license">Terms and conditions of use</a>
-</section>
-</div>
-</div>
+<?php include "includes/sample-cont-fr.php"; ?>
 <!-- MainContentEnd -->
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-nav.php";
