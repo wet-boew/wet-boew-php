@@ -42,6 +42,21 @@ include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/he
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php";
 ?>
 <!-- Main content start -->
+<?php
+if( $_SITE['wb_theme'] == 'theme-gcwu-fegc') {
+?>
+    <div class="col-md-12">
+        <h1>Welcome / <span lang="fr">Bienvenue</span></h1>
+        <section class="col-md-6">
+            <h2>Web Experience Toolkit</h2>
+            <a class="btn btn-lg btn-primary btn-block" href="../index-en.html">English</a> <a class="btn btn-lg btn-default btn-block" href="../../License-en.html" rel="license">Terms and conditions of use</a> </section>
+        <section class="col-md-6" lang="fr">
+            <h2>Boîte à outils de l'expérience Web</h2>
+            <a class="btn btn-lg btn-primary btn-block" href="../index-fr.html">Français</a> <a class="btn btn-lg btn-default btn-block" href="../../Licence-fr.html" rel="license">Conditions régissant l'utilisation</a> </section>
+    </div>  
+<?php
+} else {
+?>
 <div class="row mrgn-tp-lg">
 <div class="col-md-12">
 <section class="col-md-6">
@@ -56,6 +71,9 @@ include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/he
 </section>
 </div>
 </div>
+<?php
+}
+?>
 <!-- MainContentEnd -->
 <?php 
 include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-nav.php"; 
