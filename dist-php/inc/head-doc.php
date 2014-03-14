@@ -35,6 +35,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <title><?php echo $_PAGE_TITLE_;?></title>
 
 <link rel="shortcut icon" href="<?php echo $_SITE['wb_core_dist_folder']?>/assets/favicon.ico" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
 <?php 
 //print the available title metadata for this page
 for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
