@@ -36,6 +36,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 <link rel="shortcut icon" href="<?php echo $_SITE['wb_core_dist_folder']?>/assets/favicon.ico" />
 <?php 
+$_META_LANG_ = "";
 //print the available title metadata for this page
 for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 	if( isset($_PAGE['title_'.$_PAGE['lang'.$i]]) ) {
