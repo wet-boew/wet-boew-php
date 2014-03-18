@@ -26,7 +26,7 @@
 ?>
 </head>
 
-<body vocab="http://schema.org/" typeof="WebPage">
+<body vocab="http://schema.org/" typeof="WebPage"<?php echo ' '.$_PAGE['bodytag']; ?>>
 <?php 
 //if this is a server page the skip navigation isn't required
 if( $_PAGE['isserv'] != "1" && $_PAGE['issplash']!='1') {?>

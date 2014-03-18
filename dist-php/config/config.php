@@ -9,14 +9,13 @@
 	$_PAGE['isserv'] = (!isset($_PAGE['isserv']) ? 0 : $_PAGE['isserv']);
 	$_PAGE['signin'] = (!isset($_PAGE['signin']) ? 0 : $_PAGE['signin']);
 	$_PAGE['signout'] = (!isset($_PAGE['signout']) ? 0 : $_PAGE['signout']);
-	$_META_LANG = (!isset($_META_LANG) ? '' : $_META_LANG); // for head-end.php
-	$_META_LANG_ = (!isset($_META_LANG_) ? '' : $_META_LANG_); // for head-doc.php
 	$_PAGE['nolang'] = (!isset($_PAGE['nolang']) ? 0 : $_PAGE['nolang']);
 	$_PAGE['nosearch'] = (!isset($_PAGE['nosearch']) ? 0 : $_PAGE['nosearch']);
 	$_PAGE['nositemenu'] = (!isset($_PAGE['nositemenu']) ? 0 : $_PAGE['nositemenu']);
 	$_PAGE['nobcrumb'] = (!isset($_PAGE['nobcrumb']) ? 0 : $_PAGE['nobcrumb']);
 	$_PAGE['isarchived'] = (!isset($_PAGE['isarchived']) ? 0 : $_PAGE['isarchived']);
-	 	 
+	$_PAGE['bodytag'] = (!isset($_PAGE['bodytag']) ? '' : $_PAGE['bodytag']);
+
 	/*
 	 * Define the path to the wet core distribution folder. For development from
 	 * github the deploy folder is /wet-boew-dist and the php deploy folder is 
