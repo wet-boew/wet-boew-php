@@ -8,7 +8,7 @@ if( isset($_PAGE['issplash']) && $_PAGE['issplash'] == 1 ) {
 } else {
 	$_INC_TYPE_ = 'cont';
 	$_MOD_TEXT_ = $_SITE['wb_doc_dates_'.$_PAGE['lang1']];
-    $_DATE_VERSION_TEXT_ = "<span><time>".$_PAGE['modified']."</time></span>";
+    $_DATE_VERSION_TEXT_ = "<span>".$_PAGE['modified']."</span>";
     if( $_PAGE['isapp'] == "1" ) {
         $_MOD_TEXT_ = $_SITE['wb_doc_version_' . $_PAGE['lang1']];
         $_DATE_VERSION_TEXT_ = $_PAGE['version'];
