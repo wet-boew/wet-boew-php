@@ -49,34 +49,31 @@
 
 	$_SITE['wb_bcrumb_'.$_LANG_] = "Breadcrumb trail"; 
 	
-	$_SITE['wb_doc_dates_'.$_LANG_] = "Date modified:";
-	
-	//The following variables were used in version 3.1, but not in version 4.0
-	/*	
-	//Modify to point to a custom signin/signout application
-	//Override the 'wb_signin_file_'.$_LANG_ variable in the file calling it, the default is for demos
-	$_SITE['wb_signin_file_'.$_LANG_] = "application-signout-en.php";
-	$_SITE['wb_signin_text_'.$_LANG_] = "Sign in";
-	
-	//Modify to point to a custom signin/signout application
-	//Override the 'wb_signout_file_'.$_LANG_ variable in the file calling it, the default is for demos
-	$_SITE['wb_signout_file_'.$_LANG_] = "application-signin-en.php";
-	$_SITE['wb_signout_text_'.$_LANG_] = "Sign out";
+	 $_SITE['wb_doc_dates_'.$_LANG_] = "Date modified:";
 
-	//Modify to point to a custom account settings application when using sign in/sign out button
-	$_SITE['wb_sio_file_'.$_LANG_] = "#";
-	$_SITE['wb_sio_text_'.$_LANG_] = "Account settings";
-	$_SITE['wb_sio_heading_'.$_LANG_] = "My account";
+        $_SITE['wb_archive_title_'.$_LANG_] = "ARCHIVED - ";
+        $_SITE['wb_archive_warn_msg_'.$_LANG_] = "p><span class='glyphicon glyphicon-warning-sign' title='Warning'></span> The <a href='http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227'>Standard on Web Usability</a> replaces this content. This content is archived because Common Look and Feel 2.0 Standards have been rescinded.</p><section id='archived' class='panel panel-warning wb-inview' data-inview='archived-bnr'><div class='panel-heading'><h2 class='panel-title'>Archived Content</h2></div><div class='panel-body'><p>Information identified as archived is provided for reference, research or recordkeeping purposes. It is not subject to the Government of Canada Web Standards and has not been altered or updated since it was archived. Please contact us to request a format other than those available.</p></div></section><section id='archived-bnr' class='wb-overlay modal-content overlay-def wb-bar-t'><header><h2 class='wb-inv'>Archived</h2></header><p><a href='#archived'>This page has been archived on the Web.</a></p></section>";
 
-	$_SITE['wb_sup_'.$_LANG_] = "Supplemental content"; 
-	$_SITE['wb_doc_dates_'.$_LANG_] = "Date modified:"; 
-	$_SITE['wb_doc_version_'.$_LANG_] = "Version:"; 
-	$_SITE['wb_sitefooter_'.$_LANG_] = "Site footer"; 
+        //The following variables were used in version 3.1, but not in version 4.0
+        /*
+        //Modify to point to a custom signin/signout application
+        //Override the 'wb_signin_file_'.$_LANG_ variable in the file calling it, the default is for demos
+        $_SITE['wb_signin_file_'.$_LANG_] = "application-signout-en.php";
+        $_SITE['wb_signin_text_'.$_LANG_] = "Sign in";
 
-	$_SITE['wb_archive_warn_alt_'.$_LANG_] = "Warning";
-	$_SITE['wb_archive_warn_title_'.$_LANG_] = $_SITE['wb_archive_warn_alt'.$_LANG_];
-	$_SITE['wb_archive_warn_webuse_'.$_LANG_] = "The <a href='http://www.tbs-sct.gc.ca/pol/doc-en.aspx?id=24227'>Standard on Web Usability</a> replaces this content. This content is archived because Common Look and Feel 2.0 Standards have been rescinded.";
-	$_SITE['wb_archive_warn_head_'.$_LANG_] = "Archived Content";
-	$_SITE['wb_archive_warn_msg_'.$_LANG_] = "Information identified as archived is provided for reference, research or recordkeeping purposes. It is not subject to the Government of Canada Web Standards and has not been altered or updated since it was archived. Please contact us to request a format other than those available.";
-	*/
+        //Modify to point to a custom signin/signout application
+        //Override the 'wb_signout_file_'.$_LANG_ variable in the file calling it, the default is for demos
+        $_SITE['wb_signout_file_'.$_LANG_] = "application-signin-en.php";
+        $_SITE['wb_signout_text_'.$_LANG_] = "Sign out";
+
+        //Modify to point to a custom account settings application when using sign in/sign out button
+        $_SITE['wb_sio_file_'.$_LANG_] = "#";
+        $_SITE['wb_sio_text_'.$_LANG_] = "Account settings";
+        $_SITE['wb_sio_heading_'.$_LANG_] = "My account";
+
+        $_SITE['wb_sup_'.$_LANG_] = "Supplemental content";
+        $_SITE['wb_doc_dates_'.$_LANG_] = "Date modified:";
+        $_SITE['wb_doc_version_'.$_LANG_] = "Version:";
+        $_SITE['wb_sitefooter_'.$_LANG_] = "Site footer";
+        */
 ?>
