@@ -15,32 +15,42 @@
 <?php
 //print the links that appear in the black navigation bar
 for($i=1; isset($_SITE['gcwu_gcnb' .$i .'_href_'.$_PAGE['lang1'] ]); $i++ ) {
-	$_LINK_ = $_SITE['gcwu_gcnb' .$i .'_href_'.$_PAGE['lang1'] ];
-	$_TEXT_ = $_SITE['gcwu_gcnb' .$i .'_text_'.$_PAGE['lang1'] ];
-	echo '<li id="gcwu-gcnb'.$i.'"><a'.$_TARGET_.' rel="external" href="'.$_LINK_.'">' .$_TEXT_ ."</a></li>\n";
+        $_LINK_ = $_SITE['gcwu_gcnb' .$i .'_href_'.$_PAGE['lang1'] ];
+        $_TEXT_ = $_SITE['gcwu_gcnb' .$i .'_text_'.$_PAGE['lang1'] ];
+        echo '<li id="gcwu-gcnb'.$i.'"><a'.$_TARGET_.' rel="external" href="'.$_LINK_.'">' .$_TEXT_ ."</a></li>\n";
+}
+//new way to change the language base on the actual filename
+$q= $_SERVER['REQUEST_URI'];
+if (preg_match('/-en\./', $q) > 0) {
+        $q = preg_replace('/-en\./', '-fr.', $q);
+}
+else if (preg_match('/-fr\./', $q) > 0) {
+        $q = preg_replace('/-fr\./', '-en.', $q);
 }
 if( $_PAGE['nolang'] != "1" ) {
-	for($i=2; isset($_PAGE['lang'.$i]); $i++ ) {
-		echo '<li id="gcwu-gcnb-lang';
-		if( $i-1 >= 2 ) {
-			echo "-" .($i-1);
-		}
-		echo '">';
-		echo '<a href="' .$_SITE['gcwu_cmblang_href_' . $_PAGE['lang'.$i]];
-		echo '" lang="' .$_SITE['wb_meta_' . $_PAGE['lang'.$i]];
-		echo '">' . $_SITE['gcwu_cmblang_text_' . $_PAGE['lang'.$i]]; 
-		echo '</a></li>';
-	}
+        for($i=2; isset($_PAGE['lang'.$i]); $i++ ) {
+                echo '<li id="gcwu-gcnb-lang';
+                if( $i-1 >= 2 ) {
+                        echo "-" .($i-1);
+                }
+                echo '">';
+//              echo '<a href="' .$_SITE['gcwu_cmblang_href_' . $_PAGE['lang'.$i]];
+                echo '<a href="' .$q;
+                echo '" lang="' .$_SITE['wb_meta_' . $_PAGE['lang'.$i]];
+                echo '">' . $_SITE['gcwu_cmblang_text_' . $_PAGE['lang'.$i]]; ;
+                echo '</a></li>';
+        }
 }
 
 /*if( $_PAGE['nolang'] != "1" ) {
-	echo '<li id="gcwu-gcnb-lang">';
-	echo '<a href="' .$_SITE['gcwu_cmblang_href_' . $_PAGE['lang1']];
-	echo '" lang="' .$_SITE['gcwu_langalt_' . $_PAGE['lang1']];
-	echo '">' . $_SITE['gcwu_cmblang_text_' . $_PAGE['lang1']]; 
-	echo '</a></li>';
+        echo '<li id="gcwu-gcnb-lang">';
+        echo '<a href="' .$_SITE['gcwu_cmblang_href_' . $_PAGE['lang1']];
+        echo '" lang="' .$_SITE['gcwu_langalt_' . $_PAGE['lang1']];
+        echo '">' . $_SITE['gcwu_cmblang_text_' . $_PAGE['lang1']];
+        echo '</a></li>';
 }*/
 ?>
+
 </ul>
 </div></div></div></nav>
 
