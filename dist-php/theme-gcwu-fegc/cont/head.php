@@ -29,7 +29,7 @@ $_WMMS_ALT_ = $_SITE['gcwu_wmms_' . $_PAGE['lang1'] ];
                                                 $listItem .= '" href="' .$q . $_PAGE['lang'.$i].'.php?'.$_SERVER['QUERY_STRING'];
                                         }else{
                                                 $listItem .= '" href="' .$q . $_PAGE['lang'.$i].'.php';
-                                                }
+                                        }
                                         $listItem .= '">' . $_SITE['wb_lang_text_' . $_PAGE['lang'.$i]];
                                         $listItem .= "</a>";
 
