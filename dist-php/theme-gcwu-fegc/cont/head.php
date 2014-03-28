@@ -19,27 +19,26 @@ $_WMMS_ALT_ = $_SITE['gcwu_wmms_' . $_PAGE['lang1'] ];
 				<h2><?php echo $_SITE['wb_lang_header_'.$_PAGE['lang1']]; ?></h2>
 			<ul class="list-inline">
 			 <?php
-                        if( $_PAGE['nolang'] != "1" ) {
-                                $q= substr($_SERVER['REQUEST_URI'], 0, strpos($_SERVER['REQUEST_URI'], $_PAGE['lang1']."."));
-                                $langString = "";
-                                for($i=2; isset($_PAGE['lang'.$i]); $i++ ) {
-                                        $listItem = '<li>';
-                                        $listItem .= '<a lang="' .$_SITE['wb_meta_' . $_PAGE['lang'.$i]];
-                                        if ($_SERVER['QUERY_STRING'] != ""){
-                                                $listItem .= '" href="' .$q . $_PAGE['lang'.$i].'.php?'.$_SERVER['QUERY_STRING'];
-                                        }else{
-                                                $listItem .= '" href="' .$q . $_PAGE['lang'.$i].'.php';
-                                        }
-                                        $listItem .= '">' . $_SITE['wb_lang_text_' . $_PAGE['lang'.$i]];
-                                        $listItem .= "</a>";
-
-                                        $listItem .= '</li>' . "\n";
-
-                                        $langString = $listItem . $langString;
-                                }
-                                echo $langString;
+                if( $_PAGE['nolang'] != "1" ) {
+                    $q= substr($_SERVER['REQUEST_URI'], 0, strpos($_SERVER['REQUEST_URI'], $_PAGE['lang1']."."));
+                    $langString = "";
+                    for($i=2; isset($_PAGE['lang'.$i]); $i++ ) {
+                        $listItem = '<li>';
+                        $listItem .= '<a lang="' .$_SITE['wb_meta_' . $_PAGE['lang'.$i]];
+                        $listItem .= '" href="' .$q . $_PAGE['lang'.$i].'.php';
+                        if ($_SERVER['QUERY_STRING'] != ""){
+                        	$listItem .= '?'.$_SERVER['QUERY_STRING'];
                         }
-                        ?></ul>
+                        $listItem .= '">' . $_SITE['wb_lang_text_' . $_PAGE['lang'.$i]];
+                        $listItem .= "</a>";
+
+                        $listItem .= '</li>' . "\n";
+
+                        $langString = $listItem . $langString;
+                    }
+                    echo $langString;
+	            }
+                ?></ul>
 			</li>
 			
 		</ul>
