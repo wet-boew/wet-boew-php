@@ -19,21 +19,17 @@ $_WMMS_ALT_ = $_SITE['gcwu_wmms_' . $_PAGE['lang1'] ];
 				<h2><?php echo $_SITE['wb_lang_header_'.$_PAGE['lang1']]; ?></h2>
 			<ul class="list-inline">
 			 <?php
-                        //new way to change the language base on the actual filename
-                        $q= $_SERVER['REQUEST_URI'];
-                        if (preg_match('/-en\./', $q) > 0) {
-                                $q = preg_replace('/-en\./', '-fr.', $q);
-                        }
-                        else if (preg_match('/-fr\./', $q) > 0) {
-                                $q = preg_replace('/-fr\./', '-en.', $q);
-                        }
-
                         if( $_PAGE['nolang'] != "1" ) {
+                                $q= substr($_SERVER['REQUEST_URI'], 0, strpos($_SERVER['REQUEST_URI'], $_PAGE['lang1']."."));
                                 $langString = "";
                                 for($i=2; isset($_PAGE['lang'.$i]); $i++ ) {
                                         $listItem = '<li>';
                                         $listItem .= '<a lang="' .$_SITE['wb_meta_' . $_PAGE['lang'.$i]];
-                                        $listItem .= '" href="' .$q;
+                                        if ($_SERVER['QUERY_STRING'] != ""){
+                                                $listItem .= '" href="' .$q . $_PAGE['lang'.$i].'.php?'.$_SERVER['QUERY_STRING'];
+                                        }else{
+                                                $listItem .= '" href="' .$q . $_PAGE['lang'.$i].'.php';
+                                                }
                                         $listItem .= '">' . $_SITE['wb_lang_text_' . $_PAGE['lang'.$i]];
                                         $listItem .= "</a>";
 
