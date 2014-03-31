@@ -1,0 +1,6 @@
+# .scrutinizer.yml
+imports:
+    - javascript
+    - php
+
+## Overwrite as needed here.
