@@ -25,7 +25,7 @@ $_PAGE['modified'] = "YYYY-MM-DD";
 //Optional variables
 $_PAGE['short_title_' .$_PAGE['lang1']] = "Page de contenu - Menu Secondaire - Thème de la BOEW";
 
-$_PAGE['left_menu_gauche'] = $_PAGE_PATH_ ."/menu-left-gauche/secnav1-fr.php";
+$_PAGE['left_menu_gauche'] = $_PAGE_PATH_ ."/../menu-left-gauche/secnav1-fr.php";
 
 //include header information that comes before custome CSS on the page
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
