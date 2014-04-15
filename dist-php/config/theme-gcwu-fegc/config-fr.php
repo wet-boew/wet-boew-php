@@ -31,7 +31,7 @@
 	$_SITE['gcwu_travel_link_'.$_LANG_] = "http://www.travel.gc.ca/index-fra.asp";
 
 	$_SITE['gcwu_service_'.$_LANG_] = "<span>Service Canada</span>servicecanada.gc.ca";
-	$_SITE['gcwu_service_link_'.$_LANG_] = "http://www.servicecanada.gc.ca/fra/home.shtml";
+	$_SITE['gcwu_service_link_'.$_LANG_] = "http://www.servicecanada.gc.ca/fra/accueil.shtml";
 
 	$_SITE['gcwu_job_'.$_LANG_] = "<span>Emplois</span>guichetemplois.gc.ca";
 	$_SITE['gcwu_job_link_'.$_LANG_] = "http://www.jobbank.gc.ca/intro-fra.aspx";
