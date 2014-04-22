@@ -22,11 +22,11 @@
          */
         //Set this to 1 if PCO sent a banner to put across all the website.
         $_SITE['PCOBanner'] = "1";
-        $_SITE['PCOBanner-en'] = "/_img/PCO-Banner/Usability_Standard_Theme_1200x320_eng.jpg";
+        $_SITE['PCOBanner-en'] = "/_img/PCO-Banner/Usability_Standard_Theme_1200x100_eng.jpg";
         $_SITE['PCOBanner-WithLeftMenu-en'] = "/_img/PCO-Banner/Usability_Standard_Theme_880x240_eng.jpg";
         $_SITE['PCOBanner-en-alt'] = "May 9, 2014, National Day of Honour, Afghanistan";
         $_SITE['PCOBanner-en-link'] = "http://www.app.forces.gc.ca/ndoh-jndc/national-day-of-honour.html?utm_source=Departmental%20Websites&utm_medium=Priorities&utm_campaign=NDOH-ENG ";
-        $_SITE['PCOBanner-fr'] = "/_img/PCO-Banner/Usability_Standard_Theme_1200x320_fra.jpg";
+        $_SITE['PCOBanner-fr'] = "/_img/PCO-Banner/Usability_Standard_Theme_1200x100_fra.jpg";
         $_SITE['PCOBanner-WithLeftMenu-fr'] = "/_img/PCO-Banner/Usability_Standard_Theme_880x240_fra.jpg";
         $_SITE['PCOBanner-fr-alt'] = "le 9 mai 2014. Journ&eacute;e nationale de comm&eacute;moration, Afghanistan";
         $_SITE['PCOBanner-fr-link'] = "http://www.app.forces.gc.ca/ndoh-jndc/journee-nationale-de-commemoration.html?utm_source=Departmental%20Websites&utm_medium=Priorities&utm_campaign=NDOH-FRA";
