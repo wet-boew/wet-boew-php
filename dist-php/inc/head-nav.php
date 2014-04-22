@@ -85,6 +85,25 @@ if( $_PAGE['isserv'] != "1" && $_PAGE['issplash']!='1') {?>
 		echo '</ul>' ."\n";
 		echo '</aside></div>' ."\n";
 	}
+	
+if( $_SITE['PCOBanner'] == "1" ){
+    $pageLang= $_SERVER['REQUEST_URI'];
+        if (preg_match('/-en\./', $pageLang) > 0) {
+            if ($_PAGE['left_menu_gauche'] <> ""){
+                echo "<a href='".$_SITE['PCOBanner-en-link']."'><img width='880' height='240' src='".$_SITE['PCOBanner-WithLeftMenu-en']."' alt='".$_SITE['PCOBanner-en-alt']."' /></a>";
+                }
+            else{
+            echo "<a href='".$_SITE['PCOBanner-en-link']."'><img width='1180' height='315' src='".$_SITE['PCOBanner-en']."' alt='".$_SITE['PCOBanner-en-alt']."' /></a>";
+            }
+        }
+        else if (preg_match('/-fr\./', $pageLang) > 0) {
+                if ($_PAGE['left_menu_gauche'] <> ""){
+            echo "<a href='".$_SITE['PCOBanner-fr-link']."'><img width='880' height='240' src='".$_SITE['PCOBanner-WithLeftMenu-fr']."' alt='".$_SITE['PCOBanner-fr-alt']."' /></a>";}
+            else{
+                echo "<a href='".$_SITE['PCOBanner-fr-link']."'><img width='1180' height='315' src='".$_SITE['PCOBanner-fr']."' alt='".$_SITE['PCOBanner-fr-alt']."' /></a>";
+                }
+    }
+}
 ?>
 <h1 id="wb-cont"><?php
 $_TITLE_ = $_PAGE['short_title_' . $_PAGE['lang1']];
