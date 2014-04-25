@@ -55,3 +55,9 @@ function gt_ie8_css() {
 <link rel="stylesheet" href="<?php echo $_SITE['wb_core_dist_folder']; ?>/js/css/pe-ap-min.css" />
 <?php echo gt_ie8_css(); ?>
 <!--<![endif]-->
+<?php
+if( $_SITE['PCOBanner'] == "1" ){
+echo "<style type='text/css'>.width98{width:98%;}</style>";
+}
+?>
+

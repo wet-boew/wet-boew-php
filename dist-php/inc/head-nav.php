@@ -90,17 +90,17 @@ if( $_SITE['PCOBanner'] == "1" ){
     $pageLang= $_SERVER['REQUEST_URI'];
         if (preg_match('/-en\./', $pageLang) > 0) {
             if ($_PAGE['left_menu_gauche'] <> ""){
-                echo "<a href='".$_SITE['PCOBanner-en-link']."'><img width='98%' height='98%' src='".$_SITE['PCOBanner-WithLeftMenu-en']."' alt='".$_SITE['PCOBanner-en-alt']."' /></a>";
+                echo "<a href='".$_SITE['PCOBanner-en-link']."'><img class='width98' src='".$_SITE['PCOBanner-WithLeftMenu-en']."' alt='".$_SITE['PCOBanner-en-alt']."' /></a>";
                 }
             else{
-            echo "<a href='".$_SITE['PCOBanner-en-link']."'><img width='98%' height='98%' src='".$_SITE['PCOBanner-en']."' alt='".$_SITE['PCOBanner-en-alt']."' /></a>";
+            echo "<a href='".$_SITE['PCOBanner-en-link']."'><img class='width98' src='".$_SITE['PCOBanner-en']."' alt='".$_SITE['PCOBanner-en-alt']."' /></a>";
             }
         }
         else if (preg_match('/-fr\./', $pageLang) > 0) {
                 if ($_PAGE['left_menu_gauche'] <> ""){
-            echo "<a href='".$_SITE['PCOBanner-fr-link']."'><img width='98%' height='98%' src='".$_SITE['PCOBanner-WithLeftMenu-fr']."' alt='".$_SITE['PCOBanner-fr-alt']."' /></a>";}
+            echo "<a href='".$_SITE['PCOBanner-fr-link']."'><img class='width98' src='".$_SITE['PCOBanner-WithLeftMenu-fr']."' alt='".$_SITE['PCOBanner-fr-alt']."' /></a>";}
             else{
-                echo "<a href='".$_SITE['PCOBanner-fr-link']."'><img width='98%' height='98%' src='".$_SITE['PCOBanner-fr']."' alt='".$_SITE['PCOBanner-fr-alt']."' /></a>";
+                echo "<a href='".$_SITE['PCOBanner-fr-link']."'><img class='width98' src='".$_SITE['PCOBanner-fr']."' alt='".$_SITE['PCOBanner-fr-alt']."' /></a>";
                 }
     }
 }
