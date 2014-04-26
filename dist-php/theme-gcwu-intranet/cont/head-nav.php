@@ -42,7 +42,7 @@ if( $_PAGE['nolang'] != "1" ) {
 <div id="gcwu-title"><p id="gcwu-title-in"><a<?php echo $_TARGET_; ?> href="<?php echo $_SITE['wb_site_href_' . $_PAGE['lang1']]; ?>"><?php echo $_SITE['wb_site_title_' . $_PAGE['lang1']]; ?></a></p></div>
 
 <?php
-if( $_PAGE['nosearch'] != "1" ) {
+if ($_PAGE['nosearch'] != "1") {
 	echo '<section role="search"><div id="gcwu-srchbx"><h2>'.$_SITE['wb_search_' . $_PAGE['lang1']].'</h2>';
     include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] ."/inc/search.php";
 	echo '</div></section>';
@@ -50,27 +50,27 @@ if( $_PAGE['nosearch'] != "1" ) {
 ?>
 </div>
 <?php
-if( isset($PAGE['sub_title_' . $PAGE['lang1']]) && !empty($PAGE['sub_title_' . $_PAGE['lang1']]) )  {
+if (isset($_PAGE['sub_title_' . $_PAGE['lang1']]) && ! empty($_PAGE['sub_title_' . $_PAGE['lang1']]))  {
 	echo '<div id="gcwu-subsite" class="gcwu-subsite-1">'."\n";
 	echo '<p><a href="'.$_PAGE['sub_link_' . $_PAGE['lang1']].'">'.$_PAGE['sub_title_' . $_PAGE['lang1']]."</a></p>\n";
 	echo '</div>';
 }
 ?></div>
 <?php
-//if the site menu hasn't been set or the file can't be found set the no site menu flag
-if( !isset($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ]) || (isset($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ])
+// if the site menu hasn't been set or the file can't be found set the no site menu flag
+if ( ! isset($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ]) || (isset($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ])
  && ($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ]=="" || !file_exists($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ])))) {
 	$_PAGE['nositemenu'] = "1";
 	echo "<h1 id=\"here\">".$_PAGE['wb_sitenav_file_' . $_PAGE['lang1']]."</h1>";
 }
 
-//if the bread crumb trail hasn't been set or the file can't be found set the nobcrumb
-if( !isset($_SITE['wb_bcrumb_file']) || (isset($_SITE['wb_bcrumb_file']) && 
+// if the bread crumb trail hasn't been set or the file can't be found set the nobcrumb
+if ( ! isset($_SITE['wb_bcrumb_file']) || (isset($_SITE['wb_bcrumb_file']) && 
 	($_SITE['wb_bcrumb_file'] == "" || !file_exists($_SITE['wb_bcrumb_file'])))) {
 		$_PAGE['nobcrumb'] = "1";
 }
 
-//Handle the mega menu and bread crumb trail
+// Handle the mega menu and bread crumb trail
 if ($_PAGE['nositemenu'] != '1' || $_PAGE['nobcrumb'] != '1') { 
 
 	echo '<nav role="navigation">' ."\n";

@@ -40,15 +40,15 @@ if( $_PAGE['nosearch'] != "1" ) {
 ?>
 </div>
 <?php
-if( isset($PAGE['sub_title_' . $PAGE['lang1']]) && !empty($PAGE['sub_title_' . $_PAGE['lang1']]) )  {
+if (isset($_PAGE['sub_title_' . $_PAGE['lang1']]) && ! empty($_PAGE['sub_title_' . $_PAGE['lang1']]) )  {
 	echo '<div id="wet-subsite" class="wet-subsite-1">'."\n";
 	echo '<p><a href="'.$_PAGE['sub_link_' . $_PAGE['lang1']].'">'.$_PAGE['sub_title_' . $_PAGE['lang1']]."</a></p>\n";
 	echo '</div>';
 }
 ?></div>
 <?php
-//if the site menu hasn't been set or the file can't be found set the no site menu flag
-if( !isset($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ]) || (isset($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ])
+// if the site menu hasn't been set or the file can't be found set the no site menu flag
+if ( ! isset($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ]) || (isset($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ])
  && ($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ]=="" || !file_exists($_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ])))) {
 	$_PAGE['nositemenu'] = "1";
 }
