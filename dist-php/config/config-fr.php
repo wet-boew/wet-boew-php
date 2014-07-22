@@ -16,7 +16,7 @@
 	$_SITE['wb_terms_'.$_LANG_] = "Conditions régissant l'utilisation";
 	$_SITE['wb_terms_href_'.$_LANG_] = "../../Licence-fr.html";
 
-	$_SITE['wb_mb_menu_'.$_LANG_] = "Menu";
+	$_SITE['wb_mb_menu_'.$_LANG_] = "Recherche et menus";
 
 	//used in foot-nav.php
 	$_SITE['wb_sec_'.$_LANG_] = "Menu secondaire"; 
