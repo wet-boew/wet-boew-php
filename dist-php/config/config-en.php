@@ -16,7 +16,7 @@
 	$_SITE['wb_terms_'.$_LANG_] = "Terms and conditions of use";
 	$_SITE['wb_terms_href_'.$_LANG_] = "../../License-en.html";
 	
-	$_SITE['wb_mb_menu_'.$_LANG_] = "Menu";
+	$_SITE['wb_mb_menu_'.$_LANG_] = "Search and menus";
 
 	//used in foot-nav.php
 	$_SITE['wb_sec_'.$_LANG_] = "Secondary menu"; 
