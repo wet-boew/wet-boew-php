@@ -24,19 +24,19 @@
 	
 	$_SITE['gcwu_footer_'.$_LANG_] = "Government of Canada footer";
 
-	$_SITE['gcwu_health_'.$_LANG_] = "<span>Santé</span>canadiensensante.gc.ca";
+	$_SITE['gcwu_health_'.$_LANG_] = "<span>Santé</span>";
 	$_SITE['gcwu_health_link_'.$_LANG_] = "http://healthycanadians.gc.ca/index-fra.php";
 
-	$_SITE['gcwu_travel_'.$_LANG_] = "<span>Voyage</span>voyage.gc.ca";
+	$_SITE['gcwu_travel_'.$_LANG_] = "<span>Voyage</span>";
 	$_SITE['gcwu_travel_link_'.$_LANG_] = "http://www.travel.gc.ca/index-fra.asp";
 
-	$_SITE['gcwu_service_'.$_LANG_] = "<span>Service Canada</span>servicecanada.gc.ca";
+	$_SITE['gcwu_service_'.$_LANG_] = "<span>Service Canada</span>";
 	$_SITE['gcwu_service_link_'.$_LANG_] = "http://www.servicecanada.gc.ca/fra/accueil.shtml";
 
-	$_SITE['gcwu_job_'.$_LANG_] = "<span>Emplois</span>guichetemplois.gc.ca";
+	$_SITE['gcwu_job_'.$_LANG_] = "<span>Emplois</span>";
 	$_SITE['gcwu_job_link_'.$_LANG_] = "http://www.jobbank.gc.ca/intro-fra.aspx";
 
-	$_SITE['gcwu_economy_'.$_LANG_] = "<span>Économie</span>plandaction.gc.ca";
+	$_SITE['gcwu_economy_'.$_LANG_] = "<span>Économie</span>";
 	$_SITE['gcwu_economy_link_'.$_LANG_] = "http://actionplan.gc.ca/fr";
 
 	$_SITE['gcwu_canada_dot_ca_'.$_LANG_] = "Canada.ca";
