@@ -42,7 +42,7 @@ for( $i=1; isset($_SITE['wb_ft'.$i.'_text_'.$_PAGE['lang1']]); $i++ ) {
 for( $i=1; isset($_SITE['gcwu_trail'.$i.'_href_'.$_PAGE['lang1']]); $i++ ) {
 	$_LINK_ = $_SITE['gcwu_trail'.$i.'_href_'.$_PAGE['lang1']];
 	$_TEXT_ = $_SITE['gcwu_trail'.$i.'_text_'.$_PAGE['lang1']];
-	echo '<li><a'.$_TARGET_.' rel="external" href="' .$_LINK_. '"><span>'.$_TEXT_.'</span></a></li>';
+	echo '<li><a'.$_TARGET_.' rel="external" href="' .$_LINK_. '"><span>'.$_TEXT_."</span></a></li>\n";
 }
 ?>
 <li id="gcwu-gcft-ca"><div><a<?php echo $_TARGET_ ?> rel="external" href="<?php echo $_SITE['gcwu_trail_canada_href_'.$_PAGE['lang1']]; ?>"><?php echo $_SITE['gcwu_trail_canada_text_'.$_PAGE['lang1']]; ?></a></div></li>
