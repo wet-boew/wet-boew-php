@@ -87,14 +87,24 @@ if( $_PAGE['isserv'] != "1" && $_PAGE['issplash']!='1') {?>
 	}
 ?>
 <h1 id="wb-cont"><?php
+if( $_PAGE['isarchived'] == "1" ){
+$_TITLE_ = $_SITE['wb_archive_title_'.$_PAGE['lang1']]. $_PAGE['short_title_' . $_PAGE['lang1']];
+//if there's more than one language set then add the additioal title elements
+for( $i=2; isset($_PAGE['lang'.$i]); $i++ ) {
+        if( isset($_PAGE['short_title_' . $_PAGE['lang'.$i]]) ) {
+                $_TITLE_ .= " / <span lang=\"".$_SITE['wb_meta_'.$_PAGE['lang'.$i]]."\">" . $_PAGE['short_title_' . $_PAGE['lang'.$i]] ."</span>";
+        }
+}
+}
+else{
 $_TITLE_ = $_PAGE['short_title_' . $_PAGE['lang1']];
 //if there's more than one language set then add the additioal title elements
 for( $i=2; isset($_PAGE['lang'.$i]); $i++ ) {
-	if( isset($_PAGE['short_title_' . $_PAGE['lang'.$i]]) ) {
-		$_TITLE_ .= " / <span lang=\"".$_SITE['wb_meta_'.$_PAGE['lang'.$i]]."\">" . $_PAGE['short_title_' . $_PAGE['lang'.$i]] ."</span>"; 
-	}
+        if( isset($_PAGE['short_title_' . $_PAGE['lang'.$i]]) ) {
+                $_TITLE_ .= " / <span lang=\"".$_SITE['wb_meta_'.$_PAGE['lang'.$i]]."\">" . $_PAGE['short_title_' . $_PAGE['lang'.$i]] ."</span>";
+        }
 }
-
+}
 echo $_TITLE_;
 ?></h1>
 
