@@ -73,15 +73,15 @@
 	$_SITE['gcwu_cmblang_title_fra'] = "English - English version of the Web page"; 
 
 	//links that appear at the very bottom of the page for this theme
-	$_SITE['gcwu_trail1_href_eng'] = "http://healthycanadians.gc.ca/index-eng.php"; 
-	$_SITE['gcwu_trail1_href_fra'] = "http://canadiensensante.gc.ca/index-fra.php"; 
+	$_SITE['gcwu_trail1_href_eng'] = "http://healthycanadians.gc.ca/"; 
+	$_SITE['gcwu_trail1_href_fra'] = "http://canadiensensante.gc.ca/"; 
 	$_SITE['gcwu_trail1_text_eng'] = "Health"; 
 	$_SITE['gcwu_trail1_text_fra'] = "Santé"; 
 	$_SITE['gcwu_trail1_textsub_eng'] = "healthycanadians.gc.ca"; 
 	$_SITE['gcwu_trail1_textsub_fra'] = "canadiensensante.gc.ca"; 
 
-	$_SITE['gcwu_trail2_href_eng'] = "http://www.voyage.gc.ca/index-eng.asp"; 
-	$_SITE['gcwu_trail2_href_fra'] = "http://www.voyage.gc.ca/index-fra.asp"; 
+	$_SITE['gcwu_trail2_href_eng'] = "http://www.travel.gc.ca/"; 
+	$_SITE['gcwu_trail2_href_fra'] = "http://www.voyage.gc.ca/"; 
 	$_SITE['gcwu_trail2_text_eng'] = "Travel"; 
 	$_SITE['gcwu_trail2_text_fra'] = "Voyage"; 
 	$_SITE['gcwu_trail2_textsub_eng'] = "travel.gc.ca"; 
@@ -94,8 +94,8 @@
 	$_SITE['gcwu_trail3_textsub_eng'] = "servicecanada.gc.ca"; 
 	$_SITE['gcwu_trail3_textsub_fra'] = "servicecanada.gc.ca"; 
 
-	$_SITE['gcwu_trail4_href_eng'] = "http://www.jobbank.gc.ca/intro-eng.aspx"; 
-	$_SITE['gcwu_trail4_href_fra'] = "http://www.guichetemplois.gc.ca/Intro-fra.aspx"; 
+	$_SITE['gcwu_trail4_href_eng'] = "http://www.jobbank.gc.ca/"; 
+	$_SITE['gcwu_trail4_href_fra'] = "http://www.guichetemplois.gc.ca/"; 
 	$_SITE['gcwu_trail4_text_eng'] = "Jobs"; 
 	$_SITE['gcwu_trail4_text_fra'] = "Emplois"; 
 	$_SITE['gcwu_trail4_textsub_eng'] = "jobbank.gc.ca"; 
@@ -108,10 +108,10 @@
 	$_SITE['gcwu_trail5_textsub_eng'] = "actionplan.gc.ca"; 
 	$_SITE['gcwu_trail5_textsub_fra'] = "plandaction.gc.ca"; 
 
-	$_SITE['gcwu_trail_canada_href_eng'] = "http://www.canada.gc.ca/menu-eng.html"; 
-	$_SITE['gcwu_trail_canada_href_fra'] = "http://www.canada.gc.ca/menu-fra.html"; 
-	$_SITE['gcwu_trail_canada_text_eng'] = "Canada.gc.ca"; 
-	$_SITE['gcwu_trail_canada_text_fra'] = "Canada.gc.ca"; 
+	$_SITE['gcwu_trail_canada_href_eng'] = "http://www.canada.ca/en/"; 
+	$_SITE['gcwu_trail_canada_href_fra'] = "http://www.canada.ca/fr/"; 
+	$_SITE['gcwu_trail_canada_text_eng'] = "Canada.ca"; 
+	$_SITE['gcwu_trail_canada_text_fra'] = "Canada.ca"; 
 
 	/* Support for other languages, only necessary for multilingual demos */
 	$_SITE['gcwu_cmblang_text_spa'] = "español";
