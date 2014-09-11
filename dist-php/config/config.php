@@ -1,6 +1,6 @@
 <?php
 
-	$_SITE['wb_version'] = '3.1';
+	$_SITE['wb_version'] = '3.1.0';
 	/*
 	 * Add all of the default variables that may be null to prevent PHP warnings 
 	 * and errors for undefined values
