@@ -23,7 +23,7 @@
 
 <ul class="mb-menu">
 <li><section><h3><a href="http://wet-boew.github.io/wet-boew/index-en.html">WET project</a></h3><div class="mb-sm">
-<div class="span-2">
+<div class="col-md-4">
 <ul>
 <li><a href="https://github.com/wet-boew/wet-boew/">Main project page</a></li>
 <li><a href="http://wet-boew.github.io/wet-boew/License-en.html">Terms and conditions</a></li>
@@ -34,7 +34,7 @@
 <div class="mb-main-link"><a href="http://wet-boew.github.io/wet-boew/index-en.html">WET project - Main page</a></div>
 </div></section></li>
 <li><section><h3><a href="section2/index-en.html">Section 2</a></h3><div class="mb-sm">
-<div class="span-2">
+<div class="col-md-4">
 <section><h4><a href="#">Section 2.1</a></h4>
 <ul>
 <li><a href="#">Item 2.1.1</a></li>
@@ -46,7 +46,7 @@
 </ul>
 </section>
 </div>
-<div class="span-2">
+<div class="col-md-4">
 <section><h4><a href="section2/section22/index-en.html">Section 2.2</a></h4>
 <ul>
 <li><a href="#">Item 2.2.1</a></li>
@@ -84,7 +84,7 @@
 <div class="clear"></div>
 </section>
 </div>
-<div class="span-2">
+<div class="col-md-4">
 <section><h4><a href="#">Section 3.1</a></h4>
 <ul>
 <li><a href="#">Item 3.1.1</a></li>
@@ -96,7 +96,7 @@
 </ul>
 </section>
 </div>
-<div class="span-2">
+<div class="col-md-4">
 <section><h4><a href="#">Section 3.2</a></h4>
 <ul>
 <li><a href="#">Item 3.2.1</a></li>
@@ -110,7 +110,7 @@
 </ul>
 </section>
 </div>
-<div class="span-2">
+<div class="col-md-4">
 <section><h4><a href="#">Section 3.3</a></h4>
 <ul>
 <li><a href="#">Item 3.3.1</a></li>
@@ -123,7 +123,7 @@
 <div class="mb-main-link"><a href="#">Section 3 - Main page</a></div>
 </div></section></li>
 <li><section><h3><a href="section4/index-en.html">Section 4</a></h3><div class="mb-sm">
-<div class="span-2">
+<div class="col-md-4">
 <section><h4><a href="#">Section 4.1</a></h4>
 <ul>
 <li><a href="#">Item 4.1.1</a></li>
@@ -140,7 +140,7 @@
 </ul>
 </section>
 </div>
-<div class="span-2">
+<div class="col-md-4">
 <section><h4><a href="section4/section43/index-en.html">Section 4.3</a></h4>
 <ul>
 <li><a href="#">Item 4.3.1</a></li>
@@ -176,7 +176,7 @@
 <div class="clear"></div>
 </section>
 </div>
-<div class="span-2">
+<div class="col-md-4">
 <section><h4><a href="#">Section 6.1</a></h4>
 <ul>
 <li><a href="#">Item 6.1.1</a></li>
@@ -188,7 +188,7 @@
 </ul>
 </section>
 </div>
-<div class="span-2">
+<div class="col-md-4">
 <section><h4><a href="#">Section 6.2</a></h4>
 <ul>
 <li><a href="#">Item 6.2.1</a></li>
@@ -202,7 +202,7 @@
 </ul>
 </section>
 </div>
-<div class="span-2">
+<div class="col-md-4">
 <section><h4><a href="#">Section 6.3</a></h4>
 <ul>
 <li><a href="#">Item 6.3.1</a></li>
@@ -211,7 +211,7 @@
 </ul>
 </section>
 </div>
-<div class="span-2">
+<div class="col-md-4">
 <section><h4><a href="#">Section 6.4</a></h4>
 <ul>
 <li><a href="#">Item 6.4.1</a></li>
@@ -227,7 +227,7 @@
 <div class="mb-main-link"><a href="#">Section 6 - Main page</a></div>
 </div></section></li>
 <li><section><h3><a href="#">Section 7</a></h3><div class="mb-sm">
-<div class="span-2">
+<div class="col-md-4">
 <section><h4><a href="#">Section 7.1</a></h4>
 <ul>
 <li><a href="#">Item 7.1.1</a></li>
@@ -239,7 +239,7 @@
 </ul>
 </section>
 </div>
-<div class="span-2">
+<div class="col-md-4">
 <section><h4><a href="#">Section 7.2</a></h4>
 <ul>
 <li><a href="#">Item 7.2.1</a></li>
@@ -253,7 +253,7 @@
 </ul>
 </section>
 </div>
-<div class="span-2">
+<div class="col-md-4">
 <section><h4><a href="#">Section 7.3</a></h4>
 <ul>
 <li><a href="#">Item 7.3.1</a></li>

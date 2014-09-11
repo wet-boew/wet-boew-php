@@ -30,11 +30,8 @@ for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 <!--<![endif]-->
 <head>
 <meta charset="utf-8" />
-<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 <title><?php echo $_PAGE_TITLE_;?></title>
-
-<link rel="shortcut icon" href="<?php echo $_SITE['wb_core_dist_folder']?>/assets/favicon.ico" />
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <?php 
 $_META_LANG_ = "";
 //print the available title metadata for this page
@@ -55,5 +52,3 @@ for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 	}
 }
 ?>
-
-<meta content="width=device-width, initial-scale=1" name="viewport"/>

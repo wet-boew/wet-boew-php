@@ -26,11 +26,15 @@
 	 * out or remove these lines.
 	 */
 	
-	$_SITE['wb_core_dist_folder'] = $_SITE['wb_core_root'];
+	if( !isset($_SITE['wb_core_dist_folder']) ) {
+		$_SITE['wb_core_dist_folder'] = $_SITE['wb_core_root'];
+	}
 	
 	//define the path to the wet php distribution folder
 	//for development the deploy folder is /wet-boew-php
-	$_SITE['wb_php_dist_folder'] = $_SITE['wb_php_root'] . "dist-php";
+	if( !isset($_SITE['wb_php_dist_folder']) ) {
+		$_SITE['wb_php_dist_folder'] = $_SITE['wb_php_root'] . "dist-php";
+	}
 	
 	//define the locations of the demo menus
 	$_MENU_LOCATION_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_root'] . "/demos-php/menu";

@@ -13,7 +13,6 @@ if( !isset($_SITE['wb_bcrumb_file']) || (isset($_SITE['wb_bcrumb_file']) &&
 
 ?>
 <!-- HeaderStart -->
-
 <div id="wb-bnr">
 	<div id="wb-bar">
 <?php 
@@ -25,13 +24,10 @@ if( !isset($_SITE['wb_bcrumb_file']) || (isset($_SITE['wb_bcrumb_file']) &&
 ?>
 	</div>
 </div>
-
 <?php
 //Handle the mega menu and bread crumb trail
 	if ($_PAGE['nositemenu'] != '1') {
-	
 		include $_SITE['wb_sitenav_file_' . $_PAGE['lang1'] ];
-	
 	} else {
 		echo '<span data-trgt="mb-pnl" class="wb-menu hide"></span>';
 	}
