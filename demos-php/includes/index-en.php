@@ -1,4 +1,4 @@
-<table id="components" class="wb-tables table table-striped table-hover" data-wet-boew='{"aoColumnDefs": [ { "bVisible": false, "aTargets": [ 3 ] } ], "aLengthMenu": [[10, 25, -1], [10, 25, "All"]], "iDisplayLength": -1 }'>
+<table id="components" class="wb-tables table table-striped table-hover" data-wet-boew='{"aoColumnDefs": [ {"bVisible": false, "aTargets": [ 3 ] } ], "aLengthMenu": [[10, 25, -1], [10, 25, "All"]], "iDisplayLength": -1 }'>
 <thead>
 <tr>
 <th>Name</th>

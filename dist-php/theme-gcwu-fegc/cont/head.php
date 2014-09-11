@@ -47,10 +47,15 @@ $_WMMS_ALT_ = $_SITE['gcwu_wmms_' . $_PAGE['lang1'] ];
 			<ul class="pnl-btn list-inline text-right">
 			<li><a href="#mb-pnl" title="<?php echo $_SITE['wb_mb_menu_'.$_PAGE['lang1']]; ?>" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv"><?php echo $_SITE['wb_mb_menu_'.$_PAGE['lang1']]; ?></span></span></span></a></li>
 			</ul>
-			<div id="mb-pnl"></div>
-		</section>
+			<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+				<h2><?php echo $_SITE['wb_mb_menu_'.$_PAGE['lang1']]; ?></h2>
+				<ul class="pnl-btn list-inline text-right">
+				<li><a href="#mb-pnl" title="<?php echo $_SITE['wb_mb_menu_'.$_PAGE['lang1']]; ?>" aria-controls="mb-pnl" class="overlay-lnk btn btn-xs btn-default" role="button"><span class="glyphicon glyphicon-th-list"><span class="wb-inv"><?php echo $_SITE['wb_mb_menu_'.$_PAGE['lang1']]; ?></span></span></a></li>
+				</ul>
+				<div id="mb-pnl"></div>
+			</section>
+		</div>
 	</div>
-</div>
 </div>
 <div class="container">
 	<div class="row">
@@ -59,14 +64,14 @@ $_WMMS_ALT_ = $_SITE['gcwu_wmms_' . $_PAGE['lang1'] ];
 			<span><?php echo $_SITE['wb_site_title_'.$_PAGE['lang1']] ?></span>
 			</a>
 		</div>
-			<object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="<?php  echo $_WMMS_IMG_; ?>" aria-label="<?php echo $_WMMS_ALT_; ?>"></object>
+		<object id="wmms" type="image/svg+xml" tabindex="-1" role="img" data="<?php  echo $_WMMS_IMG_; ?>" aria-label="<?php echo $_WMMS_ALT_; ?>"></object>
 		<?php
 		if( $_PAGE['nosearch'] != "1" ) {
-			echo '<section id="wb-srch" class="visible-md visible-lg">';
-			echo '<h2>'.$_SITE['wb_search_' . $_PAGE['lang1']].'</h2>';
+			echo "<section id=\"wb-srch\" class=\"visible-md visible-lg\">".PHP_EOL;
+			echo "<h2>".$_SITE['wb_search_' . $_PAGE['lang1']]."</h2>";
 		    include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] ."/inc/search.php";
-			echo '</section>';
+			echo "</section>";
 		}
 		?>
+		
 	</div>
-
