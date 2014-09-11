@@ -20,33 +20,33 @@ for($i=1; isset($_SITE['gcwu_gcnb' .$i .'_href_'.$_PAGE['lang1'] ]); $i++ ) {
         echo '<li id="gcwu-gcnb'.$i.'"><a'.$_TARGET_.' rel="external" href="'.$_LINK_.'">' .$_TEXT_ ."</a></li>\n";
 }
 //new way to change the language base on the actual filename
-$q= $_SERVER['REQUEST_URI'];
-if (preg_match('/-en\./', $q) > 0) {
-    $q = preg_replace('/-en\./', '-fr.', $q);
-} else if (preg_match('/-fr\./', $q) > 0) {
-    $q = preg_replace('/-fr\./', '-en.', $q);
-} else {
-	//if the Request URI doesn't end with a -en or a -fr then blank it and use the
-	//$_SITE['gcwu_cmbland_href_' .$_PAGE['lang'.$i]] variable. The user should have
-	//either set the variable to point to a static page change or it should be pointing
-	//to the script file that's used for language changing.
-	$q = '';
-}
 if( $_PAGE['nolang'] != "1" ) {
-        for($i=2; isset($_PAGE['lang'.$i]); $i++ ) {
-				if( $q == '' ) {
-					$q = $_SITE['gcwu_cmblang_href_' . $_PAGE['lang'.$i]];
-				}
-                echo '<li id="gcwu-gcnb-lang';
-                if( $i-1 >= 2 ) {
-                        echo "-" .($i-1);
-                }
-                echo '">';
-                echo '<a href="' .$q;
-                echo '" lang="' .$_SITE['wb_meta_' . $_PAGE['lang'.$i]];
-                echo '">' . $_SITE['gcwu_cmblang_text_' . $_PAGE['lang'.$i]]; ;
-                echo '</a></li>';
-        }
+	$q= $_SERVER['REQUEST_URI'];
+	if (preg_match('/-en\./', $q) > 0) {
+	    $q = preg_replace('/-en\./', '-fr.', $q);
+	} else if (preg_match('/-fr\./', $q) > 0) {
+	    $q = preg_replace('/-fr\./', '-en.', $q);
+	} else {
+		//if the Request URI doesn't end with a -en or a -fr then blank it and use the
+		//$_SITE['gcwu_cmbland_href_' .$_PAGE['lang'.$i]] variable. The user should have
+		//either set the variable to point to a static page change or it should be pointing
+		//to the script file that's used for language changing.
+		$q = '';
+	}
+	for($i=2; isset($_PAGE['lang'.$i]); $i++ ) {
+		if( $q == '' ) {
+			$q = $_SITE['gcwu_cmblang_href_' . $_PAGE['lang'.$i]];
+		}
+		echo '<li id="gcwu-gcnb-lang';
+		if( $i-1 >= 2 ) {
+			echo "-" .($i-1);
+		}
+		echo '">';
+		echo '<a href="' .$q;
+		echo '" lang="' .$_SITE['wb_meta_' . $_PAGE['lang'.$i]];
+		echo '">' . $_SITE['gcwu_cmblang_text_' . $_PAGE['lang'.$i]]; ;
+		echo '</a></li>';
+	}
 }
 
 /*if( $_PAGE['nolang'] != "1" ) {
