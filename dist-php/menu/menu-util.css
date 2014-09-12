@@ -1,0 +1,38 @@
+details[open].menu{
+	padding-bottom: 0px;
+}
+
+ul.menu li.slflnk, ul li ul.menu li.slflnk {
+	display: none;
+}
+
+ul li ul li ul.menu li.slflnk {
+	display: inline;
+}
+
+/*.form-radio.form-label-inline.wrap-none, .form-checkbox.form-label-inline.wrap-none {
+	padding-right: 10px;
+}*/
+
+.wb-sec-def h5 a {
+	display: block;
+	color: #333;
+	background: #DDD;
+	text-decoration: none;
+}
+.wb-sec-def h5 {
+	font-size: 100%;
+	border-bottom: 0;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	margin: 0 0 3px;
+}
+
+li.top-level ul li.leaf a {
+	background-color: white !important;
+	font-weight: 100 !important;
+}
+ul.minimized {
+	display: none;
+}

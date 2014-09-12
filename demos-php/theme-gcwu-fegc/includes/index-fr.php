@@ -7,6 +7,7 @@
 <li><a href="content-nositemenubc-fr.php">Page de contenu - Sans menu du site ou fil d'Ariane</a></li>
 <li><a href="content-nosearchlangsitemenubc-fr.php">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane</a></li>
 <li><a href="splashpage-fr.php">Page d'entrée</a></li>
+<li><a href="menu-util-demo-fr.php">Menu secondaire utilitaire</a></li>
 </ul>
 </section>
 <section>
@@ -19,5 +20,6 @@
 <li><a href="content-nosearchlangsitemenubc-en.php">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane</a></li>
 <li><a href="content-multilang-en.php">Page de contenu - Multilingual Support</a></li>
 <li><a href="splashpage-en.php">Page d'entrée</a></li>
+<li><a href="menu-util-demo-en.php">Menu secondaire utilitaire</a></li>
 </ul>
 </section>
