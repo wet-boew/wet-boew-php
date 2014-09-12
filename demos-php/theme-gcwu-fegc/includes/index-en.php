@@ -8,6 +8,7 @@
 <li><a href="content-nosearchlangsitemenubc-en.php">Content page - No search, language selection link, site menu or breadcrumb trail</a></li>
 <li><a href="content-multilang-en.php">Content page - Multilingual Support</a></li>
 <li><a href="splashpage-en.php">Splash page</a></li>
+<li><a href="menu-util-demo-en.php">Secondary Utility Menu page</a></li>
 </ul>
 </section>
 <section>
@@ -20,5 +21,6 @@
 <li><a href="content-nosearchlangsitemenubc-fr.php">Content page - No search, language selection link, site menu or breadcrumb trail</a></li>
 <li><a href="content-multilang-fr.php">Content page - Multilingual Support</a></li>
 <li><a href="splashpage-fr.php">Splash page</a></li>
+<li><a href="menu-util-demo-fr.php">Secondary Utility Menu page</a></li>
 </ul>
 </section>
