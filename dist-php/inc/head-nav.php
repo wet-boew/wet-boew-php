@@ -57,46 +57,45 @@ if( file_exists($_HEAD_INCLUDE_) ) {
 
 </header>
 <?php
-if( isset($_PAGE['left_menu_gauche']) && $_PAGE['left_menu_gauche']!='' && file_exists($_PAGE['left_menu_gauche']) ) {
-	echo '<div class="container">';
-	echo '<div class="row">';
-	echo '<main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">';
+if (isset($_PAGE['left_menu_gauche']) && $_PAGE['left_menu_gauche'] != '' && file_exists($_PAGE['left_menu_gauche'])) {
+    echo '<div class="container">';
+    echo '<div class="row">';
+    echo '<main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">';
 } else {
-	echo '<main role="main" property="mainContentOfPage" class="container">';
+    echo '<main role="main" property="mainContentOfPage" class="container">';
 }
 
-if( $_PAGE['issplash']!='1' ) {
-	echo '<h1 id="wb-cont" property="name">';
-	if( $_PAGE['isarchived'] == "1" ){
-		$_TITLE_ = $_SITE['wb_archive_title_'.$_PAGE['lang1']]. $_PAGE['short_title_' . $_PAGE['lang1']];
-		//if there's more than one language set then add the additioal title elements
-		for( $i=2; isset($_PAGE['lang'.$i]); $i++ ) {
-			if( isset($_PAGE['short_title_' . $_PAGE['lang'.$i]]) ) {
-				$_TITLE_ .= " / <span lang=\"".$_SITE['wb_meta_'.$_PAGE['lang'.$i]]."\">" . $_PAGE['short_title_' . $_PAGE['lang'.$i]] ."</span>";
-			}
-		}
-	} else{
-        if( isset($_PAGE['short_title_' . $_PAGE['lang1']])) {
-                $_TITLE_ = $_PAGE['short_title_' . $_PAGE['lang1']];
-                //if there's more than one language set then add the additioal title elements
-                for( $i=2; isset($_PAGE['lang'.$i]); $i++ ) {
-                        if( isset($_PAGE['short_title_' . $_PAGE['lang'.$i]]) ) {
-                                $_TITLE_ .= " / <span lang=\"".$_SITE['wb_meta_'.$_PAGE['lang'.$i]]."\">" . $_PAGE['short_title_' . $_PAGE['lang'.$i]] ."</span>";
-                        }
-                }
-                echo $_TITLE_;
+if ($_PAGE['issplash'] != '1') {
+    echo '<h1 id="wb-cont" property="name">';
+    if ($_PAGE['isarchived'] == "1") {
+        $_TITLE_ = $_SITE['wb_archive_title_' . $_PAGE['lang1']] . $_PAGE['short_title_' . $_PAGE['lang1']];
+        //if there's more than one language set then add the additioal title elements
+        for ($i = 2; isset($_PAGE['lang' . $i]); $i++) {
+            if (isset($_PAGE['short_title_' . $_PAGE['lang' . $i]])) {
+                $_TITLE_ .= " / <span lang=\"" . $_SITE['wb_meta_' . $_PAGE['lang' . $i]] . "\">" . $_PAGE['short_title_' . $_PAGE['lang' . $i]] . "</span>";
+            }
         }
-}
-        echo '</h1>';
+    } else {
+        $_TITLE_ = $_PAGE['short_title_' . $_PAGE['lang1']];
+        //if there's more than one language set then add the additioal title elements
+        for ($i = 2; isset($_PAGE['lang' . $i]); $i++) {
+            if (isset($_PAGE['short_title_' . $_PAGE['lang' . $i]])) {
+                $_TITLE_ .= " / <span lang=\"" . $_SITE['wb_meta_' . $_PAGE['lang' . $i]] . "\">" . $_PAGE['short_title_' . $_PAGE['lang' . $i]] . "</span>";
+            }
+        }
+    }
+    echo $_TITLE_;
+    echo '</h1>';
 
-        $_HEAD_END_ = $_SERVER['DOCUMENT_ROOT'] .$_SITE['wb_php_dist_folder'] ."/head-end.php";
-        if( file_exists($_HEAD_END_) ) {
-                include_once $_HEAD_END_;
-        }
+    $_HEAD_END_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/head-end.php";
+    if (file_exists($_HEAD_END_)) {
+        include_once $_HEAD_END_;
+    }
 
-        // Archived Section
-        if( $_PAGE['isarchived'] == "1" ){
-                echo $_SITE['wb_archive_warn_msg_'.$_PAGE['lang1']];
-        }
+    // Archived Section
+    if ($_PAGE['isarchived'] == "1") {
+        echo $_SITE['wb_archive_warn_msg_' . $_PAGE['lang1']];
+    }
 }
 ?>
+
