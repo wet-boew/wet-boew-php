@@ -30,7 +30,11 @@ for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 <!--<![endif]-->
 <head>
 <meta charset="utf-8" />
-<title><?php echo $_PAGE_TITLE_;?></title>
+<title><?php
+if( $_PAGE['isarchived'] == "1" ){
+        echo $_SITE['wb_archive_title_'.$_PAGE['lang1']];
+}
+echo $_PAGE_TITLE_;?></title>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <?php 
 $_META_LANG_ = "";
