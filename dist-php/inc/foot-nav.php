@@ -1,10 +1,13 @@
 <?php
 //$_INC_TYPE_ is used to determine if this is a splash page or if it's a standard content page
 $_INC_TYPE_ = 'cont';
-if( isset($_PAGE['issplash']) && $_PAGE['issplash'] == 1 ) {
+if( $_PAGE['issplash'] == 1 ) {
 	$_INC_TYPE_ = 'sp-pe';
 	echo '</main>' .PHP_EOL;
 	
+} else if( $_PAGE['iserror'] == 1 ) {
+	$_INC_TYPE_ = 'err';
+	echo '</main>' .PHP_EOL;
 } else {
 	$_INC_TYPE_ = 'cont';
 	$_MOD_TEXT_ = $_SITE['wb_doc_dates_'.$_PAGE['lang1']];

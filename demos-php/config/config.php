@@ -23,7 +23,7 @@
 	 * 
 	 * I've give the PHP distribution themes the same names as the core theme folders
 	 */
-	 $_SITE['wb_php_root'] = "wet-boew-php/";
+	 $_SITE['wb_php_root'] = "/wet-boew-php/";
 	 $_SITE['wb_core_root'] = "/".$_SITE['wb_theme'];
 	
 	//include the standard distribution config with the default settings

@@ -7,6 +7,10 @@
 <li><a href="content-nositemenubc-fr.php">Page de contenu - Sans menu du site ou fil d'Ariane</a></li>
 <li><a href="content-nosearchlangsitemenubc-fr.php">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane</a></li>
 <li><a href="splashpage-fr.php">Page d'entrée</a></li>
+<li><a href="404-en.php">404 error page</a></li>
+<li><a href="404-en-fr.php">404 error page (English/French)</a></li>
+<li><a href="servermessage-en-fr.php">Server message page (English/French)</a></li>
+<li><a href="servermessage-en.php">Server message page</a></li>
 <li><a href="menu-util-demo-fr.php">Menu secondaire utilitaire</a></li>
 </ul>
 </section>
