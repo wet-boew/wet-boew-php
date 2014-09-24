@@ -4,6 +4,7 @@
 	 * Add all of the default variables that may be null to prevent PHP warnings 
 	 * and errors for undefined values
 	 */
+	$_PAGE['iserror'] = (!isset($_PAGE['iserror']) ? 0 : $_PAGE['iserror']);
 	$_PAGE['issplash'] = (!isset($_PAGE['issplash']) ? 0 : $_PAGE['issplash']);
 	$_PAGE['isapp'] = (!isset($_PAGE['isapp']) ? 0 : $_PAGE['isapp']);
 	$_PAGE['isserv'] = (!isset($_PAGE['isserv']) ? 0 : $_PAGE['isserv']);

@@ -1,4 +1,5 @@
 <?php
+if( $_PAGE['iserror'] != 1 ) {
 	$_COL_LAYOUT = "";
 	$_NAV_LINK = "";
 	//'left_menu_gauche' is all that's needed since you can only have one leftside per page
@@ -23,12 +24,13 @@
 
 	$_SKIP_1_NAV_TEXT = $_SITE['wb_sh_link_1_' . $_PAGE['lang1']];
 	$_SKIP_2_NAV_TEXT = $_SITE[$_NAV_LINK . $_PAGE['lang1']];
+}
 ?>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage"<?php echo ' '.$_PAGE['bodytag']; ?>>
 <?php 
 //if this is a server page the skip navigation isn't required
-if( $_PAGE['isserv'] != "1" && $_PAGE['issplash']!='1') {?>
+if( $_PAGE['isserv'] != '1' && $_PAGE['issplash'] != '1' && $_PAGE['iserror'] != '1') {?>
 <ul id="wb-tphp">
 	<li class="wb-slc">
 		<a class="wb-sl" href="#wb-cont"><?php echo $_SKIP_1_NAV_TEXT ?></a>
@@ -38,14 +40,16 @@ if( $_PAGE['isserv'] != "1" && $_PAGE['issplash']!='1') {?>
 	</li>
 </ul>
 <?php } ?>
-<header role="banner">
+<header role="banner" <?php echo ($_PAGE['iserror']==1?" class=\"container\"":"");?>>
 <?php
 //use the content head by default
 $_ROOT_PATH_ = $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'];
 $_INC_TYPE_ = 'cont';
 
-if( $_PAGE['issplash'] == "1" ) {
+if( $_PAGE['issplash'] == '1' ) {
 	$_INC_TYPE_ = 'sp-pe';
+} else if( $_PAGE['iserror'] == '1' ) {
+	$_INC_TYPE_ = 'err';
 }
 
 $_HEAD_INCLUDE_ = $_ROOT_PATH_ . "/inc/".$_INC_TYPE_."/head.php";
@@ -57,15 +61,15 @@ if( file_exists($_HEAD_INCLUDE_) ) {
 
 </header>
 <?php
-if (isset($_PAGE['left_menu_gauche']) && $_PAGE['left_menu_gauche'] != '' && file_exists($_PAGE['left_menu_gauche'])) {
+if ($_PAGE['iserror'] != '1' && isset($_PAGE['left_menu_gauche']) && $_PAGE['left_menu_gauche'] != '' && file_exists($_PAGE['left_menu_gauche'])) {
     echo '<div class="container">';
     echo '<div class="row">';
-    echo '<main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">';
+    echo '<main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">' .PHP_EOL;
 } else {
-    echo '<main role="main" property="mainContentOfPage" class="container">';
+    echo '<main role="main" property="mainContentOfPage" class="container">' .PHP_EOL;
 }
 
-if ($_PAGE['issplash'] != '1') {
+if ($_PAGE['issplash'] != '1' && $_PAGE['iserror'] != '1') {
     echo '<h1 id="wb-cont" property="name">';
     if ($_PAGE['isarchived'] == "1") {
         $_TITLE_ = $_SITE['wb_archive_title_' . $_PAGE['lang1']] . $_PAGE['short_title_' . $_PAGE['lang1']];
@@ -96,6 +100,20 @@ if ($_PAGE['issplash'] != '1') {
     if ($_PAGE['isarchived'] == "1") {
         echo $_SITE['wb_archive_warn_msg_' . $_PAGE['lang1']];
     }
+} else if( $_PAGE['iserror'] == '1' ) {
+	echo '<div class="row mrgn-tp-lg">' .PHP_EOL;
+	echo '<div class="col-md-12">' .PHP_EOL;
+	echo '<h1><span class="glyphicon glyphicon-warning-sign mrgn-rght-md"></span> ';
+	echo $_PAGE['short_title_'.$_PAGE['lang1']];
+	echo '</h1>'.PHP_EOL.'<p>';
+	echo $_PAGE['err_msg_'.$_PAGE['lang1']];
+	echo '</p>'.PHP_EOL.'<ul>' .PHP_EOL;
+	//TODO: externalize these strings and add/find variable for home page
+	echo '<li>Return to the ';
+    echo '<a href="'.$_SITE['wb_site_href_' . $_PAGE['lang1']] .'">';
+    echo 'home page</a></li>' .PHP_EOL;
+	echo '</ul>' .PHP_EOL;
+	echo '</div>' .PHP_EOL;
+	echo '</div>' .PHP_EOL;
 }
 ?>
-
