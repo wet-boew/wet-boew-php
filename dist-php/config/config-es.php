@@ -52,6 +52,9 @@
 	
 	$_SITE['wb_doc_dates_'.$_LANG_] = "Date modified:";
 
+	$_STIE['wb_err_return_text_'.$_LANG_] = 'Return to the ';
+	$_STIE['wb_err_return_link_'.$_LANG_] = 'home page';
+	
 	//The following variables were used in version 3.1, but not in version 4.0
 	/*	
 	//Modify to point to a custom signin/signout application

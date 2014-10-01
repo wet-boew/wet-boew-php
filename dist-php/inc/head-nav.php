@@ -102,18 +102,50 @@ if ($_PAGE['issplash'] != '1' && $_PAGE['iserror'] != '1') {
     }
 } else if( $_PAGE['iserror'] == '1' ) {
 	echo '<div class="row mrgn-tp-lg">' .PHP_EOL;
-	echo '<div class="col-md-12">' .PHP_EOL;
-	echo '<h1><span class="glyphicon glyphicon-warning-sign mrgn-rght-md"></span> ';
-	echo $_PAGE['short_title_'.$_PAGE['lang1']];
-	echo '</h1>'.PHP_EOL.'<p>';
-	echo $_PAGE['err_msg_'.$_PAGE['lang1']];
-	echo '</p>'.PHP_EOL.'<ul>' .PHP_EOL;
-	//TODO: externalize these strings and add/find variable for home page
-	echo '<li>Return to the ';
-    echo '<a href="'.$_SITE['wb_site_href_' . $_PAGE['lang1']] .'">';
-    echo 'home page</a></li>' .PHP_EOL;
-	echo '</ul>' .PHP_EOL;
-	echo '</div>' .PHP_EOL;
+	
+	if(isset($_PAGE['lang2']) ) {
+		echo '<h1 class="wb-inv">';
+		echo $_PAGE['short_title_'.$_PAGE['lang1']];
+		echo '<span lang="'.$_PAGE['lang2'].'">';
+		echo ' / ' .$_PAGE['short_title_'.$_PAGE['lang2']];
+		echo '</span></h1>'.PHP_EOL;
+		echo '<section class="col-md-6">'.PHP_EOL;
+		echo "<h2><span class=\"glyphicon glyphicon-warning-sign mrgn-rght-md\"></span> " .$_PAGE['short_title_'.$_PAGE['lang1']] ."</h2>" .PHP_EOL;
+		echo '<p>';
+		echo $_PAGE['err_msg_'.$_PAGE['lang1']];
+		echo '</p>'.PHP_EOL.'<ul>' .PHP_EOL;
+		echo '<li>'.$_STIE['wb_err_return_text_'.$_PAGE['lang1']]; //Return to the ';
+		echo '<a href="'.$_SITE['wb_site_href_' . $_PAGE['lang1']] .'">';
+		echo $_STIE['wb_err_return_link_'.$_PAGE['lang1']] .'</a></li>' .PHP_EOL; //'home page</a></li>' .PHP_EOL;
+		echo '</ul>' .PHP_EOL;
+		echo '</section>' .PHP_EOL;
+
+		echo '<section class="col-md-6" lang="'.$_PAGE['lang2'].'">'.PHP_EOL;
+		echo "<h2><span class=\"glyphicon glyphicon-warning-sign mrgn-rght-md\"></span> " .$_PAGE['short_title_'.$_PAGE['lang2']] ."</h2>" .PHP_EOL;
+		echo '<p>';
+		echo $_PAGE['err_msg_'.$_PAGE['lang2']];
+		echo '</p>'.PHP_EOL.'<ul>' .PHP_EOL;
+		echo '<li>'.$_STIE['wb_err_return_text_'.$_PAGE['lang2']];// Retournez à la ';
+		echo '<a href="'.$_SITE['wb_site_href_' . $_PAGE['lang2']] .'">';
+		echo $_STIE['wb_err_return_link_'.$_PAGE['lang2']] .'</a></li>' .PHP_EOL; //'page d\'accueil</a></li>' .PHP_EOL;
+		echo '</ul>' .PHP_EOL;
+		echo '</section>' .PHP_EOL;
+		
+	} else {
+		echo '<div class="col-md-12">' .PHP_EOL;
+		echo '<h1><span class="glyphicon glyphicon-warning-sign mrgn-rght-md"></span> ';
+		echo $_PAGE['short_title_'.$_PAGE['lang1']];
+		echo '</h1>'.PHP_EOL.'<p>';
+		echo $_PAGE['err_msg_'.$_PAGE['lang1']];
+		echo '</p>'.PHP_EOL.'<ul>' .PHP_EOL;
+		//TODO: externalize these strings and add/find variable for home page
+		echo '<li>'.$_STIE['wb_err_return_text_'.$_PAGE['lang1']]; //Return to the ';
+		echo '<a href="'.$_SITE['wb_site_href_' . $_PAGE['lang1']] .'">';
+		echo $_STIE['wb_err_return_link_'.$_PAGE['lang1']] .'</a></li>' .PHP_EOL; //'home page</a></li>' .PHP_EOL;
+		echo '</ul>' .PHP_EOL;
+		echo '</div>' .PHP_EOL;
+	}
 	echo '</div>' .PHP_EOL;
 }
+
 ?>
