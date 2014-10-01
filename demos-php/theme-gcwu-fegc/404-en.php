@@ -11,7 +11,7 @@ $path = realpath(dirname(__FILE__));
 require_once $path ."/config/config.php";
 
 $_PAGE['title_en'] = "We couldn&#x27;t find that Web page (Error 404) - Government of Canada Web Usability theme";
-$_PAGE['short_title_en'] = "Message title";
+$_PAGE['short_title_en'] = "Error 404";
 
 $_PAGE['err_msg_en'] = "We're sorry you ended up here. Sometimes a page gets moved or deleted, but hopefully we can help you find what you're looking for.";
 

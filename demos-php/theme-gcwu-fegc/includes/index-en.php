@@ -13,7 +13,7 @@
 <li><a href="404-en-fr.php">404 error page (English/French)</a></li>
 <li><a href="servermessage-en-fr.php">Server message page (English/French)</a></li>
 <li><a href="servermessage-en.php">Server message page</a></li>
-<li><a href="menu-util-demo-fr.php">Menu secondaire utilitaire</a></li>
+<li><a href="menu-util-demo-en.php">Secondary Utility Menu page</a></li>
 </ul>
 </section>
 <section>
@@ -26,6 +26,8 @@
 <li><a href="content-nosearchlangsitemenubc-fr.php">Content page - No search, language selection link, site menu or breadcrumb trail</a></li>
 <li><a href="content-multilang-fr.php">Content page - Multilingual Support</a></li>
 <li><a href="splashpage-fr.php">Splash page</a></li>
+<li><a href="404-fr.php">404 error page</a></li>
+<li><a href="404-fr-en.php">404 error page (French/English)</a></li>
 <li><a href="menu-util-demo-fr.php">Secondary Utility Menu page</a></li>
 </ul>
 </section>

@@ -121,9 +121,9 @@ if ($_PAGE['issplash'] != '1' && $_PAGE['iserror'] != '1') {
 		echo '</section>' .PHP_EOL;
 
 		echo '<section class="col-md-6" lang="'.$_PAGE['lang2'].'">'.PHP_EOL;
-		echo "<h2><span class=\"glyphicon glyphicon-warning-sign mrgn-rght-md\"></span> " .$_PAGE['short_title_'.$_PAGE['lang1']] ."</h2>" .PHP_EOL;
+		echo "<h2><span class=\"glyphicon glyphicon-warning-sign mrgn-rght-md\"></span> " .$_PAGE['short_title_'.$_PAGE['lang2']] ."</h2>" .PHP_EOL;
 		echo '<p>';
-		echo $_PAGE['err_msg_'.$_PAGE['lang1']];
+		echo $_PAGE['err_msg_'.$_PAGE['lang2']];
 		echo '</p>'.PHP_EOL.'<ul>' .PHP_EOL;
 		echo '<li>'.$_STIE['wb_err_return_text_'.$_PAGE['lang2']];// Retournez à la ';
 		echo '<a href="'.$_SITE['wb_site_href_' . $_PAGE['lang2']] .'">';
