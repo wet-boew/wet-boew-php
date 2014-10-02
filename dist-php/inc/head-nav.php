@@ -61,7 +61,7 @@ if( file_exists($_HEAD_INCLUDE_) ) {
 
 </header>
 <?php
-if ($_PAGE['iserror'] != '1' && isset($_PAGE['left_menu_gauche']) && $_PAGE['left_menu_gauche'] != '' && file_exists($_PAGE['left_menu_gauche'])) {
+if (($_PAGE['iserror'] != '1') && isset($_PAGE['left_menu_gauche']) && $_PAGE['left_menu_gauche'] != '' && file_exists($_PAGE['left_menu_gauche'])) {
     echo '<div class="container">';
     echo '<div class="row">';
     echo '<main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">' .PHP_EOL;
@@ -113,22 +113,30 @@ if ($_PAGE['issplash'] != '1' && $_PAGE['iserror'] != '1') {
 		echo "<h2><span class=\"glyphicon glyphicon-warning-sign mrgn-rght-md\"></span> " .$_PAGE['short_title_'.$_PAGE['lang1']] ."</h2>" .PHP_EOL;
 		echo '<p>';
 		echo $_PAGE['err_msg_'.$_PAGE['lang1']];
-		echo '</p>'.PHP_EOL.'<ul>' .PHP_EOL;
-		echo '<li>'.$_STIE['wb_err_return_text_'.$_PAGE['lang1']]; //Return to the ';
-		echo '<a href="'.$_SITE['wb_site_href_' . $_PAGE['lang1']] .'">';
-		echo $_STIE['wb_err_return_link_'.$_PAGE['lang1']] .'</a></li>' .PHP_EOL; //'home page</a></li>' .PHP_EOL;
-		echo '</ul>' .PHP_EOL;
+		echo '</p>'.PHP_EOL;
+		
+		if( $_PAGE['isserv'] != '1' ) {
+			echo '<ul>' .PHP_EOL;
+			echo '<li>'.$_STIE['wb_err_return_text_'.$_PAGE['lang1']]; //Return to the ';
+			echo '<a href="'.$_SITE['wb_site_href_' . $_PAGE['lang1']] .'">';
+			echo $_STIE['wb_err_return_link_'.$_PAGE['lang1']] .'</a></li>' .PHP_EOL; //'home page</a></li>' .PHP_EOL;
+			echo '</ul>' .PHP_EOL;
+		}
 		echo '</section>' .PHP_EOL;
 
 		echo '<section class="col-md-6" lang="'.$_PAGE['lang2'].'">'.PHP_EOL;
 		echo "<h2><span class=\"glyphicon glyphicon-warning-sign mrgn-rght-md\"></span> " .$_PAGE['short_title_'.$_PAGE['lang2']] ."</h2>" .PHP_EOL;
 		echo '<p>';
 		echo $_PAGE['err_msg_'.$_PAGE['lang2']];
-		echo '</p>'.PHP_EOL.'<ul>' .PHP_EOL;
-		echo '<li>'.$_STIE['wb_err_return_text_'.$_PAGE['lang2']];// Retournez à la ';
-		echo '<a href="'.$_SITE['wb_site_href_' . $_PAGE['lang2']] .'">';
-		echo $_STIE['wb_err_return_link_'.$_PAGE['lang2']] .'</a></li>' .PHP_EOL; //'page d\'accueil</a></li>' .PHP_EOL;
-		echo '</ul>' .PHP_EOL;
+		echo '</p>'.PHP_EOL;
+		
+		if( $_PAGE['isserv'] != '1' ) {
+			echo '<ul>' .PHP_EOL;
+			echo '<li>'.$_STIE['wb_err_return_text_'.$_PAGE['lang2']];// Retournez à la ';
+			echo '<a href="'.$_SITE['wb_site_href_' . $_PAGE['lang2']] .'">';
+			echo $_STIE['wb_err_return_link_'.$_PAGE['lang2']] .'</a></li>' .PHP_EOL; //'page d\'accueil</a></li>' .PHP_EOL;
+			echo '</ul>' .PHP_EOL;
+		}
 		echo '</section>' .PHP_EOL;
 		
 	} else {
@@ -137,12 +145,14 @@ if ($_PAGE['issplash'] != '1' && $_PAGE['iserror'] != '1') {
 		echo $_PAGE['short_title_'.$_PAGE['lang1']];
 		echo '</h1>'.PHP_EOL.'<p>';
 		echo $_PAGE['err_msg_'.$_PAGE['lang1']];
-		echo '</p>'.PHP_EOL.'<ul>' .PHP_EOL;
-		//TODO: externalize these strings and add/find variable for home page
-		echo '<li>'.$_STIE['wb_err_return_text_'.$_PAGE['lang1']]; //Return to the ';
-		echo '<a href="'.$_SITE['wb_site_href_' . $_PAGE['lang1']] .'">';
-		echo $_STIE['wb_err_return_link_'.$_PAGE['lang1']] .'</a></li>' .PHP_EOL; //'home page</a></li>' .PHP_EOL;
-		echo '</ul>' .PHP_EOL;
+		echo '</p>'.PHP_EOL;
+		if( $_PAGE['isserv'] != '1' ) {
+			echo '<ul>' .PHP_EOL;
+			echo '<li>'.$_STIE['wb_err_return_text_'.$_PAGE['lang1']]; //Return to the ';
+			echo '<a href="'.$_SITE['wb_site_href_' . $_PAGE['lang1']] .'">';
+			echo $_STIE['wb_err_return_link_'.$_PAGE['lang1']] .'</a></li>' .PHP_EOL; //'home page</a></li>' .PHP_EOL;
+			echo '</ul>' .PHP_EOL;
+		}
 		echo '</div>' .PHP_EOL;
 	}
 	echo '</div>' .PHP_EOL;

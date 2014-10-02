@@ -28,6 +28,8 @@
 <li><a href="splashpage-fr.php">Splash page</a></li>
 <li><a href="404-fr.php">404 error page</a></li>
 <li><a href="404-fr-en.php">404 error page (French/English)</a></li>
+<li><a href="servermessage-fr-en.php">Server message page (English/French)</a></li>
+<li><a href="servermessage-fr.php">Server message page</a></li>
 <li><a href="menu-util-demo-fr.php">Secondary Utility Menu page</a></li>
 </ul>
 </section>
