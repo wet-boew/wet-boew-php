@@ -6,6 +6,10 @@
 //it won't be added to anchor tags
 $_TARGET_ = ($_PAGE['isapp']=="1"?" target=\"_blank\"":"");
 
+//if the server flag is set then most of the layout will be the same
+//as if this was an error page.
+$_PAGE['iserror'] = ($_PAGE['isserv']=="1"?1:$_PAGE['iserror']);
+
 // create the title to be used throughout
 $_PAGE_TITLE_ = "";
 // itterate over the set languages starting from 1 and print the titles for the page
