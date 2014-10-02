@@ -11,7 +11,7 @@ if( $_PAGE['issplash'] == 1 ) {
 } else {
 	$_INC_TYPE_ = 'cont';
 	$_MOD_TEXT_ = $_SITE['wb_doc_dates_'.$_PAGE['lang1']];
-    $_DATE_VERSION_TEXT_ = "<span>".$_PAGE['modified']."</span>";
+    $_DATE_VERSION_TEXT_ = $_PAGE['modified'];
     if( $_PAGE['isapp'] == "1" ) {
         $_MOD_TEXT_ = $_SITE['wb_doc_version_' . $_PAGE['lang1']];
         $_DATE_VERSION_TEXT_ = $_PAGE['version'];
@@ -19,7 +19,7 @@ if( $_PAGE['issplash'] == 1 ) {
 	echo '    <dl id="wb-dtmd" role="contentinfo" property="dateModified">' .PHP_EOL;
 	echo '        <dt>' . $_SITE['wb_doc_dates_'.$_PAGE['lang1']] . '</dt>' .PHP_EOL;
 	echo '       <dd>' .PHP_EOL;
-	echo '            <time>' . $_DATE_VERSION_TEXT_. '</time>' .PHP_EOL;
+	echo '            <time property="dateModified">' . $_DATE_VERSION_TEXT_. '</time>' .PHP_EOL;
 	echo '        </dd>' .PHP_EOL;
 	echo '    </dl>' .PHP_EOL;
 	echo '</main>' .PHP_EOL;
