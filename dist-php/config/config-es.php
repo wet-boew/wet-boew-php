@@ -55,6 +55,11 @@
 	$_STIE['wb_err_return_text_'.$_LANG_] = 'Return to the ';
 	$_STIE['wb_err_return_link_'.$_LANG_] = 'home page';
 	
+	$_SITE['wb_archive_title_'.$_LANG_] = "ARCHIVED - ";
+	$_SITE['wb_archive_panel_title_'.$_LANG_] = "Archived Content";
+	$_SITE['wb_archive_panel_glyph_'.$_LANG_] = "warrning";
+	$_SITE['wb_archive_warn_msg_'.$_LANG_] = "Information identified as archived is provided for reference, research or recordkeeping purposes. It is not subject to the Government of Canada Web Standards and has not been altered or updated since it was archived. Please contact us to request a format other than those available.";
+	
 	//The following variables were used in version 3.1, but not in version 4.0
 	/*	
 	//Modify to point to a custom signin/signout application

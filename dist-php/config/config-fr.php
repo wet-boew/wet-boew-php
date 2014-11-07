@@ -51,8 +51,10 @@
 	$_SITE['wb_doc_dates_'.$_LANG_] = "Date de modification&nbsp;:";
 
 	$_SITE['wb_archive_title_'.$_LANG_] = "ARCHIV&Eacute;E - ";
-	$_SITE['wb_archive_warn_msg_'.$_LANG_] = "<p><span class='glyphicon glyphicon-warning-sign' title='Avertissement'></span> La <a href='http://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=24227'>Norme sur la facilité d'emploi des sites Web</a> remplace ce contenu. Cette page Web a été archivée parce que les Normes sur la normalisation des sites Internet 2.0 ont étés annulées.</p><section id='archived' class='panel panel-warning wb-inview' data-inview='archived-bnr'><div class='panel-heading'><h2 class='panel-title'>Contenu archivé</h2></div><div class='panel-body'><p>L'information dont il est indiqué qu'elle est archivée est fournie à des fins de référence, de recherche ou de tenue de documents. Elle n'est pas assujettie aux normes Web du gouvernement du Canada et elle n'a pas été modifiée ou mise à jour depuis son archivage. Pour obtenir cette information dans un autre format, veuillez communiquer avec nous.</p></div></section><section id='archived-bnr' class='wb-overlay modal-content overlay-def wb-bar-t'><header><h2 class='wb-inv'>Archivée</h2></header><p><a href='#archived'>Cette page Web a été archivée dans le Web.</a></p></section>";
-
+	$_SITE['wb_archive_panel_title_'.$_LANG_] = "Contenu archivé";
+	$_SITE['wb_archive_panel_glyph_'.$_LANG_] = "Avertissement";
+	$_SITE['wb_archive_warn_msg_'.$_LANG_] = "L'information dont il est indiqué qu'elle est archivée est fournie à des fins de référence, de recherche ou de tenue de documents. Elle n'est pas assujettie aux normes Web du gouvernement du Canada et elle n'a pas été modifiée ou mise à jour depuis son archivage. Pour obtenir cette information dans un autre format, veuillez communiquer avec nous.";
+	
 	$_STIE['wb_err_return_text_'.$_LANG_] = 'Retournez à la ';
 	$_STIE['wb_err_return_link_'.$_LANG_] = 'page d\'accueil';
 	

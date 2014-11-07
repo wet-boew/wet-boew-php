@@ -52,7 +52,9 @@
 	$_SITE['wb_doc_dates_'.$_LANG_] = "Date modified:";
 
 	$_SITE['wb_archive_title_'.$_LANG_] = "ARCHIVED - ";
-	$_SITE['wb_archive_warn_msg_'.$_LANG_] = "<p><span class='glyphicon glyphicon-warning-sign' title='Warning'></span> The <a href='http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227'>Standard on Web Usability</a> replaces this content. This content is archived because Common Look and Feel 2.0 Standards have been rescinded.</p><section id='archived' class='panel panel-warning wb-inview' data-inview='archived-bnr'><div class='panel-heading'><h2 class='panel-title'>Archived Content</h2></div><div class='panel-body'><p>Information identified as archived is provided for reference, research or recordkeeping purposes. It is not subject to the Government of Canada Web Standards and has not been altered or updated since it was archived. Please contact us to request a format other than those available.</p></div></section><section id='archived-bnr' class='wb-overlay modal-content overlay-def wb-bar-t'><header><h2 class='wb-inv'>Archived</h2></header><p><a href='#archived'>This page has been archived on the Web.</a></p></section>";
+	$_SITE['wb_archive_panel_title_'.$_LANG_] = "Archived Content";
+	$_SITE['wb_archive_panel_glyph_'.$_LANG_] = "warrning";
+	$_SITE['wb_archive_warn_msg_'.$_LANG_] = "Information identified as archived is provided for reference, research or recordkeeping purposes. It is not subject to the Government of Canada Web Standards and has not been altered or updated since it was archived. Please contact us to request a format other than those available.";
 	
 	$_STIE['wb_err_return_text_'.$_LANG_] = 'Return to the ';
 	$_STIE['wb_err_return_link_'.$_LANG_] = 'home page';
