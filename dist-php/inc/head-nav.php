@@ -98,7 +98,20 @@ if ($_PAGE['issplash'] != '1' && $_PAGE['iserror'] != '1') {
 
     // Archived Section
     if ($_PAGE['isarchived'] == "1") {
-        echo $_SITE['wb_archive_warn_msg_' . $_PAGE['lang1']];
+        echo "<div class=\"panel panel-danger\">";
+        echo "<header class=\"panel-heading\">";
+        echo "<h3 class=\"panel-title\">";
+        echo "<span class=\"glyphicon glyphicon-warning-sign mrgn-rght-sm\" title=\"".$_SITE['wb_archive_panel_glyph_'.$_PAGE['lang1']]."\"> </span>";
+        echo $_SITE['wb_archive_panel_title_'.$_PAGE['lang1']];
+        echo "</h3>";
+        echo "</header>";
+        echo "<div class=\"panel-body\">";
+        echo "<p>";
+        echo $_SITE['wb_archive_warn_msg_'.$_PAGE['lang1']];
+    	echo "</p>";
+        echo "</div>";
+        
+        echo "</div>";
     }
 } else if( $_PAGE['iserror'] == '1' ) {
 	echo '<div class="row mrgn-tp-lg">' .PHP_EOL;
