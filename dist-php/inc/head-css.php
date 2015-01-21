@@ -23,7 +23,7 @@ echo '.min.css"/>';
 		}
 	}
 ?>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="<?php echo $_SITE['wb_core_dist_folder']; ?>/js/ie8-wet-boew.min.js"></script>
 <![endif]-->
 <noscript><link rel="stylesheet" href="<?php echo $_SITE['wb_core_dist_folder']; ?>/css/noscript.min.css"/></noscript>
