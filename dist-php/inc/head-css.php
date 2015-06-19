@@ -2,7 +2,7 @@
 <link href="<?php echo $_SITE['wb_core_dist_folder']?>/assets/favicon.ico" rel="icon" type="image/x-icon"/>
 <link rel="stylesheet" href="<?php echo $_SITE['wb_core_dist_folder']; ?>/css/wet-boew.min.css"/><!--<![endif]-->
 <?php
-echo '<link rel="stylesheet" href="' . $_SITE['wb_core_dist_folder'] . '/css/theme';
+echo '<link rel="stylesheet" href="' . $_SITE['wb_core_dist_folder'] .  $_SITE['wb_core_root'] . '/css/theme';
 if( $_SITE['wb_theme'] == 'theme-gcwu-fegc' ) {
 	if( isset($_PAGE['issplash']) && $_PAGE['issplash'] == 1 ) {
 		echo '-sp-pe';
