@@ -3,6 +3,44 @@
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  */
+ 
+function is_dubious($input) {
+    // remove things that:
+    // - look, feel and smell like XSS
+    $dubious = array('javascript', 'vbscript', 'expression', 'applet', 'meta',
+                     'xml', 'blink', 'link', 'style', 'script', 'embed',
+                     'object', 'iframe', 'frame', 'frameset', 'ilayer',
+                     'layer', 'bgsound', 'title', 'base', 'onabort',
+                     'onactivate', 'onafter', 'onbefore', 'onblur',
+                     'onbounce', 'onclick', 'onchange', 'ondata', 'ondrag',
+                     'ondrop', 'onload', 'onunload', 'onresize', 'onmouse',
+                     'onselect', 'onkey', 'onlayout', 'oncontrol', 'onmove',
+                     'ondbl', 'focus', 'onscroll', 'onrow', 'onpaste',
+                     'onready', 'onreset', 'prompt',
+                     '"', '\'', // remove single and double quotes
+                     "\n", "\r", "\r\n", '%0d', '%0a'); // remove any CR LF
+
+    foreach($dubious as $dub) {
+        if (stristr($input, $dub)) {
+            return TRUE;
+        }
+    }
+    return FALSE;
+}
+
+if (empty($_SERVER['HTTP_REFERER'])) {
+    // don't know how we got here, blacklist and early out
+    header('HTTP/1.1 400 Bad Request', true, 400);
+    exit();
+}
+
+// brute force check for XSS/CRLF/HTTP response splitting
+if (is_dubious($_SERVER['HTTP_REFERER']) === TRUE || is_dubious($_SERVER['QUERY_STRING']) === TRUE) {
+    // dubious request, blacklist and early out
+    header('HTTP/1.1 400 Bad Request', true, 400);
+    exit();
+}
+ 
 if ($_SERVER['HTTP_REFERER'] != "") {
     $q = $_SERVER['HTTP_REFERER'];
 } else {
