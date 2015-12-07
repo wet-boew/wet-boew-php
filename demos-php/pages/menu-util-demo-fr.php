@@ -8,16 +8,18 @@ $_PAGE['lang2'] = "en";
 
 require_once __DIR__ . "/config/config.php";
 
-// These are the required variables fore each page.
-$_PAGE['title_' . $_PAGE['lang1']] = $_SITE['theme_list_' . $_PAGE['lang1']][$_SITE['wb_theme']] . " - Boîte à outils de l'expérience Web";
+// These are the required variables for each page.
+$_PAGE['title_' . $_PAGE['lang1']] = "Page de contenu - Menu secondaire utilitaire - Thème de la BOEW - Boîte à outils de l'expérience Web";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
 // Optional variables.
-$_PAGE['short_title_' .$_PAGE['lang1']] = $_SITE['theme_list_' . $_PAGE['lang1']][$_SITE['wb_theme']];
+$_PAGE['short_title_' .$_PAGE['lang1']] = "Page de contenu - Menu secondaire utilitaire - Thème de la BOEW";
 
-// Include header information that comes before custome CSS on the page.
-include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
+$_PAGE['left_menu_gauche'] = $_PAGE_PATH_ ."/menu-left-gauche/left-menu-util-demo.php";
+
+// Include header information that comes before custom CSS on the page.
+include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php";
 ?>
 
 <!-- custom page metadata start -->
@@ -27,12 +29,13 @@ include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/he
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-css.php"; ?>
 
 <!-- custom css includes -->
+<!-- Must include the css required to display the menu correctly -->
+<link rel="stylesheet" href="/<?php echo $_SITE['wb_php_root'];?>dist-php/menu/menu-util.css" media="screen" type="text/css" />
 <!-- end of custom css includes -->
-
 
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php"; ?>
 <!-- Main content start -->
-<?php include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_website_root'] . "/includes/index-fr.php"; ?>
+<?php include "includes/sample-cont-fr.php"; ?>
 <!-- MainContentEnd -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-nav.php"; ?>
 <!-- CustomScriptsStart -->

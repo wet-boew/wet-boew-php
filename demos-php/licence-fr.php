@@ -9,12 +9,12 @@ $_PAGE['lang2'] = "en";
 require_once __DIR__ . "/config/config.php";
 
 // These are the required variables fore each page.
-$_PAGE['title_' . $_PAGE['lang1']] = $_SITE['theme_list_' . $_PAGE['lang1']][$_SITE['wb_theme']] . " - Boîte à outils de l'expérience Web";
+$_PAGE['title_' . $_PAGE['lang1']] = "Conditions régissant l'utilisation - Boîte à outils de l'expérience Web";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
 // Optional variables.
-$_PAGE['short_title_' .$_PAGE['lang1']] = $_SITE['theme_list_' . $_PAGE['lang1']][$_SITE['wb_theme']];
+$_PAGE['short_title_' .$_PAGE['lang1']] = "Conditions régissant l'utilisation";
 
 // Include header information that comes before custome CSS on the page.
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
@@ -29,10 +29,17 @@ include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/he
 <!-- custom css includes -->
 <!-- end of custom css includes -->
 
-
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php"; ?>
 <!-- Main content start -->
-<?php include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_website_root'] . "/includes/index-fr.php"; ?>
+<?php
+$_content = file_get_contents( $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_core_root'] . "/Licence-" . $_PAGE['lang1'] . ".txt");
+$_content = str_replace("\n\n","@#$#@",$_content);
+$_content = str_replace("\n", " ", $_content);
+$_content = str_replace("@#$#@", "\n", $_content);
+foreach (explode("\n", $_content) as $_line) {
+   echo '<p>' . $_line . '</p>';
+}
+?>
 <!-- MainContentEnd -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-nav.php"; ?>
 <!-- CustomScriptsStart -->
