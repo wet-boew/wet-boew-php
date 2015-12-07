@@ -1,0 +1,62 @@
+Getting started with the WET-BOEW-PHP demo site
+
+This documentation will help you get your first instance of WET-BOEW-PHP up and running. It assumes that you already have a working webserver that meets the minumum requirements.
+
+From your webroot directory (root of your website's directory, sometimes also called www or htdocs), do the following commands:
+
+    mkdir wetsite
+    cd wetsite
+
+    git clone https://github.com/wet-boew/wet-boew-php.git
+    cd wet-boew-php
+    git checkout v4.0
+    cd ..
+
+    mkdir wet-boew-themes
+    cd wet-boew-themes
+
+    git clone -b theme-base --single-branch https://github.com/wet-boew/themes-dist.git theme-base
+    git clone -b theme-GCWeb --single-branch https://github.com/wet-boew/themes-dist.git theme-gcweb
+    git clone -b theme-gc-intranet --single-branch https://github.com/wet-boew/themes-dist.git theme-gc-intranet
+    git clone -b theme-gcwu-fegc --single-branch https://github.com/wet-boew/themes-dist.git theme-gcwu-fegc
+    git clone -b theme-ogpl --single-branch https://github.com/wet-boew/themes-dist.git theme-ogpl
+    git clone -b v4.0-dist --single-branch  https://github.com/wet-boew/wet-boew-dist.git theme-wet-boew
+
+Note 1: If you only want a particular theme, you can omit the other "git clone..." commands.
+Note 2: WET-BOEW-PHP currently only includes support for theme-base, theme-gcwu-fegc and theme-wet-boew.
+
+What you end up with is a directory structure that looks something like:
+
+    wetconfig.php    (located one level up from wet-boew-php OR the root of your website)
+    /wet-boew-php/   (clone of the wet-boew-php repo)
+        demos-php/
+        dist-php/
+
+    /wet-boew-themes/theme-base/             |
+    /wet-boew-themes/theme-gcwu-fegc/        |  Each of these is a clone of
+    /wet-boew-themes/theme-gc-intranet/      |  the wet-boew-themes repo with
+    /wet-boew-themes/theme-gcweb/            |  a different branch activated.
+    /wet-boew-themes/theme-ogpl/             |
+    /wet-boew-themes/theme-wet-boew/         | 
+    etc...
+
+TIPS For Theme Developers
+
+When creating a new theme, each theme will require files to be added to the wet-boew-php directory tree. For example, when creating a theme called theme-custom, you would need to add the following directory branches:
+
+/wet-boew-themes/theme-wet-boew/theme-custom
+/wet-boew-php/dist-php/theme-custom
+/wet-boew-php/dist-php/config/theme-custom
+
+To add the new theme to the demos-php site, you would also need to add:
+
+/wet-boew-php/demos-php/theme-custom
+
+... and modify list of themes in the config-xx.php files in wet-boew-php/dist-php/config/ .
+
+IMPORTANT: The PHP themes folders in wet-boew-php/dist-php/ must have the same names as in the core wet-boew-themes/ folders.
+
+Known issues:
+
+- Secondary Utility Menu Page - side menu doesn't work.
+- Base theme - Footer should be grey, not red.

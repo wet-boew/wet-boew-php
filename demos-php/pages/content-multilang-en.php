@@ -1,27 +1,27 @@
 <?php
 // Always set the page language options first.
 // Set 'lang1' to 'en' for English pages, 'fr' for French pages.
-$_PAGE['lang1'] = "fr";
+$_PAGE['lang1'] = "en";
 
 // Add additional languages the page will support.
-$_PAGE['lang2'] = "en";
+$_PAGE['lang2'] = "fr";
 
 require_once __DIR__ . "/config/config.php";
 
-// These are the required variables fore each page.
-$_PAGE['title_' . $_PAGE['lang1']] = $_SITE['theme_list_' . $_PAGE['lang1']][$_SITE['wb_theme']] . " - Boîte à outils de l'expérience Web";
+// These are the required variables for each page.
+$_PAGE['title_' . $_PAGE['lang1']] = "Content page - Multilingual Support - Web Experience Toolkit";
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
 // Optional variables.
-$_PAGE['short_title_' .$_PAGE['lang1']] = $_SITE['theme_list_' . $_PAGE['lang1']][$_SITE['wb_theme']];
+$_PAGE['short_title_' . $_PAGE['lang1']] = "Content page - Multilingual Support";
 
-// Include header information that comes before custome CSS on the page.
+// Include header information that comes before custom CSS on the page.
 include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-doc.php"; 
 ?>
 
 <!-- custom page metadata start -->
-<meta name="description" content="La Boîte à outils de l’expérience Web (BOEW) rassemble différents composants réutilisables et prêts-à-utiliser pour la conception et la mise à jour de sites Web innovateurs qui sont à la fois accessibles, conviviaux et interopérables. Tous ces composants réutilisables sont des logiciels libres mis à la disposition des ministères et des collectivités Web externes."/>
+<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities"/>
 <!-- end of custom metadata -->
 
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-css.php"; ?>
@@ -29,10 +29,9 @@ include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/he
 <!-- custom css includes -->
 <!-- end of custom css includes -->
 
-
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php"; ?>
 <!-- Main content start -->
-<?php include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_website_root'] . "/includes/index-fr.php"; ?>
+<?php include "includes/sample-cont-en.php"; ?>
 <!-- MainContentEnd -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-nav.php"; ?>
 <!-- CustomScriptsStart -->

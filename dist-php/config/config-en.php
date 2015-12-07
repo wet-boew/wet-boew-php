@@ -4,6 +4,15 @@
 	$_SITE['wb_lang_text_'.$_LANG_] = "English"; 
 	$_SITE['wb_lang_cur_'.$_LANG_] = "(current)";
 
+    $_SITE['theme_list_'.$_LANG_] = array(
+            "theme-gcwu-fegc" => "Government of Canada Web Usability theme",
+            "theme-gcweb" => "Canada.ca theme",
+            "theme-wet-boew" => "WET theme",
+            "theme-gc-intranet" => "Government of Canada Web Usability Intranet theme",
+            "theme-ogpl" => "OGPL theme",
+            "theme-base" => "Base theme",
+    );
+	
 	$_SITE['wb_sh_link_1_'.$_LANG_] = "Skip to main content"; 
 	$_SITE['wb_sh_link_2_'.$_LANG_] = "Skip to secondary menu"; 
 	$_SITE['wb_sh_link_3_'.$_LANG_] = "Skip to site information"; 
@@ -14,7 +23,7 @@
 	$_SITE['wb_lang_header_'.$_LANG_] = "Language selection";
 
 	$_SITE['wb_terms_'.$_LANG_] = "Terms and conditions of use";
-	$_SITE['wb_terms_href_'.$_LANG_] = "../../License-en.html";
+	$_SITE['wb_terms_href_'.$_LANG_] = "../../license-en.php";
 	
 	$_SITE['wb_mb_menu_'.$_LANG_] = "Search and menus";
 
