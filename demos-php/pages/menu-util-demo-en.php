@@ -13,8 +13,8 @@ $_PAGE['title_' . $_PAGE['lang1']] = "Content page - Secondary Utility Menu - " 
 $_PAGE['issued'] = "YYYY-MM-DD";
 $_PAGE['modified'] = "YYYY-MM-DD";
 
-//Optional variables
-$_PAGE['short_title_' .$_PAGE['lang1']] = "Content page - Secondary Utility Menu - " . $_SITE['theme_list_' . $_PAGE['lang1']][$_SITE['wb_theme']];
+// Optional variables.
+$_PAGE['short_title_' . $_PAGE['lang1']] = "Content page - Secondary Utility Menu - " . $_SITE['theme_list_' . $_PAGE['lang1']][$_SITE['wb_theme']];
 
 $_PAGE['left_menu_gauche'] = __DIR__ ."/menu-left-gauche/left-menu-util-demo.php";
 
@@ -33,9 +33,9 @@ include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/he
 <link rel="stylesheet" href="/<?php echo $_SITE['wb_php_root'];?>dist-php/menu/menu-util.css" media="screen" type="text/css" />
 <!-- end of custom css includes -->
 
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php";  ?>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/head-nav.php"; ?>
 <!-- Main content start -->
-<?php include "includes/menu-util-demo-en.php"; ?>
+<?php include "includes/sample-cont-en.php"; ?>
 <!-- MainContentEnd -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . $_SITE['wb_php_dist_folder'] . "/inc/foot-nav.php"; ?>
 <!-- CustomScriptsStart -->
