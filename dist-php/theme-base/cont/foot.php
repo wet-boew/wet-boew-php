@@ -1,6 +1,7 @@
 <footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
 <div class="container">
 <nav role="navigation" class="row">
+<h2><?php echo $_SITE['wb_foot_' .$_PAGE['lang1']] ;?></h2>
 
 <!-- FooterStart -->
 <?php
