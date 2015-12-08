@@ -1,6 +1,6 @@
-<footer role="contentinfo" id="wb-info" class="container visible-md visible-lg">
+<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+<div class="container">
 <nav role="navigation" class="row">
-<h2><?php echo $_SITE['wb_foot_' .$_PAGE['lang1']] ;?></h2>
 
 <!-- FooterStart -->
 <?php
@@ -24,4 +24,5 @@ for( $i=1; isset($_SITE['wb_ft'.$i.'_text_'.$_PAGE['lang1']]); $i++ ) {
 ?>
 <!-- FooterEnd -->
 </nav>
+</div>
 </footer>

@@ -48,6 +48,7 @@ if( $_PAGE['issplash'] == 1 ) {
 		include $_THEME_FOOT_FILE;
 	}
 ?>
+
 <!-- ScriptsStart -->
 
 <!--[if gte IE 9 | !IE ]><!-->

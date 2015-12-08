@@ -17,6 +17,7 @@
 <td>Theme and style</td>
 <td>This theme implements the requirements of the <a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227" rel="external">Standard on Web Usability</a> and is recommended for use on all Government of Canada websites (except for Canada.ca).</td>
 </tr>
+<tr>
 <td><a href="<?php echo $_SITE['wb_php_root']; ?>/demos-php/pages/index-en.php?theme=wet-boew">Web Experience Toolkit (WET) theme</a></td>
 <td>Theme and style</td>
 <td>This theme provides an example implementation of the Base theme.</td>
