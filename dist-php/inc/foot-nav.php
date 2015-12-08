@@ -48,10 +48,11 @@ if( $_PAGE['issplash'] == 1 ) {
 		include $_THEME_FOOT_FILE;
 	}
 ?>
+
 <!-- ScriptsStart -->
 
 <!--[if gte IE 9 | !IE ]><!-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="<?php echo $_SITE['wb_core_dist_folder']; ?>/js/wet-boew.min.js"></script>
 <!--<![endif]-->
 <!--[if lt IE 9]><script src="<?php echo $_SITE['wb_core_dist_folder']; ?>/js/ie8-wet-boew2.min.js"></script><![endif]-->

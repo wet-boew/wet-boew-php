@@ -31,7 +31,7 @@
 	$_SITE['wb_sec_'.$_LANG_] = "Menu secondaire";
 
 	//used in cont/foot.php
-	$_SITE['wb_foot_'.$_LANG_] = "Pied de page";
+	$_SITE['wb_foot_'.$_LANG_] = "À propos de ce site";
 
 	//$_MENU_LOCATION__ is set in the parent config.php file
 	$_SITE['wb_sitenav_file_'.$_LANG_] = $_MENU_LOCATION_ ."/prim-megamenu-fr.php";
@@ -39,11 +39,11 @@
 
 	$_SITE['wb_ft1_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-1-fr.php";
 	$_SITE['wb_ft1_href_'.$_LANG_] = "#";
-	$_SITE['wb_ft1_text_'.$_LANG_] = "À propos";
+	$_SITE['wb_ft1_text_'.$_LANG_] = "Contactez-nous";
 
 	$_SITE['wb_ft2_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-2-fr.php";
 	$_SITE['wb_ft2_href_'.$_LANG_] = "#";
-	$_SITE['wb_ft2_text_'.$_LANG_] = "Contactez-nous";
+	$_SITE['wb_ft2_text_'.$_LANG_] = "À propos";
 
 	$_SITE['wb_ft3_menu_file_'.$_LANG_] = $_MENU_LOCATION_ ."/trail-3-fr.php";
 	$_SITE['wb_ft3_href_'.$_LANG_] = "#";
