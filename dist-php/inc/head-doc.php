@@ -27,11 +27,13 @@ for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 	}
 }
 ?>
-<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="<?php echo $_SITE['wb_meta_' . $_PAGE['lang1']]; ?>"><![endif]--><!--[if gt IE 8]><!-->
-<html class="no-js" lang="<?php echo $_SITE['wb_meta_' . $_PAGE['lang1']]; ?>"<?php echo ($_PAGE['iserror']=='1'?" dir=\"ltr\"":"");?>><!--<![endif]-->
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="<?php echo $_SITE['wb_meta_' . $_PAGE['lang1']]; ?>" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="<?php echo $_SITE['wb_meta_' . $_PAGE['lang1']]; ?>" dir="ltr">
+<!--<![endif]-->
 <head>
-<meta charset="utf-8" /> <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
-		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<meta charset="utf-8" />
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 <title><?php
 if( $_PAGE['isarchived'] == "1" ){
 	echo $_SITE['wb_archive_title_'.$_PAGE['lang1']];
