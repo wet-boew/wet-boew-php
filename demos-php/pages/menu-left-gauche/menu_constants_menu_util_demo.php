@@ -20,7 +20,7 @@ $demo_menu_top["links"] = array();
  * $demo_menu_sub1 is a leaf node (meaning it has no sub menus) level two menu.
  */
 $demo_menu_sub1["name"] = array("en" => "Item&#32;1", "fr" => "Article&#32;1");
-$demo_menu_sub1["addr"] = "/index";
+$demo_menu_sub1["addr"] = $_SITE['wb_website_root'] . "/index";
 array_push($demo_menu_top["links"], $demo_menu_sub1);
 
 /*
@@ -30,41 +30,41 @@ array_push($demo_menu_top["links"], $demo_menu_sub1);
  * "Article 2 - Autre" link as the first link under it followed by the sub menus
  */
 $demo_menu_sub2["name"] = array("en" => "Item&#32;2", "fr" => "Article&#32;2");
-$demo_menu_sub2["addr"] = "/index";
+$demo_menu_sub2["addr"] = $_SITE['wb_website_root'] . "/index";
 $demo_menu_sub2["links"] = array();
 
 /*
  * $demo_menu_sub2a is a leaf node level three menu belonging to $demo_menu_sub2
  */
 $demo_menu_sub2a["name"] = array("en" => "Item&#32;2a", "fr" => "Article&#32;2a");
-$demo_menu_sub2a["addr"] = "/index";
+$demo_menu_sub2a["addr"] = $_SITE['wb_website_root'] . "/index";
 
 //have to add the $demo_menu_sub2a to the $demo_menu_sub2["links"] array
 array_push($demo_menu_sub2["links"], $demo_menu_sub2a);
 array_push($demo_menu_top["links"], $demo_menu_sub2);
 
 $demo_menu_sub3["name"] = array("en" => "Item&#32;3", "fr" => "Article&#32;3");
-$demo_menu_sub3["addr"] = "/index";
+$demo_menu_sub3["addr"] = $_SITE['wb_website_root'] . "/index";
 array_push($demo_menu_top["links"], $demo_menu_sub3);
 
 $demo_menu_sub4["name"] = array("en" => "Item&#32;4", "fr" => "Article&#32;4");
-$demo_menu_sub4["addr"] = "/index";
+$demo_menu_sub4["addr"] = $_SITE['wb_website_root'] . "/index";
 array_push($demo_menu_top["links"], $demo_menu_sub4);
 
 $demo_menu_sub5["name"] = array("en" => "Item&#32;5", "fr" => "Article&#32;5");
-$demo_menu_sub5["addr"] = "/index";
+$demo_menu_sub5["addr"] = $_SITE['wb_website_root'] . "/index";
 array_push($demo_menu_top["links"], $demo_menu_sub5);
 
 $demo_menu_sub6["name"] = array("en" => "Item&#32;6", "fr" => "Article&#32;6");
-$demo_menu_sub6["addr"] = "/index";
+$demo_menu_sub6["addr"] = $_SITE['wb_website_root'] . "/index";
 array_push($demo_menu_top["links"], $demo_menu_sub6);
 
 $demo_menu_sub7["name"] = array("en" => "Item&#32;7", "fr" => "Article&#32;7");
-$demo_menu_sub7["addr"] = "/index";
+$demo_menu_sub7["addr"] = $_SITE['wb_website_root'] . "/index";
 array_push($demo_menu_top["links"], $demo_menu_sub7);
 
 $demo_menu_sub8["name"] = array("en" => "Item&#32;8", "fr" => "Article&#32;8");
-$demo_menu_sub8["addr"] = "/index";
+$demo_menu_sub8["addr"] = $_SITE['wb_website_root'] . "/index";
 array_push($demo_menu_top["links"], $demo_menu_sub8);
 
 //add the $demo_menu_top menu to the $demo_menu["links"] array
