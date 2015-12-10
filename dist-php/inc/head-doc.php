@@ -28,7 +28,7 @@ for($i=1; isset($_PAGE['lang'.$i]); $i++ ) {
 }
 ?>
 <!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="<?php echo $_SITE['wb_meta_' . $_PAGE['lang1']]; ?>" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
-<html class="no-js" lang="<?php echo $_SITE['wb_meta_' . $_PAGE['lang1']]; ?>" dir="ltr">
+<html class="no-js" lang="<?php echo $_SITE['wb_meta_' . $_PAGE['lang1']]; ?>"<?php echo ($_PAGE['issplash']?"":" dir=\"ltr\"")?>>
 <!--<![endif]-->
 <head>
 <meta charset="utf-8" />

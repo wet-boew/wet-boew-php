@@ -9,11 +9,11 @@ if (!isset($_PAGE['lang2'])) $_PAGE['lang2'] = "fr";
 require_once __DIR__ . "/config/config.php";
 
 // These are the required variables for this page.
-if (!isset($_PAGE['title_en'])) $_PAGE['title_en'] = "";
-if (!isset($_PAGE['title_fr'])) $_PAGE['title_fr'] = "";
+if (!isset($_PAGE['title_en'])) $_PAGE['title_en'] = "Language selection - Government of Canada Web Usability theme - Web Experience Toolkit";
+if (!isset($_PAGE['title_fr'])) $_PAGE['title_fr'] = "Sélection de la langue - Thème de la facilité d’emploi Web du gouvernement du Canada - Boîte à outils de l’expérience Web";
 
-$_PAGE['sub_title_en'] = "Web Experience Toolkit";
-$_PAGE['sub_title_fr'] = "Boîte à outils de l’expérience Web";
+$_PAGE['sub_title_en'] = "Government of Canada Web Usability theme - Web Experience Toolkit";
+$_PAGE['sub_title_fr'] = "Thème de la facilité d’emploi Web du gouvernement du Canada - Boîte à outils de l’expérience Web";
 
 $_PAGE['issplash'] = "1";
 
