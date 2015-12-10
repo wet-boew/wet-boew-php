@@ -9,11 +9,11 @@ if (!isset($_PAGE['lang2'])) $_PAGE['lang2'] = "fr";
 require_once __DIR__ . "/config/config.php";
 
 // These are the required variables for this page.
-if (!isset($_PAGE['title_en'])) $_PAGE['title_en'] = "Language selection - Government of Canada Web Usability theme - Web Experience Toolkit";
-if (!isset($_PAGE['title_fr'])) $_PAGE['title_fr'] = "Sélection de la langue - Thème de la facilité d’emploi Web du gouvernement du Canada - Boîte à outils de l’expérience Web";
+if (!isset($_PAGE['title_en'])) $_PAGE['title_en'] = "Language selection - " .$_SITE['theme_list_' . $_PAGE['lang1']][$_SITE['wb_theme']]. " - Web Experience Toolkit";
+if (!isset($_PAGE['title_fr'])) $_PAGE['title_fr'] = "Sélection de la langue - " .$_SITE['theme_list_' . $_PAGE['lang2']][$_SITE['wb_theme']]. " - Boîte à outils de l’expérience Web";
 
-$_PAGE['sub_title_en'] = "Government of Canada Web Usability theme - Web Experience Toolkit";
-$_PAGE['sub_title_fr'] = "Thème de la facilité d’emploi Web du gouvernement du Canada - Boîte à outils de l’expérience Web";
+$_PAGE['sub_title_en'] = $_SITE['theme_list_' . $_PAGE['lang1']][$_SITE['wb_theme']]. " - Web Experience Toolkit";
+$_PAGE['sub_title_fr'] = $_SITE['theme_list_' . $_PAGE['lang2']][$_SITE['wb_theme']]. " - Boîte à outils de l’expérience Web";
 
 $_PAGE['issplash'] = "1";
 
