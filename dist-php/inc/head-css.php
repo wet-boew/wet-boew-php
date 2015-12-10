@@ -1,6 +1,10 @@
 <!--[if gte IE 9 | !IE ]><!-->
 <link href="<?php echo $_SITE['wb_core_dist_folder']?>/assets/favicon.ico" rel="icon" type="image/x-icon"/>
-<link rel="stylesheet" href="<?php echo $_SITE['wb_core_dist_folder']; ?>/css/wet-boew.min.css"/><!--<![endif]-->
+<?php 
+if( !$_PAGE["issplash"] ) {
+?>
+<link rel="stylesheet" href="<?php echo $_SITE['wb_core_dist_folder']; ?>/css/wet-boew.min.css"/>
+<?php } ?>
 <?php
 echo '<link rel="stylesheet" href="' . $_SITE['wb_core_dist_folder'] . '/css/theme';
 if( $_SITE['wb_theme'] == 'theme-gcwu-fegc' ) {
@@ -11,7 +15,10 @@ if( $_SITE['wb_theme'] == 'theme-gcwu-fegc' ) {
 	}
 }
 echo '.min.css"/>';
-?><!--[if lt IE 9]>
+?>
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
 <link href="<?php echo $_SITE['wb_core_dist_folder']?>/assets/favicon.ico" rel="shortcut icon"/>
 <link rel="stylesheet" href="<?php echo $_SITE['wb_core_dist_folder']; ?>/css/ie8-wet-boew.min.css"/>
 <?php 

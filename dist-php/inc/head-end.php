@@ -4,7 +4,7 @@ if( $_PAGE['issplash'] == 1 ) {
 ?>
 <div id="wet-title">
 <?php
-	echo '<div id="wet-title-left" class="span-3 margin-bottom-none"'.$_META_LANG.'>';
+/*	echo '<div id="wet-title-left" class="span-3 margin-bottom-none"'.$_META_LANG.'>';
 	echo $_SITE['wb_site_title_'.$_PAGE['lang1']];
 	echo "</div>\n";
 	echo '<div class="span-2 margin-bottom-none"></div>'."\n";
@@ -27,7 +27,7 @@ if( $_PAGE['issplash'] == 1 ) {
 			echo $_SITE['wb_site_title_'.$_PAGE['lang'.$i]];
 			echo "</div>\n";
 		}
-	}
+	}*/
 ?>
 <div class="clear"></div>
 </div>
