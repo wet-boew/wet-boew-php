@@ -1,6 +1,6 @@
-Getting started with the WET-BOEW-PHP demo site
+Getting Started with the WET-BOEW-PHP Demo Site
 
-This documentation will help you get your first instance of WET-BOEW-PHP up and running. It assumes that you already have a working webserver that meets the minumum requirements.
+This documentation will help you get your first instance of WET-BOEW-PHP up and running. It assumes that you already have a working webserver that meets the minimum requirements.
 
 From your webroot directory (root of your website's directory, sometimes also called www or htdocs), do the following commands:
 
@@ -16,7 +16,7 @@ From your webroot directory (root of your website's directory, sometimes also ca
     cd wet-boew-themes
 
     git clone -b theme-base --single-branch https://github.com/wet-boew/themes-dist.git theme-base
-    git clone -b theme-GCWeb --single-branch https://github.com/wet-boew/themes-dist.git theme-gcweb
+    git clone -b GCWeb --single-branch https://github.com/wet-boew/themes-dist.git theme-gcweb
     git clone -b theme-gc-intranet --single-branch https://github.com/wet-boew/themes-dist.git theme-gc-intranet
     git clone -b theme-gcwu-fegc --single-branch https://github.com/wet-boew/themes-dist.git theme-gcwu-fegc
     git clone -b theme-ogpl --single-branch https://github.com/wet-boew/themes-dist.git theme-ogpl
@@ -27,36 +27,62 @@ Note 2: WET-BOEW-PHP currently only includes support for theme-base, theme-gcwu-
 
 What you end up with is a directory structure that looks something like:
 
-    wetconfig.php    (located one level up from wet-boew-php OR the root of your website)
-    /wet-boew-php/   (clone of the wet-boew-php repo)
-        demos-php/
-        dist-php/
+    wetconfig.php        (located one level up from wet-boew-php OR the root of your website)
+        /wet-boew-php/   (clone of the wet-boew-php repo)
+            demos-php/
+            dist-php/
 
-    /wet-boew-themes/theme-base/             |
-    /wet-boew-themes/theme-gcwu-fegc/        |  Each of these is a clone of
-    /wet-boew-themes/theme-gc-intranet/      |  the wet-boew-themes repo with
-    /wet-boew-themes/theme-gcweb/            |  a different branch activated.
-    /wet-boew-themes/theme-ogpl/             |
-    /wet-boew-themes/theme-wet-boew/         | 
-    etc...
+        /wet-boew-themes/
+            theme-base/             |
+            theme-gcwu-fegc/        |  Each of these is a clone of
+            theme-gc-intranet/      |  the wet-boew-themes repo with
+            theme-gcweb/            |  a different branch activated.
+            theme-ogpl/             |
+            theme-wet-boew/         |
+            etc...
 
-TIPS For Theme Developers
+SUPPORT FOR MULTIPLE DOMAINS
 
-When creating a new theme, each theme will require files to be added to the wet-boew-php directory tree. For example, when creating a theme called theme-custom, you would need to add the following directory branches:
+If you want to use a single common code base for multiple sites, you can do this if each site has its own domain. Just add the full domain name to the wetconfig.php filename. For example, if your domain was www.example.com, you would rename your wetconfig.php file to wetconfig-www.example.com.php. In this way you can have a separate wetconfig.php file for each site. Note that this has only been tested on Apache webservers.
+
+TIPS FOR THEME DEVELOPERS
+
+When creating a new theme, each will require files to be added to the wet-boew-php directory tree. For example, when creating a theme called theme-custom, you would need to add the following directory branches:
 
 /wet-boew-themes/theme-wet-boew/theme-custom
 /wet-boew-php/dist-php/theme-custom
 /wet-boew-php/dist-php/config/theme-custom
 
-To add the new theme to the demos-php site, you would also need to add:
+To add the new theme to the demos-php site, you would also need to:
+
+Add the following folder and related files (see examples of required files in core themes):
 
 /wet-boew-php/demos-php/theme-custom
 
-... and modify list of themes in the config-xx.php files in wet-boew-php/dist-php/config/ .
+You will also need to modify the list of themes in the wet-boew-php/dist-php/config/config-xx.php files. To have the theme appear in the home page of the demos-php site, you will need to add a new section to the demos-php/includes/index-en.php and demos-php/includes/index-fr.php files.
 
 IMPORTANT: The PHP themes folders in wet-boew-php/dist-php/ must have the same names as in the core wet-boew-themes/ folders.
 
-Known issues:
+THEME NAME
 
-- Secondary Utility Menu Page - side menu doesn't work.
-- Base theme - Footer should be grey, not red.
+Instead of hard coding the name of the theme when creating new pages on the demos-php site, use the following variable to display the name of the active theme:
+
+$_SITE['theme_list_' . $_PAGE['lang1']][$_SITE['wb_theme']]
+
+and
+
+$_SITE['theme_list_' . $_PAGE['lang2']][$_SITE['wb_theme']]
+
+The arrays $_SITE['theme_list_en'] and $_SITE['theme_list_fr'] are defined in the dist-php/config/config-xx.php language files - currently only English (en) and French (fr). Definitions for all 6 core themes are currently included even though only 3 are available right now.
+
+This will result in the correct theme name to appear depending on which theme is being used. See demos-php/index-en.php for a working example.
+
+SWITCHING THEMES
+
+To switch theme, simply go to the home page and select the theme that you want to you. At any point on the demos-php site, you can switch theme without leaving the current page by adding ?theme=themename to the URL where themename can be any of the above mentioned themes without the leading "theme-" part of the name (example: ?theme=gcwu-fegc).
+
+To revert back to your site's default theme, just use this technique specifying the desired theme. Alternatively, the theme will also reset if you simply close and re-open your web browser as a session cookie is being used to keep track when an alternative theme is active.
+
+Switching of the theme in this way is limited and only affects the current session in your web browser. Other visitors to the site will continue to still see the default theme.
+
+IMPORTANT: While this theme switching feature is nice to have on the demo site, it is definitely not recommended on a production sites or else visitors will be able to change the look and feel of your website.
