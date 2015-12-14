@@ -1,7 +1,7 @@
 <div id="wb-bnr" class="row">
 <div class="row">
 <?php
-if (!empty($_SITE['gcwu_wmms_alt_image_'.$_PAGE['lang1']) {
+if (!empty($_SITE['gcwu_wmms_alt_image_'.$_PAGE['lang1']])) {
     $_SIG_IMG_ = $_SITE['gcwu_sig_alt_image_'.$_PAGE['lang1']];
     $_SIG_ALT_ = $_SITE['gcwu_sig_' . $_PAGE['lang1']];
 ?>
@@ -10,7 +10,7 @@ if (!empty($_SITE['gcwu_wmms_alt_image_'.$_PAGE['lang1']) {
     </div>
 <?php
 }
-if (!empty($_SITE['gcwu_sig_alt_image_'.$_PAGE['lang1']) {
+if (!empty($_SITE['gcwu_sig_alt_image_'.$_PAGE['lang1']])) {
     $_WMMS_IMG_ = $_SITE['gcwu_wmms_alt_image_'.$_PAGE['lang1']];
     $_WMMS_ALT_ = $_SITE['gcwu_wmms_' . $_PAGE['lang1'] ];
 ?>
