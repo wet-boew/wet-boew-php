@@ -17,6 +17,7 @@
 <td>Thèmes et style</td>
 <td>Un exemple de thème conçu à partir du thème de base.</td>
 </tr>
+<tr>
 <td><a href="<?php echo $_SITE['wb_php_root']; ?>/demos-php/pages/index-fr.php?theme=gcwu-fegc">Thème de la facilité d’emploi Web du gouvernement du Canada</a></td>
 <td>Thèmes et style</td>
 <td>Ce thème met en place la mise en page et la mise en forme exigés par la <a href="http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227" rel="external">Norme sur la facilité des sites Web</a>. Il est recommandé de se servir de ce thème sur les sites Web du gouvernement du Canada (sauf Canada.ca).</td>

@@ -16,7 +16,7 @@ if( $_PAGE['issplash'] == 1 ) {
         $_MOD_TEXT_ = $_SITE['wb_doc_version_' . $_PAGE['lang1']];
         $_DATE_VERSION_TEXT_ = $_PAGE['version'];
     }
-	echo '    <dl id="wb-dtmd" role="contentinfo" property="dateModified">' .PHP_EOL;
+	echo '    <dl id="wb-dtmd">' .PHP_EOL;
 	echo '        <dt>' . $_SITE['wb_doc_dates_'.$_PAGE['lang1']] . '</dt>' .PHP_EOL;
 	echo '       <dd>' .PHP_EOL;
 	echo '            <time property="dateModified">' . $_DATE_VERSION_TEXT_. '</time>' .PHP_EOL;
