@@ -25,9 +25,16 @@ $_WMMS_ALT_ = $_SITE['gcwu_wmms_' . $_PAGE['lang1'] ];
                     for($i=2; isset($_PAGE['lang'.$i]); $i++ ) {
                         $listItem = '<li>';
                         $listItem .= '<a lang="' .$_SITE['wb_meta_' . $_PAGE['lang'.$i]];
-                        $listItem .= '" href="' .$q . $_PAGE['lang'.$i].'.php';
-                        if ($_SERVER['QUERY_STRING'] != ""){
-                        	$listItem .= '?'.$_SERVER['QUERY_STRING'];
+                        // If the Request URI doesn't end with a -en or a -fr, $q will be blank. We will use the
+                        // $_PAGE['wb_lang_href_' . $_PAGE['lang'.$i]] variable instead. The developer should have
+                        // set the variable to point to a static URL that will be used for language changing.
+                        if ( empty($q) ) {
+                            $listItem .= '" href="' . $_PAGE['wb_lang_href_' . $_PAGE['lang'.$i]];
+                        } else {
+                            $listItem .= '" href="' .$q . $_PAGE['lang'.$i].'.php';
+                            if ($_SERVER['QUERY_STRING'] != ""){
+                                $listItem .= '?'.$_SERVER['QUERY_STRING'];
+                            }
                         }
                         $listItem .= '">' . $_SITE['wb_lang_text_' . $_PAGE['lang'.$i]];
                         $listItem .= "</a>";
