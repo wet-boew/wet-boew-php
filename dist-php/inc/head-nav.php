@@ -70,6 +70,8 @@ if (($_PAGE['iserror'] != '1') && isset($_PAGE['left_menu_gauche']) && $_PAGE['l
 }
 
 if ($_PAGE['issplash'] != '1' && $_PAGE['iserror'] != '1') {
+    include $_SITE['wb_buttonbar_file_' . $_PAGE['lang1']];
+
     echo '<h1 id="wb-cont" property="name">';
     if ($_PAGE['isarchived'] == "1") {
         $_TITLE_ = $_SITE['wb_archive_title_' . $_PAGE['lang1']] . $_PAGE['short_title_' . $_PAGE['lang1']];
